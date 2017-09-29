@@ -2,26 +2,17 @@
 #define ITEM_H
 
 #include <QString>
+#include "category.h"
 
 
-class Item
+struct Item
 {
-private:
-    QString itemName;
-    int     quantity;
-    int     effectiveOnHand;
 
-
-public:
-    Item();
-    ~Item();
-    void setItemName();
-    int  getItemName() const;
-
-    void setEffectiveOnHands();
-    int  getEffectiveOnHands() const;
-
-
+    QString          itemName;
+    int              quantity;
+    int              effectiveOnHand;
+    CatCls::Category category;
+    int              boxNum;
 
 
 };

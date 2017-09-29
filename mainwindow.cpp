@@ -18,7 +18,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_mInv_clicked()
 {
     manageInvetory = new ManageInventory(this);
-    manageInvetory->hide();
+    manageInvetory->show();
     hide();
 
 }

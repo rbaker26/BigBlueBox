@@ -31,7 +31,6 @@ SOURCES += \
     date.cpp \
     gearholder.cpp \
     dbmanager.cpp \
-    item.cpp \
     manageInventory.cpp
 
 HEADERS += \
@@ -44,7 +43,8 @@ HEADERS += \
     dbmanager.h \
     item.h \
     manageInventory.h \
-    files.h
+    files.h \
+    category.h
 
 FORMS += \
         mainwindow.ui \

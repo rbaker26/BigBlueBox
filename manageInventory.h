@@ -2,6 +2,7 @@
 #define MANAGEINVENTORY_H
 
 #include <QMainWindow>
+#include "dbmanager.h"
 
 
 
@@ -25,6 +26,8 @@ private slots:
 
 
     void on_pushButton_home_clicked();
+
+    void on_pushButton_viewInv_clicked();
 
 private:
     Ui::ManageInventory *ui;

@@ -5,8 +5,9 @@
 #include <QSqlQuery>
 #include <QDebug>
 #include <QSqlError>
+#include <QSqlRecord>
 #include "Gear.h"
-
+#include "item.h"
 
 class DbManager
 {
@@ -26,6 +27,7 @@ public:
                      const HealthStatus& healthStatus,
                      Date& obsolescenceDate);
 
+    QVector<Item> getFullInventory();
 
 };
 

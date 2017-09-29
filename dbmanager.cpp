@@ -110,3 +110,38 @@ void DbManager::addGearPartsToDB(const QString& gearDescription,
     }
 }
 /*****************************************************************************/
+
+
+
+/*****************************************************************************/
+QVector<Item> DbManager::getFullInventory() // not tested yet
+{
+    QVector<Item> tempItemV;
+    Item tempItem;
+    QSqlQuery query("SELECT * FROM inventory");
+
+
+
+    int itemNameFieldNum  = query.record().indexOf("item_name");
+    int quantityFieldNum  = query.record().indexOf("quantity");
+    int efOnHandFieldNum  = query.record().indexOf("effective_on_hand");
+    int categoryFieldNum  = query.record().indexOf("cat");
+    int boxNumFieldNum    = query.record().indexOf("box_num");
+
+
+
+    query.first();
+    do
+    {
+        tempItem.itemName        = query.value(itemNameFieldNum).toString();
+        tempItem.quantity        = query.value(quantityFieldNum).toInt();
+        tempItem.effectiveOnHand = query.value(efOnHandFieldNum).toInt();
+        tempItem.category        = static_cast<CatCls::Category>(query.value(categoryFieldNum).toInt());
+        tempItem.boxNum          = query.value(boxNumFieldNum).toInt();
+
+        tempItemV.push_back(tempItem);
+    }while(query.next());
+
+    return tempItemV;
+}
+/*****************************************************************************/

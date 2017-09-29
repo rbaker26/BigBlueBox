@@ -10,6 +10,9 @@ ManageInventory::ManageInventory(QWidget *parent) :
 {
     ui->setupUi(this);
     this->parent = parent;
+
+
+
 }
 
 ManageInventory::~ManageInventory()
@@ -26,3 +29,11 @@ void ManageInventory::on_pushButton_home_clicked()
 
 }
 
+
+void ManageInventory::on_pushButton_viewInv_clicked()
+{
+    // test code for db
+    Date date(2017,10,22);
+    DbManager dbtest("C:/Users/007ds/Documents/qT/BigBlueBox/BigBlueBox.db"); // put db object in name space and make a pointer to it.  pass that pointer to all functions that need to access db
+
+}
