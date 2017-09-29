@@ -1,6 +1,6 @@
 #include "dbmanager.h"
 
-
+/*****************************************************************************/
 DbManager::DbManager(const QString& path)
 {
    bbb_db = QSqlDatabase::addDatabase("QSQLITE");
@@ -16,7 +16,7 @@ DbManager::DbManager(const QString& path)
    }
 }
 
-
+/*****************************************************************************/
 void DbManager::addGearItem(const QString& gearDescription,
                             const int gearCatID,
                             const int gearIdvID,
@@ -25,33 +25,33 @@ void DbManager::addGearItem(const QString& gearDescription,
                             const HealthStatus& healthStatus,
                             Date& obsolescenceDate)
 {
-     qDebug() << "Database: function 888 entered: ok" << bbb_db.isOpen();
+     qDebug() << "Database is open?:\t" << bbb_db.isOpen();
     // check args
     QSqlQuery query;
     query.prepare("INSERT INTO gear (gear_discription, gear_cat_id, gear_idv_id, has_parts, health_status, obsol_date) "
                   "VALUES (:gearDescription, :gear_cat_id, :gear_idv_id, :has_parts, :health_status, :obsolDate)");
 
 
-    qDebug() << "Database: function entered:2 ok";
+
     query.bindValue(":gearDescription", gearDescription);
     query.bindValue(":gear_cat_id", gearCatID);
     query.bindValue(":gear_idv_id", gearIdvID);
     query.bindValue(":has_parts", hasParts);
     query.bindValue(":health_status", healthStatus);
     query.bindValue(":obsolDate", obsolescenceDate.getDateString());
-    qDebug() << obsolescenceDate.getDateString();
     //query.bindValue(":obsol_date", obsolescenceDate);
-    qDebug() << "query 1bind last error::: : "
-                   << query.lastError().text();
+    qDebug() << "query.bindValue .lastError():\t" << query.lastError();
+
     query.exec();
 
-    qDebug() << "Database: function entered: 4ok";
+    qDebug() << "query.exec() .lastError():\t" << query.lastError();
     //qDebug() << query5.exec();
     //query6.exec();
 
 
 }
 
+/*****************************************************************************/
 void DbManager::addGearPartsToDB(const QString& gearDescription,
                                  const QVector<int>& partsFromInventory)
 {
@@ -108,5 +108,5 @@ void DbManager::addGearPartsToDB(const QString& gearDescription,
         return;
         break;
     }
-
 }
+/*****************************************************************************/

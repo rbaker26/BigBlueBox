@@ -27,6 +27,7 @@ public:
     void setPatrolName(const PatrolName& patrolName);
 
     void addGearToHolder(const Gear& gear);
+    void removeGearFromHolder(const Gear& gear);
 
 
 };

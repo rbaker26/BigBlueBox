@@ -27,3 +27,7 @@ void GearHolder::addGearToHolder(const Gear& gear)
 }
 
 
+void GearHolder::removeGearFromHolder(const Gear &gear)
+{
+    //hmm
+}

@@ -6,144 +6,92 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1100</width>
-    <height>557</height>
+    <width>800</width>
+    <height>494</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QStackedWidget" name="stackedWidget">
+   <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>30</y>
-      <width>1101</width>
-      <height>491</height>
+      <x>140</x>
+      <y>100</y>
+      <width>491</width>
+      <height>281</height>
      </rect>
     </property>
-    <property name="currentIndex">
-     <number>1</number>
-    </property>
-    <widget class="QWidget" name="landingPage_0">
-     <widget class="QTextBrowser" name="textBrowser">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>20</y>
-        <width>1091</width>
-        <height>192</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Welcome to Big Blue Box.&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Please use the buttons to navigate to your desired page.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Gear is large items like TVs and batteries.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Supplies are small items that will not be returned to Programs like, silverware, pots, and lighters.  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="buttonToGearPage">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>460</y>
-        <width>131</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Gear Page</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="buttonToSuppliesPage">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>460</y>
-        <width>111</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Supplies Page</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="gearPage_1">
-     <widget class="QStackedWidget" name="gearPageWidget">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>961</width>
-        <height>341</height>
-       </rect>
-      </property>
-      <widget class="QWidget" name="page">
-       <widget class="QPushButton" name="buttonCheckoutGearPage">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>300</y>
-          <width>80</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Checkout Gear</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="buttonCheckinGearPage">
-        <property name="geometry">
-         <rect>
-          <x>140</x>
-          <y>300</y>
-          <width>80</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Check-in Gear</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="buttonLogBrokenPage">
-        <property name="geometry">
-         <rect>
-          <x>240</x>
-          <y>300</y>
-          <width>91</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Log Broken Gear</string>
-        </property>
-       </widget>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton_gearRepot">
+       <property name="text">
+        <string>Generate Gear Reports</string>
+       </property>
       </widget>
-      <widget class="QWidget" name="page_4"/>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="page_2"/>
-    <widget class="QWidget" name="page_3"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_mInv">
+       <property name="text">
+        <string>Manage Inventory</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pushButton_invReport">
+       <property name="text">
+        <string>Generate Inventory Reports</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton_help">
+       <property name="text">
+        <string>Help</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="pushButton_viewBook">
+       <property name="text">
+        <string>View Q-Corps Handbook</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton_mGear">
+       <property name="text">
+        <string>Manage Gear</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>80</width>
-      <height>21</height>
+      <x>140</x>
+      <y>55</y>
+      <width>351</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Home</string>
+     <string>What do you want to do?</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Welcome to Big Blue Box</string>
     </property>
    </widget>
   </widget>
