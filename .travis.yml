@@ -14,13 +14,10 @@ install:
   - sudo apt-get install qt5-default qttools5-dev-tools
   
 script:
-  #- qmake "CONFIG+=test" iRobot.pro #we gonna compile for Unit test first
-  #- make
-  #- ./iRobot #run unit test
-  #- rm Makefile iRobot *.o #remove files (which are generated from unit test) for next build
-  - qmake CONFIG+=debug BigBlueBox.pro #we gonna compile for actual program
-  - make
-  # test complete
+ - qmake -project
+ - qmake BigBlueBox.pro
+ - make
+ 
   
   after_success:
   - bash <(curl -s https://codecov.io/bash)
