@@ -1,7 +1,7 @@
 #include "manageInventory.h"
 #include "ui_manageInventory.h"
 
-#include "mainwindow.h"
+
 
 
 ManageInventory::ManageInventory(QWidget *parent) :
@@ -24,8 +24,7 @@ ManageInventory::~ManageInventory()
 
 void ManageInventory::on_pushButton_home_clicked()
 {
-    this->parent->show();
-    hide();
+
 
 }
 

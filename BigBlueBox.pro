@@ -28,7 +28,6 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     gear.cpp \
-    date.cpp \
     gearholder.cpp \
     dbmanager.cpp \
     manageInventory.cpp
@@ -36,19 +35,17 @@ SOURCES += \
 HEADERS += \
         mainwindow.h \
     gear.h \
-    date.h \
     gearholder.h \
     troopletter.h \
     patrolname.h \
     dbmanager.h \
     item.h \
     manageInventory.h \
-    files.h \
     category.h
 
 FORMS += \
         mainwindow.ui \
     manageInventory.ui
 
-DISTFILES += \
+RESOURCES += \
     PatrolNames.txt
