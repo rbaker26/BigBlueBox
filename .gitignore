@@ -18,6 +18,7 @@
 *.pro.user.*
 *.qbs.user
 *.qbs.user.*
+*.user
 *.moc
 moc_*.cpp
 moc_*.h
@@ -37,6 +38,3 @@ Makefile*
 CMakeLists.txt.user*
 DEBUG/
 RELEASE/
-
-*.user
-*.user
