@@ -15,7 +15,7 @@ install:
   
 script:
  - qmake -project
- - qmake BigBlueBox.pro
+ - qmake src/BigBlueBox.pro
  - make
  
 after_success:
