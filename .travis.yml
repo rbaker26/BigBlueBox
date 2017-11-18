@@ -10,8 +10,8 @@ before_install:
  - sudo apt-get install qt5-default qttools5-dev-tools
 
 install:
-  - sudo apt-get update
-  - sudo apt-get install qt5-default qttools5-dev-tools
+ - sudo apt-get update
+ - sudo apt-get install qt5-default qttools5-dev-tools
   
 script:
  - qmake -project
