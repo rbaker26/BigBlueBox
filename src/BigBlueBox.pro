@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui sql
-
+CONFIG   += c++11
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET   = BigBlueBox
@@ -26,12 +26,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
+    reportsView.cpp \
+    item.cpp \
+    category.cpp \
+    dbconnect.cpp
         
 HEADERS += \
         mainwindow.h \
+    reportsView.h \
+    item.h \
+    category.h \
+    dbconnect.h
         
 FORMS += \
         mainwindow.ui \
+    reportsView.ui
         
 test {
 

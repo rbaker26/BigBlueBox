@@ -3,6 +3,10 @@
 
 #include <QMainWindow>
 
+
+// test code, del when finshed
+#include "reportsView.h"
+
 namespace Ui {
 class MainWindow;
 }
