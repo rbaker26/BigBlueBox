@@ -6,16 +6,15 @@ ReportsView::ReportsView(QWidget *parent) :
     ui(new Ui::ReportsView)
 {
     ui->setupUi(this);
-}
-
-ReportsView::~ReportsView()
-{
-    delete ui;
-}
+    ui->toolBox->setCurrentIndex(2);
 
 
-void ReportsView::on_pushButton_fillTable1_clicked()
-{
+
+    ui->tableWidget_inv->clear();
+    ui->tableWidget_inv->setRowCount(0);
+
+//*********************************************************************************************************************
+    //functionize
     QStringList header;
     header << "Name" << "Quantity" << "EFOH" << "Cat" << "BOX#";
     ui->tableWidget_inv->setColumnCount(5);
@@ -43,5 +42,32 @@ void ReportsView::on_pushButton_fillTable1_clicked()
             rowCount++;
             it++;
         } // End While loop
+//*********************************************************************************************************************
+}
 
+ReportsView::~ReportsView()
+{
+    delete ui;
+}
+
+
+void ReportsView::on_tableWidget_inv_cellDoubleClicked(int row, int column)
+{
+    QStringList rowData;
+    for(int i = 0; i < ui->tableWidget_inv->columnCount(); i++)
+    {
+        rowData << ui->tableWidget_inv->item(row, i)->text();
+    }
+    qDebug() << "Row\t" << "Column\t";
+    qDebug() << row << "\t" << column;
+    qDebug() << rowData;
+
+    sendRowToToolBox(rowData);
+}
+
+void ReportsView::sendRowToToolBox(QStringList row)
+{
+    ui->lineEdit_itemName->setText(row.at(0));
+    ui->spinBox_quantity->setValue(QString(row.at(1)).toInt());
+    ui->spinBox_targetQ->setValue(QString((row.at(2))).toInt());
 }

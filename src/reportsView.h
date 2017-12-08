@@ -20,10 +20,11 @@ public:
 
 private slots:
 
-    void on_pushButton_fillTable1_clicked();
+    void on_tableWidget_inv_cellDoubleClicked(int row, int column);
 
 private:
     Ui::ReportsView *ui;
+    void sendRowToToolBox(QStringList row);
 };
 
 #endif // REPORTSVIEW_H
