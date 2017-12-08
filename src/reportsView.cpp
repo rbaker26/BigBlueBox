@@ -70,4 +70,7 @@ void ReportsView::sendRowToToolBox(QStringList row)
     ui->lineEdit_itemName->setText(row.at(0));
     ui->spinBox_quantity->setValue(QString(row.at(1)).toInt());
     ui->spinBox_targetQ->setValue(QString((row.at(2))).toInt());
+    ui->lineEdit_cat->setText(row.at(3));
+    ui->lineEdit_box->setText(row.at(4));
+
 }

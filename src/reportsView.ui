@@ -241,7 +241,7 @@
            </item>
           </layout>
          </widget>
-         <widget class="QLineEdit" name="lineEdit">
+         <widget class="QLineEdit" name="lineEdit_cat">
           <property name="geometry">
            <rect>
             <x>20</x>
@@ -251,7 +251,7 @@
            </rect>
           </property>
          </widget>
-         <widget class="QLineEdit" name="lineEdit_2">
+         <widget class="QLineEdit" name="lineEdit_box">
           <property name="geometry">
            <rect>
             <x>20</x>
