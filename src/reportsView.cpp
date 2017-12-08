@@ -1,40 +1,6 @@
 #include "reportsView.h"
 #include "ui_reportsView.h"
 
-void ReportsView::initTableInv()
-{
-    QStringList header;
-    header << "Name" << "Quantity" << "EFOH" << "Cat" << "BOX#";
-    ui->tableWidget_inv->setColumnCount(5);
-    ui->tableWidget_inv->setHorizontalHeaderLabels(header);
-    ui->tableWidget_inv->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-    ui->tableWidget_inv->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-    ui->tableWidget_inv->verticalHeader()->hide();
-
-    ui->tableWidget_inv->setSortingEnabled(false);
-}
-
-void ReportsView::fillTableInv()
-{
-    QVector<Item> inv = DbConnect::getInstance()->getFullInvAsVector();
-    QVector<Item>::iterator it = inv.begin();
-    const QVector<Item>::iterator EXIT_FLAG = inv.end();
-
-    int rowCount = 0;
-    while(it != EXIT_FLAG)
-        { // Start While loop
-            ui->tableWidget_inv->insertRow(ui->tableWidget_inv->rowCount());
-
-            ui->tableWidget_inv->setItem(rowCount ,0, new QTableWidgetItem(it->itemName));
-            ui->tableWidget_inv->setItem(rowCount ,1, new QTableWidgetItem(QString::number((it->quantity))));
-            ui->tableWidget_inv->setItem(rowCount ,2, new QTableWidgetItem(QString::number(it->effectiveOnHand)));
-            ui->tableWidget_inv->setItem(rowCount ,3, new QTableWidgetItem(QString::number(it->category)));
-            ui->tableWidget_inv->setItem(rowCount ,4, new QTableWidgetItem(QString::number(it->boxNum)));
-            rowCount++;
-            it++;
-        }// end while-loop
-}
-
 ReportsView::ReportsView(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ReportsView)
@@ -42,18 +8,13 @@ ReportsView::ReportsView(QWidget *parent) :
     ui->setupUi(this);
     ui->toolBox->setCurrentIndex(2);
 
-
-
     ui->tableWidget_inv->clear();
     ui->tableWidget_inv->setRowCount(0);
 
-//*********************************************************************************************************************
-    //functionize
     initTableInv();
-
     fillTableInv();
-//*********************************************************************************************************************
 }
+
 
 ReportsView::~ReportsView()
 {
@@ -85,4 +46,39 @@ void ReportsView::sendRowToToolBox(QStringList row)
     ui->lineEdit_cat->setText(catString);
     ui->lineEdit_box->setText(row.at(4));
 
+}
+
+void ReportsView::initTableInv()
+{
+    QStringList header;
+    header << "Name" << "Quantity" << "EFOH" << "Cat" << "BOX#";
+    ui->tableWidget_inv->setColumnCount(5);
+    ui->tableWidget_inv->setHorizontalHeaderLabels(header);
+    ui->tableWidget_inv->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->tableWidget_inv->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->tableWidget_inv->verticalHeader()->hide();
+
+    ui->tableWidget_inv->setSortingEnabled(false);
+}
+
+
+void ReportsView::fillTableInv()
+{
+    QVector<Item> inv = DbConnect::getInstance()->getFullInvAsVector();
+    QVector<Item>::iterator it = inv.begin();
+    const QVector<Item>::iterator EXIT_FLAG = inv.end();
+
+    int rowCount = 0;
+    while(it != EXIT_FLAG)
+        { // Start While loop
+            ui->tableWidget_inv->insertRow(ui->tableWidget_inv->rowCount());
+
+            ui->tableWidget_inv->setItem(rowCount ,0, new QTableWidgetItem(it->itemName));
+            ui->tableWidget_inv->setItem(rowCount ,1, new QTableWidgetItem(QString::number((it->quantity))));
+            ui->tableWidget_inv->setItem(rowCount ,2, new QTableWidgetItem(QString::number(it->effectiveOnHand)));
+            ui->tableWidget_inv->setItem(rowCount ,3, new QTableWidgetItem(QString::number(it->category)));
+            ui->tableWidget_inv->setItem(rowCount ,4, new QTableWidgetItem(QString::number(it->boxNum)));
+            rowCount++;
+            it++;
+        }// end while-loop
 }
