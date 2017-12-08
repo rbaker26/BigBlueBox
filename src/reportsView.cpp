@@ -94,6 +94,7 @@ void ReportsView::on_pushButton_edit_clicked()
     if(rx::isItemName( ui->lineEdit_itemName->text()))
     {
         // push to db
+        qDebug() << "Push to db";
     }
     qDebug() << (rx::isItemName( ui->lineEdit_itemName->text()) ? "REGEX SUCCESS" : "REGEX FAIL" );
 }

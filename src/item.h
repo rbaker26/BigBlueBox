@@ -10,12 +10,13 @@ class Item
 public:
     Item();
 
-    QString          itemName;
-    int              quantity;
-    int              effectiveOnHand;
-    Category::categoryType category;
-    int              boxNum;
+    QString  itemName;
+    int      quantity;
+    int      effectiveOnHand;
+    int      boxNum;
+    bool     canExpire;
 
+    Category::categoryType category;
 
     QString categoryToQString(); // needs implamentation/  use this->cat, or call the fx in Catagory class
 };
