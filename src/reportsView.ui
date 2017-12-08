@@ -205,88 +205,116 @@
          <attribute name="label">
           <string>Adjust Inventory</string>
          </attribute>
-         <widget class="QLineEdit" name="lineEdit_itemName">
+         <widget class="QWidget" name="">
           <property name="geometry">
            <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>161</width>
-            <height>20</height>
+            <x>10</x>
+            <y>0</y>
+            <width>191</width>
+            <height>176</height>
            </rect>
           </property>
-          <property name="placeholderText">
-           <string>name</string>
-          </property>
-         </widget>
-         <widget class="QWidget" name="layoutWidget_2">
-          <property name="geometry">
-           <rect>
-            <x>30</x>
-            <y>60</y>
-            <width>151</width>
-            <height>20</height>
-           </rect>
-          </property>
-          <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <layout class="QVBoxLayout" name="verticalLayout_editItemInfo">
            <item>
-            <widget class="QLabel" name="label_3">
+            <widget class="QLabel" name="label_4">
              <property name="text">
-              <string>Target</string>
+              <string>Item Information</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QSpinBox" name="spinBox_targetQ">
-             <property name="maximum">
-              <number>1000</number>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-         <widget class="QLineEdit" name="lineEdit_cat">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>90</y>
-            <width>113</width>
-            <height>20</height>
-           </rect>
-          </property>
-         </widget>
-         <widget class="QLineEdit" name="lineEdit_box">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>120</y>
-            <width>113</width>
-            <height>20</height>
-           </rect>
-          </property>
-         </widget>
-         <widget class="QWidget" name="layoutWidget">
-          <property name="geometry">
-           <rect>
-            <x>30</x>
-            <y>40</y>
-            <width>151</width>
-            <height>20</height>
-           </rect>
-          </property>
-          <layout class="QHBoxLayout" name="horizontalLayout_2">
-           <item>
-            <widget class="QLabel" name="label_2">
-             <property name="text">
-              <string>Quantity</string>
+            <widget class="QLineEdit" name="lineEdit_itemName">
+             <property name="placeholderText">
+              <string>name</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QSpinBox" name="spinBox_quantity">
-             <property name="maximum">
-              <number>1000</number>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>Quantity</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBox_quantity">
+               <property name="maximum">
+                <number>1000</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Target</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBox_targetQ">
+               <property name="maximum">
+                <number>1000</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_cat">
+             <property name="placeholderText">
+              <string>catagory</string>
              </property>
             </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_box">
+             <property name="placeholderText">
+              <string>box number</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_edit">
+               <property name="text">
+                <string>Edit</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
            </item>
           </layout>
          </widget>

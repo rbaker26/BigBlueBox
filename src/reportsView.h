@@ -5,6 +5,7 @@
 
 #include "dbconnect.h"
 #include "item.h"
+#include "_regex.h"
 
 namespace Ui {
 class ReportsView;
@@ -21,6 +22,8 @@ public:
 private slots:
 
     void on_tableWidget_inv_cellDoubleClicked(int row, int column);
+
+    void on_pushButton_edit_clicked();
 
 private:
     Ui::ReportsView *ui;

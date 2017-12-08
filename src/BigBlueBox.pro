@@ -29,14 +29,16 @@ SOURCES += \
     reportsView.cpp \
     item.cpp \
     category.cpp \
-    dbconnect.cpp
+    dbconnect.cpp \
+    _regex.cpp
         
 HEADERS += \
         mainwindow.h \
     reportsView.h \
     item.h \
     category.h \
-    dbconnect.h
+    dbconnect.h \
+    _regex.h
         
 FORMS += \
         mainwindow.ui \

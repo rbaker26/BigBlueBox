@@ -70,15 +70,25 @@ void ReportsView::fillTableInv()
 
     int rowCount = 0;
     while(it != EXIT_FLAG)
-        { // Start While loop
-            ui->tableWidget_inv->insertRow(ui->tableWidget_inv->rowCount());
+    { // Start While loop
+        ui->tableWidget_inv->insertRow(ui->tableWidget_inv->rowCount());
 
-            ui->tableWidget_inv->setItem(rowCount ,0, new QTableWidgetItem(it->itemName));
-            ui->tableWidget_inv->setItem(rowCount ,1, new QTableWidgetItem(QString::number((it->quantity))));
-            ui->tableWidget_inv->setItem(rowCount ,2, new QTableWidgetItem(QString::number(it->effectiveOnHand)));
-            ui->tableWidget_inv->setItem(rowCount ,3, new QTableWidgetItem(QString::number(it->category)));
-            ui->tableWidget_inv->setItem(rowCount ,4, new QTableWidgetItem(QString::number(it->boxNum)));
-            rowCount++;
-            it++;
-        }// end while-loop
+        ui->tableWidget_inv->setItem(rowCount ,0, new QTableWidgetItem(it->itemName));
+        ui->tableWidget_inv->setItem(rowCount ,1, new QTableWidgetItem(QString::number((it->quantity))));
+        ui->tableWidget_inv->setItem(rowCount ,2, new QTableWidgetItem(QString::number(it->effectiveOnHand)));
+        ui->tableWidget_inv->setItem(rowCount ,3, new QTableWidgetItem(QString::number(it->category)));
+        ui->tableWidget_inv->setItem(rowCount ,4, new QTableWidgetItem(QString::number(it->boxNum)));
+        rowCount++;
+        it++;
+    }// end while-loop
+}
+
+void ReportsView::on_pushButton_edit_clicked()
+{
+    typedef _Regex rx;
+    if(rx::isItemName( ui->lineEdit_itemName->text()))
+    {
+        // push to db
+    }
+    qDebug() << (rx::isItemName( ui->lineEdit_itemName->text()) ? "REGEX SUCCESS" : "REGEX FAIL" );
 }
