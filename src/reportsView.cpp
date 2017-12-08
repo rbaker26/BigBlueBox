@@ -13,6 +13,9 @@ ReportsView::ReportsView(QWidget *parent) :
 
     initTableInv();
     fillTableInv();
+
+    ui->pushButton_edit->setEnabled(false);
+
 }
 
 
@@ -42,7 +45,8 @@ void ReportsView::sendRowToToolBox(QStringList row)
     ui->lineEdit_itemName->setText(row.at(0));
     ui->spinBox_quantity->setValue(QString(row.at(1)).toInt());
     ui->spinBox_targetQ->setValue(QString((row.at(2))).toInt());
-    QString catString = Category::categoryToQString(QString(row.at(3)).toInt()-1);
+    //QString catString = Category::categoryToQString(QString(row.at(3)).toInt()-1);
+    QString catString = (QString(row.at(3)));
     ui->lineEdit_cat->setText(catString);
     ui->lineEdit_box->setText(row.at(4));
 
@@ -76,7 +80,8 @@ void ReportsView::fillTableInv()
         ui->tableWidget_inv->setItem(rowCount ,0, new QTableWidgetItem(it->itemName));
         ui->tableWidget_inv->setItem(rowCount ,1, new QTableWidgetItem(QString::number((it->quantity))));
         ui->tableWidget_inv->setItem(rowCount ,2, new QTableWidgetItem(QString::number(it->effectiveOnHand)));
-        ui->tableWidget_inv->setItem(rowCount ,3, new QTableWidgetItem(QString::number(it->category)));
+        QString catagoryS = Category::categoryToQString(QString::number(it->category).toInt()-1);
+        ui->tableWidget_inv->setItem(rowCount ,3, new QTableWidgetItem(catagoryS));
         ui->tableWidget_inv->setItem(rowCount ,4, new QTableWidgetItem(QString::number(it->boxNum)));
         rowCount++;
         it++;
@@ -91,4 +96,17 @@ void ReportsView::on_pushButton_edit_clicked()
         // push to db
     }
     qDebug() << (rx::isItemName( ui->lineEdit_itemName->text()) ? "REGEX SUCCESS" : "REGEX FAIL" );
+}
+
+void ReportsView::on_checkBox_editsOn_clicked()
+{
+    if(ui->checkBox_editsOn->isChecked())
+    {
+        ui->pushButton_edit->setEnabled(true);
+    }
+    else
+    {
+        ui->pushButton_edit->setEnabled(false);
+    }
+
 }

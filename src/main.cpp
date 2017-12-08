@@ -12,9 +12,11 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    a.setWindowIcon(QIcon(":/img/nyltIcon.png"));
+    a.setApplicationName("BigBlueBox v1.1");
     MainWindow w;
+    w.setWindowTitle("BigBlueBox v1.1");
     w.show();
-
 
 
 

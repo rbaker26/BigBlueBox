@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/"/>
+    <qresource prefix="/img">
+        <file>nyltIcon.jpg</file>
+        <file>nyltIcon.png</file>
+    </qresource>
+</RCC>

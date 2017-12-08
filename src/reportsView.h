@@ -25,6 +25,8 @@ private slots:
 
     void on_pushButton_edit_clicked();
 
+    void on_checkBox_editsOn_clicked();
+
 private:
     Ui::ReportsView *ui;
     void sendRowToToolBox(QStringList row);

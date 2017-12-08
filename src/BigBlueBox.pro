@@ -48,3 +48,6 @@ test {
 
 }
 
+RESOURCES += \
+    ../rec/rec.qrc
+
