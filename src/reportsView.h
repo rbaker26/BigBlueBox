@@ -25,6 +25,8 @@ private slots:
 private:
     Ui::ReportsView *ui;
     void sendRowToToolBox(QStringList row);
+    void initTableInv();
+    void fillTableInv();
 };
 
 #endif // REPORTSVIEW_H

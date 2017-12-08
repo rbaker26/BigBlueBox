@@ -17,6 +17,7 @@ public:
     int              boxNum;
 
 
+    QString categoryToQString(); // needs implamentation/  use this->cat, or call the fx in Catagory class
 };
 
 #endif // ITEM_H

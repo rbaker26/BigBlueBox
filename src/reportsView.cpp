@@ -1,20 +1,8 @@
 #include "reportsView.h"
 #include "ui_reportsView.h"
 
-ReportsView::ReportsView(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::ReportsView)
+void ReportsView::initTableInv()
 {
-    ui->setupUi(this);
-    ui->toolBox->setCurrentIndex(2);
-
-
-
-    ui->tableWidget_inv->clear();
-    ui->tableWidget_inv->setRowCount(0);
-
-//*********************************************************************************************************************
-    //functionize
     QStringList header;
     header << "Name" << "Quantity" << "EFOH" << "Cat" << "BOX#";
     ui->tableWidget_inv->setColumnCount(5);
@@ -24,7 +12,10 @@ ReportsView::ReportsView(QWidget *parent) :
     ui->tableWidget_inv->verticalHeader()->hide();
 
     ui->tableWidget_inv->setSortingEnabled(false);
+}
 
+void ReportsView::fillTableInv()
+{
     QVector<Item> inv = DbConnect::getInstance()->getFullInvAsVector();
     QVector<Item>::iterator it = inv.begin();
     const QVector<Item>::iterator EXIT_FLAG = inv.end();
@@ -41,7 +32,26 @@ ReportsView::ReportsView(QWidget *parent) :
             ui->tableWidget_inv->setItem(rowCount ,4, new QTableWidgetItem(QString::number(it->boxNum)));
             rowCount++;
             it++;
-        } // End While loop
+        }// end while-loop
+}
+
+ReportsView::ReportsView(QWidget *parent) :
+    QWidget(parent),
+    ui(new Ui::ReportsView)
+{
+    ui->setupUi(this);
+    ui->toolBox->setCurrentIndex(2);
+
+
+
+    ui->tableWidget_inv->clear();
+    ui->tableWidget_inv->setRowCount(0);
+
+//*********************************************************************************************************************
+    //functionize
+    initTableInv();
+
+    fillTableInv();
 //*********************************************************************************************************************
 }
 
@@ -53,6 +63,7 @@ ReportsView::~ReportsView()
 
 void ReportsView::on_tableWidget_inv_cellDoubleClicked(int row, int column)
 {
+    ui->toolBox->setCurrentIndex(2);
     QStringList rowData;
     for(int i = 0; i < ui->tableWidget_inv->columnCount(); i++)
     {
@@ -70,7 +81,8 @@ void ReportsView::sendRowToToolBox(QStringList row)
     ui->lineEdit_itemName->setText(row.at(0));
     ui->spinBox_quantity->setValue(QString(row.at(1)).toInt());
     ui->spinBox_targetQ->setValue(QString((row.at(2))).toInt());
-    ui->lineEdit_cat->setText(row.at(3));
+    QString catString = Category::categoryToQString(QString(row.at(3)).toInt()-1);
+    ui->lineEdit_cat->setText(catString);
     ui->lineEdit_box->setText(row.at(4));
 
 }
