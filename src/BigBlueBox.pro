@@ -1,8 +1,12 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2017-11-17T00:27:28
-#
-#-------------------------------------------------
+###########################################################################
+#   ______  _          ______  _                ______                    #
+#  (____  \(_)        (____  \| |              (____  \                   #
+#   ____)  )_  ____    ____)  ) |_   _  ____    ____)  ) ___ _   _        #
+#  |  __  (| |/ _  |  |  __  (| | | | |/ _  )  |  __  ( / _ ( \ / )       #
+#  | |__)  ) ( ( | |  | |__)  ) | |_| ( (/ /   | |__)  ) |_| ) X (        #
+#  |______/|_|\_|| |  |______/|_|\____|\____)  |______/ \___(_/ \_)       #
+#            (_____|                                                      #
+###########################################################################
 
 QT       += core gui sql
 CONFIG   += c++11
@@ -26,23 +30,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    reportsView.cpp \
-    item.cpp \
-    category.cpp \
-    dbconnect.cpp \
-    _regex.cpp
+        reportsView.cpp \
+        item.cpp \
+        category.cpp \
+        dbconnect.cpp \
+        _regex.cpp
         
 HEADERS += \
         mainwindow.h \
-    reportsView.h \
-    item.h \
-    category.h \
-    dbconnect.h \
-    _regex.h
+        reportsView.h \
+        item.h \
+        category.h \
+        dbconnect.h \
+        _regex.h
         
 FORMS += \
         mainwindow.ui \
-    reportsView.ui
+        reportsView.ui
         
 test {
 
