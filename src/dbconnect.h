@@ -22,6 +22,7 @@ private:
     DbConnect();
 
 public:
+    ~DbConnect();
     static DbConnect* getInstance();
 
     QVector<Item> getFullInvAsVector();
