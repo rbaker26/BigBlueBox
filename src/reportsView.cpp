@@ -1,6 +1,6 @@
 #include "reportsView.h"
 #include "ui_reportsView.h"
-
+//*********************************************************************************
 ReportsView::ReportsView(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ReportsView)
@@ -17,14 +17,16 @@ ReportsView::ReportsView(QWidget *parent) :
     ui->pushButton_edit->setEnabled(false);
 
 }
+//*********************************************************************************
 
-
+//*********************************************************************************
 ReportsView::~ReportsView()
 {
     delete ui;
 }
+//*********************************************************************************
 
-
+//*********************************************************************************
 void ReportsView::on_tableWidget_inv_cellDoubleClicked(int row, int column)
 {
     ui->toolBox->setCurrentIndex(2);
@@ -39,7 +41,9 @@ void ReportsView::on_tableWidget_inv_cellDoubleClicked(int row, int column)
 
     sendRowToToolBox(rowData);
 }
+//*********************************************************************************
 
+//*********************************************************************************
 void ReportsView::sendRowToToolBox(QStringList row)
 {
     ui->lineEdit_itemName->setText(row.at(0));
@@ -51,7 +55,9 @@ void ReportsView::sendRowToToolBox(QStringList row)
     ui->lineEdit_box->setText(row.at(4));
 
 }
+//*********************************************************************************
 
+//*********************************************************************************
 void ReportsView::initTableInv()
 {
     QStringList header;
@@ -64,8 +70,9 @@ void ReportsView::initTableInv()
 
     ui->tableWidget_inv->setSortingEnabled(false);
 }
+//*********************************************************************************
 
-
+//*********************************************************************************
 void ReportsView::fillTableInv()
 {
     QVector<Item> inv = DbConnect::getInstance()->getFullInvAsVector();
@@ -87,7 +94,9 @@ void ReportsView::fillTableInv()
         it++;
     }// end while-loop
 }
+//*********************************************************************************
 
+//*********************************************************************************
 void ReportsView::on_pushButton_edit_clicked()
 {
     typedef _Regex rx;
@@ -98,7 +107,9 @@ void ReportsView::on_pushButton_edit_clicked()
     }
     qDebug() << (rx::isItemName( ui->lineEdit_itemName->text()) ? "REGEX SUCCESS" : "REGEX FAIL" );
 }
+//*********************************************************************************
 
+//*********************************************************************************
 void ReportsView::on_checkBox_editsOn_clicked()
 {
     if(ui->checkBox_editsOn->isChecked())
@@ -111,3 +122,4 @@ void ReportsView::on_checkBox_editsOn_clicked()
     }
 
 }
+//*********************************************************************************

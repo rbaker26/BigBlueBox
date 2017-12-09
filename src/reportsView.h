@@ -29,9 +29,23 @@ private slots:
 
 private:
     Ui::ReportsView *ui;
+    //**********************************************************
+    //! \brief Sends the doubleclicked row to the tool box
+    //! \author Bob Baker
     void sendRowToToolBox(QStringList row);
+    //**********************************************************
+
+    //**********************************************************
+    //! \brief Sets up the inventoy table
+    //! \author Bob Baker
     void initTableInv();
+    //**********************************************************
+
+    //**********************************************************
+    //! \brief Fills the inventory table from the database
+    //! \author Bob Baker
     void fillTableInv();
+    //**********************************************************
 };
 
 #endif // REPORTSVIEW_H
