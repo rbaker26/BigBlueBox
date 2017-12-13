@@ -27,6 +27,15 @@ public:
     //! \author  Bob Baker
     static bool isItemName(QString itemName);
     //**********************************************************
+
+    //**********************************************************
+    //! \brief   Contains requirements for box names.
+    //! \details Static:
+    //! \param   QString boxName
+    //! \return  bool isValidBoxName
+    //! \author  Bob Baker
+    static bool isBoxName(QString boxName);
+    //**********************************************************
 private:
     //**********************************************************
     //! \brief   Default no-args constructor

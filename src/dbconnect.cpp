@@ -34,7 +34,7 @@ DbConnect::~DbConnect()
 //*********************************************************************************
 DbConnect* DbConnect::getInstance()
 {
-    if(instance == NULL)
+    if(instance == nullptr)
     {
         instance = new DbConnect();
     }
@@ -90,3 +90,31 @@ DbConnect* DbConnect::getInstance()
 
  }
 //*********************************************************************************
+
+
+
+void DbConnect::updateItem(QString orgName, Row newRowInfo)
+{
+    QSqlQuery query;
+    query.prepare("UPDATE inventory "
+                  "SET item_name       = (:item_name_new), "
+                      "quantity        = (:quantity), "
+                      "target_quantity = (:target_quantity), "
+                      "cat             = (:cat), "
+                      "box_num         = (:box_num) "
+                  "WHERE item_name = (:item_name_org)");
+
+    query.bindValue(":item_name_org", orgName);
+
+    query.bindValue(":quantity",        newRowInfo.quantity);
+    query.bindValue(":target_quantity", newRowInfo.effectiveOnHand);
+    query.bindValue(":cat",             static_cast<int>(newRowInfo.category));
+    query.bindValue(":box_num",         newRowInfo.boxNum);
+    query.bindValue(":item_name_new",   newRowInfo.itemName);
+
+
+    if(!query.exec())
+    {
+        qDebug() << "Exec err:\t" << query.lastError().text();
+    }
+}

@@ -8,6 +8,10 @@
 #            (_____|                                                      #
 ###########################################################################
 
+
+# in gear class, add default comments. like precomplied comments for health status or custom msg.
+#2019 year, make a patrol box standered and put that into system,
+#after 2018, empty all patrol boxs.  then add them back in to make a patrol box standered.
 QT       += core gui sql
 CONFIG   += c++11
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -28,25 +32,30 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp \
+        main.cpp        \
+        mainwindow.cpp  \
+        item.cpp        \
+        category.cpp    \
+        dbconnect.cpp   \
         reportsView.cpp \
-        item.cpp \
-        category.cpp \
-        dbconnect.cpp \
-        _regex.cpp
+        _regex.cpp      \
+    gearcentral.cpp \
+    usersession.cpp
         
 HEADERS += \
-        mainwindow.h \
-        reportsView.h \
-        item.h \
-        category.h \
-        dbconnect.h \
-        _regex.h
+        mainwindow.h    \
+        reportsView.h   \
+        item.h          \
+        category.h      \
+        dbconnect.h     \
+        _regex.h        \
+    gearcentral.h \
+    usersession.h
         
 FORMS += \
-        mainwindow.ui \
-        reportsView.ui
+        mainwindow.ui   \
+        reportsView.ui  \
+    gearcentral.ui
         
 test {
 

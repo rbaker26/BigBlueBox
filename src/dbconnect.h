@@ -73,6 +73,9 @@ public:
     //! \return  QVector<Item> fullInventory
     QVector<Item> getFullInvAsVector();
     //**********************************************************
+
+
+    void updateItem(QString orgName, Row newRowInfo);
 };
 //*********************************************************************************
 #endif // DBCONNECT_H

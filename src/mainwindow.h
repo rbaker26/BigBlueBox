@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "gearcentral.h"
 
 
 // test code, del when finshed
@@ -18,6 +19,11 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+private slots:
+    void on_actionHome_triggered();
+
+    void on_actionGoto_Home_triggered();
 
 private:
     Ui::MainWindow *ui;

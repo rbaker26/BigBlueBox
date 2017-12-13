@@ -2,6 +2,7 @@
 #define REPORTSVIEW_H
 
 #include <QWidget>
+#include <QPair>
 
 #include "dbconnect.h"
 #include "item.h"
@@ -46,6 +47,25 @@ private:
     //! \author Bob Baker
     void fillTableInv();
     //**********************************************************
+
+    void clearTable();
+
+    QVector<Item> fullInventory;
+
+
+
+    // 5 col size
+    QString orgItemName;
+
+    QString getOrgItemNameFromToolBox();
+    Row getNewRowFromToolBox();
+    QPair<QString, Row> makePair(QString orgName, Row r2);
+    QPair<QString, Row> rowForUpdate;
+
+    void updateStoredVector(QPair<QString, Row> rowForUpdate);
+    void updateDataBase(QPair<QString, Row> rowForUpdate);
+
+
 };
 
 #endif // REPORTSVIEW_H

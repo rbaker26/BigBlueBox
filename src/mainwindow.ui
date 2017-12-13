@@ -27,6 +27,7 @@
     <property name="title">
      <string>Home</string>
     </property>
+    <addaction name="actionGoto_Home"/>
    </widget>
    <addaction name="menuHome"/>
   </widget>
@@ -40,6 +41,19 @@
    <addaction name="separator"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionHome">
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionGoto_Home">
+   <property name="text">
+    <string>Goto Home</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

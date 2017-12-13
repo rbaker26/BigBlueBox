@@ -103,7 +103,7 @@
             <x>0</x>
             <y>0</y>
             <width>232</width>
-            <height>477</height>
+            <height>450</height>
            </rect>
           </property>
           <property name="acceptDrops">
@@ -169,7 +169,7 @@
             <x>0</x>
             <y>0</y>
             <width>232</width>
-            <height>477</height>
+            <height>450</height>
            </rect>
           </property>
           <attribute name="label">
@@ -181,13 +181,18 @@
            </item>
           </layout>
          </widget>
+         <widget class="QWidget" name="page">
+          <attribute name="label">
+           <string>Add New Item to Inventory</string>
+          </attribute>
+         </widget>
          <widget class="QWidget" name="toolBoxPage3">
           <property name="geometry">
            <rect>
             <x>0</x>
             <y>0</y>
             <width>232</width>
-            <height>477</height>
+            <height>450</height>
            </rect>
           </property>
           <attribute name="label">
