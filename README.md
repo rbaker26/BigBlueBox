@@ -4,5 +4,6 @@
 [![codecov](https://codecov.io/gh/rbaker26/BigBlueBox/branch/master/graph/badge.svg)](https://codecov.io/gh/rbaker26/BigBlueBox)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub language count](https://img.shields.io/github/languages/count/badges/shields.svg)](https://github.com/rbaker26/BigBlueBox)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg)](https://github.com/rbaker26/BigBlueBox)
 <br> <br>
 A Inventory Management System for a NYLT Course or other Boy Scout Programs.
