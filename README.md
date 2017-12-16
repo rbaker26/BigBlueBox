@@ -50,7 +50,7 @@ __Qt__
 
 ## Testing
 
-Testing will include Continuous Integration Testing using Travis.ci and Regression Testing using QtTestLib.  
+Testing will include continuous integration testing using Travis.ci and regression testing using QtTestLib and Travis.ci.  
 
 ### CI Testing
 
@@ -59,22 +59,36 @@ will be shown here.
 
 
  [Click here](https://travis-ci.org/rbaker26/BigBlueBox) to see the latest travis.ci build status.
+ 
 
+### Regression Testing
 
+Unit tests written with the QtTestLib will be run on travis.ci.  If any tests fail, travis.ci build state will be set to 
+failed.   
+This project will follow the examples at [this](http://doc.qt.io/qt-5/qttestlib-tutorial1-example.html) link.
 
+<br>
 
+## Style
 
-### And coding style tests
+This project uses standard C++ style and Doxygen comments on all function prototypes, class definitions and enum definitions.
+Doxygen comments should only be in .h files.  In .cpp files, regular C++ comments should be used.  
 
-Explain what these tests test and why
+For more in-depth details regarding style, [click here]() to go to the style page.
 
-```
-Give an example
+```cpp
+class MyClass
+{
+  //! \brief   One sentence or less description.
+  //! \details Verbose description
+  //
+  void myFunction(int i, double d);
+}
 ```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+No deployment plan at this time.  Still in development.
 
 ## Built With
 
