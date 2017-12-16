@@ -19,7 +19,8 @@ This project currently uses Qt 5.3.9, with the MSVC2017-64bit kit, and a SQLITE 
   <li> DB Browser for SQLITE can be found here: http://sqlitebrowser.org/ </li>
   <li> Qt - Open Source can be found here:  https://www1.qt.io/download-open-source/ </li>
 </ul>
-  
+<br>  
+
 
 ### Installing
 
@@ -44,13 +45,12 @@ __Qt__
   
   6. Follow the rest of the installer's prompts.
 
+<br>
 
 
-End with an example of getting some data out of the system or using it for a little demo
+## Testing
 
-## Running the tests
-
-Explain how to run the automated tests for this system
+Testing will include Continuous Integration Testing using Travis.ci and Regression Testing using QtTestLib.  
 
 ### Break down into end to end tests
 
