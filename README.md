@@ -7,6 +7,7 @@
 
 A Inventory Management System for a NYLT Course or other Boy Scout Programs.
 
+For documentation for source code, [click here](https://rbaker26.github.io/BigBlueBox/html/index.html).
 
 ## Getting Started
 
