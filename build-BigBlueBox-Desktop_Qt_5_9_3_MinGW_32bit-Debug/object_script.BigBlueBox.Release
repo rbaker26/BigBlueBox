@@ -1,0 +1,15 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\item.o
+./release\category.o
+./release\dbconnect.o
+./release\reportsView.o
+./release\_regex.o
+./release\gearcentral.o
+./release\usersession.o
+./release\qrc_rec.o
+./release\moc_mainwindow.o
+./release\moc_reportsView.o
+./release\moc_gearcentral.o
+);
