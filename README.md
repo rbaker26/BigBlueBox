@@ -76,19 +76,13 @@ Doxygen comments should only be in .h files.  In .cpp files, regular C++ comment
 
 For more in-depth details regarding style, [click here]() to go to the style page.
 
-```cpp
-class MyClass
-{
-  //! \brief   One sentence or less description.
-  //! \details Verbose description
-  //
-  void myFunction(int i, double d);
-}
-```
+<br>
 
 ## Deployment
 
 No deployment plan at this time.  Still in development.
+
+<br>
 
 ## Built With
 
@@ -96,27 +90,35 @@ No deployment plan at this time.  Still in development.
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
+<br>
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+## Contributing
+Message me if you want to contribute.
+
+<br>
 
 ## Versioning
-
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Authors
+<br>
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+## Authors
+* **Robert Baker** - *Initial work* 
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
+<br>
+
 ## License
+This project is licensed under the GPL 3.0 License - see the [LICENSE.md](LICENSE.md) file for details
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+<br>
 
+<!--
 ## Acknowledgments
-
 * Hat tip to anyone who's code was used
 * Inspiration
 * etc
 
+
+-->
