@@ -60,7 +60,12 @@ will be shown here.
 <br>
 Here is an example of the travis.ci build status screen.
 <br>
-![photo of travis](https://raw.githubusercontent.com/rbaker26/BigBlueBox/master/src/readme_rec/travis.ci.jpg)
+
+<p align="center">
+  <img src="src/readme_rec/travis.ci.jpg" />
+ 
+</p>
+
 
 
 ### And coding style tests
