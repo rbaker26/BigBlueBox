@@ -59,7 +59,8 @@ will be shown here.
 
 <br>
 Here is an example of the travis.ci build status screen.
-![photo of travic.ci](https://github.com/rbaker26/BigBlueBox/blob/master/src/readme_rec/travis.ci.jpg)
+<br>
+![photo of travis](https://raw.githubusercontent.com/rbaker26/BigBlueBox/master/src/readme_rec/travis.ci.jpg)
 
 
 ### And coding style tests
