@@ -98,19 +98,19 @@ Message me if you want to contribute.
 <br>
 
 ## Versioning
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+This project uses [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/rbaker26/BigBlueBox/tags). 
 
 <br>
 
 ## Authors
 * **Robert Baker** - *Initial work* 
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/rbaker26/BigBlueBox/graphs/contributors) who participated in this project.
 
 <br>
 
 ## License
-This project is licensed under the GPL 3.0 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GPL 3.0 License - see the [LICENSE.md](https://github.com/rbaker26/BigBlueBox/blob/master/LICENSE) file for details
 
 <br>
 
