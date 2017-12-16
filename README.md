@@ -58,7 +58,7 @@ This is a simply ci test.  Travis.ci will use a .yml to build the files.  If any
 will be shown here.  
 
 <br>
-Here is an example of the travis.ci build status screen. <br>
+Here is an example of the travis.ci build status screen.
 ![photo of travic.ci](https://github.com/rbaker26/BigBlueBox/blob/master/src/readme_rec/travis.ci.jpg)
 
 
