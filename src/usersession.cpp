@@ -10,6 +10,7 @@ UserSession::UserSession()
 
 UserSession::~UserSession()
 {
+    // logout deletes the instance pointer
     logout();
 }
 
@@ -30,4 +31,22 @@ void UserSession::logout()
         delete instance;
         instance = nullptr;
     }
+}
+
+void UserSession::setUsername(QString userName)
+{
+    this->userName = userName;
+}
+
+
+void UserSession::setPassword(QString password)
+{
+    this->password = password;
+}
+
+
+bool UserSession::validateSessionInfo()
+{
+    // sql query to check the passed name&pw to the values in the db.
+    return true;
 }

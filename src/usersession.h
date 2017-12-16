@@ -30,6 +30,10 @@ private:
 public:
     static UserSession* getInstance();
     static void logout();
+
+    void setUsername(QString userName);
+    void setPassword(QString password);
+    bool validateSessionInfo();
 };
 
 #endif // USERSESSION_H
