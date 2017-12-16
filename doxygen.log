@@ -174,7 +174,17 @@ Generating code for file /home/travis/build/rbaker26/BigBlueBox/ui_gearcentral.h
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/ui_mainwindow.h...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/ui_reportsView.h...
 Generating file documentation...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/moc_gearcentral.cpp/home/travis/build/rbaker26/BigBlueBox/Style.md:2: warning: explicit link request to 'Style' could not be resolved
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/moc_gearcentral.cpp/home/travis/build/rbaker26/BigBlueBox/Style.md:13: warning: explicit link request to 'ifndef' could not be resolved
+/home/travis/build/rbaker26/BigBlueBox/Style.md:13: warning: explicit link request to 'define' could not be resolved
+/home/travis/build/rbaker26/BigBlueBox/Style.md:13: warning: explicit link request to 'endif' could not be resolved
+/home/travis/build/rbaker26/BigBlueBox/Style.md:63: warning: explicit link request to 'ifndef' could not be resolved
+/home/travis/build/rbaker26/BigBlueBox/Style.md:64: warning: explicit link request to 'define' could not be resolved
+/home/travis/build/rbaker26/BigBlueBox/Style.md:67: warning: Unsupported xml/html tag <QRegex> found
+/home/travis/build/rbaker26/BigBlueBox/Style.md:68: warning: explicit link request to 'include' could not be resolved
+/home/travis/build/rbaker26/BigBlueBox/Style.md:68: warning: Unsupported xml/html tag <QRegularExpression> found
+/home/travis/build/rbaker26/BigBlueBox/Style.md:71: warning: explicit link request to 'include' could not be resolved
+/home/travis/build/rbaker26/BigBlueBox/Style.md:71: warning: Unsupported xml/html tag <QString> found
+/home/travis/build/rbaker26/BigBlueBox/Style.md:124: warning: explicit link request to 'endif' could not be resolved
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:34: warning: argument 'QString' of command @param is not found in the argument list of _Regex::isBoxName(QString boxName)
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:34: warning: The following parameters of _Regex::isBoxName(QString boxName) are not documented:
   parameter 'boxName'
@@ -442,5 +452,5 @@ Patching output file 37/40
 Patching output file 38/40
 Patching output file 39/40
 Patching output file 40/40
-lookup cache used 299/65536 hits=1821 misses=309
+lookup cache used 299/65536 hits=1824 misses=309
 finished...

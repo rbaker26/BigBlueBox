@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BigBlueBox: Style</title>
+<title>BigBlueBox: Style and Coding Standards</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -76,10 +76,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Style </div>  </div>
+<div class="title">Style and Coding Standards </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>#Style and Coding Standards </p>
+<div class="textblock"><p>This project follows the standard C++ styling with strict adherence to Doxygen style comments. <br/>
+ <br/>
+</p>
+<h2>C++ Standards</h2>
+<p>The following uses some of google's C++ style guide. <br/>
+</p>
+<h3>Headers</h3>
+<ul>
+<li>All .cpp files should also have a .h file. The header should contain the declaration and the .cpp should have the implementation.</li>
+<li>Headers should be self-contained and single purpose.</li>
+<li>All headers must start with #ifndef, #define and end with #endif to prevent errors.</li>
+<li>Do not use "using namespace ..." or "using ..." as it bloats the header file. <br/>
+</li>
+</ul>
+<h3>Classes</h3>
+<ul>
+<li>Write out both the default constructor and destructor.</li>
+<li>Use inheritance sparingly. Composition adds more to readability.</li>
+<li>Avoid multiple inheritance.</li>
+<li>Only overload operators if it makes sense.</li>
+<li>Make all variables private or protected unless absolutely necessary. <br/>
+</li>
+</ul>
+<h3>Functions</h3>
+<ul>
+<li>Give functions discriptive names.</li>
+<li>If a function is not a mutator, declare it const.</li>
+<li>Function parameters should be declared in logical order.</li>
+<li>Comment any part of a function that took you more that 15 seconds to think of. <br/>
+</li>
+</ul>
+<h3>Misc.</h3>
+<ul>
+<li>Use smart pointers.</li>
+<li>Use auto sparingly.</li>
+<li>Use pass-by-reference or const-pass-by-reference when passing objects. <br/>
+</li>
+</ul>
+<p>All standard C++ code should be written cleanly, using proper tabing and spacing. Below is an example</p>
+<p>```cpp //... bool myBool = ( (a &lt; b &amp;&amp; c &gt;= d) || (c &lt; d &amp;&amp; a == b) ); if(myBool) { myFunction(a, b); } else { otherFunction(c, d); } // end if-else //... ```</p>
+<h2>Doxygen Commenting</h2>
+<p>All Doxygen comments should be in the .h files with the declarations and prototypes.</p>
+<h3>Example Class with Doxygen</h3>
+<p>```cpp #ifndef _REGEX_H #define _REGEX_H //********************************************************************************* // For Regex matching // Do not use &lt;QRegex&gt;, it is outdated. #include &lt;QRegularExpression&gt;</p>
+<p>// For strings #include &lt;QString&gt; //*********************************************************************************</p>
+<p>//********************************************************************************* //! </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
