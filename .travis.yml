@@ -10,7 +10,7 @@ branches:
 # Environment variables
 env:
   global:
-    - GH_REPO_NAME: <BigBlueBox>
+    - GH_REPO_NAME: GH_REPO_TOKEN
     - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
     - GH_REPO_REF: github.com/rbaker26/BigBlueBox.git
     
