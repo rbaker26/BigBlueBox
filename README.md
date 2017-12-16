@@ -52,13 +52,21 @@ __Qt__
 
 Testing will include Continuous Integration Testing using Travis.ci and Regression Testing using QtTestLib.  
 
-### Break down into end to end tests
+### CI Testing
 
-Explain what these tests test and why
+This is a simply ci test.  Travis.ci will use a .yml to build the files.  If any new addtions create compile-test conflicts, they 
+will be shown here.  
 
-```
-Give an example
-```
+<br>
+Here is an example of the travis.ci build status screen.
+<br>
+
+<p align="center">
+  <img src="src/readme_rec/travis.ci.jpg" />
+ 
+</p>
+
+
 
 ### And coding style tests
 
