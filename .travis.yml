@@ -1,8 +1,29 @@
 language: cpp
 
-sudo: required
+sudo: false
 dist: trusty
-
+# Blacklist
+branches:
+  except:
+    - gh-pages
+    
+# Environment variables
+env:
+  global:
+    - GH_REPO_NAME: <BigBlueBox>
+    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
+    - GH_REPO_REF: github.com/rbaker26/BigBlueBox.git
+    
+# Install dependencies
+addons:
+  apt:
+    packages:
+      - doxygen
+      - doxygen-doc
+      - doxygen-latex
+      - doxygen-gui
+      - graphviz
+    
 before_install:
  - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
  - sudo apt-get update -qq
@@ -17,9 +38,9 @@ script:
  - qmake -project
  - qmake src/BigBlueBox.pro
  - make
- 
-after_success:
- - bash <(curl -s https://codecov.io/bash)
- 
- 
 
+# Generate and deploy documentation
+after_success:
+  - cd $TRAVIS_BUILD_DIR
+  - chmod +x generateDocumentationAndDeploy.sh
+  - ./generateDocumentationAndDeploy.sh
