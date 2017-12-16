@@ -88,9 +88,9 @@ No deployment plan at this time.  Still in development.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Qt Framework](http://www.dropwizard.io/1.0.2/docs/) - Desktop application framework 
+* [SQLITE](https://www.sqlite.org) - Data Management
+* [Doxygen](http://www.stack.nl/~dimitri/doxygen/index.html) - Autogenerating documentation
 
 <br>
 
@@ -116,11 +116,8 @@ This project is licensed under the GPL 3.0 License - see the [LICENSE.md](https:
 
 <br>
 
-<!--
+
 ## Acknowledgments
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* [*Jeroen de Bruijn*](https://gist.github.com/vidavidorra) - Auto generation and deployment script for Doxygen after successful travis.ci build.  
 
 
--->
