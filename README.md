@@ -23,14 +23,14 @@ This project currently uses Qt 5.3.9, with the MSVC2017-64bit kit, and a SQLITE 
 
 ### Installing
 
-DB Browser for SQLITE
+__DB Browser for SQLITE__
 
   1. Download correct version for your system.
   2. Run the installer.
   3. Specify the directory where DB Browser for SQLITE will be installed.
   4. Follow the rest of the installer's prompts.
   
-Qt
+__Qt__
 
   1. Download from website provided.
   2. Run the installer. 
