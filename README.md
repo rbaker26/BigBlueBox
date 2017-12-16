@@ -54,17 +54,13 @@ Testing will include Continuous Integration Testing using Travis.ci and Regressi
 
 ### CI Testing
 
-This is a simply ci test.  Travis.ci will use a .yml to build the files.  If any new addtions create compile-test conflicts, they 
+This is simply ci test.  Travis.ci will use a .yml to build the files.  If any new addtions create compile-time conflicts, they 
 will be shown here.  
 
 <br>
-Here is an example of the travis.ci build status screen.
+[Click here](https://travis-ci.org/rbaker26/BigBlueBox) to see the latest travis.ci build status.
 <br>
 
-<p align="center">
-  <img src="src/readme_rec/travis.ci.jpg" />
- 
-</p>
 
 
 
