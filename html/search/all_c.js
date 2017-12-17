@@ -8,6 +8,7 @@ var searchData=
   ['mainwindow_2ecpp',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
   ['mainwindow_2eh',['mainwindow.h',['../mainwindow_8h.html',1,'']]],
   ['makepair',['makePair',['../class_reports_view.html#a17e75e97b9355acc4661802ee95483a3',1,'ReportsView']]],
+  ['makereport',['makeReport',['../class___file_writer.html#acee5ce66444735f37990f57afbfe1452',1,'_FileWriter']]],
   ['menubar',['menuBar',['../class_ui___main_window.html#a2be1c24ec9adfca18e1dcc951931457f',1,'Ui_MainWindow']]],
   ['menuhome',['menuHome',['../class_ui___main_window.html#a650031e50eb903bc69f69d3050dcb6b9',1,'Ui_MainWindow']]],
   ['moc_5fgearcentral_2ecpp',['moc_gearcentral.cpp',['../moc__gearcentral_8cpp.html',1,'']]],

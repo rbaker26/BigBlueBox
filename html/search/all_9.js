@@ -1,7 +1,7 @@
 var searchData=
 [
   ['inittableinv',['initTableInv',['../class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d',1,'ReportsView']]],
-  ['instance',['instance',['../class_db_connect.html#a1593e67ff27718b1990ff713d10770e0',1,'DbConnect::instance()'],['../class_user_session.html#ad88c3a571d7699a3a366712ffa38f3c1',1,'UserSession::instance()']]],
+  ['instance',['instance',['../class___file_writer.html#ae08e07bb9731330e110629a64eb409e1',1,'_FileWriter::instance()'],['../class_db_connect.html#a1593e67ff27718b1990ff713d10770e0',1,'DbConnect::instance()'],['../class_user_session.html#ad88c3a571d7699a3a366712ffa38f3c1',1,'UserSession::instance()']]],
   ['isboxname',['isBoxName',['../class___regex.html#a23e37deda14af81e47c12224176257f0',1,'_Regex']]],
   ['isitemname',['isItemName',['../class___regex.html#ad73b4104a24a919c82a129288796025e',1,'_Regex']]],
   ['item',['Item',['../class_item.html',1,'Item'],['../class_item.html#a297720c02984eab37332ae795d22189d',1,'Item::Item()']]],
