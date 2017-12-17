@@ -71,6 +71,7 @@ public:
     //! \details Returns a QVector of all items in the inventory
     //!          table in the database.
     //! \return  QVector<Item> fullInventory
+    //! \author  Bob Baker
     QVector<Item> getFullInvAsVector();
     //**********************************************************
 
