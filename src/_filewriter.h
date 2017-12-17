@@ -9,17 +9,23 @@
 
 #include "item.h"
 
-class _FileWriter
+namespace bbb
 {
-private:
-    _FileWriter();
-    static _FileWriter* instance;
-public:
-    //_FileWriter();
-    ~_FileWriter();
-    static _FileWriter* getInstance();
+    class _FileWriter
+    {
+    private:
+        _FileWriter();
+        static _FileWriter* instance;
+    public:
+        //_FileWriter();
+        ~_FileWriter();
+        static _FileWriter* getInstance();
 
-     void makeReport(QVector<Item> inventory);
-};
+        // every option should also have a output to .csv option as well
+        // can be controled via combo box dropdown in reports veiw.
+         void makeReport(QVector<Item> inventory);
+    };
+}
+
 
 #endif // _FILEWRITER_H

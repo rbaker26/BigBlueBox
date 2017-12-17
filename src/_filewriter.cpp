@@ -1,5 +1,7 @@
 #include "_filewriter.h"
 
+using namespace bbb;
+
 _FileWriter* _FileWriter::instance = nullptr;
 
 _FileWriter::_FileWriter()
@@ -27,7 +29,7 @@ _FileWriter* _FileWriter::getInstance()
 void _FileWriter::makeReport(QVector<Item> inventory)
 {
     const int NAME_COL_SIZE = 30;
-    const int OTHER_COL_SIZE = 20;
+    const int OTHER_COL_SIZE = 14;
     QStringList oFileNames;
     oFileNames  << "../FULL_INVENTORY_REPORT.txt"
                 << "../LOW_INVENTORY_REPORT.txt"
@@ -50,20 +52,20 @@ void _FileWriter::makeReport(QVector<Item> inventory)
     //ofs.setFieldWidth(5);
     //ofs.setFieldAlignment(QTextStream::AlignLeft);
 
-    ofs << "------------------------------------------------------------------------------------------" << endl;
+    ofs << "-------------------------------------------------------------------------" << endl;
     ofs << "Full Inventory\n";
-    ofs << "------------------------------------------------------------------------------------------" << endl;
+    ofs << "-------------------------------------------------------------------------" << endl;
     ofs << endl;
-    ofs << "------------------------------------------------------------------------------------------" << endl;
+    ofs << "-------------------------------------------------------------------------" << endl;
     ofs << left
         << qSetFieldWidth(NAME_COL_SIZE) << "Item Name"
         << right
         << qSetFieldWidth(OTHER_COL_SIZE)
         << qSetFieldWidth(OTHER_COL_SIZE) << "Quantity"
-        << qSetFieldWidth(OTHER_COL_SIZE) << "Target Quantity"
+        << qSetFieldWidth(OTHER_COL_SIZE) << "Target #"
         << qSetFieldWidth(OTHER_COL_SIZE) << "Needed"
         << endl;
-    ofs << "------------------------------------------------------------------------------------------" << endl;
+    ofs << "-------------------------------------------------------------------------" << endl;
     while(it != EXIT_FLAG)
     {
         ofs << left
@@ -71,7 +73,8 @@ void _FileWriter::makeReport(QVector<Item> inventory)
             << right
             << qSetFieldWidth(OTHER_COL_SIZE) << it->quantity
             << qSetFieldWidth(OTHER_COL_SIZE) << it->effectiveOnHand
-            << qSetFieldWidth(OTHER_COL_SIZE) << (it->quantity < it->effectiveOnHand ? it->effectiveOnHand - it->quantity : 0)
+            << qSetFieldWidth(OTHER_COL_SIZE) <<
+               (it->quantity < it->effectiveOnHand ? it->effectiveOnHand - it->quantity : 0)
             << endl;
         it++;
     }

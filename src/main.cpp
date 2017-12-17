@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 //    _FileWriter* fw = _FileWriter::getInstance();
 //    fw->makeReport(DbConnect::getInstance()->getFullInvAsVector());
 
-    _FileWriter::getInstance()->makeReport(DbConnect::getInstance()->getFullInvAsVector());
+    bbb::_FileWriter::getInstance()->makeReport(DbConnect::getInstance()->getFullInvAsVector());
 
    return a.exec();
 }
