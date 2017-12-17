@@ -98,6 +98,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Output File Stream Handler : Singleton.  
+ <a href="classbbb_1_1___file_writer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="__filewriter_8h_source.html">_filewriter.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for bbb::_FileWriter:</div>
@@ -110,26 +113,35 @@ Collaboration diagram for bbb::_FileWriter:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a68306142a8735b0ab3aed6716631d639"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#a68306142a8735b0ab3aed6716631d639">~_FileWriter</a> ()</td></tr>
+<tr class="memdesc:a68306142a8735b0ab3aed6716631d639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default non-args de-constructor.  <a href="#a68306142a8735b0ab3aed6716631d639">More...</a><br/></td></tr>
 <tr class="separator:a68306142a8735b0ab3aed6716631d639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acee5ce66444735f37990f57afbfe1452"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#acee5ce66444735f37990f57afbfe1452">makeReport</a> (QVector&lt; <a class="el" href="class_item.html">Item</a> &gt; inventory)</td></tr>
+<tr class="memdesc:acee5ce66444735f37990f57afbfe1452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a Inventory Report.  <a href="#acee5ce66444735f37990f57afbfe1452">More...</a><br/></td></tr>
 <tr class="separator:acee5ce66444735f37990f57afbfe1452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a65f1d3f6b273766d8b224b330de66ffa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbbb_1_1___file_writer.html">_FileWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa">getInstance</a> ()</td></tr>
+<tr class="memdesc:a65f1d3f6b273766d8b224b330de66ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton pointer return function.  <a href="#a65f1d3f6b273766d8b224b330de66ffa">More...</a><br/></td></tr>
 <tr class="separator:a65f1d3f6b273766d8b224b330de66ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:abfb28b4697018a402c6e70afe8cc0320"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#abfb28b4697018a402c6e70afe8cc0320">_FileWriter</a> ()</td></tr>
+<tr class="memdesc:abfb28b4697018a402c6e70afe8cc0320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default no-args constructor.  <a href="#abfb28b4697018a402c6e70afe8cc0320">More...</a><br/></td></tr>
 <tr class="separator:abfb28b4697018a402c6e70afe8cc0320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:ae08e07bb9731330e110629a64eb409e1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbbb_1_1___file_writer.html">_FileWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#ae08e07bb9731330e110629a64eb409e1">instance</a> = nullptr</td></tr>
+<tr class="memdesc:ae08e07bb9731330e110629a64eb409e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton Pointer.  <a href="#ae08e07bb9731330e110629a64eb409e1">More...</a><br/></td></tr>
 <tr class="separator:ae08e07bb9731330e110629a64eb409e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Output File Stream Handler : Singleton. </p>
+<p>Handles all writing to files. This is mainly for creating reports. It can output in .txt format or in .csv format. </p>
+<dl class="section author"><dt>Author</dt><dd>Bob Baker </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="abfb28b4697018a402c6e70afe8cc0320"></a>
 <div class="memitem">
 <div class="memproto">
@@ -151,12 +163,15 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Default no-args constructor. </p>
+<p>Private: No objects can be instantiated. </p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbbb_1_1___file_writer_abfb28b4697018a402c6e70afe8cc0320_icgraph.png" border="0" usemap="#classbbb_1_1___file_writer_abfb28b4697018a402c6e70afe8cc0320_icgraph" alt=""/></div>
 <map name="classbbb_1_1___file_writer_abfb28b4697018a402c6e70afe8cc0320_icgraph" id="classbbb_1_1___file_writer_abfb28b4697018a402c6e70afe8cc0320_icgraph">
-<area shape="rect" id="node2" href="classbbb_1_1___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa" title="bbb::_FileWriter::getInstance" alt="" coords="177,12,367,39"/><area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="416,12,467,39"/></map>
+<area shape="rect" id="node2" href="classbbb_1_1___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa" title="Singleton pointer return function. " alt="" coords="177,12,367,39"/><area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="416,12,467,39"/></map>
 </div>
 </p>
 
@@ -174,6 +189,10 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Default non-args de-constructor. </p>
+<p>Resets instance to nullptr. </p>
+<dl class="section author"><dt>Author</dt><dd>Bob Baker </dd></dl>
 
 </div>
 </div>
@@ -199,12 +218,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Singleton pointer return function. </p>
+<p>Returns pointer to singleton object. </p>
+<dl class="section return"><dt>Returns</dt><dd>_FileWriter* </dd></dl>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbbb_1_1___file_writer_a65f1d3f6b273766d8b224b330de66ffa_cgraph.png" border="0" usemap="#classbbb_1_1___file_writer_a65f1d3f6b273766d8b224b330de66ffa_cgraph" alt=""/></div>
 <map name="classbbb_1_1___file_writer_a65f1d3f6b273766d8b224b330de66ffa_cgraph" id="classbbb_1_1___file_writer_a65f1d3f6b273766d8b224b330de66ffa_cgraph">
-<area shape="rect" id="node2" href="classbbb_1_1___file_writer.html#abfb28b4697018a402c6e70afe8cc0320" title="bbb::_FileWriter::\l_FileWriter" alt="" coords="245,5,368,46"/></map>
+<area shape="rect" id="node2" href="classbbb_1_1___file_writer.html#abfb28b4697018a402c6e70afe8cc0320" title="Default no&#45;args constructor. " alt="" coords="245,5,368,46"/></map>
 </div>
 </p>
 
@@ -232,6 +255,10 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Writes a Inventory Report. </p>
+<p>Takes in Vector&lt;Item&gt; then formats and writes it to a file. </p>
+<dl class="section author"><dt>Author</dt><dd>Bob Baker </dd></dl>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -262,6 +289,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Singleton Pointer. </p>
 
 </div>
 </div>
