@@ -16,6 +16,7 @@ ReportsView::ReportsView(QWidget *parent) :
 
     ui->pushButton_edit->setEnabled(false);
 
+
 }
 //*********************************************************************************
 
@@ -29,7 +30,6 @@ ReportsView::~ReportsView()
 //*********************************************************************************
 void ReportsView::on_tableWidget_inv_cellDoubleClicked(int row, int column)
 {
-    ui->toolBox->setCurrentIndex(3);
     QStringList rowData;
     for(int i = 0; i < ui->tableWidget_inv->columnCount(); i++)
     {
@@ -49,13 +49,32 @@ void ReportsView::on_tableWidget_inv_cellDoubleClicked(int row, int column)
 //*********************************************************************************
 void ReportsView::sendRowToToolBox(QStringList row)
 {
-    ui->lineEdit_itemName->setText(row.at(0));
-    ui->spinBox_quantity->setValue(QString(row.at(1)).toInt());
-    ui->spinBox_targetQ->setValue(QString((row.at(2))).toInt());
-    //QString catString = Category::categoryToQString(QString(row.at(3)).toInt()-1);
+    QString name = row.at(0);
+    int quantity = QString(row.at(1)).toInt();
+    int target = QString((row.at(2))).toInt();
     QString catString = (QString(row.at(3)));
+    QString  boxNum = row.at(4);
+
+
+    //***********************************************
+    //* Adjust tool box
+    //***********************************************
+    ui->lineEdit_itemName->setText(name);
+    ui->spinBox_quantity->setValue(quantity);
+    ui->spinBox_targetQ->setValue(target);
     ui->lineEdit_cat->setText(catString);
-    ui->lineEdit_box->setText(row.at(4));
+    ui->lineEdit_box->setText(boxNum);
+    //***********************************************
+
+    //***********************************************
+    //* Add / Delete tool box
+    //***********************************************
+    ui->lineEdit_itemNameNew->setText(name);
+    ui->spinBox_quantityNew->setValue(quantity);
+    ui->spinBox_targetQNew->setValue(target);
+    ui->lineEdit_catNew->setText(catString);
+    ui->lineEdit_boxNew->setText(boxNum);
+    //***********************************************
 
 }
 //*********************************************************************************
@@ -152,6 +171,7 @@ void ReportsView::on_checkBox_editsOn_clicked()
 }
 //*********************************************************************************
 
+//*********************************************************************************
 void ReportsView::clearTable()
 {
     ui->tableWidget_inv->clear();
@@ -172,3 +192,33 @@ Row ReportsView::getNewRowFromToolBox()
 
     return r2;
 }
+//*********************************************************************************
+
+//*********************************************************************************
+void ReportsView::on_comboBox_currentIndexChanged(int index)
+{
+
+}
+//*********************************************************************************
+
+//*********************************************************************************
+void ReportsView::on_comboBox_addDel_activated(int index)
+{
+    if(index == 0 /* 0 = "add" */)
+    {
+        ui->lineEdit_itemNameNew->setEnabled(true);
+        ui->lineEdit_catNew->setEnabled(true);
+        ui->lineEdit_boxNew->setEnabled(true);
+        ui->spinBox_quantityNew->setEnabled(true);
+        ui->spinBox_targetQNew->setEnabled(true);
+    }
+    else if(index == 1 /* 1 = "remove" */)
+    {
+        ui->lineEdit_itemNameNew->setEnabled(true);
+        ui->lineEdit_catNew->setEnabled(false);
+        ui->lineEdit_boxNew->setEnabled(false);
+        ui->spinBox_quantityNew->setEnabled(false);
+        ui->spinBox_targetQNew->setEnabled(false);
+    }
+}
+//*********************************************************************************

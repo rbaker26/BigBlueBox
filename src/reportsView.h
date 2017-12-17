@@ -28,6 +28,10 @@ private slots:
 
     void on_checkBox_editsOn_clicked();
 
+    void on_comboBox_currentIndexChanged(int index);
+
+    void on_comboBox_addDel_activated(int index);
+
 private:
     Ui::ReportsView *ui;
     //**********************************************************

@@ -38,3 +38,4 @@ Makefile*
 CMakeLists.txt.user*
 DEBUG/
 RELEASE/
+FULL_INVENTORY_REPORT.txt

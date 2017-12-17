@@ -40,7 +40,8 @@ SOURCES += \
         reportsView.cpp \
         _regex.cpp      \
     gearcentral.cpp \
-    usersession.cpp
+    usersession.cpp \
+    _filewriter.cpp
         
 HEADERS += \
         mainwindow.h    \
@@ -50,7 +51,8 @@ HEADERS += \
         dbconnect.h     \
         _regex.h        \
     gearcentral.h \
-    usersession.h
+    usersession.h \
+    _filewriter.h
         
 FORMS += \
         mainwindow.ui   \
