@@ -1,7 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$class___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa" title="_FileWriter::getInstance" alt="" coords="106,5,267,32"/>
-<area shape="rect" id="node4" href="$class___file_writer.html#acee5ce66444735f37990f57afbfe1452" title="_FileWriter::makeReport" alt="" coords="105,56,269,83"/>
-<area shape="rect" id="node5" href="$class_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="105,107,269,133"/>
-<area shape="rect" id="node3" href="$class___file_writer.html#abfb28b4697018a402c6e70afe8cc0320" title="_FileWriter::_FileWriter" alt="" coords="321,5,477,32"/>
-<area shape="rect" id="node6" href="$class_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="317,107,480,133"/>
+<area shape="rect" id="node2" href="$classbbb_1_1___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa" title="bbb::_FileWriter::getInstance" alt="" coords="106,12,297,39"/>
+<area shape="rect" id="node4" href="$classbbb_1_1___file_writer.html#acee5ce66444735f37990f57afbfe1452" title="bbb::_FileWriter::makeReport" alt="" coords="105,63,298,89"/>
+<area shape="rect" id="node5" href="$class_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="119,113,283,140"/>
+<area shape="rect" id="node3" href="$classbbb_1_1___file_writer.html#abfb28b4697018a402c6e70afe8cc0320" title="bbb::_FileWriter::\l_FileWriter" alt="" coords="367,5,489,46"/>
+<area shape="rect" id="node6" href="$class_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="347,113,509,140"/>
 </map>
