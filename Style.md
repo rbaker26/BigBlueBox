@@ -64,8 +64,6 @@ All Doxygen comments should be in the .h files with the declarations and prototy
 #ifndef _REGEX_H
 #define _REGEX_H
 //*********************************************************************************
-
-#ifndef DOXYGEN_SHOULD_SKIP_THIS   // note, this is here so Doxygen doesn't read Style.md
 // For Regex matching
 // Do not use <QRegex>, it is outdated.
 #include <QRegularExpression>
@@ -109,7 +107,6 @@ private:
     _Regex();
     //**********************************************************
 };
-#endif /* DOXYGEN_SHOULD_SKIP_THIS */
 //*********************************************************************************
 
 #endif // _REGEX_H
