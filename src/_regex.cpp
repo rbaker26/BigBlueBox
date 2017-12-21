@@ -1,5 +1,5 @@
 #include "_regex.h"
-using namespace bbb2;
+using namespace bbb;
 
 //*********************************************************************************
 _Regex::_Regex()
