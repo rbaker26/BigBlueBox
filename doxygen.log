@@ -3,18 +3,18 @@ Warning: ignoring unsupported tag `TOC_INCLUDE_HEADINGS   =' at line 313, file /
 Warning: ignoring unsupported tag `GROUP_NESTED_COMPOUNDS =' at line 370, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
 Warning: ignoring unsupported tag `HIDE_COMPOUND_REFERENCE=' at line 541, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
 Warning: ignoring unsupported tag `WARN_AS_ERROR          =' at line 765, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: Tag `CLANG_ASSISTED_PARSING' at line 1083 of file /home/travis/build/rbaker26/BigBlueBox/Doxyfile belongs to an option that was not enabled at compile time.
+Warning: Tag `CLANG_ASSISTED_PARSING' at line 1085 of file /home/travis/build/rbaker26/BigBlueBox/Doxyfile belongs to an option that was not enabled at compile time.
 To avoid this warning please remove this line from your configuration file, upgrade it using "doxygen -u", or recompile doxygen with this feature enabled.
-Warning: Tag `CLANG_OPTIONS' at line 1091 of file /home/travis/build/rbaker26/BigBlueBox/Doxyfile belongs to an option that was not enabled at compile time.
+Warning: Tag `CLANG_OPTIONS' at line 1093 of file /home/travis/build/rbaker26/BigBlueBox/Doxyfile belongs to an option that was not enabled at compile time.
 To avoid this warning please remove this line from your configuration file, upgrade it using "doxygen -u", or recompile doxygen with this feature enabled.
-Warning: ignoring unsupported tag `LATEX_EXTRA_STYLESHEET =' at line 1763, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `LATEX_TIMESTAMP        =' at line 1830, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `RTF_SOURCE_CODE        =' at line 1896, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `MAN_SUBDIR             =' at line 1931, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `DOCBOOK_PROGRAMLISTING =' at line 1994, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `PLANTUML_JAR_PATH      =' at line 2423, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `PLANTUML_CFG_FILE      =' at line 2428, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `PLANTUML_INCLUDE_PATH  =' at line 2433, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `LATEX_EXTRA_STYLESHEET =' at line 1765, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `LATEX_TIMESTAMP        =' at line 1832, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `RTF_SOURCE_CODE        =' at line 1898, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `MAN_SUBDIR             =' at line 1933, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `DOCBOOK_PROGRAMLISTING =' at line 1996, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `PLANTUML_JAR_PATH      =' at line 2425, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `PLANTUML_CFG_FILE      =' at line 2430, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `PLANTUML_INCLUDE_PATH  =' at line 2435, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
 Searching for include files...
 Searching for example files...
 Searching for images...
@@ -30,12 +30,6 @@ Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/rec
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/src
 Reading and parsing tag files
 Parsing files
-Preprocessing /home/travis/build/rbaker26/BigBlueBox/moc_gearcentral.cpp...
-Parsing file /home/travis/build/rbaker26/BigBlueBox/moc_gearcentral.cpp...
-Preprocessing /home/travis/build/rbaker26/BigBlueBox/moc_mainwindow.cpp...
-Parsing file /home/travis/build/rbaker26/BigBlueBox/moc_mainwindow.cpp...
-Preprocessing /home/travis/build/rbaker26/BigBlueBox/moc_reportsView.cpp...
-Parsing file /home/travis/build/rbaker26/BigBlueBox/moc_reportsView.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/qrc_rec.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/qrc_rec.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/_filewriter.cpp...
@@ -76,28 +70,6 @@ Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/usersession.h...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/usersession.h...
-Preprocessing /home/travis/build/rbaker26/BigBlueBox/ui_gearcentral.h...
-Parsing file /h/home/travis/build/rbaker26/BigBlueBox/moc_gearcentral.cpp:54: warning: documented symbol `void GearCentral::qt_static_metacall' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_gearcentral.cpp:62: warning: documented symbol `const QMetaObject GearCentral::staticMetaObject' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_gearcentral.cpp:68: warning: documented symbol `const QMetaObject * GearCentral::metaObject' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_gearcentral.cpp:73: warning: documented symbol `void * GearCentral::qt_metacast' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_gearcentral.cpp:81: warning: documented symbol `int GearCentral::qt_metacall' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_mainwindow.cpp:66: warning: documented symbol `void MainWindow::qt_static_metacall' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_mainwindow.cpp:79: warning: documented symbol `const QMetaObject MainWindow::staticMetaObject' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_mainwindow.cpp:85: warning: documented symbol `const QMetaObject * MainWindow::metaObject' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_mainwindow.cpp:90: warning: documented symbol `void * MainWindow::qt_metacast' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_mainwindow.cpp:98: warning: documented symbol `int MainWindow::qt_metacall' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_reportsView.cpp:81: warning: documented symbol `void ReportsView::qt_static_metacall' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_reportsView.cpp:96: warning: documented symbol `const QMetaObject ReportsView::staticMetaObject' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_reportsView.cpp:102: warning: documented symbol `const QMetaObject * ReportsView::metaObject' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_reportsView.cpp:107: warning: documented symbol `void * ReportsView::qt_metacast' was not declared or defined.
-/home/travis/build/rbaker26/BigBlueBox/moc_reportsView.cpp:115: warning: documented symbol `int ReportsView::qt_metacall' was not declared or defined.
-error: Project logo 'rec/nyltIcon.png' specified by PROJECT_LOGO does not exist!
-ome/travis/build/rbaker26/BigBlueBox/ui_gearcentral.h...
-Preprocessing /home/travis/build/rbaker26/BigBlueBox/ui_mainwindow.h...
-Parsing file /home/travis/build/rbaker26/BigBlueBox/ui_mainwindow.h...
-Preprocessing /home/travis/build/rbaker26/BigBlueBox/ui_reportsView.h...
-Parsing file /home/travis/build/rbaker26/BigBlueBox/ui_reportsView.h...
 Building group list...
 Building directory list...
 Building namespace list...
@@ -114,7 +86,8 @@ Searching for documented variables...
 Building interface member list...
 Building member list...
 Searching for friends...
-Searching for documented defines...
+Searching for documerror: Project logo 'rec/nyltIcon.png' specified by PROJECT_LOGO does not exist!
+ented defines...
 Computing class inheritance relations...
 Computing class usage relations...
 Flushing cached template relations that have become invalid...
@@ -150,9 +123,6 @@ Generating style sheet...
 Generating search indices...
 Generating example documentation...
 Generating file sources...
-Parsing code for file /home/travis/build/rbaker26/BigBlueBox/moc_gearcentral.cpp...
-Parsing code for file /home/travis/build/rbaker26/BigBlueBox/moc_mainwindow.cpp...
-Parsing code for file /home/travis/build/rbaker26/BigBlueBox/moc_reportsView.cpp...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/qrc_rec.cpp...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/_filewriter.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/_filewriter.h...
@@ -173,13 +143,7 @@ Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.h...
-Generating code for file /home/travis/build/rbaker26/BigBlueBox/ui_gearcentral.h...
-Generating code for file /home/travis/build/rbaker26/BigBlueBox/ui_mainwindow.h...
-Generating code for file /home/travis/build/rbaker26/BigBlueBox/ui_reportsView.h...
 Generating file documentation...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/moc_gearcentral.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/moc_mainwindow.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/moc_reportsView.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/qrc_rec.cpp...
 Generating call graph for function qCleanupResources_rec
 Generating call graph for function qInitResources_rec
@@ -196,45 +160,7 @@ Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h.
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/item.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/item.h...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/main.cpp...
-Generating call graph for function main
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.h...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.h...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/ui_gearcentral.h...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/ui_mainwindow.h...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/ui_reportsView.h...
-Generating page documentation...
-Generating group documentation...
-Generating class documentation...
-Generating docs for compound GearCentral...
-Generating call graph for function GearCentral::GearCentral
-Generating docs for compound MainWindow...
-Generating call graph for function MainWindow::MainWindow
-Generating docs for compound qt_meta_stringdata_GearCentral_t...
-Generating docs for compound qt_meta_stringdata_MainWindow_t...
-Generating docs for compound qt_meta_stringdata_ReportsView_t...
-Generating docs for compound ReportsView...
-Generating call graph for function ReportsView::ReportsView
-Generating caller graph for function ReportsView::clearTable
-Generating call graph for function ReportsView::fillTableInv
-Generating caller graph for function ReportsView::fillTableInv
-Generating caller graph for function ReportsView::getOrgItemNameFromToolBox
-Generating caller graph for function ReportsView::initTableInv
-Generating call graph for function ReportsView::on_pushButton_edit_clicked
-Generating call graph for function ReportsView::on_tableWidget_inv_cellDoubleClicked
-Generating caller graph for function ReportsView::sendRowToToolBox
-Generating docs for compound Ui_GearCentral...
-Generating caller graph for function Ui_GearCentral::retranslateUi
-Generating call graph for function Ui_GearCentral::setupUi
-Generating caller graph for function Ui_GearCentral::setupUi
-Generating docs for compound Ui_MainWindow...
-Generating caller graph for function Ui_MainWindow::retranslateUi
-Generating call graph fo/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
+Generating docs for file /home/travis//home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
   parameter 'boxName'
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
@@ -252,12 +178,30 @@ Generating call graph fo/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: 
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:42: warning: The following parameters of bbb::Item::categoryToQString(bbb::Category::categoryType category) are not documented:
   parameter 'category'
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:60: warning: Found unknown command `\inherits'
-r function Ui_MainWindow::setupUi
-Generating caller graph for function Ui_MainWindow::setupUi
-Generating docs for compound Ui_ReportsView...
-Generating caller graph for function Ui_ReportsView::retranslateUi
-Generating call graph for function Ui_ReportsView::setupUi
-Generating caller graph for function Ui_ReportsView::setupUi
+build/rbaker26/BigBlueBox/src/item.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/main.cpp...
+Generating call graph for function main
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.h...
+Generating page documentation...
+Generating group documentation...
+Generating class documentation...
+Generating docs for compound GearCentral...
+Generating docs for compound MainWindow...
+Generating docs for compound ReportsView...
+Generating call graph for function ReportsView::ReportsView
+Generating caller graph for function ReportsView::clearTable
+Generating call graph for function ReportsView::fillTableInv
+Generating caller graph for function ReportsView::fillTableInv
+Generating caller graph for function ReportsView::getOrgItemNameFromToolBox
+Generating caller graph for function ReportsView::initTableInv
+Generating call graph for function ReportsView::on_pushButton_edit_clicked
+Generating call graph for function ReportsView::on_tableWidget_inv_cellDoubleClicked
+Generating caller graph for function ReportsView::sendRowToToolBox
 Generating namespace index...
 Generating docs for namespace bbb
 Generating docs for compound bbb::_FileWriter...
@@ -283,9 +227,6 @@ Generating call graph for function bbb::UserSession::~UserSession
 Generating call graph for function bbb::UserSession::getInstance
 Generating caller graph for function bbb::UserSession::logout
 Generating docs for namespace Ui
-Generating docs for compound Ui::GearCentral...
-Generating docs for compound Ui::MainWindow...
-Generating docs for compound Ui::ReportsView...
 Generating graph info page...
 Generating directory documentation...
 Generating dependency graph for directory /home/travis/build/rbaker26/BigBlueBox/src
@@ -305,163 +246,116 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 3 parallel threads...
-Running dot for graph 1/115
-Running dot for graph 2/115
-Running dot for graph 3/115
-Running dot for graph 4/115
-Running dot for graph 5/115
-Running dot for graph 6/115
-Running dot for graph 7/115
-Running dot for graph 8/115
-Running dot for graph 9/115
-Running dot for graph 10/115
-Running dot for graph 11/115
-Running dot for graph 12/115
-Running dot for graph 13/115
-Running dot for graph 14/115
-Running dot for graph 15/115
-Running dot for graph 16/115
-Running dot for graph 17/115
-Running dot for graph 18/115
-Running dot for graph 19/115
-Running dot for graph 20/115
-Running dot for graph 21/115
-Running dot for graph 22/115
-Running dot for graph 23/115
-Running dot for graph 24/115
-Running dot for graph 25/115
-Running dot for graph 26/115
-Running dot for graph 27/115
-Running dot for graph 28/115
-Running dot for graph 29/115
-Running dot for graph 30/115
-Running dot for graph 31/115
-Running dot for graph 32/115
-Running dot for graph 33/115
-Running dot for graph 34/115
-Running dot for graph 35/115
-Running dot for graph 36/115
-Running dot for graph 37/115
-Running dot for graph 38/115
-Running dot for graph 39/115
-Running dot for graph 40/115
-Running dot for graph 41/115
-Running dot for graph 42/115
-Running dot for graph 43/115
-Running dot for graph 44/115
-Running dot for graph 45/115
-Running dot for graph 46/115
-Running dot for graph 47/115
-Running dot for graph 48/115
-Running dot for graph 49/115
-Running dot for graph 50/115
-Running dot for graph 51/115
-Running dot for graph 52/115
-Running dot for graph 53/115
-Running dot for graph 54/115
-Running dot for graph 55/115
-Running dot for graph 56/115
-Running dot for graph 57/115
-Running dot for graph 58/115
-Running dot for graph 59/115
-Running dot for graph 60/115
-Running dot for graph 61/115
-Running dot for graph 62/115
-Running dot for graph 63/115
-Running dot for graph 64/115
-Running dot for graph 65/115
-Running dot for graph 66/115
-Running dot for graph 67/115
-Running dot for graph 68/115
-Running dot for graph 69/115
-Running dot for graph 70/115
-Running dot for graph 71/115
-Running dot for graph 72/115
-Running dot for graph 73/115
-Running dot for graph 74/115
-Running dot for graph 75/115
-Running dot for graph 76/115
-Running dot for graph 77/115
-Running dot for graph 78/115
-Running dot for graph 79/115
-Running dot for graph 80/115
-Running dot for graph 81/115
-Running dot for graph 82/115
-Running dot for graph 83/115
-Running dot for graph 84/115
-Running dot for graph 85/115
-Running dot for graph 86/115
-Running dot for graph 87/115
-Running dot for graph 88/115
-Running dot for graph 89/115
-Running dot for graph 90/115
-Running dot for graph 91/115
-Running dot for graph 92/115
-Running dot for graph 93/115
-Running dot for graph 94/115
-Running dot for graph 95/115
-Running dot for graph 96/115
-Running dot for graph 97/115
-Running dot for graph 98/115
-Running dot for graph 99/115
-Running dot for graph 100/115
-Running dot for graph 101/115
-Running dot for graph 102/115
-Running dot for graph 103/115
-Running dot for graph 104/115
-Running dot for graph 105/115
-Running dot for graph 106/115
-Running dot for graph 107/115
-Running dot for graph 108/115
-Running dot for graph 109/115
-Running dot for graph 110/115
-Running dot for graph 111/115
-Running dot for graph 112/115
-Running dot for graph 113/115
-Running dot for graph 114/115
-Running dot for graph 115/115
-Patching output file 1/43
-Patching output file 2/43
-Patching output file 3/43
-Patching output file 4/43
-Patching output file 5/43
-Patching output file 6/43
-Patching output file 7/43
-Patching output file 8/43
-Patching output file 9/43
-Patching output file 10/43
-Patching output file 11/43
-Patching output file 12/43
-Patching output file 13/43
-Patching output file 14/43
-Patching output file 15/43
-Patching output file 16/43
-Patching output file 17/43
-Patching output file 18/43
-Patching output file 19/43
-Patching output file 20/43
-Patching output file 21/43
-Patching output file 22/43
-Patching output file 23/43
-Patching output file 24/43
-Patching output file 25/43
-Patching output file 26/43
-Patching output file 27/43
-Patching output file 28/43
-Patching output file 29/43
-Patching output file 30/43
-Patching output file 31/43
-Patching output file 32/43
-Patching output file 33/43
-Patching output file 34/43
-Patching output file 35/43
-Patching output file 36/43
-Patching output file 37/43
-Patching output file 38/43
-Patching output file 39/43
-Patching output file 40/43
-Patching output file 41/43
-Patching output file 42/43
-Patching output file 43/43
-lookup cache used 410/65536 hits=2329 misses=428
+Running dot for graph 1/80
+Running dot for graph 2/80
+Running dot for graph 3/80
+Running dot for graph 4/80
+Running dot for graph 5/80
+Running dot for graph 6/80
+Running dot for graph 7/80
+Running dot for graph 8/80
+Running dot for graph 9/80
+Running dot for graph 10/80
+Running dot for graph 11/80
+Running dot for graph 12/80
+Running dot for graph 13/80
+Running dot for graph 14/80
+Running dot for graph 15/80
+Running dot for graph 16/80
+Running dot for graph 17/80
+Running dot for graph 18/80
+Running dot for graph 19/80
+Running dot for graph 20/80
+Running dot for graph 21/80
+Running dot for graph 22/80
+Running dot for graph 23/80
+Running dot for graph 24/80
+Running dot for graph 25/80
+Running dot for graph 26/80
+Running dot for graph 27/80
+Running dot for graph 28/80
+Running dot for graph 29/80
+Running dot for graph 30/80
+Running dot for graph 31/80
+Running dot for graph 32/80
+Running dot for graph 33/80
+Running dot for graph 34/80
+Running dot for graph 35/80
+Running dot for graph 36/80
+Running dot for graph 37/80
+Running dot for graph 38/80
+Running dot for graph 39/80
+Running dot for graph 40/80
+Running dot for graph 41/80
+Running dot for graph 42/80
+Running dot for graph 43/80
+Running dot for graph 44/80
+Running dot for graph 45/80
+Running dot for graph 46/80
+Running dot for graph 47/80
+Running dot for graph 48/80
+Running dot for graph 49/80
+Running dot for graph 50/80
+Running dot for graph 51/80
+Running dot for graph 52/80
+Running dot for graph 53/80
+Running dot for graph 54/80
+Running dot for graph 55/80
+Running dot for graph 56/80
+Running dot for graph 57/80
+Running dot for graph 58/80
+Running dot for graph 59/80
+Running dot for graph 60/80
+Running dot for graph 61/80
+Running dot for graph 62/80
+Running dot for graph 63/80
+Running dot for graph 64/80
+Running dot for graph 65/80
+Running dot for graph 66/80
+Running dot for graph 67/80
+Running dot for graph 68/80
+Running dot for graph 69/80
+Running dot for graph 70/80
+Running dot for graph 71/80
+Running dot for graph 72/80
+Running dot for graph 73/80
+Running dot for graph 74/80
+Running dot for graph 75/80
+Running dot for graph 76/80
+Running dot for graph 77/80
+Running dot for graph 78/80
+Running dot for graph 79/80
+Running dot for graph 80/80
+Patching output file 1/31
+Patching output file 2/31
+Patching output file 3/31
+Patching output file 4/31
+Patching output file 5/31
+Patching output file 6/31
+Patching output file 7/31
+Patching output file 8/31
+Patching output file 9/31
+Patching output file 10/31
+Patching output file 11/31
+Patching output file 12/31
+Patching output file 13/31
+Patching output file 14/31
+Patching output file 15/31
+Patching output file 16/31
+Patching output file 17/31
+Patching output file 18/31
+Patching output file 19/31
+Patching output file 20/31
+Patching output file 21/31
+Patching output file 22/31
+Patching output file 23/31
+Patching output file 24/31
+Patching output file 25/31
+Patching output file 26/31
+Patching output file 27/31
+Patching output file 28/31
+Patching output file 29/31
+Patching output file 30/31
+Patching output file 31/31
+lookup cache used 214/65536 hits=1087 misses=227
 finished...

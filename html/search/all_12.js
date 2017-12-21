@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['tablewidget_5finv',['tableWidget_inv',['../class_ui___reports_view.html#a6fea20e6ff4746e15601de7d24ca5418',1,'Ui_ReportsView']]],
-  ['tarps',['TARPS',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daad8d6be49f49f7bd410de0e43f8e0e9cc',1,'bbb::Category']]],
-  ['textbrowser',['textBrowser',['../class_ui___reports_view.html#ad363040939cb810c4833e16e4e58a87b',1,'Ui_ReportsView']]],
-  ['textbrowser_5f2',['textBrowser_2',['../class_ui___reports_view.html#ac8a158d8f14d8bb50881c941e0828405',1,'Ui_ReportsView']]],
-  ['timeedit',['timeEdit',['../class_ui___reports_view.html#ac3ee060e8a0fc3105ebbaad96e722ced',1,'Ui_ReportsView']]],
-  ['toolbox',['toolBox',['../class_ui___reports_view.html#a3c8c95c53d83ac0b818a0d14238bba89',1,'Ui_ReportsView']]],
-  ['toolboxpage1',['toolBoxPage1',['../class_ui___reports_view.html#ae58ec8e4bf1997f6c327f54347ce49f1',1,'Ui_ReportsView']]],
-  ['toolboxpage2',['toolBoxPage2',['../class_ui___reports_view.html#a0bed5027456db0beb98521595ac0c490',1,'Ui_ReportsView']]],
-  ['toolboxpage3',['toolBoxPage3',['../class_ui___reports_view.html#a273cf888319cc317cae3b0ef59592d96',1,'Ui_ReportsView']]]
+  ['ui',['Ui',['../namespace_ui.html',1,'Ui'],['../class_gear_central.html#a80b047f4188ddf321170711ce7d90d7a',1,'GearCentral::ui()'],['../class_main_window.html#a35466a70ed47252a0191168126a352a5',1,'MainWindow::ui()'],['../class_reports_view.html#acca59cfce657d13b15ac68ae519bda30',1,'ReportsView::ui()']]],
+  ['updatedatabase',['updateDataBase',['../class_reports_view.html#ab58aa45a0fde5271c5ccf19da12a5f10',1,'ReportsView']]],
+  ['updateitem',['updateItem',['../classbbb_1_1_db_connect.html#a1794a5b641c117021fd6a2ffbde0028f',1,'bbb::DbConnect']]],
+  ['updatestoredvector',['updateStoredVector',['../class_reports_view.html#ab1abccf202bed57c66ad865886e6856e',1,'ReportsView']]],
+  ['user',['USER',['../classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cbafd5e188e220dab8b0166ff4602089cc0',1,'bbb::UserSession']]],
+  ['username',['userName',['../classbbb_1_1_user_session.html#a50067338e5bf30abb481e9cef523b9bd',1,'bbb::UserSession']]],
+  ['userrole',['userRole',['../classbbb_1_1_user_session.html#aca3af942c451749634dd550b2be249a1',1,'bbb::UserSession']]],
+  ['usersession',['UserSession',['../classbbb_1_1_user_session.html',1,'bbb']]],
+  ['usersession',['UserSession',['../classbbb_1_1_user_session.html#abc1a059a8be662ee345a27940fb563c6',1,'bbb::UserSession']]],
+  ['usersession_2ecpp',['usersession.cpp',['../usersession_8cpp.html',1,'']]],
+  ['usersession_2eh',['usersession.h',['../usersession_8h.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fullinventory',['fullInventory',['../class_reports_view.html#a240fa116969d30a53c2409712c3b65f4',1,'ReportsView']]]
+  ['orgitemname',['orgItemName',['../class_reports_view.html#ae9233527989415532115900f72cae761',1,'ReportsView']]]
 ];

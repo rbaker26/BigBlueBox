@@ -1,20 +1,12 @@
 var searchData=
 [
-  ['horizontallayout',['horizontalLayout',['../class_ui___reports_view.html#aea9424ba9a48554b486f21dd34956331',1,'Ui_ReportsView']]],
-  ['horizontallayout_5f2',['horizontalLayout_2',['../class_ui___reports_view.html#a07927399cff3373ac0ea8e420cb2f5cf',1,'Ui_ReportsView']]],
-  ['horizontallayout_5f3',['horizontalLayout_3',['../class_ui___reports_view.html#aab148f8006f65e185a236b6639e2a202',1,'Ui_ReportsView']]],
-  ['horizontallayout_5f4',['horizontalLayout_4',['../class_ui___reports_view.html#a062c778fb90fedaaf67c5f2409c43d4c',1,'Ui_ReportsView']]],
-  ['horizontallayout_5f5',['horizontalLayout_5',['../class_ui___reports_view.html#a8ad9d43105e5d6edab7eefd67de3feaa',1,'Ui_ReportsView']]],
-  ['horizontallayout_5f6',['horizontalLayout_6',['../class_ui___reports_view.html#a3a700951993a32154aedecde34cb2067',1,'Ui_ReportsView']]],
-  ['horizontallayout_5f7',['horizontalLayout_7',['../class_ui___reports_view.html#a4aaede5999ce829c048790006133954b',1,'Ui_ReportsView']]],
-  ['horizontallayout_5f8',['horizontalLayout_8',['../class_ui___reports_view.html#a915158ca356a8f87784195543ae1bf50',1,'Ui_ReportsView']]],
-  ['horizontallayout_5f9',['horizontalLayout_9',['../class_ui___reports_view.html#a34855831d59996b2cd06a94a8f0684cd',1,'Ui_ReportsView']]],
-  ['horizontalspacer',['horizontalSpacer',['../class_ui___reports_view.html#a804a8c9e252a411ee95e212776c6b3bb',1,'Ui_ReportsView']]],
-  ['horizontalspacer_5f2',['horizontalSpacer_2',['../class_ui___reports_view.html#a588fb085a122db82d5188461994e3292',1,'Ui_ReportsView']]],
-  ['horizontalspacer_5f3',['horizontalSpacer_3',['../class_ui___reports_view.html#ae229009f8c0b2690f7e41a0e0c91193d',1,'Ui_ReportsView']]],
-  ['horizontalspacer_5f4',['horizontalSpacer_4',['../class_ui___reports_view.html#a4cbbc988685870ed25170876063bc043',1,'Ui_ReportsView']]],
-  ['horizontalspacer_5f5',['horizontalSpacer_5',['../class_ui___reports_view.html#abf4e1548297bdb4d10b11233e23050ab',1,'Ui_ReportsView']]],
-  ['horizontalspacer_5f6',['horizontalSpacer_6',['../class_ui___reports_view.html#a55e69cb3e57b59f15d260afeec5d116d',1,'Ui_ReportsView']]],
-  ['horizontalspacer_5f7',['horizontalSpacer_7',['../class_ui___reports_view.html#ab7905921c79e24df903807e6372bb720',1,'Ui_ReportsView']]],
-  ['horizontalspacer_5f8',['horizontalSpacer_8',['../class_ui___reports_view.html#ab9867bcf8a9cb214adf78f6b5058fc0a',1,'Ui_ReportsView']]]
+  ['inittableinv',['initTableInv',['../class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d',1,'ReportsView']]],
+  ['instance',['instance',['../classbbb_1_1___file_writer.html#ae08e07bb9731330e110629a64eb409e1',1,'bbb::_FileWriter::instance()'],['../classbbb_1_1_db_connect.html#a1593e67ff27718b1990ff713d10770e0',1,'bbb::DbConnect::instance()'],['../classbbb_1_1_user_session.html#ad88c3a571d7699a3a366712ffa38f3c1',1,'bbb::UserSession::instance()']]],
+  ['isboxname',['isBoxName',['../classbbb_1_1___regex.html#a23e37deda14af81e47c12224176257f0',1,'bbb::_Regex']]],
+  ['isitemname',['isItemName',['../classbbb_1_1___regex.html#ad73b4104a24a919c82a129288796025e',1,'bbb::_Regex']]],
+  ['item',['Item',['../classbbb_1_1_item.html#a297720c02984eab37332ae795d22189d',1,'bbb::Item']]],
+  ['item',['Item',['../classbbb_1_1_item.html',1,'bbb']]],
+  ['item_2ecpp',['item.cpp',['../item_8cpp.html',1,'']]],
+  ['item_2eh',['item.h',['../item_8h.html',1,'']]],
+  ['itemname',['itemName',['../classbbb_1_1_item.html#af241539c54059c265f13b112bc4514a7',1,'bbb::Item']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['actiongoto_5fhome',['actionGoto_Home',['../class_ui___main_window.html#a6cab9fc20ddbcd84bbf97b9bf8014a7d',1,'Ui_MainWindow']]],
-  ['actionhome',['actionHome',['../class_ui___main_window.html#a5514c3cfb733ab5c99aa12c4aa6851d4',1,'Ui_MainWindow']]]
+  ['bbb_5fdb',['bbb_db',['../classbbb_1_1_db_connect.html#a732b78f5fcf21aa52cae5abbdbad1c0c',1,'bbb::DbConnect']]],
+  ['boxnum',['boxNum',['../classbbb_1_1_item.html#aeeef4e5b566b43410c900870d1487d21',1,'bbb::Item']]]
 ];

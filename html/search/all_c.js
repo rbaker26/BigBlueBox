@@ -1,17 +1,12 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
-  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['maintoolbar',['mainToolBar',['../class_ui___main_window.html#a5172877001c8c7b4e0f6de50421867d1',1,'Ui_MainWindow']]],
-  ['mainwindow',['MainWindow',['../class_main_window.html',1,'MainWindow'],['../class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db',1,'MainWindow::MainWindow()']]],
-  ['mainwindow',['MainWindow',['../class_ui_1_1_main_window.html',1,'Ui']]],
-  ['mainwindow_2ecpp',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
-  ['mainwindow_2eh',['mainwindow.h',['../mainwindow_8h.html',1,'']]],
-  ['makepair',['makePair',['../class_reports_view.html#a2f558ef578ac827d53638af002a8b93d',1,'ReportsView']]],
-  ['makereport',['makeReport',['../classbbb_1_1___file_writer.html#acee5ce66444735f37990f57afbfe1452',1,'bbb::_FileWriter']]],
-  ['menubar',['menuBar',['../class_ui___main_window.html#a2be1c24ec9adfca18e1dcc951931457f',1,'Ui_MainWindow']]],
-  ['menuhome',['menuHome',['../class_ui___main_window.html#a650031e50eb903bc69f69d3050dcb6b9',1,'Ui_MainWindow']]],
-  ['moc_5fgearcentral_2ecpp',['moc_gearcentral.cpp',['../moc__gearcentral_8cpp.html',1,'']]],
-  ['moc_5fmainwindow_2ecpp',['moc_mainwindow.cpp',['../moc__mainwindow_8cpp.html',1,'']]],
-  ['moc_5freportsview_2ecpp',['moc_reportsView.cpp',['../moc__reports_view_8cpp.html',1,'']]]
+  ['office',['OFFICE',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daac410dd00e20c4ccb957c32905d2eb56f',1,'bbb::Category']]],
+  ['on_5factiongoto_5fhome_5ftriggered',['on_actionGoto_Home_triggered',['../class_main_window.html#a293283717ca41f7e4b26d45dfaafeedd',1,'MainWindow']]],
+  ['on_5factionhome_5ftriggered',['on_actionHome_triggered',['../class_main_window.html#a313c36eed19a71e2525da1e8041eb6a0',1,'MainWindow']]],
+  ['on_5fcheckbox_5feditson_5fclicked',['on_checkBox_editsOn_clicked',['../class_reports_view.html#a89b2e4e29486ddb2a1f8a129edb59367',1,'ReportsView']]],
+  ['on_5fcombobox_5fadddel_5factivated',['on_comboBox_addDel_activated',['../class_reports_view.html#ada0efc617e671329badefe711a815f16',1,'ReportsView']]],
+  ['on_5fcombobox_5fcurrentindexchanged',['on_comboBox_currentIndexChanged',['../class_reports_view.html#a2f849e56c1e598de3ae680bf01a6cc96',1,'ReportsView']]],
+  ['on_5fpushbutton_5fedit_5fclicked',['on_pushButton_edit_clicked',['../class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59',1,'ReportsView']]],
+  ['on_5ftablewidget_5finv_5fcelldoubleclicked',['on_tableWidget_inv_cellDoubleClicked',['../class_reports_view.html#ad5cf98addd840c1e257a556598ce66d7',1,'ReportsView']]],
+  ['orgitemname',['orgItemName',['../class_reports_view.html#ae9233527989415532115900f72cae761',1,'ReportsView']]]
 ];

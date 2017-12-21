@@ -1,7 +1,6 @@
 var searchData=
 [
   ['gearcentral',['GearCentral',['../class_gear_central.html',1,'GearCentral'],['../class_gear_central.html#a50cc75d11d2ab7cad5c23fa509b18b48',1,'GearCentral::GearCentral()']]],
-  ['gearcentral',['GearCentral',['../class_ui_1_1_gear_central.html',1,'Ui']]],
   ['gearcentral_2ecpp',['gearcentral.cpp',['../gearcentral_8cpp.html',1,'']]],
   ['gearcentral_2eh',['gearcentral.h',['../gearcentral_8h.html',1,'']]],
   ['getfullinvasvector',['getFullInvAsVector',['../classbbb_1_1_db_connect.html#a7986028e9b44516bff117a8255f377e4',1,'bbb::DbConnect']]],
