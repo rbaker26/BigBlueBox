@@ -255,11 +255,11 @@ Generating docs for compound Item...
 Generating call graph for function Item::categoryToQString
 Generating docs for compound MainWindow...
 Generating call graph for function MainWindow::MainWindow
-Generating docs for compound qt_meta_stringdata_GearCentral_t./home/travis/build/rbaker26/BigBlueBox/src/_regex.h:41: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:41: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
+Generating docs for compound qt_meta_stringdata_GearCentral_t./home/travis/build/rbaker26/BigBlueBox/src/_regex.h:41: warning: argument 'QString' of command @param is not found in the argument list of bbb2::_Regex::isBoxName(QString boxName)
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:41: warning: The following parameters of bbb2::_Regex::isBoxName(QString boxName) are not documented:
   parameter 'boxName'
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:32: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:32: warning: The following parameters of bbb::_Regex::isItemName(QString itemName) are not documented:
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:32: warning: argument 'QString' of command @param is not found in the argument list of bbb2::_Regex::isItemName(QString itemName)
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:32: warning: The following parameters of bbb2::_Regex::isItemName(QString itemName) are not documented:
   parameter 'itemName'
 ..
 Generating docs for compound qt_meta_stringdata_MainWindow_t...
@@ -299,7 +299,8 @@ Generating caller graph for function bbb::_FileWriter::_FileWriter
 Generating call graph for function bbb::_FileWriter::getInstance
 Generating caller graph for function bbb::_FileWriter::getInstance
 Generating caller graph for function bbb::_FileWriter::makeReport
-Generating docs for compound bbb::_Regex...
+Generating docs for namespace bbb2
+Generating docs for compound bbb2::_Regex...
 Generating docs for namespace Ui
 Generating docs for compound Ui::GearCentral...
 Generating docs for compound Ui::MainWindow...
@@ -482,5 +483,5 @@ Patching output file 40/43
 Patching output file 41/43
 Patching output file 42/43
 Patching output file 43/43
-lookup cache used 378/65536 hits=2303 misses=390
+lookup cache used 379/65536 hits=2303 misses=391
 finished...
