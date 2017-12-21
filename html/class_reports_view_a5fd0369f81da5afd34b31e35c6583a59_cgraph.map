@@ -1,0 +1,9 @@
+<map id="ReportsView::on_pushButton_edit_clicked" name="ReportsView::on_pushButton_edit_clicked">
+<area shape="rect" id="node2" href="$class_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="489,55,653,81"/>
+<area shape="rect" id="node4" href="$class_db_connect.html#a1794a5b641c117021fd6a2ffbde0028f" title="DbConnect::updateItem" alt="" coords="251,29,413,56"/>
+<area shape="rect" id="node5" href="$class_reports_view.html#adc130acc6c8471c37855f233ed72b54f" title="ReportsView::clearTable" alt="" coords="249,80,415,107"/>
+<area shape="rect" id="node6" href="$class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d" title="Sets up the inventoy table. " alt="" coords="246,131,418,157"/>
+<area shape="rect" id="node7" href="$class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="248,181,416,208"/>
+<area shape="rect" id="node3" href="$class_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="723,55,885,81"/>
+<area shape="rect" id="node8" href="$class_db_connect.html#a7986028e9b44516bff117a8255f377e4" title="Gets full inventory. " alt="" coords="467,181,674,208"/>
+</map>
