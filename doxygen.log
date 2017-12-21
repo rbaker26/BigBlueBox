@@ -255,11 +255,11 @@ Generating docs for compound Item...
 Generating call graph for function Item::categoryToQString
 Generating docs for compound MainWindow...
 Generating call graph for function MainWindow::MainWindow
-Generating docs for compound qt_meta_stringdata_GearCentral_t./home/travis/build/rbaker26/BigBlueBox/src/_regex.h:37: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:37: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
+Generating docs for compound qt_meta_stringdata_GearCentral_t./home/travis/build/rbaker26/BigBlueBox/src/_regex.h:38: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:38: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
   parameter 'boxName'
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:28: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:28: warning: The following parameters of bbb::_Regex::isItemName(QString itemName) are not documented:
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:29: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:29: warning: The following parameters of bbb::_Regex::isItemName(QString itemName) are not documented:
   parameter 'itemName'
 ..
 Generating docs for compound qt_meta_stringdata_MainWindow_t...
