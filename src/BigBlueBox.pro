@@ -52,7 +52,8 @@ HEADERS += \
         _regex.h        \
     gearcentral.h \
     usersession.h \
-    _filewriter.h
+    _filewriter.h \
+    bbb.h
         
 FORMS += \
         mainwindow.ui   \
