@@ -3,18 +3,18 @@ Warning: ignoring unsupported tag `TOC_INCLUDE_HEADINGS   =' at line 313, file /
 Warning: ignoring unsupported tag `GROUP_NESTED_COMPOUNDS =' at line 370, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
 Warning: ignoring unsupported tag `HIDE_COMPOUND_REFERENCE=' at line 541, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
 Warning: ignoring unsupported tag `WARN_AS_ERROR          =' at line 765, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: Tag `CLANG_ASSISTED_PARSING' at line 1082 of file /home/travis/build/rbaker26/BigBlueBox/Doxyfile belongs to an option that was not enabled at compile time.
+Warning: Tag `CLANG_ASSISTED_PARSING' at line 1083 of file /home/travis/build/rbaker26/BigBlueBox/Doxyfile belongs to an option that was not enabled at compile time.
 To avoid this warning please remove this line from your configuration file, upgrade it using "doxygen -u", or recompile doxygen with this feature enabled.
-Warning: Tag `CLANG_OPTIONS' at line 1090 of file /home/travis/build/rbaker26/BigBlueBox/Doxyfile belongs to an option that was not enabled at compile time.
+Warning: Tag `CLANG_OPTIONS' at line 1091 of file /home/travis/build/rbaker26/BigBlueBox/Doxyfile belongs to an option that was not enabled at compile time.
 To avoid this warning please remove this line from your configuration file, upgrade it using "doxygen -u", or recompile doxygen with this feature enabled.
-Warning: ignoring unsupported tag `LATEX_EXTRA_STYLESHEET =' at line 1762, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `LATEX_TIMESTAMP        =' at line 1829, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `RTF_SOURCE_CODE        =' at line 1895, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `MAN_SUBDIR             =' at line 1930, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `DOCBOOK_PROGRAMLISTING =' at line 1993, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `PLANTUML_JAR_PATH      =' at line 2422, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `PLANTUML_CFG_FILE      =' at line 2427, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
-Warning: ignoring unsupported tag `PLANTUML_INCLUDE_PATH  =' at line 2432, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `LATEX_EXTRA_STYLESHEET =' at line 1763, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `LATEX_TIMESTAMP        =' at line 1830, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `RTF_SOURCE_CODE        =' at line 1896, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `MAN_SUBDIR             =' at line 1931, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `DOCBOOK_PROGRAMLISTING =' at line 1994, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `PLANTUML_JAR_PATH      =' at line 2423, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `PLANTUML_CFG_FILE      =' at line 2428, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
+Warning: ignoring unsupported tag `PLANTUML_INCLUDE_PATH  =' at line 2433, file /home/travis/build/rbaker26/BigBlueBox/Doxyfile
 Searching for include files...
 Searching for example files...
 Searching for images...
