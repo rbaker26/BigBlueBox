@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_item.html" title="Business Object Layer : Inventory Item. " alt="" coords="5,5,53,32"/>
-<area shape="rect" id="node2" href="$struct_row.html" title="Row" alt="" coords="102,5,151,32"/>
+<area shape="rect" id="node2" href="$class_gear_central.html" title="GearCentral" alt="" coords="131,5,223,32"/>
+<area shape="rect" id="node3" href="$class_reports_view.html" title="ReportsView" alt="" coords="129,56,226,83"/>
 </map>
