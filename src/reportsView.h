@@ -54,7 +54,7 @@ private:
 
     void clearTable();
 
-    QVector<Item> fullInventory;
+    QVector<bbb::Item> fullInventory;
 
 
 
@@ -62,12 +62,12 @@ private:
     QString orgItemName;
 
     QString getOrgItemNameFromToolBox();
-    Row getNewRowFromToolBox();
-    QPair<QString, Row> makePair(QString orgName, Row r2);
-    QPair<QString, Row> rowForUpdate;
+    bbb::Row getNewRowFromToolBox();
+    QPair<QString, bbb::Row> makePair(QString orgName, bbb::Row r2);
+    QPair<QString, bbb::Row> rowForUpdate;
 
-    void updateStoredVector(QPair<QString, Row> rowForUpdate);
-    void updateDataBase(QPair<QString, Row> rowForUpdate);
+    void updateStoredVector(QPair<QString, bbb::Row> rowForUpdate);
+    void updateDataBase(QPair<QString, bbb::Row> rowForUpdate);
 
 
 };

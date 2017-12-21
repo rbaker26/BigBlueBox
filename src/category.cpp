@@ -1,5 +1,5 @@
 #include "category.h"
-
+using namespace bbb;
 //*********************************************************************************
 Category::Category()
 {

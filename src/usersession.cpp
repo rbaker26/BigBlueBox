@@ -1,4 +1,5 @@
 #include "usersession.h"
+using namespace bbb;
 
 UserSession* UserSession::instance = nullptr;
 

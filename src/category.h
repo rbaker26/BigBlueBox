@@ -7,6 +7,7 @@
 #include <QStringList>
 //*********************************************************************************
 
+namespace bbb {
 //*********************************************************************************
 //! \class   Category
 //! \brief   Holds catagory enum and related methods :Business Object
@@ -54,7 +55,7 @@ public:
 
 
 
-};
+}; // end class
 //*********************************************************************************
-
+} // end namespace
 #endif // CATEGORY_H

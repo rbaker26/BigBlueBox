@@ -97,9 +97,9 @@ void ReportsView::initTableInv()
 //*********************************************************************************
 void ReportsView::fillTableInv()
 {
-    fullInventory = DbConnect::getInstance()->getFullInvAsVector();
-    QVector<Item>::iterator it              = fullInventory.begin();
-    const QVector<Item>::iterator EXIT_FLAG = fullInventory.end();
+    fullInventory = bbb::DbConnect::getInstance()->getFullInvAsVector();
+    QVector<bbb::Item>::iterator it              = fullInventory.begin();
+    const QVector<bbb::Item>::iterator EXIT_FLAG = fullInventory.end();
 
     int rowCount = 0;
     while(it != EXIT_FLAG)
@@ -125,17 +125,17 @@ void ReportsView::on_pushButton_edit_clicked()
     bool regexPass = ( rx::isItemName( ui->lineEdit_itemName->text()) &&
                        rx::isBoxName(ui->lineEdit_box->text())  );
 
-    Row thisRow;
+    bbb::Row thisRow;
     thisRow.itemName = ui->lineEdit_itemName->text();
     thisRow.quantity = ui->spinBox_quantity->value();
-    thisRow.category = static_cast<Category::categoryType>(ui->lineEdit_cat->text().toInt());
+    thisRow.category = static_cast<bbb::Category::categoryType>(ui->lineEdit_cat->text().toInt());
     thisRow.effectiveOnHand = ui->spinBox_targetQ->value();
     thisRow.boxNum = ui->lineEdit_box->text().toInt();
 //    bool inputFieldsHaveChanged = 0;
     if(regexPass)
     {
         // push to db
-        DbConnect::getInstance()->updateItem(orgItemName, thisRow);
+        bbb::DbConnect::getInstance()->updateItem(orgItemName, thisRow);
         qDebug() << "Push to db";
 
     }
@@ -183,9 +183,9 @@ QString ReportsView::getOrgItemNameFromToolBox()
     return ui->lineEdit_itemName->text();
 }
 
-Row ReportsView::getNewRowFromToolBox()
+bbb::Row ReportsView::getNewRowFromToolBox()
 {
-    Row r2;
+    bbb::Row r2;
     r2.itemName = ui->lineEdit_itemName->text();
     r2.quantity = ui->spinBox_quantity->value();
     r2.effectiveOnHand = ui->spinBox_quantity->value();

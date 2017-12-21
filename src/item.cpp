@@ -1,4 +1,7 @@
 #include "item.h"
+using namespace bbb;
+
+
 //*********************************************************************************
 Item::Item()
 {
@@ -7,8 +10,8 @@ Item::Item()
 //*********************************************************************************
 
 //*********************************************************************************
- QString Item::categoryToQString(Category::categoryType category)
+ QString Item::categoryToQString(bbb::Category::categoryType category)
  {
-    return Category::categoryToQString(category);
+    return bbb::Category::categoryToQString(category);
  }
 //*********************************************************************************

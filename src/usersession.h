@@ -1,10 +1,13 @@
 #ifndef USERSESSION_H
 #define USERSESSION_H
 
+//*********************************************************************************
 #include <QString>
 #include <QDate>
+//*********************************************************************************
 
-
+namespace bbb {
+//*********************************************************************************
 class UserSession
 {
 private:
@@ -34,6 +37,8 @@ public:
     void setUsername(QString userName);
     void setPassword(QString password);
     bool validateSessionInfo();
-};
 
+}; // end class
+//*********************************************************************************
+} // end namespace
 #endif // USERSESSION_H

@@ -21,7 +21,7 @@
 #include "item.h"
 //*********************************************************************************
 
-
+namespace bbb {
 //*********************************************************************************
 //! \class   DbConnect
 //! \brief   DataBase Comm. Layer : Singleton
@@ -77,6 +77,9 @@ public:
 
 
     void updateItem(QString orgName, Row newRowInfo);
-};
+
+
+}; // end class
 //*********************************************************************************
+} // end namespace
 #endif // DBCONNECT_H
