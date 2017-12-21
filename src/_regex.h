@@ -10,13 +10,15 @@
 //*********************************************************************************
 
 
-//*********************************************************************************
-//! \class   _Regex
-//! \brief   Regex String Validation Class
-//! \details No objects may be instantiated.  ALl methods are static.
-//! \author  Bob Baker
-//*********************************************************************************
+
 namespace bbb {
+
+    //*********************************************************************************
+    //! \class   _Regex
+    //! \brief   Regex String Validation Class
+    //! \details No objects may be instantiated.  ALl methods are static.
+    //! \author  Bob Baker
+    //*********************************************************************************
     class _Regex
     {
     public:
