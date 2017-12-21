@@ -16,34 +16,35 @@
 //! \details No objects may be instantiated.  ALl methods are static.
 //! \author  Bob Baker
 //*********************************************************************************
-class _Regex
-{
-public:
-    //**********************************************************
-    //! \brief   Contains requirements for Item names.
-    //! \details Static:
-    //! \param   QString itemName
-    //! \return  bool isValidItemName
-    //! \author  Bob Baker
-    static bool isItemName(QString itemName);
-    //**********************************************************
+namespace bbb {
+    class _Regex
+    {
+    public:
+        //**********************************************************
+        //! \brief   Contains requirements for Item names.
+        //! \details Static:
+        //! \param   QString itemName
+        //! \return  bool isValidItemName
+        //! \author  Bob Baker
+        static bool isItemName(QString itemName);
+        //**********************************************************
 
-    //**********************************************************
-    //! \brief   Contains requirements for box names.
-    //! \details Static:
-    //! \param   QString boxName
-    //! \return  bool isValidBoxName
-    //! \author  Bob Baker
-    static bool isBoxName(QString boxName);
-    //**********************************************************
-private:
-    //**********************************************************
-    //! \brief   Default no-args constructor
-    //! \details Private: No objects can be instantiated.
-    //! \author  Bob Baker
-    _Regex();
-    //**********************************************************
-};
-//*********************************************************************************
-
+        //**********************************************************
+        //! \brief   Contains requirements for box names.
+        //! \details Static:
+        //! \param   QString boxName
+        //! \return  bool isValidBoxName
+        //! \author  Bob Baker
+        static bool isBoxName(QString boxName);
+        //**********************************************************
+    private:
+        //**********************************************************
+        //! \brief   Default no-args constructor
+        //! \details Private: No objects can be instantiated.
+        //! \author  Bob Baker
+        _Regex();
+        //**********************************************************
+    };
+    //*********************************************************************************
+}
 #endif // _REGEX_H
