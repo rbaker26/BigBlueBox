@@ -18,7 +18,6 @@ namespace bbb {
     //! \brief   Regex String Validation Class Hheki
     //! \details No objects may be instantiated.  All methods are static. hehwhds
     //! \author  Bob Bakerdnsjn
-    //!
     //*********************************************************************************
     class _Regex
     {
