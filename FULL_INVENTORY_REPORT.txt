@@ -1,0 +1,81 @@
+-------------------------------------------------------------------------
+Full Inventory
+-------------------------------------------------------------------------
+
+-------------------------------------------------------------------------
+Item Name                           Quantity      Target #        Needed             
+-------------------------------------------------------------------------             
+spatula                                   73           100            27             
+wooden spoon                               5             5             0             
+tongs                                     38            10             0             
+wisk                                       1             5             4             
+pasta spoon                                4             0             0             
+ladle                                      4             0             0             
+strainer spoon                            12             0             0             
+measuring cups (set)                       1             0             0             
+sponges                                   57            30             0             
+dish washing brush                        21            15             0             
+steel wool                                12            10             0             
+cutting board                             55            20             0             
+dish soap                                 21            25             4             
+hand sanitizer                            13            25            12             
+hand soap                                  9            15             6             
+sanitizer tablets (bottle)                 3             5             2             
+salad fork                                20            10             0             
+dinner fork                               20            10             0             
+sm dinner knife                           20             5             0             
+dinner spoon                              20             5             0             
+kitchen cutting knife                     60            10             0             
+kitchen knife sharpener                   18             3             0             
+skillet (small)                            7             0             0             
+pot (extra lg)                             2             0             0             
+pot (big)                                  3             1             0             
+mixing bowl                                1             0             0             
+plates (mess kit)                         12             5             0             
+oven mitts                                70            20             0             
+serving spoon                              2             5             3             
+pan (large)                                2             2             0             
+pot lid (various)                         18             0             0             
+salad bowl                                20             3             0             
+pot (med)                                  4             2             0             
+kettle                                     2             0             0             
+bowl (med)                                 7             2             0             
+tupperware (small)                         3            15            12             
+lighters                                 140            25             0             
+match box                                 13             5             0             
+propane regulator                         15             7             0             
+propane tank (green)                      70            25             0             
+lantern mantles                           50            20             0             
+propane Y-spliter                          0             2             2             
+glue (white)                               3             2             0             
+glue (wood)                                7             0             0             
+glue (felt)                                9            10             1             
+scissors                                  16             5             0             
+tape (duct)                               18            10             0             
+tape (blue)                               24             3             0             
+tape (packing)                            12             5             0             
+tape (scotch)                              4             3             0             
+tape (electrical)                          2             0             0             
+tarp (med)                                70            30             0             
+tarp (large)                              13             5             0             
+letter opener                              1             0             0             
+binder rings                              20             0             0             
+push pins                                 50             0             0             
+lable sheet                               10             0             0             
+note cards                               150             0             0             
+sheet lifters                             23             0             0             
+safety pins                               15             0             0             
+rubber bands                              20             0             0             
+paper clips                               10             0             0             
+paper (ream)                               2             0             0             
+sheet protectors                         200             0             0             
+clip board                                13             0             0             
+pens (ball point)                         33            20             0             
+sharpies                                  23            10             0             
+notery seals (package)                     1             0             0             
+expo markers                               5            20            15             
+name badge lables                        100             0             0             
+AA batteries                              16            30            14             
+AAA batteries                              0            50            50             
+paper binder clips (assort.)              48            10             0             
+hole punch                                 2             0             0             
