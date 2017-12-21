@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gearcentral_2ecpp',['gearcentral.cpp',['../gearcentral_8cpp.html',1,'']]],
-  ['gearcentral_2eh',['gearcentral.h',['../gearcentral_8h.html',1,'']]]
+  ['dbconnect_2ecpp',['dbconnect.cpp',['../dbconnect_8cpp.html',1,'']]],
+  ['dbconnect_2eh',['dbconnect.h',['../dbconnect_8h.html',1,'']]]
 ];
