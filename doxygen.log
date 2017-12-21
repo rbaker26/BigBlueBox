@@ -174,18 +174,7 @@ Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.h...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/ui_gearcentral.h...
-Generating code for file /home/travis/build/rbaker26/BigBlueBox/ui_mainwindow.h.../home/travis/build/rbaker26/BigBlueBox/src/category.h:41: warning: argument 'Category' of command @param is not found in the argument list of Category::categoryToQString(Category::categoryType cat)
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:41: warning: argument 'categoryType' of command @param is not found in the argument list of Category::categoryToQString(Category::categoryType cat)
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:41: warning: The following parameters of Category::categoryToQString(Category::categoryType cat) are not documented:
-  parameter 'cat'
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:49: warning: argument 'int' of command @param is not found in the argument list of Category::categoryToQString(int cat)
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:49: warning: The following parameters of Category::categoryToQString(int cat) are not documented:
-  parameter 'cat'
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:41: warning: argument 'Category' of command @param is not found in the argument list of Item::categoryToQString(Category::categoryType category)
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:41: warning: argument 'categoryType' of command @param is not found in the argument list of Item::categoryToQString(Category::categoryType category)
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:41: warning: The following parameters of Item::categoryToQString(Category::categoryType category) are not documented:
-  parameter 'category'
-
+Generating code for file /home/travis/build/rbaker26/BigBlueBox/ui_mainwindow.h...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/ui_reportsView.h...
 Generating file documentation...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/moc_gearcentral.cpp...
@@ -222,18 +211,8 @@ Generating docs for file /home/travis/build/rbaker26/BigBlueBox/ui_reportsView.h
 Generating page documentation...
 Generating group documentation...
 Generating class documentation...
-Generating docs for compound Category...
-Generating caller graph for function Category::categoryToQString
-Generating docs for compound DbConnect...
-Generating caller graph for function DbConnect::DbConnect
-Generating caller graph for function DbConnect::getFullInvAsVector
-Generating call graph for function DbConnect::getInstance
-Generating caller graph for function DbConnect::getInstance
-Generating caller graph for function DbConnect::updateItem
 Generating docs for compound GearCentral...
 Generating call graph for function GearCentral::GearCentral
-Generating docs for compound Item...
-Generating call graph for function Item::categoryToQString
 Generating docs for compound MainWindow...
 Generating call graph for function MainWindow::MainWindow
 Generating docs for compound qt_meta_stringdata_GearCentral_t...
@@ -246,33 +225,39 @@ Generating call graph for function ReportsView::fillTableInv
 Generating caller graph for function ReportsView::fillTableInv
 Generating caller graph for function ReportsView::getOrgItemNameFromToolBox
 Generating caller graph for function ReportsView::initTableInv
-Generating call graph for function ReportsView::on_/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:41: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:41: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
-  parameter 'boxName'
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:32: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:32: warning: The following parameters of bbb::_Regex::isItemName(QString itemName) are not documented:
-  parameter 'itemName'
-pushButton_edit_clicked
+Generating call graph for function ReportsView::on_pushButton_edit_clicked
 Generating call graph for function ReportsView::on_tableWidget_inv_cellDoubleClicked
 Generating caller graph for function ReportsView::sendRowToToolBox
-Generating docs for compound Row...
 Generating docs for compound Ui_GearCentral...
 Generating caller graph for function Ui_GearCentral::retranslateUi
 Generating call graph for function Ui_GearCentral::setupUi
 Generating caller graph for function Ui_GearCentral::setupUi
 Generating docs for compound Ui_MainWindow...
 Generating caller graph for function Ui_MainWindow::retranslateUi
-Generating call graph for function Ui_MainWindow::setupUi
+Generating call graph fo/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
+  parameter 'boxName'
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: The following parameters of bbb::_Regex::isItemName(QString itemName) are not documented:
+  parameter 'itemName'
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:42: warning: argument 'Category' of command @param is not found in the argument list of bbb::Category::categoryToQString(Category::categoryType cat)
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:42: warning: argument 'categoryType' of command @param is not found in the argument list of bbb::Category::categoryToQString(Category::categoryType cat)
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:42: warning: The following parameters of bbb::Category::categoryToQString(Category::categoryType cat) are not documented:
+  parameter 'cat'
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:50: warning: argument 'int' of command @param is not found in the argument list of bbb::Category::categoryToQString(int cat)
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:50: warning: The following parameters of bbb::Category::categoryToQString(int cat) are not documented:
+  parameter 'cat'
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:42: warning: argument 'Category' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:42: warning: argument 'categoryType' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:42: warning: The following parameters of bbb::Item::categoryToQString(bbb::Category::categoryType category) are not documented:
+  parameter 'category'
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:60: warning: Found unknown command `\inherits'
+r function Ui_MainWindow::setupUi
 Generating caller graph for function Ui_MainWindow::setupUi
 Generating docs for compound Ui_ReportsView...
 Generating caller graph for function Ui_ReportsView::retranslateUi
 Generating call graph for function Ui_ReportsView::setupUi
 Generating caller graph for function Ui_ReportsView::setupUi
-Generating docs for compound UserSession...
-Generating caller graph for function UserSession::UserSession
-Generating call graph for function UserSession::~UserSession
-Generating call graph for function UserSession::getInstance
-Generating caller graph for function UserSession::logout
 Generating namespace index...
 Generating docs for namespace bbb
 Generating docs for compound bbb::_FileWriter...
@@ -281,6 +266,22 @@ Generating call graph for function bbb::_FileWriter::getInstance
 Generating caller graph for function bbb::_FileWriter::getInstance
 Generating caller graph for function bbb::_FileWriter::makeReport
 Generating docs for compound bbb::_Regex...
+Generating docs for compound bbb::Category...
+Generating caller graph for function bbb::Category::categoryToQString
+Generating docs for compound bbb::DbConnect...
+Generating caller graph for function bbb::DbConnect::DbConnect
+Generating caller graph for function bbb::DbConnect::getFullInvAsVector
+Generating call graph for function bbb::DbConnect::getInstance
+Generating caller graph for function bbb::DbConnect::getInstance
+Generating caller graph for function bbb::DbConnect::updateItem
+Generating docs for compound bbb::Item...
+Generating call graph for function bbb::Item::categoryToQString
+Generating docs for compound bbb::Row...
+Generating docs for compound bbb::UserSession...
+Generating caller graph for function bbb::UserSession::UserSession
+Generating call graph for function bbb::UserSession::~UserSession
+Generating call graph for function bbb::UserSession::getInstance
+Generating caller graph for function bbb::UserSession::logout
 Generating docs for namespace Ui
 Generating docs for compound Ui::GearCentral...
 Generating docs for compound Ui::MainWindow...
@@ -462,5 +463,5 @@ Patching output file 40/43
 Patching output file 41/43
 Patching output file 42/43
 Patching output file 43/43
-lookup cache used 376/65536 hits=2299 misses=388
+lookup cache used 410/65536 hits=2329 misses=428
 finished...

@@ -15,5 +15,5 @@ var searchData=
   ['lineedit_5fcatnew',['lineEdit_catNew',['../class_ui___reports_view.html#a4bd117b306059d627191b2debc2002d2',1,'Ui_ReportsView']]],
   ['lineedit_5fitemname',['lineEdit_itemName',['../class_ui___reports_view.html#a2ab2cf4e99540763d16435b33f7072ac',1,'Ui_ReportsView']]],
   ['lineedit_5fitemnamenew',['lineEdit_itemNameNew',['../class_ui___reports_view.html#a7fbf81266a45954f8fedd6930c2484f4',1,'Ui_ReportsView']]],
-  ['logout',['logout',['../class_user_session.html#ab4a7a52bedaae41bd759c79eb7c6d9f3',1,'UserSession']]]
+  ['logout',['logout',['../classbbb_1_1_user_session.html#ab4a7a52bedaae41bd759c79eb7c6d9f3',1,'bbb::UserSession']]]
 ];

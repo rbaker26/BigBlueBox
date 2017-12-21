@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['crafts',['CRAFTS',['../class_category.html#ad6169303fc1367cee56c769c00c6d77ba1d2d3239936e7ee3e022dd14849c88de',1,'Category']]]
+  ['crafts',['CRAFTS',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daadb67e967ccdceba26f4e68b4bfc9b388',1,'bbb::Category']]]
 ];

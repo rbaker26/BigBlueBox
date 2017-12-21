@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kitchen',['KITCHEN',['../class_category.html#ad6169303fc1367cee56c769c00c6d77bab5a7eb7c5b43e05956dd4ec549a3787c',1,'Category']]]
+  ['kitchen',['KITCHEN',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daa4726a4611f4ed2e1e07cad81c9bf4910',1,'bbb::Category']]]
 ];

@@ -7,7 +7,7 @@ var searchData=
   ['mainwindow',['MainWindow',['../class_ui_1_1_main_window.html',1,'Ui']]],
   ['mainwindow_2ecpp',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
   ['mainwindow_2eh',['mainwindow.h',['../mainwindow_8h.html',1,'']]],
-  ['makepair',['makePair',['../class_reports_view.html#a17e75e97b9355acc4661802ee95483a3',1,'ReportsView']]],
+  ['makepair',['makePair',['../class_reports_view.html#a2f558ef578ac827d53638af002a8b93d',1,'ReportsView']]],
   ['makereport',['makeReport',['../classbbb_1_1___file_writer.html#acee5ce66444735f37990f57afbfe1452',1,'bbb::_FileWriter']]],
   ['menubar',['menuBar',['../class_ui___main_window.html#a2be1c24ec9adfca18e1dcc951931457f',1,'Ui_MainWindow']]],
   ['menuhome',['menuHome',['../class_ui___main_window.html#a650031e50eb903bc69f69d3050dcb6b9',1,'Ui_MainWindow']]],

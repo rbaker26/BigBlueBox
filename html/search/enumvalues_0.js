@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['admin',['ADMIN',['../class_user_session.html#a7fe62dc9f61b394386ece5e9d73f9d2ca936f9f67158bfd19cb87b308e019cfac',1,'UserSession']]]
+  ['admin',['ADMIN',['../classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cbaac482a5009ae293f7c17c3718fb09161',1,'bbb::UserSession']]]
 ];

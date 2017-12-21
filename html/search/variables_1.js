@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bbb_5fdb',['bbb_db',['../class_db_connect.html#aa9d9c9fc431275cbdc7ca9a077f7f4ca',1,'DbConnect']]],
-  ['boxnum',['boxNum',['../class_item.html#a7ba077f0730d467839e6ac01b24a7908',1,'Item']]]
+  ['bbb_5fdb',['bbb_db',['../classbbb_1_1_db_connect.html#a732b78f5fcf21aa52cae5abbdbad1c0c',1,'bbb::DbConnect']]],
+  ['boxnum',['boxNum',['../classbbb_1_1_item.html#aeeef4e5b566b43410c900870d1487d21',1,'bbb::Item']]]
 ];

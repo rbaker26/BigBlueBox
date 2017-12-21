@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user',['USER',['../class_user_session.html#a7fe62dc9f61b394386ece5e9d73f9d2ca7af7dcaaf9b73831c79460232c697f8a',1,'UserSession']]]
+  ['user',['USER',['../classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cbafd5e188e220dab8b0166ff4602089cc0',1,'bbb::UserSession']]]
 ];

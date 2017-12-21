@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['validatesessioninfo',['validateSessionInfo',['../class_user_session.html#a41638ea015b8f3b58961287fd25e1029',1,'UserSession']]],
+  ['validatesessioninfo',['validateSessionInfo',['../classbbb_1_1_user_session.html#a41638ea015b8f3b58961287fd25e1029',1,'bbb::UserSession']]],
   ['verticallayout',['verticalLayout',['../class_ui___reports_view.html#a63c1a5d7b4d3fde655108fd3faf9a15c',1,'Ui_ReportsView']]],
   ['verticallayout_5f2',['verticalLayout_2',['../class_ui___reports_view.html#a9a042be562592c6e64f05d3d3f6a9226',1,'Ui_ReportsView']]],
   ['verticallayout_5f3',['verticalLayout_3',['../class_ui___reports_view.html#a05ba2888a4a196536f8f85e7f1a75ee2',1,'Ui_ReportsView']]],
