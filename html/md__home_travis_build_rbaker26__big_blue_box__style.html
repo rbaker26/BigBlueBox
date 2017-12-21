@@ -123,9 +123,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h2>Doxygen Commenting</h2>
 <p>All Doxygen comments should be in the .h files with the declarations and prototypes.</p>
 <h3>Example Class with Doxygen</h3>
-<p>```cpp #ifndef DOXYGEN_SHOULD_SKIP_THIS // note, this is here so Doxygen doesn't read <a class="el" href="_style_8md.html">Style.md</a> #ifndef _REGEX_H #define _REGEX_H //********************************************************************************* // For Regex matching // Do not use &lt;QRegex&gt;, it is outdated. #include &lt;QRegularExpression&gt;</p>
+<p>```cpp</p>
+<p>#ifndef _REGEX_H #define _REGEX_H //*********************************************************************************</p>
+<p>#ifndef DOXYGEN_SHOULD_SKIP_THIS // note, this is here so Doxygen doesn't read <a class="el" href="_style_8md.html">Style.md</a> // For Regex matching // Do not use &lt;QRegex&gt;, it is outdated. #include &lt;QRegularExpression&gt;</p>
 <p>// For strings #include &lt;QString&gt; //*********************************************************************************</p>
-<p>//********************************************************************************* //! </p>
+<p>//********************************************************************************* // </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

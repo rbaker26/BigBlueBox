@@ -178,16 +178,16 @@ Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp
 Generating code for file /home/travis/build/rbaker26/BigBl/home/travis/build/rbaker26/BigBlueBox/Style.md:13: warning: explicit link request to 'ifndef' could not be resolved
 /home/travis/build/rbaker26/BigBlueBox/Style.md:13: warning: explicit link request to 'define' could not be resolved
 /home/travis/build/rbaker26/BigBlueBox/Style.md:13: warning: explicit link request to 'endif' could not be resolved
-/home/travis/build/rbaker26/BigBlueBox/Style.md:63: warning: explicit link request to 'ifndef' could not be resolved
 /home/travis/build/rbaker26/BigBlueBox/Style.md:64: warning: explicit link request to 'ifndef' could not be resolved
 /home/travis/build/rbaker26/BigBlueBox/Style.md:65: warning: explicit link request to 'define' could not be resolved
-/home/travis/build/rbaker26/BigBlueBox/Style.md:68: warning: Unsupported xml/html tag <QRegex> found
-/home/travis/build/rbaker26/BigBlueBox/Style.md:69: warning: explicit link request to 'include' could not be resolved
-/home/travis/build/rbaker26/BigBlueBox/Style.md:69: warning: Unsupported xml/html tag <QRegularExpression> found
-/home/travis/build/rbaker26/BigBlueBox/Style.md:72: warning: explicit link request to 'include' could not be resolved
-/home/travis/build/rbaker26/BigBlueBox/Style.md:72: warning: Unsupported xml/html tag <QString> found
+/home/travis/build/rbaker26/BigBlueBox/Style.md:68: warning: explicit link request to 'ifndef' could not be resolved
+/home/travis/build/rbaker26/BigBlueBox/Style.md:70: warning: Unsupported xml/html tag <QRegex> found
+/home/travis/build/rbaker26/BigBlueBox/Style.md:71: warning: explicit link request to 'include' could not be resolved
+/home/travis/build/rbaker26/BigBlueBox/Style.md:71: warning: Unsupported xml/html tag <QRegularExpression> found
+/home/travis/build/rbaker26/BigBlueBox/Style.md:74: warning: explicit link request to 'include' could not be resolved
+/home/travis/build/rbaker26/BigBlueBox/Style.md:74: warning: Unsupported xml/html tag <QString> found
 /home/travis/build/rbaker26/BigBlueBox/Style.md:119: warning: explicit link request to 'endif' could not be resolved
-/home/travis/build/rbaker26/BigBlueBox/Style.md:120: warning: explicit link request to 'endif' could not be resolved
+/home/travis/build/rbaker26/BigBlueBox/Style.md:122: warning: explicit link request to 'endif' could not be resolved
 /home/travis/build/rbaker26/BigBlueBox/src/category.h:41: warning: argument 'Category' of command @param is not found in the argument list of Category::categoryToQString(Category::categoryType cat)
 /home/travis/build/rbaker26/BigBlueBox/src/category.h:41: warning: argument 'categoryType' of command @param is not found in the argument list of Category::categoryToQString(Category::categoryType cat)
 /home/travis/build/rbaker26/BigBlueBox/src/category.h:41: warning: The following parameters of Category::categoryToQString(Category::categoryType cat) are not documented:
