@@ -19,6 +19,7 @@ DbConnect::DbConnect()
     {
         qDebug() << "Db Open\n";
     }
+
 }
 //*********************************************************************************
 
@@ -69,7 +70,7 @@ DbConnect* DbConnect::getInstance()
         tempItem.itemName        = query.value(itemNameFieldNum).toString();
         tempItem.quantity        = query.value(quantityFieldNum).toInt();
         tempItem.effectiveOnHand = query.value(efOnHandFieldNum).toInt();
-        tempItem.category        = static_cast<bbb::Category::categoryType>(query.value(categoryFieldNum).toInt());
+        tempItem.category        = static_cast<Category::categoryType>(query.value(categoryFieldNum).toInt());
         tempItem.boxNum          = query.value(boxNumFieldNum).toInt();
 //**************************************************************
 //*                       * Test Code *                        *
