@@ -60,10 +60,12 @@ All Doxygen comments should be in the .h files with the declarations and prototy
 ### Example Class with Doxygen
 
 ```cpp
-#ifndef DOXYGEN_SHOULD_SKIP_THIS   // note, this is here so Doxygen doesn't read Style.md
+
 #ifndef _REGEX_H
 #define _REGEX_H
 //*********************************************************************************
+
+#ifndef DOXYGEN_SHOULD_SKIP_THIS   // note, this is here so Doxygen doesn't read Style.md
 // For Regex matching
 // Do not use <QRegex>, it is outdated.
 #include <QRegularExpression>
@@ -74,43 +76,44 @@ All Doxygen comments should be in the .h files with the declarations and prototy
 
 
 //*********************************************************************************
-//! \class   _Regex
-//! \brief   Regex String Validation Class
-//! \details No objects may be instantiated.  ALl methods are static.
-//! \author  Bob Baker
+// \class   _Regex
+// \brief   Regex String Validation Class
+// \details No objects may be instantiated.  ALl methods are static.
+// \author  Bob Baker 
 //*********************************************************************************
 class _Regex
 {
 public:
     //**********************************************************
-    //! \brief   Contains requirements for Item names.
-    //! \details Static:
-    //! \param   QString itemName
-    //! \return  bool isValidItemName
-    //! \author  Bob Baker
+    // \brief   Contains requirements for Item names. 
+    // \details Static:
+    // \param   QString itemName
+    // \return  bool isValidItemName
+    // \author  Bob Baker
     static bool isItemName(QString itemName);
     //**********************************************************
 
     //**********************************************************
-    //! \brief   Contains requirements for box names.
-    //! \details Static:
-    //! \param   QString boxName
-    //! \return  bool isValidBoxName
-    //! \author  Bob Baker
+    // \brief   Contains requirements for box names.
+    // \details Static:
+    // \param   QString boxName
+    // \return  bool isValidBoxName
+    // \author  Bob Baker
     static bool isBoxName(QString boxName);
     //**********************************************************
 private:
     //**********************************************************
-    //! \brief   Default no-args constructor
-    //! \details Private: No objects can be instantiated.
-    //! \author  Bob Baker
+    // \brief   Default no-args constructor
+    // \details Private: No objects can be instantiated.
+    // \author  Bob Baker
     _Regex();
     //**********************************************************
 };
+#endif /* DOXYGEN_SHOULD_SKIP_THIS */
 //*********************************************************************************
 
 #endif // _REGEX_H
-#endif /* DOXYGEN_SHOULD_SKIP_THIS */
+
 ```
 
 
