@@ -121,7 +121,7 @@ void ReportsView::fillTableInv()
 //*********************************************************************************
 void ReportsView::on_pushButton_edit_clicked()
 {
-    typedef bbb::_Regex rx;
+    typedef bbb2::_Regex rx;
     bool regexPass = ( rx::isItemName( ui->lineEdit_itemName->text()) &&
                        rx::isBoxName(ui->lineEdit_box->text())  );
 
