@@ -246,11 +246,11 @@ Generating call graph for function ReportsView::fillTableInv
 Generating caller graph for function ReportsView::fillTableInv
 Generating caller graph for function ReportsView::getOrgItemNameFromToolBox
 Generating caller graph for function ReportsView::initTableInv
-Generating call graph for function ReportsView::on_/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:41: warning: argument 'QString' of command @param is not found in the argument list of bbb2::_Regex::isBoxName(QString boxName)
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:41: warning: The following parameters of bbb2::_Regex::isBoxName(QString boxName) are not documented:
+Generating call graph for function ReportsView::on_/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:41: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:41: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
   parameter 'boxName'
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:32: warning: argument 'QString' of command @param is not found in the argument list of bbb2::_Regex::isItemName(QString itemName)
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:32: warning: The following parameters of bbb2::_Regex::isItemName(QString itemName) are not documented:
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:32: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:32: warning: The following parameters of bbb::_Regex::isItemName(QString itemName) are not documented:
   parameter 'itemName'
 pushButton_edit_clicked
 Generating call graph for function ReportsView::on_tableWidget_inv_cellDoubleClicked
@@ -280,8 +280,7 @@ Generating caller graph for function bbb::_FileWriter::_FileWriter
 Generating call graph for function bbb::_FileWriter::getInstance
 Generating caller graph for function bbb::_FileWriter::getInstance
 Generating caller graph for function bbb::_FileWriter::makeReport
-Generating docs for namespace bbb2
-Generating docs for compound bbb2::_Regex...
+Generating docs for compound bbb::_Regex...
 Generating docs for namespace Ui
 Generating docs for compound Ui::GearCentral...
 Generating docs for compound Ui::MainWindow...
@@ -463,5 +462,5 @@ Patching output file 40/43
 Patching output file 41/43
 Patching output file 42/43
 Patching output file 43/43
-lookup cache used 377/65536 hits=2299 misses=389
+lookup cache used 376/65536 hits=2299 misses=388
 finished...
