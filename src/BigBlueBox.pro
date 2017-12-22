@@ -43,6 +43,7 @@ SOURCES += \
         gearcentral.cpp \
         usersession.cpp \
         _filewriter.cpp \
+    test/categorytest.cpp
 
 
         
@@ -57,6 +58,7 @@ HEADERS += \
         usersession.h   \
         _filewriter.h   \
         bbb.h           \
+    test/categorytest.h
 
 
         

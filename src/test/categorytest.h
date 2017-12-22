@@ -1,24 +1,21 @@
-#ifndef _REGEXTEST_H
-#define _REGEXTEST_H
+#ifndef CATEGORYTEST_H
+#define CATEGORYTEST_H
 
 #include <QObject>
 #include <QtTest>
 #include <QString>
 
-#include "_regex.h"
-
-namespace bbbTest {
+namespace bbb {
 /***********************************************************************************/
-class _RegexTest : public QObject
+class CategoryTest : public QObject
 {
-    Q_OBJECT // Qt Object macro
+    Q_OBJECT
 public:
     //************************************************************
     //! \brief Default Constructor
     //! \author Bob Baker
-    _RegexTest();
+    CategoryTest();
     //************************************************************
-
 
 // All testing functions must be in private slots.
 private slots:
@@ -29,18 +26,8 @@ private slots:
     //! \author Bob Baker
     void testTest();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-    //! \brief Data for testIsItemName()
-    //! \author  Bob Baker
-    void testIsItemName_data();
-    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-    //! \brief Tests regex on isItemName
-    //! \author Bob Baker
-    void testIsItemName();
-    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     //************************************************************
-
-}; // end class
+};
 /***********************************************************************************/
-
-} // end namespace
-#endif // _REGEXTEST_H
+}
+#endif // CATEGORYTEST_H

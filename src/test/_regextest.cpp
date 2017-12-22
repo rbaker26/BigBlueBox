@@ -101,7 +101,6 @@ void _RegexTest::testIsItemName_data()
 
 void _RegexTest::testIsItemName()
 {
-    qDebug() << endl;
     //************************************************************
     //* Testing begins here
     //************************************************************
@@ -121,6 +120,5 @@ void _RegexTest::testIsItemName()
     //QCOMPARE( actual, expected)
     QCOMPARE(rx::isItemName(itemName), result);
     //************************************************************
-    qDebug() << endl;
 }
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
