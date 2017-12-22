@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['unittest',['UnitTest',['../classbbb_test_1_1_unit_test.html#a67ddaff817b55a624741d32550052f4b',1,'bbbTest::UnitTest']]],
-  ['updatedatabase',['updateDataBase',['../class_reports_view.html#ab58aa45a0fde5271c5ccf19da12a5f10',1,'ReportsView']]],
-  ['updateitem',['updateItem',['../classbbb_1_1_db_connect.html#a1794a5b641c117021fd6a2ffbde0028f',1,'bbb::DbConnect']]],
-  ['updatestoredvector',['updateStoredVector',['../class_reports_view.html#ab1abccf202bed57c66ad865886e6856e',1,'ReportsView']]],
-  ['usersession',['UserSession',['../classbbb_1_1_user_session.html#abc1a059a8be662ee345a27940fb563c6',1,'bbb::UserSession']]]
+  ['testcatenumvals',['testCatEnumVals',['../classbbb_test_1_1_category_test.html#a6b8e930731c0cb0b55bad0aa70c2100b',1,'bbbTest::CategoryTest']]],
+  ['testisitemname',['testIsItemName',['../classbbb_test_1_1___regex_test.html#ada7fd54b12d91d356780b6ee1c9da02f',1,'bbbTest::_RegexTest']]],
+  ['testisitemname_5fdata',['testIsItemName_data',['../classbbb_test_1_1___regex_test.html#af1f630ee33f580e7726b2aac98407ee6',1,'bbbTest::_RegexTest']]],
+  ['testtest',['testTest',['../classbbb_test_1_1___regex_test.html#a0333bebb3755dc68c2cf5492cc8530f0',1,'bbbTest::_RegexTest::testTest()'],['../classbbb_test_1_1_category_test.html#a3d00e8ff136a5e5cc92ab6fde7829113',1,'bbbTest::CategoryTest::testTest()']]]
 ];
