@@ -31,6 +31,15 @@ private slots:
     //! \brief Tests the int values of the enums
     //! \author Bob Baker
     void testCatEnumVals();
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //! \brief Test Data for testEnumToString()
+    //! \author Bob Baker
+    void testEnumToString_data();
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //! \brief Tests category enum to QString conversions
+    //! \author Bob Baker
+    void testEnumToString();
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     //************************************************************
 
 }; // end class

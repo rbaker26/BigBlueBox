@@ -37,3 +37,36 @@ void CategoryTest::testCatEnumVals()
     QVERIFY(static_cast<int>(cat::OFFICE)  == 5);
     //************************************************************
 }
+
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+void CategoryTest::testEnumToString_data()
+{
+    typedef bbb::Category::categoryType cat;
+    QTest::addColumn<cat>("catEmum");
+    QTest::addColumn<QString>("result");
+
+    QTest::newRow("KITCHEN") << cat::KITCHEN << "Kitchen";
+    QTest::newRow("PROPANE") << cat::PROPANE << "Propane / Stoves";
+    QTest::newRow("CRAFTS") << cat::CRAFTS << "Arts and Crafts";
+    QTest::newRow("TARPS") << cat::TARPS << "Tarps";
+    QTest::newRow("OFFICE") << cat::OFFICE << "Office";
+
+}
+
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+void CategoryTest::testEnumToString()
+{
+    bbb::Category cat;
+
+    //************************************************************
+    //* Testing begins here
+    //************************************************************
+    QFETCH(cat, catEnum);
+    QFETCH(QString, result);
+    QCOMPARE(cat.categoryToQString(catEnum), result);
+    //************************************************************
+}
+
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
