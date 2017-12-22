@@ -38,7 +38,7 @@ install:
  - sudo apt-get install qt5-default qttools5-dev-tools
  
 script:
- - ./configure --enable-gcov && make && make check
+ #- ./configure --enable-gcov && make && make check
  - qmake "CONFIG+=test" src/BigBlueBox.pro #we gonna compile for Unit test first
  - make
  - ./BigBlueBox #run unit test
