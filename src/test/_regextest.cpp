@@ -105,6 +105,6 @@ void _RegexTest::testIsItemName()
     typedef bbb::_Regex rx;
 
     //QCOMPARE( actual, expected)
-    QCOMPARE(rx.isItemName(itemName), result);
+    QCOMPARE(rx::isItemName(itemName), result);
     //************************************************************
 }
