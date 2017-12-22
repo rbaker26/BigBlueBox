@@ -8,7 +8,7 @@ _RegexTest::_RegexTest() { qDebug() << "\n"; }
 
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-_RegexTest::testTest()
+void _RegexTest::testTest()
 {
     //************************************************************
     //* Testing begins here
@@ -23,7 +23,7 @@ _RegexTest::testTest()
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-_RegexTest::testIsItemName_data()
+void _RegexTest::testIsItemName_data()
 {
     QTest::addColumn<QString>("itemName");
     QTest::addColumn<bool>("result");
@@ -94,7 +94,7 @@ _RegexTest::testIsItemName_data()
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-_RegexTest::testIsItemName()
+void _RegexTest::testIsItemName()
 {
     //************************************************************
     //* Testing begins here
