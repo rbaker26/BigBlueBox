@@ -35,7 +35,7 @@ install:
  - sudo apt-get install qt5-default qttools5-dev-tools
   
 script:
- - qmake "CONFIG+=test" BigBlueBox.pro #we gonna compile for Unit test first
+ - qmake "CONFIG+=test" src/BigBlueBox.pro #we gonna compile for Unit test first
  - make
  - src/BigBlueBox #run unit test
  - rm Makefile BigBlueBox *.o #remove files (which are generated from unit test) for next build
