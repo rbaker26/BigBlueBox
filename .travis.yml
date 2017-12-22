@@ -37,7 +37,7 @@ install:
 script:
  - qmake "CONFIG+=test" BigBlueBox.pro #we gonna compile for Unit test first
  - make
- - ./BigBlueBox #run unit test
+ - src/BigBlueBox #run unit test
  - rm Makefile BigBlueBox *.o #remove files (which are generated from unit test) for next build
   
  - qmake -project
