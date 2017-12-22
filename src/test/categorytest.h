@@ -5,7 +5,9 @@
 #include <QtTest>
 #include <QString>
 
-namespace bbb {
+#include "category.h"
+
+namespace bbbTest {
 /***********************************************************************************/
 class CategoryTest : public QObject
 {
@@ -26,8 +28,13 @@ private slots:
     //! \author Bob Baker
     void testTest();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //! \brief Tests the values of the enums
+    //! \author Bob Baker
+    void testCatEnumVals();
     //************************************************************
-};
+
+}; // end class
 /***********************************************************************************/
-}
+
+} // end namespace
 #endif // CATEGORYTEST_H
