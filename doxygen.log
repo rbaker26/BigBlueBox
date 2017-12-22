@@ -28,6 +28,7 @@ Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/code_doc
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/code_docs/BigBlueBox
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/rec
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/src
+Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/src/test
 Reading and parsing tag files
 Parsing files
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/qrc_rec.cpp...
@@ -68,6 +69,17 @@ Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
+Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
+Parsing file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
+Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.h...
+Parsing file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.h...
+Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/test/main.cpp...
+Parsing file /home/travis/build/rbaker26/BigBlueBox/src/test/main.cpp...
+Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/test/unittest.cpp...
+Parsing file /home/travis/build/rbaker26/BigBlueBox/src/test/unittest.cpp...
+Preproceserror: Project logo 'rec/nyltIcon.png' specified by PROJECT_LOGO does not exist!
+sing /home/travis/build/rbaker26/BigBlueBox/src/test/unittest.h...
+Parsing file /home/travis/build/rbaker26/BigBlueBox/src/test/unittest.h...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/usersession.h...
@@ -84,8 +96,7 @@ Searching for enumerations...
 Searching for documented typedefs...
 Searching for members imported via using declarations...
 Searching for included using directives...
-Searchingerror: Project logo 'rec/nyltIcon.png' specified by PROJECT_LOGO does not exist!
- for documented variables...
+Searching for documented variables...
 Building interface member list...
 Building member list...
 Searching for friends...
@@ -140,10 +151,25 @@ Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/item.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/item.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/main.cpp...
+Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/test/main.cpp...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
+Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
+Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.h...
+Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/test/unittest.cpp...
+Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/t/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
+  parameter 'boxName'
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
+/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: The following parameters of bbb::_Regex::isItemName(QString itemName) are not documented:
+  parameter 'itemName'
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:42: warning: argument 'Category' of command @param is not found in the argument list of bbb::Category::categoryToQString(Category::categoryType cat)
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:42: warning: argument 'categoryType' of command @param is not found in the argument list of bbb::Category::categoryToQString(Category::categoryType cat)
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:42: warning: The following parameters of bbb::Category::categoryToQString(Category::categoryType cat) are not documented:
+  parameter 'cat'
+est/unittest.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.h...
 Generating file documentation...
@@ -161,34 +187,22 @@ Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/category.cpp
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/category.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h...
-Gener/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
-  parameter 'boxName'
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
-/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: The following parameters of bbb::_Regex::isItemName(QString itemName) are not documented:
-  parameter 'itemName'
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:42: warning: argument 'Category' of command @param is not found in the argument list of bbb::Category::categoryToQString(Category::categoryType cat)
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:42: warning: argument 'categoryType' of command @param is not found in the argument list of bbb::Category::categoryToQString(Category::categoryType cat)
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:42: warning: The following parameters of bbb::Category::categoryToQString(Category::categoryType cat) are not documented:
-  parameter 'cat'
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:50: warning: argument 'int' of command @param is not found in the argument list of bbb::Category::categoryToQString(int cat)
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:50: warning: The following parameters of bbb::Category::categoryToQString(int cat) are not documented:
-  parameter 'cat'
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:42: warning: argument 'Category' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:42: warning: argument 'categoryType' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:42: warning: The following parameters of bbb::Item::categoryToQString(bbb::Category::categoryType category) are not documented:
-  parameter 'category'
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:60: warning: Found unknown command `\inherits'
-ating docs for file /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/item.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/item.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/main.cpp...
 Generating call graph for function main
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/main.cpp...
+Generating call graph for function main
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/unittest.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/unittest.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.h...
 Generating page documentation...
@@ -215,7 +229,15 @@ Generating caller graph for function bbb::_FileWriter::getInstance
 Generating caller graph for function bbb::_FileWriter::makeReport
 Generating docs for compound bbb::_Regex...
 Generating docs for compound bbb::Category...
-Generating caller graph for function bbb::Category::categoryToQString
+Generating caller graph for function bbb::Category::categoryToQSt/home/travis/build/rbaker26/BigBlueBox/src/category.h:50: warning: argument 'int' of command @param is not found in the argument list of bbb::Category::categoryToQString(int cat)
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:50: warning: The following parameters of bbb::Category::categoryToQString(int cat) are not documented:
+  parameter 'cat'
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:42: warning: argument 'Category' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:42: warning: argument 'categoryType' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:42: warning: The following parameters of bbb::Item::categoryToQString(bbb::Category::categoryType category) are not documented:
+  parameter 'category'
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:60: warning: Found unknown command `\inherits'
+ring
 Generating docs for compound bbb::DbConnect...
 Generating caller graph for function bbb::DbConnect::DbConnect
 Generating caller graph for function bbb::DbConnect::getFullInvAsVector
@@ -230,10 +252,15 @@ Generating caller graph for function bbb::UserSession::UserSession
 Generating call graph for function bbb::UserSession::~UserSession
 Generating call graph for function bbb::UserSession::getInstance
 Generating caller graph for function bbb::UserSession::logout
+Generating docs for namespace bbbTest
+Generating docs for compound bbbTest::_RegexTest...
+Generating docs for compound bbbTest::UnitTest...
+Generating caller graph for function bbbTest::UnitTest::run
 Generating docs for namespace Ui
 Generating graph info page...
 Generating directory documentation...
 Generating dependency graph for directory /home/travis/build/rbaker26/BigBlueBox/src
+Generating dependency graph for directory /home/travis/build/rbaker26/BigBlueBox/src/test
 Generating index page...
 Generating page index...
 Generating module index...
@@ -250,116 +277,139 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 3 parallel threads...
-Running dot for graph 1/80
-Running dot for graph 2/80
-Running dot for graph 3/80
-Running dot for graph 4/80
-Running dot for graph 5/80
-Running dot for graph 6/80
-Running dot for graph 7/80
-Running dot for graph 8/80
-Running dot for graph 9/80
-Running dot for graph 10/80
-Running dot for graph 11/80
-Running dot for graph 12/80
-Running dot for graph 13/80
-Running dot for graph 14/80
-Running dot for graph 15/80
-Running dot for graph 16/80
-Running dot for graph 17/80
-Running dot for graph 18/80
-Running dot for graph 19/80
-Running dot for graph 20/80
-Running dot for graph 21/80
-Running dot for graph 22/80
-Running dot for graph 23/80
-Running dot for graph 24/80
-Running dot for graph 25/80
-Running dot for graph 26/80
-Running dot for graph 27/80
-Running dot for graph 28/80
-Running dot for graph 29/80
-Running dot for graph 30/80
-Running dot for graph 31/80
-Running dot for graph 32/80
-Running dot for graph 33/80
-Running dot for graph 34/80
-Running dot for graph 35/80
-Running dot for graph 36/80
-Running dot for graph 37/80
-Running dot for graph 38/80
-Running dot for graph 39/80
-Running dot for graph 40/80
-Running dot for graph 41/80
-Running dot for graph 42/80
-Running dot for graph 43/80
-Running dot for graph 44/80
-Running dot for graph 45/80
-Running dot for graph 46/80
-Running dot for graph 47/80
-Running dot for graph 48/80
-Running dot for graph 49/80
-Running dot for graph 50/80
-Running dot for graph 51/80
-Running dot for graph 52/80
-Running dot for graph 53/80
-Running dot for graph 54/80
-Running dot for graph 55/80
-Running dot for graph 56/80
-Running dot for graph 57/80
-Running dot for graph 58/80
-Running dot for graph 59/80
-Running dot for graph 60/80
-Running dot for graph 61/80
-Running dot for graph 62/80
-Running dot for graph 63/80
-Running dot for graph 64/80
-Running dot for graph 65/80
-Running dot for graph 66/80
-Running dot for graph 67/80
-Running dot for graph 68/80
-Running dot for graph 69/80
-Running dot for graph 70/80
-Running dot for graph 71/80
-Running dot for graph 72/80
-Running dot for graph 73/80
-Running dot for graph 74/80
-Running dot for graph 75/80
-Running dot for graph 76/80
-Running dot for graph 77/80
-Running dot for graph 78/80
-Running dot for graph 79/80
-Running dot for graph 80/80
-Patching output file 1/31
-Patching output file 2/31
-Patching output file 3/31
-Patching output file 4/31
-Patching output file 5/31
-Patching output file 6/31
-Patching output file 7/31
-Patching output file 8/31
-Patching output file 9/31
-Patching output file 10/31
-Patching output file 11/31
-Patching output file 12/31
-Patching output file 13/31
-Patching output file 14/31
-Patching output file 15/31
-Patching output file 16/31
-Patching output file 17/31
-Patching output file 18/31
-Patching output file 19/31
-Patching output file 20/31
-Patching output file 21/31
-Patching output file 22/31
-Patching output file 23/31
-Patching output file 24/31
-Patching output file 25/31
-Patching output file 26/31
-Patching output file 27/31
-Patching output file 28/31
-Patching output file 29/31
-Patching output file 30/31
-Patching output file 31/31
-lookup cache used 213/65536 hits=1088 misses=226
+Running dot for graph 1/95
+Running dot for graph 2/95
+Running dot for graph 3/95
+Running dot for graph 4/95
+Running dot for graph 5/95
+Running dot for graph 6/95
+Running dot for graph 7/95
+Running dot for graph 8/95
+Running dot for graph 9/95
+Running dot for graph 10/95
+Running dot for graph 11/95
+Running dot for graph 12/95
+Running dot for graph 13/95
+Running dot for graph 14/95
+Running dot for graph 15/95
+Running dot for graph 16/95
+Running dot for graph 17/95
+Running dot for graph 18/95
+Running dot for graph 19/95
+Running dot for graph 20/95
+Running dot for graph 21/95
+Running dot for graph 22/95
+Running dot for graph 23/95
+Running dot for graph 24/95
+Running dot for graph 25/95
+Running dot for graph 26/95
+Running dot for graph 27/95
+Running dot for graph 28/95
+Running dot for graph 29/95
+Running dot for graph 30/95
+Running dot for graph 31/95
+Running dot for graph 32/95
+Running dot for graph 33/95
+Running dot for graph 34/95
+Running dot for graph 35/95
+Running dot for graph 36/95
+Running dot for graph 37/95
+Running dot for graph 38/95
+Running dot for graph 39/95
+Running dot for graph 40/95
+Running dot for graph 41/95
+Running dot for graph 42/95
+Running dot for graph 43/95
+Running dot for graph 44/95
+Running dot for graph 45/95
+Running dot for graph 46/95
+Running dot for graph 47/95
+Running dot for graph 48/95
+Running dot for graph 49/95
+Running dot for graph 50/95
+Running dot for graph 51/95
+Running dot for graph 52/95
+Running dot for graph 53/95
+Running dot for graph 54/95
+Running dot for graph 55/95
+Running dot for graph 56/95
+Running dot for graph 57/95
+Running dot for graph 58/95
+Running dot for graph 59/95
+Running dot for graph 60/95
+Running dot for graph 61/95
+Running dot for graph 62/95
+Running dot for graph 63/95
+Running dot for graph 64/95
+Running dot for graph 65/95
+Running dot for graph 66/95
+Running dot for graph 67/95
+Running dot for graph 68/95
+Running dot for graph 69/95
+Running dot for graph 70/95
+Running dot for graph 71/95
+Running dot for graph 72/95
+Running dot for graph 73/95
+Running dot for graph 74/95
+Running dot for graph 75/95
+Running dot for graph 76/95
+Running dot for graph 77/95
+Running dot for graph 78/95
+Running dot for graph 79/95
+Running dot for graph 80/95
+Running dot for graph 81/95
+Running dot for graph 82/95
+Running dot for graph 83/95
+Running dot for graph 84/95
+Running dot for graph 85/95
+Running dot for graph 86/95
+Running dot for graph 87/95
+Running dot for graph 88/95
+Running dot for graph 89/95
+Running dot for graph 90/95
+Running dot for graph 91/95
+Running dot for graph 92/95
+Running dot for graph 93/95
+Running dot for graph 94/95
+Running dot for graph 95/95
+Patching output file 1/39
+Patching output file 2/39
+Patching output file 3/39
+Patching output file 4/39
+Patching output file 5/39
+Patching output file 6/39
+Patching output file 7/39
+Patching output file 8/39
+Patching output file 9/39
+Patching output file 10/39
+Patching output file 11/39
+Patching output file 12/39
+Patching output file 13/39
+Patching output file 14/39
+Patching output file 15/39
+Patching output file 16/39
+Patching output file 17/39
+Patching output file 18/39
+Patching output file 19/39
+Patching output file 20/39
+Patching output file 21/39
+Patching output file 22/39
+Patching output file 23/39
+Patching output file 24/39
+Patching output file 25/39
+Patching output file 26/39
+Patching output file 27/39
+Patching output file 28/39
+Patching output file 29/39
+Patching output file 30/39
+Patching output file 31/39
+Patching output file 32/39
+Patching output file 33/39
+Patching output file 34/39
+Patching output file 35/39
+Patching output file 36/39
+Patching output file 37/39
+Patching output file 38/39
+Patching output file 39/39
+lookup cache used 239/65536 hits=1155 misses=252
 finished...
