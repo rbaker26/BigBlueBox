@@ -42,16 +42,37 @@ void CategoryTest::testCatEnumVals()
 
 void CategoryTest::testEnumToString_data()
 {
-    typedef bbb::Category::categoryType cat;
-
-    QTest::addColumn<cat>("catEmum");
+    QTest::addColumn<bbb::Category::categoryType>("catEmum");
     QTest::addColumn<QString>("result");
 
-    QTest::newRow("KITCHEN") << cat::KITCHEN << "Kitchen";
-    QTest::newRow("PROPANE") << cat::PROPANE << "Propane / Stoves";
-    QTest::newRow("CRAFTS ") << cat::CRAFTS  << "Arts and Crafts";
-    QTest::newRow("TARPS  ") << cat::TARPS   << "Tarps";
-    QTest::newRow("OFFICE ") << cat::OFFICE  << "Office";
+    QTest::newRow("KITCHEN") << bbb::Category::categoryType::KITCHEN << "Kitchen";
+    QTest::newRow("PROPANE") << bbb::Category::categoryType::PROPANE << "Propane / Stoves";
+    QTest::newRow("CRAFTS ") << bbb::Category::categoryType::CRAFTS  << "Arts and Crafts";
+    QTest::newRow("TARPS  ") << bbb::Category::categoryType::TARPS   << "Tarps";
+    QTest::newRow("OFFICE ") << bbb::Category::categoryType::OFFICE  << "Office";
+
+
+}
+
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+void CategoryTest::testEnumToString()
+{
+    //************************************************************
+    //* Testing begins here
+    //************************************************************
+    QFETCH(bbb::Category::categoryType, catEnum);
+    QFETCH(QString, result);
+    QCOMPARE(bbb::Category::categoryToQString(catEnum), result);
+    //************************************************************
+}
+
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+void CategoryTest::testIntToString_data()
+{
+    QTest::addColumn<int>("catNum");
+    QTest::addColumn<QString>("result");
 
     QTest::newRow("Int 1 ")  << 1 << "Kitchen";
     QTest::newRow("Int 2 ")  << 2 << "Propane / Stoves";
@@ -63,16 +84,14 @@ void CategoryTest::testEnumToString_data()
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-void CategoryTest::testEnumToString()
+void CategoryTest::testIntToString()
 {
-    typedef bbb::Category::categoryType cat;
-
     //************************************************************
     //* Testing begins here
     //************************************************************
-    QFETCH(cat, catEnum);
+    QFETCH(int, catNum);
     QFETCH(QString, result);
-    QCOMPARE(bbb::Category::categoryToQString(catEnum), result);
+    QCOMPARE(catNum, result);
     //************************************************************
 }
 

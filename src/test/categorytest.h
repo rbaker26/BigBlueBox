@@ -40,6 +40,13 @@ private slots:
     //! \author Bob Baker
     void testEnumToString();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //! \brief Test Data for testIntToString()
+    //! \author Bob Baker
+    void testIntToString_data();
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //! \brief Tests int to QString conversions
+    //! \author Bob Baker
+    void testIntToString();
     //************************************************************
 
 }; // end class
