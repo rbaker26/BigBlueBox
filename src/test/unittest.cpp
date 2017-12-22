@@ -7,14 +7,14 @@ UnitTest::UnitTest() {}
 void UnitTest::run()
 {
     //********************************************************
-    //* Testing the class Customer
+    //* Testing the class _RegexTest
     //*-------------------------------------------------------
-    //* This will test the methods in the customer class.  If
+    //* This will test the methods in the _Regex class.  If
     //*  any tests fails, travis.ci will display the failed
     //*  test in the log file and the build will fail.
     //********************************************************
-//    CustomerTest customerTest;
-//    QTest::qExec(&customerTest);
+    _RegexTest rxt;
+    QTest::qExec(&rxt);
     //********************************************************
 
 

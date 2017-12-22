@@ -13,6 +13,7 @@
 //#include "CustomerTest.h"
 //#include "sqltest.h"
 
+#include "test/_regextest.h"
 
 namespace bbbTest {
 /***********************************************************************************/
