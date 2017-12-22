@@ -25,19 +25,22 @@ void _RegexTest::testTest()
 
 void _RegexTest::testIsItemName_data()
 {
+    // Setting up Columns for testing.
     QTest::addColumn<QString>("itemName");
     QTest::addColumn<bool>("result");
 
+    // Casing
     QTest::newRow("all lower ") << "mypot"  << true;
     QTest::newRow("mixed case") << "MyPot"  << true;
     QTest::newRow("upper case") << "MYPOT"  << true;
 
+    // Illegal Length
     QTest::newRow("too short ") << ""       << false;
     QTest::newRow("too long  ") << "abcdefghijklmnop"
                                    "qrstuvwxyz012345"
                                    "678910"
                                             << false;
-
+    // Legal Symbols
     QTest::newRow("beg w. num") << "5myPot" << true;
     QTest::newRow("beg w. (  ") << "(myPot" << true;
     QTest::newRow("beg w. )  ") << ")myPot" << true;
@@ -98,6 +101,7 @@ void _RegexTest::testIsItemName_data()
 
 void _RegexTest::testIsItemName()
 {
+    qDebug() << endl;
     //************************************************************
     //* Testing begins here
     //************************************************************
@@ -117,5 +121,6 @@ void _RegexTest::testIsItemName()
     //QCOMPARE( actual, expected)
     QCOMPARE(rx::isItemName(itemName), result);
     //************************************************************
+    qDebug() << endl;
 }
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
