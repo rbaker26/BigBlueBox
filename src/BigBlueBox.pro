@@ -67,6 +67,8 @@ FORMS += \
         
 test {
 
+SOURCES -= main.cpp
+
 SOURCES += \
         test/unittest.cpp   \
         test/main.cpp       \
