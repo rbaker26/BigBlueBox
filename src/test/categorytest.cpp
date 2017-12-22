@@ -43,14 +43,21 @@ void CategoryTest::testCatEnumVals()
 void CategoryTest::testEnumToString_data()
 {
     typedef bbb::Category::categoryType cat;
+
     QTest::addColumn<cat>("catEmum");
     QTest::addColumn<QString>("result");
 
     QTest::newRow("KITCHEN") << cat::KITCHEN << "Kitchen";
     QTest::newRow("PROPANE") << cat::PROPANE << "Propane / Stoves";
-    QTest::newRow("CRAFTS") << cat::CRAFTS << "Arts and Crafts";
-    QTest::newRow("TARPS") << cat::TARPS << "Tarps";
-    QTest::newRow("OFFICE") << cat::OFFICE << "Office";
+    QTest::newRow("CRAFTS")  << cat::CRAFTS  << "Arts and Crafts";
+    QTest::newRow("TARPS")   << cat::TARPS   << "Tarps";
+    QTest::newRow("OFFICE")  << cat::OFFICE  << "Office";
+
+    QTest::newRow("Int 1 ")  << 1 << "Kitchen";
+    QTest::newRow("Int 2 ")  << 2 << "Propane / Stoves";
+    QTest::newRow("Int 3 ")  << 3 << "Arts and Crafts";
+    QTest::newRow("Int 4 ")  << 4 << "Tarps";
+    QTest::newRow("Int 5 ")  << 5 << "Office";
 
 }
 
