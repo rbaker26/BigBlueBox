@@ -14,6 +14,7 @@
 //#include "sqltest.h"
 
 #include "test/_regextest.h"
+#include "test/categorytest.h"
 
 namespace bbbTest {
 /***********************************************************************************/

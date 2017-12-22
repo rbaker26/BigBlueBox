@@ -28,7 +28,7 @@ private slots:
     //! \author Bob Baker
     void testTest();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-    //! \brief Tests the values of the enums
+    //! \brief Tests the int values of the enums
     //! \author Bob Baker
     void testCatEnumVals();
     //************************************************************

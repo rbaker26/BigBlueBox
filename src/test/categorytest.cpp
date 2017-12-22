@@ -26,9 +26,14 @@ void CategoryTest::testTest()
 
 void CategoryTest::testCatEnumVals()
 {
+    typedef bbb::Category::categoryType cat;
     //************************************************************
     //* Testing begins here
     //************************************************************
-
+    QVERIFY(static_cast<int>(cat::KITCHEN) == 1);
+    QVERIFY(static_cast<int>(cat::PROPANE) == 2);
+    QVERIFY(static_cast<int>(cat::CRAFTS)  == 3);
+    QVERIFY(static_cast<int>(cat::TARPS)   == 4);
+    QVERIFY(static_cast<int>(cat::OFFICE)  == 5);
     //************************************************************
 }
