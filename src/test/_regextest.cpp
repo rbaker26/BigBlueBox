@@ -74,9 +74,9 @@ void _RegexTest::testIsItemName_data()
     QTest::newRow("beg w. %  ") << "%myPot" << false;
     QTest::newRow("has    %  ") << "my%Pot" << false;
     QTest::newRow("end w. %  ") << "myPot%" << false;
-    QTest::newRow("beg w. \^ ") << "\^myPot" << false;
-    QTest::newRow("has    \^ ") << "my\^Pot" << false;
-    QTest::newRow("end w. \^ ") << "myPot\^" << false;
+    QTest::newRow("beg w. \^ ") << "\\^myPot" << false;
+    QTest::newRow("has    \^ ") << "my\\^Pot" << false;
+    QTest::newRow("end w. \^ ") << "myPot\\^" << false;
     QTest::newRow("beg w. &  ") << "&myPot" << false;
     QTest::newRow("has    &  ") << "my&Pot" << false;
     QTest::newRow("end w. &  ") << "myPot&" << false;
