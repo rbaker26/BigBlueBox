@@ -43,7 +43,7 @@ SOURCES += \
         gearcentral.cpp \
         usersession.cpp \
         _filewriter.cpp \
-    test/categorytest.cpp
+
 
 
         
@@ -58,7 +58,7 @@ HEADERS += \
         usersession.h   \
         _filewriter.h   \
         bbb.h           \
-    test/categorytest.h
+
 
 
         
@@ -67,20 +67,28 @@ FORMS += \
         reportsView.ui  \
         gearcentral.ui  \
         
+RESOURCES += \
+    ../rec/rec.qrc \
+
 test {
 
 SOURCES -= main.cpp
 
 SOURCES += \
-        test/unittest.cpp   \
-        test/main.cpp       \
-        test/_regextest.cpp \
+        test/unittest.cpp     \
+        test/main.cpp         \
+        test/_regextest.cpp   \
+        test/categorytest.cpp \
+
 
 HEADERS += \
-        test/unittest.h   \
-        test/_regextest.h \
+        test/unittest.h     \
+        test/_regextest.h   \
+        test/categorytest.h \
+
+RESOURCES -= \
+    ../rec/rec.qrc \
 }
 
-RESOURCES += \
-    ../rec/rec.qrc
+
 
