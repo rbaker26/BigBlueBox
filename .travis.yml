@@ -34,11 +34,9 @@ before_install:
 install:
  - sudo apt-get update
  - sudo apt-get install qt5-default qttools5-dev-tools
+ 
 script:
  - ./configure --enable-gcov && make && make check
-after_success:
- - coveralls --exclude lib --exclude tests --gcov-options '\-lp'
-script:
  - qmake "CONFIG+=test" src/BigBlueBox.pro #we gonna compile for Unit test first
  - make
  - ./BigBlueBox #run unit test
@@ -50,6 +48,7 @@ script:
 
 # Generate and deploy documentation
 after_success:
+  - coveralls --exclude lib --exclude tests --gcov-options '\-lp'
   - cd $TRAVIS_BUILD_DIR
   - chmod +x generateDocumentationAndDeploy.sh
   - ./generateDocumentationAndDeploy.sh
