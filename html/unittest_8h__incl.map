@@ -1,4 +1,6 @@
 <map id="/home/travis/build/rbaker26/BigBlueBox/src/test/unittest.h" name="/home/travis/build/rbaker26/BigBlueBox/src/test/unittest.h">
-<area shape="rect" id="node5" href="$__regextest_8h.html" title="test/_regextest.h" alt="" coords="121,109,241,136"/>
-<area shape="rect" id="node6" href="$__regex_8h.html" title="_regex.h" alt="" coords="100,184,172,211"/>
+<area shape="rect" id="node5" href="$__regextest_8h.html" title="test/_regextest.h" alt="" coords="89,109,209,136"/>
+<area shape="rect" id="node8" href="$categorytest_8h.html" title="test/categorytest.h" alt="" coords="335,109,464,136"/>
+<area shape="rect" id="node6" href="$__regex_8h.html" title="_regex.h" alt="" coords="40,184,112,211"/>
+<area shape="rect" id="node9" href="$category_8h.html" title="category.h" alt="" coords="420,184,501,211"/>
 </map>
