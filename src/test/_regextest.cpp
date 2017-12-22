@@ -36,14 +36,14 @@ void _RegexTest::testIsItemName_data()
     QTest::newRow("beg w. (  ") << "(myPot" << true;
     QTest::newRow("beg w. )  ") << ")myPot" << true;
     QTest::newRow("beg w. .  ") << ".myPot" << true;
-    QTest::newRow("beg w. -  ") << "\-myPot" << true;  // has issue
+    QTest::newRow("beg w. -  ") << "-myPot" << true;  // has issue // removed \ /
     QTest::newRow("beg w. _  ") << "_myPot" << true;
 
     QTest::newRow("end w. num") << "5myPot" << true;
     QTest::newRow("end w. (  ") << "myPot(" << true;
     QTest::newRow("end w. )  ") << "myPot)" << true;
     QTest::newRow("end w. .  ") << "myPot." << true;
-    QTest::newRow("end w. -  ") << "myPot\-" << true; // has issue
+    QTest::newRow("end w. -  ") << "myPot-" << true; // has issue // removed \ /
     QTest::newRow("end w. _  ") << "myPot_" << true;
 
     QTest::newRow("has ()    ") << "myP()t" << true;
@@ -74,9 +74,9 @@ void _RegexTest::testIsItemName_data()
     QTest::newRow("beg w. %  ") << "%myPot" << false;
     QTest::newRow("has    %  ") << "my%Pot" << false;
     QTest::newRow("end w. %  ") << "myPot%" << false;
-    QTest::newRow("beg w. \^ ") << "^myPot" << false; // has issue
-    QTest::newRow("has    \^ ") << "my\^Pot" << false;
-    QTest::newRow("end w. \^ ") << "myPot\^" << false;
+    QTest::newRow("beg w. ^  ") << "^myPot" << false; // has issue
+    QTest::newRow("has    ^  ") << "my^Pot" << false;
+    QTest::newRow("end w. ^  ") << "myPot^" << false;
     QTest::newRow("beg w. &  ") << "&myPot" << false;
     QTest::newRow("has    &  ") << "my&Pot" << false;
     QTest::newRow("end w. &  ") << "myPot&" << false;
@@ -86,9 +86,9 @@ void _RegexTest::testIsItemName_data()
     QTest::newRow("beg w. +  ") << "+myPot" << false;
     QTest::newRow("has    +  ") << "my+Pot" << false;
     QTest::newRow("end w. +  ") << "myPot+" << false;
-    QTest::newRow("beg w. \\= ") << "=myPot" << false; // has issue
-    QTest::newRow("has    \\= ") << "my=Pot" << false;
-    QTest::newRow("end w. \\= ") << "myPot=" << false;
+    QTest::newRow("beg w. =  ") << "=myPot" << false; // has issue
+    QTest::newRow("has    =  ") << "my=Pot" << false;
+    QTest::newRow("end w. =  ") << "myPot=" << false;
     QTest::newRow("beg w. ~  ") << "~myPot" << false;
     QTest::newRow("has    ~  ") << "my~Pot" << false;
     QTest::newRow("end w. ~  ") << "myPot~" << false;
