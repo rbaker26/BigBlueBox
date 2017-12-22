@@ -49,9 +49,9 @@ void CategoryTest::testEnumToString_data()
 
     QTest::newRow("KITCHEN") << cat::KITCHEN << "Kitchen";
     QTest::newRow("PROPANE") << cat::PROPANE << "Propane / Stoves";
-    QTest::newRow("CRAFTS")  << cat::CRAFTS  << "Arts and Crafts";
-    QTest::newRow("TARPS")   << cat::TARPS   << "Tarps";
-    QTest::newRow("OFFICE")  << cat::OFFICE  << "Office";
+    QTest::newRow("CRAFTS ") << cat::CRAFTS  << "Arts and Crafts";
+    QTest::newRow("TARPS  ") << cat::TARPS   << "Tarps";
+    QTest::newRow("OFFICE ") << cat::OFFICE  << "Office";
 
     QTest::newRow("Int 1 ")  << 1 << "Kitchen";
     QTest::newRow("Int 2 ")  << 2 << "Propane / Stoves";
@@ -65,14 +65,14 @@ void CategoryTest::testEnumToString_data()
 
 void CategoryTest::testEnumToString()
 {
-    bbb::Category cat;
+    typedef bbb::Category::categoryType cat;
 
     //************************************************************
     //* Testing begins here
     //************************************************************
     QFETCH(cat, catEnum);
     QFETCH(QString, result);
-    QCOMPARE(cat.categoryToQString(catEnum), result);
+    QCOMPARE(bbb::Category::categoryToQString(catEnum), result);
     //************************************************************
 }
 
