@@ -22,7 +22,7 @@ QString Category::categoryToQString(Category::categoryType cat)
 //*********************************************************************************
 QString Category::categoryToQString(int cat)
 {
-    QStringList categoryStrLs = QStringList() << "Kitchen" <<
+    QStringList categoryStrLs = QStringList() << "No Opp" << "Kitchen" <<
                      "Propane / Stoves" <<
                      "Arts and Crafts" <<
                      "Tarps" <<

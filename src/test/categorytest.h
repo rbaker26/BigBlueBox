@@ -28,9 +28,17 @@ private slots:
     //! \author Bob Baker
     void testTest();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-    //! \brief Tests the values of the enums
+    //! \brief Tests the int values of the enums
     //! \author Bob Baker
     void testCatEnumVals();
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //! \brief Test Data for testIntToString()
+    //! \author Bob Baker
+    void testIntToString_data();
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //! \brief Tests int to QString conversions
+    //! \author Bob Baker
+    void testIntToString();
     //************************************************************
 
 }; // end class
