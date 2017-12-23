@@ -42,6 +42,8 @@ void CategoryTest::testCatEnumVals()
 
 void CategoryTest::testEnumToString_data()
 {
+    Q_DECLARE_METATYPE(bbb::Category::categoryType);
+
     QTest::addColumn<bbb::Category::categoryType>("catEmum");
     QTest::addColumn<QString>("result");
 
@@ -58,6 +60,7 @@ void CategoryTest::testEnumToString_data()
 
 void CategoryTest::testEnumToString()
 {
+    Q_DECLARE_METATYPE(bbb::Category::categoryType);
     //************************************************************
     //* Testing begins here
     //************************************************************
@@ -71,6 +74,7 @@ void CategoryTest::testEnumToString()
 
 void CategoryTest::testIntToString_data()
 {
+    Q_DECLARE_METATYPE(bbb::Category::categoryType);
     QTest::addColumn<int>("catNum");
     QTest::addColumn<QString>("result");
 
@@ -79,13 +83,13 @@ void CategoryTest::testIntToString_data()
     QTest::newRow("Int 3 ")  << 3 << "Arts and Crafts";
     QTest::newRow("Int 4 ")  << 4 << "Tarps";
     QTest::newRow("Int 5 ")  << 5 << "Office";
-
 }
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
 void CategoryTest::testIntToString()
 {
+    Q_DECLARE_METATYPE(bbb::Category::categoryType);
     //************************************************************
     //* Testing begins here
     //************************************************************
