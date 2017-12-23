@@ -42,16 +42,17 @@ void CategoryTest::testCatEnumVals()
 
 void CategoryTest::testEnumToString_data()
 {
-    Q_DECLARE_METATYPE(bbb::Category::categoryType);
+    typedef bbb::Category::categoryType cat;
+    cat catArray[] = { cat::KITCHEN, cat::PROPANE, cat::CRAFTS, cat::TARPS, cat::OFFICE};
 
     QTest::addColumn<bbb::Category::categoryType>("catEmum");
     QTest::addColumn<QString>("result");
 
-    QTest::newRow("KITCHEN") << bbb::Category::categoryType::KITCHEN << "Kitchen";
-    QTest::newRow("PROPANE") << bbb::Category::categoryType::PROPANE << "Propane / Stoves";
-    QTest::newRow("CRAFTS ") << bbb::Category::categoryType::CRAFTS  << "Arts and Crafts";
-    QTest::newRow("TARPS  ") << bbb::Category::categoryType::TARPS   << "Tarps";
-    QTest::newRow("OFFICE ") << bbb::Category::categoryType::OFFICE  << "Office";
+    QTest::newRow("KITCHEN") << catArray[0] << "Kitchen";
+    QTest::newRow("PROPANE") << catArray[1] << "Propane / Stoves";
+    QTest::newRow("CRAFTS ") << catArray[2] << "Arts and Crafts";
+    QTest::newRow("TARPS  ") << catArray[3] << "Tarps";
+    QTest::newRow("OFFICE ") << catArray[4] << "Office";
 
 
 }
@@ -74,7 +75,6 @@ void CategoryTest::testEnumToString()
 
 void CategoryTest::testIntToString_data()
 {
-    Q_DECLARE_METATYPE(bbb::Category::categoryType);
     QTest::addColumn<int>("catNum");
     QTest::addColumn<QString>("result");
 
@@ -89,13 +89,13 @@ void CategoryTest::testIntToString_data()
 
 void CategoryTest::testIntToString()
 {
-    Q_DECLARE_METATYPE(bbb::Category::categoryType);
+
     //************************************************************
     //* Testing begins here
     //************************************************************
     QFETCH(int, catNum);
     QFETCH(QString, result);
-    QCOMPARE(catNum, result);
+    QCOMPARE(bbb::Category::categoryToQString(catNum), result);
     //************************************************************
 }
 
