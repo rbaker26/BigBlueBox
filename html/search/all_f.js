@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['reportsview',['ReportsView',['../class_reports_view.html',1,'ReportsView'],['../class_reports_view.html#a3386fadacc4633e21c1759df01a45efd',1,'ReportsView::ReportsView()']]],
-  ['reportsview_2ecpp',['reportsView.cpp',['../reports_view_8cpp.html',1,'']]],
-  ['reportsview_2eh',['reportsView.h',['../reports_view_8h.html',1,'']]],
-  ['roles',['Roles',['../classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cb',1,'bbb::UserSession']]],
-  ['root',['ROOT',['../classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cba17df6dcf118c88604b92ffe2d99cd998',1,'bbb::UserSession']]],
-  ['row',['Row',['../structbbb_1_1_row.html',1,'bbb']]],
-  ['rowforupdate',['rowForUpdate',['../class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88',1,'ReportsView']]],
-  ['run',['run',['../classbbb_test_1_1_unit_test.html#ab007b0ca0f5cf3f165305e71d67b20c0',1,'bbbTest::UnitTest']]]
+  ['qcleanupresources_5frec',['qCleanupResources_rec',['../qrc__rec_8cpp.html#ab4ed91aa7b325c67a8e8710ca6f2138e',1,'qrc_rec.cpp']]],
+  ['qinitresources_5frec',['qInitResources_rec',['../qrc__rec_8cpp.html#a7132920a38b3f4c88ac2484fa281c785',1,'qrc_rec.cpp']]],
+  ['qrc_5frec_2ecpp',['qrc_rec.cpp',['../qrc__rec_8cpp.html',1,'']]],
+  ['qregisterresourcedata',['qRegisterResourceData',['../qrc__rec_8cpp.html#ab3bec3d1e679084be46edc41e4c91bc1',1,'qrc_rec.cpp']]],
+  ['qt_5fresource_5fdata',['qt_resource_data',['../qrc__rec_8cpp.html#a67a985282ed24629b630f624b668842b',1,'qrc_rec.cpp']]],
+  ['qt_5fresource_5fname',['qt_resource_name',['../qrc__rec_8cpp.html#a7931167bf9d7e883e4194a60d031e431',1,'qrc_rec.cpp']]],
+  ['qt_5fresource_5fstruct',['qt_resource_struct',['../qrc__rec_8cpp.html#a37a83d7da2ee18badcd100d79aac64d4',1,'qrc_rec.cpp']]],
+  ['quantity',['quantity',['../classbbb_1_1_item.html#a445f85e16d26c0dc0edbf10cbe54a50c',1,'bbb::Item']]],
+  ['qunregisterresourcedata',['qUnregisterResourceData',['../qrc__rec_8cpp.html#ad65f8bca8010dd1fd135a28a085c6d03',1,'qrc_rec.cpp']]]
 ];

@@ -221,12 +221,12 @@ Generating call graph for function ReportsView::on_pushButton_edit_clicke/home/t
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: The following parameters of bbb::_Regex::isItemName(QString itemName) are not documented:
   parameter 'itemName'
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:42: warning: argument 'Category' of command @param is not found in the argument list of bbb::Category::categoryToQString(Category::categoryType cat)
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:42: warning: argument 'categoryType' of command @param is not found in the argument list of bbb::Category::categoryToQString(Category::categoryType cat)
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:42: warning: The following parameters of bbb::Category::categoryToQString(Category::categoryType cat) are not documented:
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:43: warning: argument 'Category' of command @param is not found in the argument list of bbb::Category::categoryToQString(Category::categoryType cat)
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:43: warning: argument 'categoryType' of command @param is not found in the argument list of bbb::Category::categoryToQString(Category::categoryType cat)
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:43: warning: The following parameters of bbb::Category::categoryToQString(Category::categoryType cat) are not documented:
   parameter 'cat'
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:50: warning: argument 'int' of command @param is not found in the argument list of bbb::Category::categoryToQString(int cat)
-/home/travis/build/rbaker26/BigBlueBox/src/category.h:50: warning: The following parameters of bbb::Category::categoryToQString(int cat) are not documented:
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:51: warning: argument 'int' of command @param is not found in the argument list of bbb::Category::categoryToQString(int cat)
+/home/travis/build/rbaker26/BigBlueBox/src/category.h:51: warning: The following parameters of bbb::Category::categoryToQString(int cat) are not documented:
   parameter 'cat'
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:42: warning: argument 'Category' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:42: warning: argument 'categoryType' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
@@ -430,5 +430,5 @@ Patching output file 39/42
 Patching output file 40/42
 Patching output file 41/42
 Patching output file 42/42
-lookup cache used 264/65536 hits=1232 misses=277
+lookup cache used 265/65536 hits=1234 misses=278
 finished...

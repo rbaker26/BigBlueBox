@@ -1,18 +1,12 @@
 var searchData=
 [
-  ['ui',['Ui',['../namespace_ui.html',1,'Ui'],['../class_gear_central.html#a80b047f4188ddf321170711ce7d90d7a',1,'GearCentral::ui()'],['../class_main_window.html#a35466a70ed47252a0191168126a352a5',1,'MainWindow::ui()'],['../class_reports_view.html#acca59cfce657d13b15ac68ae519bda30',1,'ReportsView::ui()']]],
-  ['unittest',['UnitTest',['../classbbb_test_1_1_unit_test.html#a67ddaff817b55a624741d32550052f4b',1,'bbbTest::UnitTest']]],
-  ['unittest',['UnitTest',['../classbbb_test_1_1_unit_test.html',1,'bbbTest']]],
-  ['unittest_2ecpp',['unittest.cpp',['../unittest_8cpp.html',1,'']]],
-  ['unittest_2eh',['unittest.h',['../unittest_8h.html',1,'']]],
-  ['updatedatabase',['updateDataBase',['../class_reports_view.html#ab58aa45a0fde5271c5ccf19da12a5f10',1,'ReportsView']]],
-  ['updateitem',['updateItem',['../classbbb_1_1_db_connect.html#a1794a5b641c117021fd6a2ffbde0028f',1,'bbb::DbConnect']]],
-  ['updatestoredvector',['updateStoredVector',['../class_reports_view.html#ab1abccf202bed57c66ad865886e6856e',1,'ReportsView']]],
-  ['user',['USER',['../classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cbafd5e188e220dab8b0166ff4602089cc0',1,'bbb::UserSession']]],
-  ['username',['userName',['../classbbb_1_1_user_session.html#a50067338e5bf30abb481e9cef523b9bd',1,'bbb::UserSession']]],
-  ['userrole',['userRole',['../classbbb_1_1_user_session.html#aca3af942c451749634dd550b2be249a1',1,'bbb::UserSession']]],
-  ['usersession',['UserSession',['../classbbb_1_1_user_session.html#abc1a059a8be662ee345a27940fb563c6',1,'bbb::UserSession']]],
-  ['usersession',['UserSession',['../classbbb_1_1_user_session.html',1,'bbb']]],
-  ['usersession_2ecpp',['usersession.cpp',['../usersession_8cpp.html',1,'']]],
-  ['usersession_2eh',['usersession.h',['../usersession_8h.html',1,'']]]
+  ['tarps',['TARPS',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daad8d6be49f49f7bd410de0e43f8e0e9cc',1,'bbb::Category']]],
+  ['testcatenumvals',['testCatEnumVals',['../classbbb_test_1_1_category_test.html#a6b8e930731c0cb0b55bad0aa70c2100b',1,'bbbTest::CategoryTest']]],
+  ['testenumtostring',['testEnumToString',['../classbbb_test_1_1_category_test.html#a741dbff3267c92a4c7c608d315fbefe9',1,'bbbTest::CategoryTest']]],
+  ['testenumtostring_5fdata',['testEnumToString_data',['../classbbb_test_1_1_category_test.html#a92dd8546e58affd773c8872e89ee9f25',1,'bbbTest::CategoryTest']]],
+  ['testinttostring',['testIntToString',['../classbbb_test_1_1_category_test.html#a9ee3cfeeb3ef2f0d2ba25f5e8736fd03',1,'bbbTest::CategoryTest']]],
+  ['testinttostring_5fdata',['testIntToString_data',['../classbbb_test_1_1_category_test.html#ad83d42e46b3e35651c4e98a8bddf4a76',1,'bbbTest::CategoryTest']]],
+  ['testisitemname',['testIsItemName',['../classbbb_test_1_1___regex_test.html#ada7fd54b12d91d356780b6ee1c9da02f',1,'bbbTest::_RegexTest']]],
+  ['testisitemname_5fdata',['testIsItemName_data',['../classbbb_test_1_1___regex_test.html#af1f630ee33f580e7726b2aac98407ee6',1,'bbbTest::_RegexTest']]],
+  ['testtest',['testTest',['../classbbb_test_1_1___regex_test.html#a0333bebb3755dc68c2cf5492cc8530f0',1,'bbbTest::_RegexTest::testTest()'],['../classbbb_test_1_1_category_test.html#a3d00e8ff136a5e5cc92ab6fde7829113',1,'bbbTest::CategoryTest::testTest()']]]
 ];
