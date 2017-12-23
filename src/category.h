@@ -29,6 +29,7 @@ public:
     //! \brief Holds all catagories that items belong to.
     //! \author Bob Baker
     enum categoryType {
+                NO_OPP  = 0,
                 KITCHEN = 1,
                 PROPANE = 2,
                 CRAFTS  = 3,
