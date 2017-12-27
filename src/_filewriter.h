@@ -3,6 +3,7 @@
 //*************************************************************************************
 #include <QFile>
 #include <QTextStream>
+#include <QXmlStreamWriter>
 
 #include <QVector>
 #include <QStringList>
