@@ -77,7 +77,7 @@ This project will follow the examples at [this](http://doc.qt.io/qt-5/qttestlib-
 This project uses standard C++ style and Doxygen comments on all function prototypes, class definitions and enum definitions.
 Doxygen comments should only be in .h files.  In .cpp files, regular C++ comments should be used.  
 
-For more in-depth details regarding style, [click here]() to go to the style page.
+For more in-depth details regarding style, [click here](./Style.md) to go to the style page.
 
 <br>
 
