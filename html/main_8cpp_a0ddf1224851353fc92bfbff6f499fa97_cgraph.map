@@ -1,7 +1,8 @@
 <map id="main" name="main">
 <area shape="rect" id="node2" href="$classbbb_1_1___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa" title="Singleton pointer return function. " alt="" coords="106,12,297,39"/>
-<area shape="rect" id="node4" href="$classbbb_1_1___file_writer.html#acee5ce66444735f37990f57afbfe1452" title="Writes a Inventory Report. " alt="" coords="105,63,298,89"/>
-<area shape="rect" id="node5" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="105,113,298,140"/>
+<area shape="rect" id="node4" href="$classbbb_1_1___file_writer.html#a9307d30ab35aa7e2572d13ec8bcffb47" title="Writes a Inventory Report to txt file. " alt="" coords="115,63,288,105"/>
+<area shape="rect" id="node5" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="105,129,298,156"/>
+<area shape="rect" id="node7" href="$classbbb_1_1___file_writer.html#ad225d4815b1da071e4f38ebe41a2d27d" title="Writes Inventory Report to xml file. " alt="" coords="113,181,290,222"/>
 <area shape="rect" id="node3" href="$classbbb_1_1___file_writer.html#abfb28b4697018a402c6e70afe8cc0320" title="Default no&#45;args constructor. " alt="" coords="381,5,504,46"/>
-<area shape="rect" id="node6" href="$classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="347,113,538,140"/>
+<area shape="rect" id="node6" href="$classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="347,129,538,156"/>
 </map>

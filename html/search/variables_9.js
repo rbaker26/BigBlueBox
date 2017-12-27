@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['ui',['ui',['../class_gear_central.html#a80b047f4188ddf321170711ce7d90d7a',1,'GearCentral::ui()'],['../class_main_window.html#a35466a70ed47252a0191168126a352a5',1,'MainWindow::ui()'],['../class_reports_view.html#acca59cfce657d13b15ac68ae519bda30',1,'ReportsView::ui()']]],
-  ['username',['userName',['../classbbb_1_1_user_session.html#a50067338e5bf30abb481e9cef523b9bd',1,'bbb::UserSession']]],
-  ['userrole',['userRole',['../classbbb_1_1_user_session.html#aca3af942c451749634dd550b2be249a1',1,'bbb::UserSession']]]
+  ['qt_5fresource_5fdata',['qt_resource_data',['../qrc__rec_8cpp.html#a67a985282ed24629b630f624b668842b',1,'qrc_rec.cpp']]],
+  ['qt_5fresource_5fname',['qt_resource_name',['../qrc__rec_8cpp.html#a7931167bf9d7e883e4194a60d031e431',1,'qrc_rec.cpp']]],
+  ['qt_5fresource_5fstruct',['qt_resource_struct',['../qrc__rec_8cpp.html#a37a83d7da2ee18badcd100d79aac64d4',1,'qrc_rec.cpp']]],
+  ['quantity',['quantity',['../classbbb_1_1_item.html#a445f85e16d26c0dc0edbf10cbe54a50c',1,'bbb::Item']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['password',['password',['../classbbb_1_1_user_session.html#affc75e2397262f8645bc03154b43f677',1,'bbb::UserSession']]]
+  ['modifiedby',['modifiedBy',['../classbbb_1_1_item.html#a0df8e99e3061466708529c747619ee7c',1,'bbb::Item']]]
 ];

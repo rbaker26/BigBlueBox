@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['effectiveonhand',['effectiveOnHand',['../classbbb_1_1_item.html#a97d5da951be5b27f80c6a1a4cb71d97b',1,'bbb::Item']]]
+  ['datemodified',['dateModified',['../classbbb_1_1_item.html#af3bc97b2e3e9b8c2d521a8db12732e4b',1,'bbb::Item']]]
 ];
