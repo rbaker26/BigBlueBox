@@ -34,7 +34,7 @@ _FileWriter* _FileWriter::getInstance()
 //*********************************************************************************
 
 //*********************************************************************************
-void _FileWriter::makeReport(QVector<Item> inventory)
+void _FileWriter::makeTxtInvReport(QVector<Item> inventory)
 {
     const int NAME_COL_SIZE = 30;
     const int OTHER_COL_SIZE = 14;
@@ -87,5 +87,43 @@ void _FileWriter::makeReport(QVector<Item> inventory)
         it++;
     }
 
+}
+//*********************************************************************************
+
+//*********************************************************************************
+void _FileWriter::makeXmlInvReport(QVector<Item> inventory)
+{
+
+    QFile file("../FULL_INVENTORY_REPORT.xml");
+    file.open(QIODevice::WriteOnly);
+    QXmlStreamWriter stream(&file);
+
+    QVector<Item>::iterator it = inventory.begin();
+    const QVector<Item>::iterator EXIT_FLAG = inventory.end();
+
+
+    stream.setAutoFormatting(true);
+    stream.writeStartDocument();
+
+    stream.writeStartElement("inventory");
+    while(it != EXIT_FLAG)
+    {
+        stream.writeStartElement("item");
+        stream.writeAttribute("dateModified", it->dateModified.toString());
+        stream.writeAttribute("modifiedBy", it->modifiedBy);
+
+        stream.writeTextElement("itemName", it->itemName);
+        stream.writeTextElement("quantity", QString::number(it->quantity));
+        stream.writeTextElement("targetQuantity", QString::number(it->effectiveOnHand));
+        stream.writeTextElement("needed", QString::number(it->quantity < it->effectiveOnHand
+                                                          ? it->effectiveOnHand - it->quantity
+                                                          : 0));
+        stream.writeEndElement();
+        it++;
+    }
+    stream.writeEndElement();
+
+
+    stream.writeEndDocument();
 }
 //*********************************************************************************

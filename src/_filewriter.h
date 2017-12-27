@@ -50,14 +50,23 @@ public:
     //**********************************************************
 
     //**********************************************************
-    //! \brief   Writes a Inventory Report.
+    //! \brief   Writes a Inventory Report to txt file.
     //! \details Takes in Vector<Item> then formats and writes
-    //!          it to a file.
+    //!          it to a .txt file.
     //! \author  Bob Baker
     // every option should also have a output to .csv option as well
     // can be controled via combo box dropdown in reports veiw.
-     void makeReport(QVector<Item> inventory);
+     void makeTxtInvReport(QVector<Item> inventory);
      //**********************************************************
+
+     //**********************************************************
+     //! \brief Writes Inventory Report to xml file
+     //! \details Takes in Vector<Item> then formats and writes
+     //!          it to a .xml file.
+     //! \author Bob Baker
+     void makeXmlInvReport(QVector<Item> inventory);
+     //**********************************************************
+
 
 }; // end class
 //*********************************************************************************

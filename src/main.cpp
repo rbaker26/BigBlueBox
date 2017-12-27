@@ -36,7 +36,8 @@ int main(int argc, char *argv[])
 //    _FileWriter* fw = _FileWriter::getInstance();
 //    fw->makeReport(DbConnect::getInstance()->getFullInvAsVector());
 
-    bbb::_FileWriter::getInstance()->makeReport(bbb::DbConnect::getInstance()->getFullInvAsVector());
+    bbb::_FileWriter::getInstance()->makeTxtInvReport(bbb::DbConnect::getInstance()->getFullInvAsVector());
+    bbb::_FileWriter::getInstance()->makeXmlInvReport(bbb::DbConnect::getInstance()->getFullInvAsVector());
 
    return a.exec();
 }

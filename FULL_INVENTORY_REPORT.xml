@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventory>
+    <item dateModified="" modifiedBy="">
+        <itemName>spatula</itemName>
+        <quantity>73</quantity>
+        <targetQuantity>35</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>wooden spoon</itemName>
+        <quantity>5</quantity>
+        <targetQuantity>5</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>tongs</itemName>
+        <quantity>38</quantity>
+        <targetQuantity>10</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>wisk</itemName>
+        <quantity>1</quantity>
+        <targetQuantity>5</targetQuantity>
+        <needed>4</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>pasta spoon</itemName>
+        <quantity>4</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>ladle</itemName>
+        <quantity>4</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>strainer spoon</itemName>
+        <quantity>12</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>measuring cups (set)</itemName>
+        <quantity>1</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>sponges</itemName>
+        <quantity>57</quantity>
+        <targetQuantity>30</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>dish washing brush</itemName>
+        <quantity>21</quantity>
+        <targetQuantity>15</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>steel wool</itemName>
+        <quantity>12</quantity>
+        <targetQuantity>10</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>cutting board</itemName>
+        <quantity>55</quantity>
+        <targetQuantity>20</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>dish soap</itemName>
+        <quantity>21</quantity>
+        <targetQuantity>25</targetQuantity>
+        <needed>4</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>hand sanitizer</itemName>
+        <quantity>13</quantity>
+        <targetQuantity>25</targetQuantity>
+        <needed>12</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>hand soap</itemName>
+        <quantity>9</quantity>
+        <targetQuantity>15</targetQuantity>
+        <needed>6</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>sanitizer tablets (bottle)</itemName>
+        <quantity>3</quantity>
+        <targetQuantity>5</targetQuantity>
+        <needed>2</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>salad fork</itemName>
+        <quantity>20</quantity>
+        <targetQuantity>10</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>dinner fork</itemName>
+        <quantity>20</quantity>
+        <targetQuantity>10</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>sm dinner knife</itemName>
+        <quantity>20</quantity>
+        <targetQuantity>5</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>dinner spoon</itemName>
+        <quantity>20</quantity>
+        <targetQuantity>5</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>kitchen cutting knife</itemName>
+        <quantity>60</quantity>
+        <targetQuantity>10</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>kitchen knife sharpener</itemName>
+        <quantity>18</quantity>
+        <targetQuantity>3</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>skillet (small)</itemName>
+        <quantity>7</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>pot (extra lg)</itemName>
+        <quantity>2</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>pot (big)</itemName>
+        <quantity>3</quantity>
+        <targetQuantity>1</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>mixing bowl</itemName>
+        <quantity>1</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>plates (mess kit)</itemName>
+        <quantity>12</quantity>
+        <targetQuantity>5</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>oven mitts</itemName>
+        <quantity>70</quantity>
+        <targetQuantity>20</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>serving spoon</itemName>
+        <quantity>2</quantity>
+        <targetQuantity>5</targetQuantity>
+        <needed>3</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>pan (large)</itemName>
+        <quantity>2</quantity>
+        <targetQuantity>2</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>pot lid (various)</itemName>
+        <quantity>18</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>salad bowl</itemName>
+        <quantity>20</quantity>
+        <targetQuantity>3</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>pot (med)</itemName>
+        <quantity>4</quantity>
+        <targetQuantity>2</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>kettle</itemName>
+        <quantity>2</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>bowl (med)</itemName>
+        <quantity>7</quantity>
+        <targetQuantity>2</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>tupperware (small)</itemName>
+        <quantity>3</quantity>
+        <targetQuantity>15</targetQuantity>
+        <needed>12</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>lighters</itemName>
+        <quantity>140</quantity>
+        <targetQuantity>25</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>match box</itemName>
+        <quantity>13</quantity>
+        <targetQuantity>5</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>propane regulator</itemName>
+        <quantity>15</quantity>
+        <targetQuantity>7</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>propane tank (green)</itemName>
+        <quantity>70</quantity>
+        <targetQuantity>25</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>lantern mantles</itemName>
+        <quantity>50</quantity>
+        <targetQuantity>20</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>propane Y-spliter</itemName>
+        <quantity>0</quantity>
+        <targetQuantity>2</targetQuantity>
+        <needed>2</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>glue (white)</itemName>
+        <quantity>3</quantity>
+        <targetQuantity>2</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>glue (wood)</itemName>
+        <quantity>7</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>glue (felt)</itemName>
+        <quantity>9</quantity>
+        <targetQuantity>10</targetQuantity>
+        <needed>1</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>scissors</itemName>
+        <quantity>16</quantity>
+        <targetQuantity>5</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>tape (duct)</itemName>
+        <quantity>18</quantity>
+        <targetQuantity>10</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>tape (blue)</itemName>
+        <quantity>24</quantity>
+        <targetQuantity>3</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>tape (packing)</itemName>
+        <quantity>12</quantity>
+        <targetQuantity>5</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>tape (scotch)</itemName>
+        <quantity>4</quantity>
+        <targetQuantity>3</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>tape (electrical)</itemName>
+        <quantity>2</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>tarp (med)</itemName>
+        <quantity>70</quantity>
+        <targetQuantity>30</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>tarp (large)</itemName>
+        <quantity>13</quantity>
+        <targetQuantity>5</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>letter opener</itemName>
+        <quantity>1</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>binder rings</itemName>
+        <quantity>20</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>push pins</itemName>
+        <quantity>50</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>lable sheet</itemName>
+        <quantity>10</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>note cards</itemName>
+        <quantity>150</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>sheet lifters</itemName>
+        <quantity>23</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>safety pins</itemName>
+        <quantity>15</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>rubber bands</itemName>
+        <quantity>20</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>paper clips</itemName>
+        <quantity>10</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>paper (ream)</itemName>
+        <quantity>2</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>sheet protectors</itemName>
+        <quantity>200</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>clip board</itemName>
+        <quantity>13</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>pens (ball point)</itemName>
+        <quantity>33</quantity>
+        <targetQuantity>20</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>sharpies</itemName>
+        <quantity>23</quantity>
+        <targetQuantity>10</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>notery seals (package)</itemName>
+        <quantity>1</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>expo markers</itemName>
+        <quantity>5</quantity>
+        <targetQuantity>20</targetQuantity>
+        <needed>15</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>name badge lables</itemName>
+        <quantity>100</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>AA batteries</itemName>
+        <quantity>16</quantity>
+        <targetQuantity>30</targetQuantity>
+        <needed>14</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>AAA batteries</itemName>
+        <quantity>0</quantity>
+        <targetQuantity>50</targetQuantity>
+        <needed>50</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>paper binder clips (assort.)</itemName>
+        <quantity>48</quantity>
+        <targetQuantity>10</targetQuantity>
+        <needed>0</needed>
+    </item>
+    <item dateModified="" modifiedBy="">
+        <itemName>hole punch</itemName>
+        <quantity>2</quantity>
+        <targetQuantity>0</targetQuantity>
+        <needed>0</needed>
+    </item>
+</inventory>

@@ -4,6 +4,7 @@
 //*********************************************************************************
 #include <QString>
 #include "category.h"
+#include <QDate>
 //*********************************************************************************
 
 namespace bbb {
@@ -36,6 +37,10 @@ public:
     bool     canExpire;
     //! \brief Category::categoryType
     bbb::Category::categoryType category;
+    //! \brief Date it was modified
+    QDate dateModified;
+     //! \brief User who last modified the item
+    QString modifiedBy;
     //**********************************************************
 
     //**********************************************************
