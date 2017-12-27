@@ -19,7 +19,7 @@
 namespace bbbTest {
 /***********************************************************************************/
 //! \class   UnitTest
-//! \brief   Starts the regression an unit testing
+//! \brief   Starts the regression and unit testing
 //! \details This file is only on included in test builds.  It will not be
 //!             complied debug or release builds. It will be used by travis.ci to
 //!             run unit tests.
