@@ -131,25 +131,28 @@ void ReportsView::on_pushButton_edit_clicked()
     thisRow.category = static_cast<bbb::Category::categoryType>(ui->lineEdit_cat->text().toInt());
     thisRow.effectiveOnHand = ui->spinBox_targetQ->value();
     thisRow.boxNum = ui->lineEdit_box->text().toInt();
+    thisRow.dateModified = QDateTime::currentDateTime();
+    //thisRow.modifiedBy // do something
+
 //    bool inputFieldsHaveChanged = 0;
+
+    // ***************
+    qDebug() <<
+    (rx::isItemName( ui->lineEdit_itemName->text()) ? "REGEX SUCCESS" : "REGEX FAIL" );
+    // ***************
     if(regexPass)
     {
         // push to db
         bbb::DbConnect::getInstance()->updateItem(orgItemName, thisRow);
         qDebug() << "Push to db";
-
     }
-    // ***************
-    qDebug() <<
-    (rx::isItemName( ui->lineEdit_itemName->text()) ? "REGEX SUCCESS" : "REGEX FAIL" );
-    // ***************
-
 
     ui->lineEdit_itemName->clear();
     ui->lineEdit_cat->clear();
     ui->lineEdit_box->clear();
     ui->spinBox_quantity->clear();
     ui->spinBox_targetQ->clear();
+    // these update the ui table after the edit
     clearTable();
     initTableInv();
     fillTableInv();

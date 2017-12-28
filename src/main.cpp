@@ -37,7 +37,15 @@ int main(int argc, char *argv[])
 //    fw->makeReport(DbConnect::getInstance()->getFullInvAsVector());
 
     bbb::_FileWriter::getInstance()->makeTxtInvReport(bbb::DbConnect::getInstance()->getFullInvAsVector());
+    bbb::_FileWriter::getInstance()->makeTxtInvReport(bbb::DbConnect::getInstance()->getFullInvAsVector(), bbb::_FileWriter::ReportType::Low);
+    bbb::_FileWriter::getInstance()->makeTxtInvReport(bbb::DbConnect::getInstance()->getFullInvAsVector(), bbb::_FileWriter::ReportType::Critical);
+    bbb::_FileWriter::getInstance()->makeTxtInvReport(bbb::DbConnect::getInstance()->getFullInvAsVector(), bbb::_FileWriter::ReportType::Full);
+
+
     bbb::_FileWriter::getInstance()->makeXmlInvReport(bbb::DbConnect::getInstance()->getFullInvAsVector());
+    bbb::_FileWriter::getInstance()->makeXmlInvReport(bbb::DbConnect::getInstance()->getFullInvAsVector(), bbb::_FileWriter::ReportType::Low);
+    bbb::_FileWriter::getInstance()->makeXmlInvReport(bbb::DbConnect::getInstance()->getFullInvAsVector(), bbb::_FileWriter::ReportType::Critical);
+    //bbb::_FileWriter::getInstance()->makeXmlInvReport(bbb::DbConnect::getInstance()->getFullInvAsVector(), bbb::_FileWriter::ReportType::DbDump);
 
    return a.exec();
 }

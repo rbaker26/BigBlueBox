@@ -103,7 +103,8 @@ void DbConnect::updateItem(QString orgName, Row newRowInfo)
                       "quantity        = (:quantity), "
                       "target_quantity = (:target_quantity), "
                       "cat             = (:cat), "
-                      "box_num         = (:box_num) "
+                      "box_num         = (:box_num), "
+                      "date_modified   = (:date_modified) "
                   "WHERE item_name = (:item_name_org)");
 
     query.bindValue(":item_name_org", orgName);
@@ -112,6 +113,8 @@ void DbConnect::updateItem(QString orgName, Row newRowInfo)
     query.bindValue(":target_quantity", newRowInfo.effectiveOnHand);
     query.bindValue(":cat",             static_cast<int>(newRowInfo.category));
     query.bindValue(":box_num",         newRowInfo.boxNum);
+    query.bindValue(":date_modified", newRowInfo.dateModified.toString("yyyy/MM/dd hh:mm:ss"));
+
     query.bindValue(":item_name_new",   newRowInfo.itemName);
 
 

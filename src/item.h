@@ -27,18 +27,25 @@ public:
     //**********************************************************
     //! \brief Item Name
     QString  itemName;
+
     //! \brief Item Quantity
     int      quantity;
+
     //! \brief  Item Effective OnHand
     int      effectiveOnHand;
+
     //! \brief Box item is in
     int      boxNum;
+
     //! \brief If it can expire
     bool     canExpire;
+
     //! \brief Category::categoryType
     bbb::Category::categoryType category;
+
     //! \brief Date it was modified
-    QDate dateModified;
+    QDateTime dateModified;
+
      //! \brief User who last modified the item
     QString modifiedBy;
     //**********************************************************
