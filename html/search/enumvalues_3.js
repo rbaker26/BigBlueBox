@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['no_5fopp',['NO_OPP',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daa1326e5f053fcc7d03c7f1015545fd9ad',1,'bbb::Category']]]
+  ['expirable',['Expirable',['../classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a08c2240bd61755455fca0610dbaf29f5',1,'bbb::_FileWriter']]]
 ];

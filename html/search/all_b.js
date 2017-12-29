@@ -7,7 +7,7 @@ var searchData=
   ['mainwindow_2ecpp',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
   ['mainwindow_2eh',['mainwindow.h',['../mainwindow_8h.html',1,'']]],
   ['makepair',['makePair',['../class_reports_view.html#a2f558ef578ac827d53638af002a8b93d',1,'ReportsView']]],
-  ['maketxtinvreport',['makeTxtInvReport',['../classbbb_1_1___file_writer.html#a9307d30ab35aa7e2572d13ec8bcffb47',1,'bbb::_FileWriter']]],
-  ['makexmlinvreport',['makeXmlInvReport',['../classbbb_1_1___file_writer.html#ad225d4815b1da071e4f38ebe41a2d27d',1,'bbb::_FileWriter']]],
+  ['maketxtinvreport',['makeTxtInvReport',['../classbbb_1_1___file_writer.html#aa45ea2af057e9074e3f83b97a1d44256',1,'bbb::_FileWriter']]],
+  ['makexmlinvreport',['makeXmlInvReport',['../classbbb_1_1___file_writer.html#af6d37d4db77fb49e8c7169694d28317a',1,'bbb::_FileWriter']]],
   ['modifiedby',['modifiedBy',['../classbbb_1_1_item.html#a0df8e99e3061466708529c747619ee7c',1,'bbb::Item']]]
 ];

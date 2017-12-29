@@ -95,62 +95,86 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QTextStream&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QXmlStreamWriter&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QVector&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="item_8h.html">item.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//*************************************************************************************</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespacebbb.html">   15</a></span>&#160;<span class="keyword">namespace </span>bbb {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//*********************************************************************************</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span><span class="comment">//*********************************************************************************</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classbbb_1_1___file_writer.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbbb_1_1___file_writer.html">_FileWriter</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span>    <a class="code" href="classbbb_1_1___file_writer.html#abfb28b4697018a402c6e70afe8cc0320">_FileWriter</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QStandardPaths&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QVector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="item_8h.html">item.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//*************************************************************************************</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespacebbb.html">   17</a></span>&#160;<span class="keyword">namespace </span>bbb {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//*********************************************************************************</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span><span class="comment">//*********************************************************************************</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classbbb_1_1___file_writer.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbbb_1_1___file_writer.html">_FileWriter</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span>    <a class="code" href="classbbb_1_1___file_writer.html#abfb28b4697018a402c6e70afe8cc0320">_FileWriter</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classbbb_1_1___file_writer.html#ae08e07bb9731330e110629a64eb409e1">   34</a></span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <a class="code" href="classbbb_1_1___file_writer.html">_FileWriter</a>* <a class="code" href="classbbb_1_1___file_writer.html#ae08e07bb9731330e110629a64eb409e1">instance</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"></span>    <a class="code" href="classbbb_1_1___file_writer.html#a68306142a8735b0ab3aed6716631d639">~_FileWriter</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classbbb_1_1___file_writer.html#ae08e07bb9731330e110629a64eb409e1">   36</a></span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <a class="code" href="classbbb_1_1___file_writer.html">_FileWriter</a>* <a class="code" href="classbbb_1_1___file_writer.html#ae08e07bb9731330e110629a64eb409e1">instance</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span>    QString <a class="code" href="classbbb_1_1___file_writer.html#ab533a812e8150ea2e92c99a1da2d7a36">getDesktopPath</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <a class="code" href="classbbb_1_1___file_writer.html">_FileWriter</a>* <a class="code" href="classbbb_1_1___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa">getInstance</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span>    <span class="comment">// every option should also have a output to .csv option as well</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// can be controled via combo box dropdown in reports veiw.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;     <span class="keywordtype">void</span> <a class="code" href="classbbb_1_1___file_writer.html#a9307d30ab35aa7e2572d13ec8bcffb47">makeTxtInvReport</a>(QVector&lt;Item&gt; inventory);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;     <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;     <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span>     <span class="keywordtype">void</span> <a class="code" href="classbbb_1_1___file_writer.html#ad225d4815b1da071e4f38ebe41a2d27d">makeXmlInvReport</a>(QVector&lt;Item&gt; inventory);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;     <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}; <span class="comment">// end class</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//*********************************************************************************</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <span class="comment">// end namespace</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // _FILEWRITER_H</span></div>
-<div class="ttc" id="classbbb_1_1___file_writer_html_ae08e07bb9731330e110629a64eb409e1"><div class="ttname"><a href="classbbb_1_1___file_writer.html#ae08e07bb9731330e110629a64eb409e1">bbb::_FileWriter::instance</a></div><div class="ttdeci">static _FileWriter * instance</div><div class="ttdoc">Singleton Pointer. </div><div class="ttdef"><b>Definition:</b> _filewriter.h:34</div></div>
-<div class="ttc" id="classbbb_1_1___file_writer_html"><div class="ttname"><a href="classbbb_1_1___file_writer.html">bbb::_FileWriter</a></div><div class="ttdoc">Output File Stream Handler : Singleton. </div><div class="ttdef"><b>Definition:</b> _filewriter.h:23</div></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53">   58</a></span>&#160;<span class="comment"></span>    <span class="keyword">enum</span> <a class="code" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53">ReportType</a></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a75c1b8699cee3b2a1bc10fce238a4d13">   60</a></span>&#160;        <a class="code" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a75c1b8699cee3b2a1bc10fce238a4d13">Full</a>,</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a4a67b0f564d0e8c917919f34e6ded765">   61</a></span>&#160;        <a class="code" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a4a67b0f564d0e8c917919f34e6ded765">Low</a>,</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c0304f38003019270f01baa455e4ec">   62</a></span>&#160;        <a class="code" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c0304f38003019270f01baa455e4ec">Critical</a>,</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a08c2240bd61755455fca0610dbaf29f5">   63</a></span>&#160;        <a class="code" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a08c2240bd61755455fca0610dbaf29f5">Expirable</a>,</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c57b7daee896abc41328a888e8a95f">   64</a></span>&#160;        <a class="code" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c57b7daee896abc41328a888e8a95f">DbDump</a></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    };</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span>    <a class="code" href="classbbb_1_1___file_writer.html#a68306142a8735b0ab3aed6716631d639">~_FileWriter</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <a class="code" href="classbbb_1_1___file_writer.html">_FileWriter</a>* <a class="code" href="classbbb_1_1___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa">getInstance</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span>    <span class="comment">// every option should also have a output to .csv option as well</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// can be controled via combo box dropdown in reports veiw.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;     <span class="keywordtype">void</span> <a class="code" href="classbbb_1_1___file_writer.html#aa45ea2af057e9074e3f83b97a1d44256">makeTxtInvReport</a>(QVector&lt;Item&gt; inventory, <a class="code" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53">ReportType</a> type = <a class="code" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a75c1b8699cee3b2a1bc10fce238a4d13">Full</a>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;     <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;     <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span>     <span class="keywordtype">void</span> <a class="code" href="classbbb_1_1___file_writer.html#af6d37d4db77fb49e8c7169694d28317a">makeXmlInvReport</a>(QVector&lt;Item&gt; inventory, <a class="code" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53">ReportType</a> type = <a class="code" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a75c1b8699cee3b2a1bc10fce238a4d13">Full</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;     <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}; <span class="comment">// end class</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">//*********************************************************************************</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <span class="comment">// end namespace</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif // _FILEWRITER_H</span></div>
+<div class="ttc" id="classbbb_1_1___file_writer_html_a486ba7d0d1033f3b93004a4fd5268a53"><div class="ttname"><a href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53">bbb::_FileWriter::ReportType</a></div><div class="ttdeci">ReportType</div><div class="ttdoc">This enum discribes the various reports to be printed. </div><div class="ttdef"><b>Definition:</b> _filewriter.h:58</div></div>
+<div class="ttc" id="classbbb_1_1___file_writer_html_ae08e07bb9731330e110629a64eb409e1"><div class="ttname"><a href="classbbb_1_1___file_writer.html#ae08e07bb9731330e110629a64eb409e1">bbb::_FileWriter::instance</a></div><div class="ttdeci">static _FileWriter * instance</div><div class="ttdoc">Singleton Pointer. </div><div class="ttdef"><b>Definition:</b> _filewriter.h:36</div></div>
+<div class="ttc" id="classbbb_1_1___file_writer_html"><div class="ttname"><a href="classbbb_1_1___file_writer.html">bbb::_FileWriter</a></div><div class="ttdoc">Output File Stream Handler : Singleton. </div><div class="ttdef"><b>Definition:</b> _filewriter.h:25</div></div>
 <div class="ttc" id="classbbb_1_1___file_writer_html_a68306142a8735b0ab3aed6716631d639"><div class="ttname"><a href="classbbb_1_1___file_writer.html#a68306142a8735b0ab3aed6716631d639">bbb::_FileWriter::~_FileWriter</a></div><div class="ttdeci">~_FileWriter()</div><div class="ttdoc">Default non-args de-constructor. </div><div class="ttdef"><b>Definition:</b> _filewriter.cpp:18</div></div>
-<div class="ttc" id="classbbb_1_1___file_writer_html_a9307d30ab35aa7e2572d13ec8bcffb47"><div class="ttname"><a href="classbbb_1_1___file_writer.html#a9307d30ab35aa7e2572d13ec8bcffb47">bbb::_FileWriter::makeTxtInvReport</a></div><div class="ttdeci">void makeTxtInvReport(QVector&lt; Item &gt; inventory)</div><div class="ttdoc">Writes a Inventory Report to txt file. </div><div class="ttdef"><b>Definition:</b> _filewriter.cpp:37</div></div>
-<div class="ttc" id="classbbb_1_1___file_writer_html_ad225d4815b1da071e4f38ebe41a2d27d"><div class="ttname"><a href="classbbb_1_1___file_writer.html#ad225d4815b1da071e4f38ebe41a2d27d">bbb::_FileWriter::makeXmlInvReport</a></div><div class="ttdeci">void makeXmlInvReport(QVector&lt; Item &gt; inventory)</div><div class="ttdoc">Writes Inventory Report to xml file. </div><div class="ttdef"><b>Definition:</b> _filewriter.cpp:94</div></div>
+<div class="ttc" id="classbbb_1_1___file_writer_html_a486ba7d0d1033f3b93004a4fd5268a53a75c1b8699cee3b2a1bc10fce238a4d13"><div class="ttname"><a href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a75c1b8699cee3b2a1bc10fce238a4d13">bbb::_FileWriter::Full</a></div><div class="ttdef"><b>Definition:</b> _filewriter.h:60</div></div>
+<div class="ttc" id="classbbb_1_1___file_writer_html_a486ba7d0d1033f3b93004a4fd5268a53a4a67b0f564d0e8c917919f34e6ded765"><div class="ttname"><a href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a4a67b0f564d0e8c917919f34e6ded765">bbb::_FileWriter::Low</a></div><div class="ttdef"><b>Definition:</b> _filewriter.h:61</div></div>
+<div class="ttc" id="classbbb_1_1___file_writer_html_a486ba7d0d1033f3b93004a4fd5268a53af8c0304f38003019270f01baa455e4ec"><div class="ttname"><a href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c0304f38003019270f01baa455e4ec">bbb::_FileWriter::Critical</a></div><div class="ttdef"><b>Definition:</b> _filewriter.h:62</div></div>
 <div class="ttc" id="classbbb_1_1___file_writer_html_abfb28b4697018a402c6e70afe8cc0320"><div class="ttname"><a href="classbbb_1_1___file_writer.html#abfb28b4697018a402c6e70afe8cc0320">bbb::_FileWriter::_FileWriter</a></div><div class="ttdeci">_FileWriter()</div><div class="ttdoc">Default no-args constructor. </div><div class="ttdef"><b>Definition:</b> _filewriter.cpp:11</div></div>
+<div class="ttc" id="classbbb_1_1___file_writer_html_aa45ea2af057e9074e3f83b97a1d44256"><div class="ttname"><a href="classbbb_1_1___file_writer.html#aa45ea2af057e9074e3f83b97a1d44256">bbb::_FileWriter::makeTxtInvReport</a></div><div class="ttdeci">void makeTxtInvReport(QVector&lt; Item &gt; inventory, ReportType type=Full)</div><div class="ttdoc">Writes a Inventory Report to txt file. </div><div class="ttdef"><b>Definition:</b> _filewriter.cpp:49</div></div>
+<div class="ttc" id="classbbb_1_1___file_writer_html_af6d37d4db77fb49e8c7169694d28317a"><div class="ttname"><a href="classbbb_1_1___file_writer.html#af6d37d4db77fb49e8c7169694d28317a">bbb::_FileWriter::makeXmlInvReport</a></div><div class="ttdeci">void makeXmlInvReport(QVector&lt; Item &gt; inventory, ReportType type=Full)</div><div class="ttdoc">Writes Inventory Report to xml file. </div><div class="ttdef"><b>Definition:</b> _filewriter.cpp:193</div></div>
+<div class="ttc" id="classbbb_1_1___file_writer_html_a486ba7d0d1033f3b93004a4fd5268a53af8c57b7daee896abc41328a888e8a95f"><div class="ttname"><a href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c57b7daee896abc41328a888e8a95f">bbb::_FileWriter::DbDump</a></div><div class="ttdef"><b>Definition:</b> _filewriter.h:64</div></div>
 <div class="ttc" id="classbbb_1_1___file_writer_html_a65f1d3f6b273766d8b224b330de66ffa"><div class="ttname"><a href="classbbb_1_1___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa">bbb::_FileWriter::getInstance</a></div><div class="ttdeci">static _FileWriter * getInstance()</div><div class="ttdoc">Singleton pointer return function. </div><div class="ttdef"><b>Definition:</b> _filewriter.cpp:26</div></div>
 <div class="ttc" id="item_8h_html"><div class="ttname"><a href="item_8h.html">item.h</a></div></div>
+<div class="ttc" id="classbbb_1_1___file_writer_html_ab533a812e8150ea2e92c99a1da2d7a36"><div class="ttname"><a href="classbbb_1_1___file_writer.html#ab533a812e8150ea2e92c99a1da2d7a36">bbb::_FileWriter::getDesktopPath</a></div><div class="ttdeci">QString getDesktopPath()</div><div class="ttdoc">Gets the path to desktop. </div><div class="ttdef"><b>Definition:</b> _filewriter.cpp:37</div></div>
+<div class="ttc" id="classbbb_1_1___file_writer_html_a486ba7d0d1033f3b93004a4fd5268a53a08c2240bd61755455fca0610dbaf29f5"><div class="ttname"><a href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a08c2240bd61755455fca0610dbaf29f5">bbb::_FileWriter::Expirable</a></div><div class="ttdef"><b>Definition:</b> _filewriter.h:63</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
@@ -110,17 +111,31 @@ Collaboration diagram for bbb::_FileWriter:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a486ba7d0d1033f3b93004a4fd5268a53"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53">ReportType</a> { <br/>
+&#160;&#160;<a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a75c1b8699cee3b2a1bc10fce238a4d13">Full</a>, 
+<a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a4a67b0f564d0e8c917919f34e6ded765">Low</a>, 
+<a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c0304f38003019270f01baa455e4ec">Critical</a>, 
+<a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a08c2240bd61755455fca0610dbaf29f5">Expirable</a>, 
+<br/>
+&#160;&#160;<a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c57b7daee896abc41328a888e8a95f">DbDump</a>
+<br/>
+ }</td></tr>
+<tr class="memdesc:a486ba7d0d1033f3b93004a4fd5268a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enum discribes the various reports to be printed.  <a href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53">More...</a><br/></td></tr>
+<tr class="separator:a486ba7d0d1033f3b93004a4fd5268a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a68306142a8735b0ab3aed6716631d639"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#a68306142a8735b0ab3aed6716631d639">~_FileWriter</a> ()</td></tr>
 <tr class="memdesc:a68306142a8735b0ab3aed6716631d639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default non-args de-constructor.  <a href="#a68306142a8735b0ab3aed6716631d639">More...</a><br/></td></tr>
 <tr class="separator:a68306142a8735b0ab3aed6716631d639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9307d30ab35aa7e2572d13ec8bcffb47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#a9307d30ab35aa7e2572d13ec8bcffb47">makeTxtInvReport</a> (QVector&lt; <a class="el" href="classbbb_1_1_item.html">Item</a> &gt; inventory)</td></tr>
-<tr class="memdesc:a9307d30ab35aa7e2572d13ec8bcffb47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a Inventory Report to txt file.  <a href="#a9307d30ab35aa7e2572d13ec8bcffb47">More...</a><br/></td></tr>
-<tr class="separator:a9307d30ab35aa7e2572d13ec8bcffb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad225d4815b1da071e4f38ebe41a2d27d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#ad225d4815b1da071e4f38ebe41a2d27d">makeXmlInvReport</a> (QVector&lt; <a class="el" href="classbbb_1_1_item.html">Item</a> &gt; inventory)</td></tr>
-<tr class="memdesc:ad225d4815b1da071e4f38ebe41a2d27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes Inventory Report to xml file.  <a href="#ad225d4815b1da071e4f38ebe41a2d27d">More...</a><br/></td></tr>
-<tr class="separator:ad225d4815b1da071e4f38ebe41a2d27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45ea2af057e9074e3f83b97a1d44256"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#aa45ea2af057e9074e3f83b97a1d44256">makeTxtInvReport</a> (QVector&lt; <a class="el" href="classbbb_1_1_item.html">Item</a> &gt; inventory, <a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53">ReportType</a> type=<a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a75c1b8699cee3b2a1bc10fce238a4d13">Full</a>)</td></tr>
+<tr class="memdesc:aa45ea2af057e9074e3f83b97a1d44256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a Inventory Report to txt file.  <a href="#aa45ea2af057e9074e3f83b97a1d44256">More...</a><br/></td></tr>
+<tr class="separator:aa45ea2af057e9074e3f83b97a1d44256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6d37d4db77fb49e8c7169694d28317a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#af6d37d4db77fb49e8c7169694d28317a">makeXmlInvReport</a> (QVector&lt; <a class="el" href="classbbb_1_1_item.html">Item</a> &gt; inventory, <a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53">ReportType</a> type=<a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a75c1b8699cee3b2a1bc10fce238a4d13">Full</a>)</td></tr>
+<tr class="memdesc:af6d37d4db77fb49e8c7169694d28317a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes Inventory Report to xml file.  <a href="#af6d37d4db77fb49e8c7169694d28317a">More...</a><br/></td></tr>
+<tr class="separator:af6d37d4db77fb49e8c7169694d28317a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -133,6 +148,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:abfb28b4697018a402c6e70afe8cc0320"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#abfb28b4697018a402c6e70afe8cc0320">_FileWriter</a> ()</td></tr>
 <tr class="memdesc:abfb28b4697018a402c6e70afe8cc0320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default no-args constructor.  <a href="#abfb28b4697018a402c6e70afe8cc0320">More...</a><br/></td></tr>
 <tr class="separator:abfb28b4697018a402c6e70afe8cc0320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab533a812e8150ea2e92c99a1da2d7a36"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1___file_writer.html#ab533a812e8150ea2e92c99a1da2d7a36">getDesktopPath</a> ()</td></tr>
+<tr class="memdesc:ab533a812e8150ea2e92c99a1da2d7a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the path to desktop.  <a href="#ab533a812e8150ea2e92c99a1da2d7a36">More...</a><br/></td></tr>
+<tr class="separator:ab533a812e8150ea2e92c99a1da2d7a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -144,7 +162,49 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock"><p>Output File Stream Handler : Singleton. </p>
 <p>Handles all writing to files. This is mainly for creating reports. It can output in .txt format or in .csv format. </p>
 <dl class="section author"><dt>Author</dt><dd>Bob Baker </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a486ba7d0d1033f3b93004a4fd5268a53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53">bbb::_FileWriter::ReportType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enum discribes the various reports to be printed. </p>
+<table class="doxtable">
+<tr>
+<th>Constant</th><th>Value</th><th>Discription </th></tr>
+<tr>
+<td>ReportType::Full</td><td>0</td><td>The full report. </td></tr>
+<tr>
+<td>ReportType::Low</td><td>1</td><td>Only prints items if their quantity is within 35% of the target. </td></tr>
+<tr>
+<td>ReportType::Critical</td><td>2</td><td>Only prints items if their quantity is within 10% of target. </td></tr>
+<tr>
+<td>ReportType::Expirable</td><td>3</td><td>Only prints items if they are expirable. </td></tr>
+<tr>
+<td>ReportType::DbDump</td><td>4</td><td>Prints all data in database. (only for xml) </td></tr>
+</table>
+<dl class="section author"><dt>Author</dt><dd>Bob Baker </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a486ba7d0d1033f3b93004a4fd5268a53a75c1b8699cee3b2a1bc10fce238a4d13"></a>Full</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a486ba7d0d1033f3b93004a4fd5268a53a4a67b0f564d0e8c917919f34e6ded765"></a>Low</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a486ba7d0d1033f3b93004a4fd5268a53af8c0304f38003019270f01baa455e4ec"></a>Critical</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a486ba7d0d1033f3b93004a4fd5268a53a08c2240bd61755455fca0610dbaf29f5"></a>Expirable</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a486ba7d0d1033f3b93004a4fd5268a53af8c57b7daee896abc41328a888e8a95f"></a>DbDump</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="abfb28b4697018a402c6e70afe8cc0320"></a>
 <div class="memitem">
 <div class="memproto">
@@ -200,6 +260,40 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ab533a812e8150ea2e92c99a1da2d7a36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString _FileWriter::getDesktopPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the path to desktop. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbbb_1_1___file_writer_ab533a812e8150ea2e92c99a1da2d7a36_icgraph.png" border="0" usemap="#classbbb_1_1___file_writer_ab533a812e8150ea2e92c99a1da2d7a36_icgraph" alt=""/></div>
+<map name="classbbb_1_1___file_writer_ab533a812e8150ea2e92c99a1da2d7a36_icgraph" id="classbbb_1_1___file_writer_ab533a812e8150ea2e92c99a1da2d7a36_icgraph">
+<area shape="rect" id="node2" href="classbbb_1_1___file_writer.html#aa45ea2af057e9074e3f83b97a1d44256" title="Writes a Inventory Report to txt file. " alt="" coords="272,5,445,46"/><area shape="rect" id="node4" href="classbbb_1_1___file_writer.html#af6d37d4db77fb49e8c7169694d28317a" title="Writes Inventory Report to xml file. " alt="" coords="270,70,447,111"/><area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="496,45,547,72"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a65f1d3f6b273766d8b224b330de66ffa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +339,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a9307d30ab35aa7e2572d13ec8bcffb47"></a>
+<a class="anchor" id="aa45ea2af057e9074e3f83b97a1d44256"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -253,8 +347,18 @@ Here is the caller graph for this function:</div>
           <td class="memname">void _FileWriter::makeTxtInvReport </td>
           <td>(</td>
           <td class="paramtype">QVector&lt; <a class="el" href="classbbb_1_1_item.html">Item</a> &gt;&#160;</td>
-          <td class="paramname"><em>inventory</em></td><td>)</td>
+          <td class="paramname"><em>inventory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53">ReportType</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a75c1b8699cee3b2a1bc10fce238a4d13">Full</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -264,17 +368,26 @@ Here is the caller graph for this function:</div>
 <dl class="section author"><dt>Author</dt><dd>Bob Baker </dd></dl>
 
 <p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbbb_1_1___file_writer_aa45ea2af057e9074e3f83b97a1d44256_cgraph.png" border="0" usemap="#classbbb_1_1___file_writer_aa45ea2af057e9074e3f83b97a1d44256_cgraph" alt=""/></div>
+<map name="classbbb_1_1___file_writer_aa45ea2af057e9074e3f83b97a1d44256_cgraph" id="classbbb_1_1___file_writer_aa45ea2af057e9074e3f83b97a1d44256_cgraph">
+<area shape="rect" id="node2" href="classbbb_1_1___file_writer.html#ab533a812e8150ea2e92c99a1da2d7a36" title="Gets the path to desktop. " alt="" coords="227,12,443,39"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classbbb_1_1___file_writer_a9307d30ab35aa7e2572d13ec8bcffb47_icgraph.png" border="0" usemap="#classbbb_1_1___file_writer_a9307d30ab35aa7e2572d13ec8bcffb47_icgraph" alt=""/></div>
-<map name="classbbb_1_1___file_writer_a9307d30ab35aa7e2572d13ec8bcffb47_icgraph" id="classbbb_1_1___file_writer_a9307d30ab35aa7e2572d13ec8bcffb47_icgraph">
+<div class="center"><img src="classbbb_1_1___file_writer_aa45ea2af057e9074e3f83b97a1d44256_icgraph.png" border="0" usemap="#classbbb_1_1___file_writer_aa45ea2af057e9074e3f83b97a1d44256_icgraph" alt=""/></div>
+<map name="classbbb_1_1___file_writer_aa45ea2af057e9074e3f83b97a1d44256_icgraph" id="classbbb_1_1___file_writer_aa45ea2af057e9074e3f83b97a1d44256_icgraph">
 <area shape="rect" id="node2" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="227,12,277,39"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ad225d4815b1da071e4f38ebe41a2d27d"></a>
+<a class="anchor" id="af6d37d4db77fb49e8c7169694d28317a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -282,8 +395,18 @@ Here is the caller graph for this function:</div>
           <td class="memname">void _FileWriter::makeXmlInvReport </td>
           <td>(</td>
           <td class="paramtype">QVector&lt; <a class="el" href="classbbb_1_1_item.html">Item</a> &gt;&#160;</td>
-          <td class="paramname"><em>inventory</em></td><td>)</td>
+          <td class="paramname"><em>inventory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53">ReportType</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a75c1b8699cee3b2a1bc10fce238a4d13">Full</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -293,10 +416,19 @@ Here is the caller graph for this function:</div>
 <dl class="section author"><dt>Author</dt><dd>Bob Baker </dd></dl>
 
 <p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbbb_1_1___file_writer_af6d37d4db77fb49e8c7169694d28317a_cgraph.png" border="0" usemap="#classbbb_1_1___file_writer_af6d37d4db77fb49e8c7169694d28317a_cgraph" alt=""/></div>
+<map name="classbbb_1_1___file_writer_af6d37d4db77fb49e8c7169694d28317a_cgraph" id="classbbb_1_1___file_writer_af6d37d4db77fb49e8c7169694d28317a_cgraph">
+<area shape="rect" id="node2" href="classbbb_1_1___file_writer.html#ab533a812e8150ea2e92c99a1da2d7a36" title="Gets the path to desktop. " alt="" coords="232,5,448,32"/><area shape="rect" id="node3" href="classbbb_1_1_category.html#ad7de659617e688faaa44e4ba448b40fe" title="Turns enum to string. " alt="" coords="251,57,429,98"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classbbb_1_1___file_writer_ad225d4815b1da071e4f38ebe41a2d27d_icgraph.png" border="0" usemap="#classbbb_1_1___file_writer_ad225d4815b1da071e4f38ebe41a2d27d_icgraph" alt=""/></div>
-<map name="classbbb_1_1___file_writer_ad225d4815b1da071e4f38ebe41a2d27d_icgraph" id="classbbb_1_1___file_writer_ad225d4815b1da071e4f38ebe41a2d27d_icgraph">
+<div class="center"><img src="classbbb_1_1___file_writer_af6d37d4db77fb49e8c7169694d28317a_icgraph.png" border="0" usemap="#classbbb_1_1___file_writer_af6d37d4db77fb49e8c7169694d28317a_icgraph" alt=""/></div>
+<map name="classbbb_1_1___file_writer_af6d37d4db77fb49e8c7169694d28317a_icgraph" id="classbbb_1_1___file_writer_af6d37d4db77fb49e8c7169694d28317a_icgraph">
 <area shape="rect" id="node2" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="232,12,283,39"/></map>
 </div>
 </p>
