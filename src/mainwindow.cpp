@@ -8,18 +8,10 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    //function to change the central widget
     QWidget* reportsView = new ReportsView(this);
+    setCentralWidget(reportsView);
 
-    try
-    {
-         //function to change the central widget
-        setCentralWidget(reportsView);
-    }
-    catch(int i)
-    {
-        qDebug() << "catch";
-    }
-    ui->actionHome->trigger();
 }
 //*********************************************************************************
 
@@ -30,14 +22,20 @@ MainWindow::~MainWindow()
 }
 //*********************************************************************************
 
+//*********************************************************************************
 void MainWindow::on_actionHome_triggered()
 {
 // non reachable slotS
+    // Idk what this does, do not delete until final.
 }
+//*********************************************************************************
 
+//*********************************************************************************
 void MainWindow::on_actionGoto_Home_triggered()
 {
+    //This is the home botton.
     QWidget* gearView = new GearCentral(this);
     setCentralWidget(gearView);
     qDebug() << "Trigger";
 }
+//*********************************************************************************

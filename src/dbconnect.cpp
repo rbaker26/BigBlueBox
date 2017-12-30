@@ -92,9 +92,6 @@ DbConnect* DbConnect::getInstance()
 
  }
 //*********************************************************************************
-
-
-
 void DbConnect::updateItem(QString orgName, Row newRowInfo)
 {
     QSqlQuery query;
@@ -123,3 +120,4 @@ void DbConnect::updateItem(QString orgName, Row newRowInfo)
         qDebug() << "Exec err:\t" << query.lastError().text();
     }
 }
+//*********************************************************************************
