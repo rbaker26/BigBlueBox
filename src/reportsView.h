@@ -7,6 +7,7 @@
 #include "dbconnect.h"
 #include "item.h"
 #include "_regex.h"
+#include "_filewriter.h"
 
 namespace Ui {
 class ReportsView;
@@ -31,6 +32,8 @@ private slots:
     void on_comboBox_currentIndexChanged(int index);
 
     void on_comboBox_addDel_activated(int index);
+
+    void on_pushButton_makeReport_clicked();
 
 private:
     Ui::ReportsView *ui;

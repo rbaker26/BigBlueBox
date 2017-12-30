@@ -225,3 +225,30 @@ void ReportsView::on_comboBox_addDel_activated(int index)
     }
 }
 //*********************************************************************************
+
+//*********************************************************************************
+void ReportsView::on_pushButton_makeReport_clicked()
+{
+    typedef  bbb::_FileWriter fw;
+
+    // sets the type based on the radio buttons on the Reports Tab
+    fw::ReportType type;
+    if(ui->radioButton_FullR->isChecked())      {type = fw::Full;}
+    else if(ui->radioButton_LowR->isChecked())  {type = fw::Low;}
+    else if(ui->radioButton_CLowR->isChecked()) {type = fw::Critical;}
+    else if(ui->radioButton_ExpR->isChecked())  {type = fw::Expirable;}
+
+    // Uses the combo box to decided what file format to use.
+    // _FileWriter will write to a default location.
+    // The Default loc should be %desktop%.
+    if(ui->comboBox_fileFormat->currentText() == "txt")
+    {
+        fw::getInstance()->makeTxtInvReport(fullInventory, type);
+    }
+    else if(ui->comboBox_fileFormat->currentText() == "XML")
+    {
+        fw::getInstance()->makeXmlInvReport(fullInventory, type);
+    }
+
+}
+//*********************************************************************************
