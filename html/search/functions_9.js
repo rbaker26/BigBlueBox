@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['qcleanupresources_5frec',['qCleanupResources_rec',['../qrc__rec_8cpp.html#ab4ed91aa7b325c67a8e8710ca6f2138e',1,'qrc_rec.cpp']]],
-  ['qinitresources_5frec',['qInitResources_rec',['../qrc__rec_8cpp.html#a7132920a38b3f4c88ac2484fa281c785',1,'qrc_rec.cpp']]],
-  ['qregisterresourcedata',['qRegisterResourceData',['../qrc__rec_8cpp.html#ab3bec3d1e679084be46edc41e4c91bc1',1,'qrc_rec.cpp']]],
-  ['qunregisterresourcedata',['qUnregisterResourceData',['../qrc__rec_8cpp.html#ad65f8bca8010dd1fd135a28a085c6d03',1,'qrc_rec.cpp']]]
+  ['on_5factiongoto_5fhome_5ftriggered',['on_actionGoto_Home_triggered',['../class_main_window.html#a293283717ca41f7e4b26d45dfaafeedd',1,'MainWindow']]],
+  ['on_5factionhome_5ftriggered',['on_actionHome_triggered',['../class_main_window.html#a313c36eed19a71e2525da1e8041eb6a0',1,'MainWindow']]],
+  ['on_5fcheckbox_5feditson_5fclicked',['on_checkBox_editsOn_clicked',['../class_reports_view.html#a89b2e4e29486ddb2a1f8a129edb59367',1,'ReportsView']]],
+  ['on_5fcombobox_5fadddel_5factivated',['on_comboBox_addDel_activated',['../class_reports_view.html#ada0efc617e671329badefe711a815f16',1,'ReportsView']]],
+  ['on_5fcombobox_5fcurrentindexchanged',['on_comboBox_currentIndexChanged',['../class_reports_view.html#a2f849e56c1e598de3ae680bf01a6cc96',1,'ReportsView']]],
+  ['on_5fpushbutton_5fedit_5fclicked',['on_pushButton_edit_clicked',['../class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59',1,'ReportsView']]],
+  ['on_5fpushbutton_5fmakereport_5fclicked',['on_pushButton_makeReport_clicked',['../class_reports_view.html#afa5f5644331a9f66811b2a21aad02b36',1,'ReportsView']]],
+  ['on_5ftablewidget_5finv_5fcelldoubleclicked',['on_tableWidget_inv_cellDoubleClicked',['../class_reports_view.html#ad5cf98addd840c1e257a556598ce66d7',1,'ReportsView']]]
 ];

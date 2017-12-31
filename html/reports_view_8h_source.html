@@ -98,90 +98,95 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dbconnect_8h.html">dbconnect.h</a>&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="item_8h.html">item.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="__regex_8h.html">_regex.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>Ui {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_reports_view.html">ReportsView</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_reports_view.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_reports_view.html">ReportsView</a> : <span class="keyword">public</span> QWidget</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_reports_view.html#a3386fadacc4633e21c1759df01a45efd">ReportsView</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_reports_view.html#a4064f31cbc74f7b75a9f5fa558564a9f">~ReportsView</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#ad5cf98addd840c1e257a556598ce66d7">on_tableWidget_inv_cellDoubleClicked</a>(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59">on_pushButton_edit_clicked</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#a89b2e4e29486ddb2a1f8a129edb59367">on_checkBox_editsOn_clicked</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#a2f849e56c1e598de3ae680bf01a6cc96">on_comboBox_currentIndexChanged</a>(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#ada0efc617e671329badefe711a815f16">on_comboBox_addDel_activated</a>(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_reports_view.html#acca59cfce657d13b15ac68ae519bda30">   36</a></span>&#160;    Ui::ReportsView *<a class="code" href="class_reports_view.html#acca59cfce657d13b15ac68ae519bda30">ui</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#ae67b95dd993a575d09b467f89557aae2">sendRowToToolBox</a>(QStringList row);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d">initTableInv</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#aadf024949bd7935f99e9fd8194edb181">fillTableInv</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//**********************************************************</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#adc130acc6c8471c37855f233ed72b54f">clearTable</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_reports_view.html#a240fa116969d30a53c2409712c3b65f4">   57</a></span>&#160;    QVector&lt;bbb::Item&gt; <a class="code" href="class_reports_view.html#a240fa116969d30a53c2409712c3b65f4">fullInventory</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="__filewriter_8h.html">_filewriter.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_reports_view.html">ReportsView</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_reports_view.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_reports_view.html">ReportsView</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_reports_view.html#a3386fadacc4633e21c1759df01a45efd">ReportsView</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_reports_view.html#a4064f31cbc74f7b75a9f5fa558564a9f">~ReportsView</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#ad5cf98addd840c1e257a556598ce66d7">on_tableWidget_inv_cellDoubleClicked</a>(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59">on_pushButton_edit_clicked</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#a89b2e4e29486ddb2a1f8a129edb59367">on_checkBox_editsOn_clicked</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#a2f849e56c1e598de3ae680bf01a6cc96">on_comboBox_currentIndexChanged</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#ada0efc617e671329badefe711a815f16">on_comboBox_addDel_activated</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#afa5f5644331a9f66811b2a21aad02b36">on_pushButton_makeReport_clicked</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_reports_view.html#acca59cfce657d13b15ac68ae519bda30">   39</a></span>&#160;    Ui::ReportsView *<a class="code" href="class_reports_view.html#acca59cfce657d13b15ac68ae519bda30">ui</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#ae67b95dd993a575d09b467f89557aae2">sendRowToToolBox</a>(QStringList row);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d">initTableInv</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#aadf024949bd7935f99e9fd8194edb181">fillTableInv</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//**********************************************************</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#adc130acc6c8471c37855f233ed72b54f">clearTable</a>();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// 5 col size</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_reports_view.html#ae9233527989415532115900f72cae761">   62</a></span>&#160;    QString <a class="code" href="class_reports_view.html#ae9233527989415532115900f72cae761">orgItemName</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_reports_view.html#a240fa116969d30a53c2409712c3b65f4">   60</a></span>&#160;    QVector&lt;bbb::Item&gt; <a class="code" href="class_reports_view.html#a240fa116969d30a53c2409712c3b65f4">fullInventory</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QString <a class="code" href="class_reports_view.html#a4429438a75b0fa80149e7e711d6c19a8">getOrgItemNameFromToolBox</a>();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="structbbb_1_1_row.html">bbb::Row</a> <a class="code" href="class_reports_view.html#ac97a33488c92baff15f618a03b58b311">getNewRowFromToolBox</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QPair&lt;QString, bbb::Row&gt; <a class="code" href="class_reports_view.html#a2f558ef578ac827d53638af002a8b93d">makePair</a>(QString orgName, <a class="code" href="structbbb_1_1_row.html">bbb::Row</a> r2);</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88">   67</a></span>&#160;    QPair&lt;QString, bbb::Row&gt; <a class="code" href="class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88">rowForUpdate</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#ab1abccf202bed57c66ad865886e6856e">updateStoredVector</a>(QPair&lt;QString, bbb::Row&gt; <a class="code" href="class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88">rowForUpdate</a>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#ab58aa45a0fde5271c5ccf19da12a5f10">updateDataBase</a>(QPair&lt;QString, bbb::Row&gt; <a class="code" href="class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88">rowForUpdate</a>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// 5 col size</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_reports_view.html#ae9233527989415532115900f72cae761">   65</a></span>&#160;    QString <a class="code" href="class_reports_view.html#ae9233527989415532115900f72cae761">orgItemName</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QString <a class="code" href="class_reports_view.html#a4429438a75b0fa80149e7e711d6c19a8">getOrgItemNameFromToolBox</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="structbbb_1_1_row.html">bbb::Row</a> <a class="code" href="class_reports_view.html#ac97a33488c92baff15f618a03b58b311">getNewRowFromToolBox</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QPair&lt;QString, bbb::Row&gt; <a class="code" href="class_reports_view.html#a2f558ef578ac827d53638af002a8b93d">makePair</a>(QString orgName, <a class="code" href="structbbb_1_1_row.html">bbb::Row</a> r2);</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88">   70</a></span>&#160;    QPair&lt;QString, bbb::Row&gt; <a class="code" href="class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88">rowForUpdate</a>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#ab1abccf202bed57c66ad865886e6856e">updateStoredVector</a>(QPair&lt;QString, bbb::Row&gt; <a class="code" href="class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88">rowForUpdate</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_reports_view.html#ab58aa45a0fde5271c5ccf19da12a5f10">updateDataBase</a>(QPair&lt;QString, bbb::Row&gt; <a class="code" href="class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88">rowForUpdate</a>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // REPORTSVIEW_H</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // REPORTSVIEW_H</span></div>
 <div class="ttc" id="class_reports_view_html_a89b2e4e29486ddb2a1f8a129edb59367"><div class="ttname"><a href="class_reports_view.html#a89b2e4e29486ddb2a1f8a129edb59367">ReportsView::on_checkBox_editsOn_clicked</a></div><div class="ttdeci">void on_checkBox_editsOn_clicked()</div><div class="ttdef"><b>Definition:</b> reportsView.cpp:163</div></div>
 <div class="ttc" id="class_reports_view_html_ab58aa45a0fde5271c5ccf19da12a5f10"><div class="ttname"><a href="class_reports_view.html#ab58aa45a0fde5271c5ccf19da12a5f10">ReportsView::updateDataBase</a></div><div class="ttdeci">void updateDataBase(QPair&lt; QString, bbb::Row &gt; rowForUpdate)</div></div>
-<div class="ttc" id="class_reports_view_html_acca59cfce657d13b15ac68ae519bda30"><div class="ttname"><a href="class_reports_view.html#acca59cfce657d13b15ac68ae519bda30">ReportsView::ui</a></div><div class="ttdeci">Ui::ReportsView * ui</div><div class="ttdef"><b>Definition:</b> reportsView.h:36</div></div>
+<div class="ttc" id="class_reports_view_html_acca59cfce657d13b15ac68ae519bda30"><div class="ttname"><a href="class_reports_view.html#acca59cfce657d13b15ac68ae519bda30">ReportsView::ui</a></div><div class="ttdeci">Ui::ReportsView * ui</div><div class="ttdef"><b>Definition:</b> reportsView.h:39</div></div>
 <div class="ttc" id="__regex_8h_html"><div class="ttname"><a href="__regex_8h.html">_regex.h</a></div></div>
 <div class="ttc" id="class_reports_view_html_ada0efc617e671329badefe711a815f16"><div class="ttname"><a href="class_reports_view.html#ada0efc617e671329badefe711a815f16">ReportsView::on_comboBox_addDel_activated</a></div><div class="ttdeci">void on_comboBox_addDel_activated(int index)</div><div class="ttdef"><b>Definition:</b> reportsView.cpp:208</div></div>
 <div class="ttc" id="class_reports_view_html_adc130acc6c8471c37855f233ed72b54f"><div class="ttname"><a href="class_reports_view.html#adc130acc6c8471c37855f233ed72b54f">ReportsView::clearTable</a></div><div class="ttdeci">void clearTable()</div><div class="ttdef"><b>Definition:</b> reportsView.cpp:178</div></div>
 <div class="ttc" id="dbconnect_8h_html"><div class="ttname"><a href="dbconnect_8h.html">dbconnect.h</a></div></div>
+<div class="ttc" id="__filewriter_8h_html"><div class="ttname"><a href="__filewriter_8h.html">_filewriter.h</a></div></div>
 <div class="ttc" id="class_reports_view_html_a577ad8a1d30de512a5bc7f8238c6ef6d"><div class="ttname"><a href="class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d">ReportsView::initTableInv</a></div><div class="ttdeci">void initTableInv()</div><div class="ttdoc">Sets up the inventoy table. </div><div class="ttdef"><b>Definition:</b> reportsView.cpp:83</div></div>
 <div class="ttc" id="class_reports_view_html_ae67b95dd993a575d09b467f89557aae2"><div class="ttname"><a href="class_reports_view.html#ae67b95dd993a575d09b467f89557aae2">ReportsView::sendRowToToolBox</a></div><div class="ttdeci">void sendRowToToolBox(QStringList row)</div><div class="ttdoc">Sends the doubleclicked row to the tool box. </div><div class="ttdef"><b>Definition:</b> reportsView.cpp:50</div></div>
-<div class="ttc" id="class_reports_view_html_ae9233527989415532115900f72cae761"><div class="ttname"><a href="class_reports_view.html#ae9233527989415532115900f72cae761">ReportsView::orgItemName</a></div><div class="ttdeci">QString orgItemName</div><div class="ttdef"><b>Definition:</b> reportsView.h:62</div></div>
+<div class="ttc" id="class_reports_view_html_ae9233527989415532115900f72cae761"><div class="ttname"><a href="class_reports_view.html#ae9233527989415532115900f72cae761">ReportsView::orgItemName</a></div><div class="ttdeci">QString orgItemName</div><div class="ttdef"><b>Definition:</b> reportsView.h:65</div></div>
 <div class="ttc" id="class_reports_view_html_ab1abccf202bed57c66ad865886e6856e"><div class="ttname"><a href="class_reports_view.html#ab1abccf202bed57c66ad865886e6856e">ReportsView::updateStoredVector</a></div><div class="ttdeci">void updateStoredVector(QPair&lt; QString, bbb::Row &gt; rowForUpdate)</div></div>
 <div class="ttc" id="item_8h_html"><div class="ttname"><a href="item_8h.html">item.h</a></div></div>
 <div class="ttc" id="class_reports_view_html_a4429438a75b0fa80149e7e711d6c19a8"><div class="ttname"><a href="class_reports_view.html#a4429438a75b0fa80149e7e711d6c19a8">ReportsView::getOrgItemNameFromToolBox</a></div><div class="ttdeci">QString getOrgItemNameFromToolBox()</div><div class="ttdef"><b>Definition:</b> reportsView.cpp:184</div></div>
-<div class="ttc" id="class_reports_view_html"><div class="ttname"><a href="class_reports_view.html">ReportsView</a></div><div class="ttdef"><b>Definition:</b> reportsView.h:15</div></div>
+<div class="ttc" id="class_reports_view_html"><div class="ttname"><a href="class_reports_view.html">ReportsView</a></div><div class="ttdef"><b>Definition:</b> reportsView.h:16</div></div>
 <div class="ttc" id="class_reports_view_html_a3386fadacc4633e21c1759df01a45efd"><div class="ttname"><a href="class_reports_view.html#a3386fadacc4633e21c1759df01a45efd">ReportsView::ReportsView</a></div><div class="ttdeci">ReportsView(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> reportsView.cpp:5</div></div>
 <div class="ttc" id="class_reports_view_html_ac97a33488c92baff15f618a03b58b311"><div class="ttname"><a href="class_reports_view.html#ac97a33488c92baff15f618a03b58b311">ReportsView::getNewRowFromToolBox</a></div><div class="ttdeci">bbb::Row getNewRowFromToolBox()</div><div class="ttdef"><b>Definition:</b> reportsView.cpp:189</div></div>
-<div class="ttc" id="class_reports_view_html_ad121d0303a83a6116f2d1e20624b0b88"><div class="ttname"><a href="class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88">ReportsView::rowForUpdate</a></div><div class="ttdeci">QPair&lt; QString, bbb::Row &gt; rowForUpdate</div><div class="ttdef"><b>Definition:</b> reportsView.h:67</div></div>
+<div class="ttc" id="class_reports_view_html_ad121d0303a83a6116f2d1e20624b0b88"><div class="ttname"><a href="class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88">ReportsView::rowForUpdate</a></div><div class="ttdeci">QPair&lt; QString, bbb::Row &gt; rowForUpdate</div><div class="ttdef"><b>Definition:</b> reportsView.h:70</div></div>
 <div class="ttc" id="class_reports_view_html_a2f849e56c1e598de3ae680bf01a6cc96"><div class="ttname"><a href="class_reports_view.html#a2f849e56c1e598de3ae680bf01a6cc96">ReportsView::on_comboBox_currentIndexChanged</a></div><div class="ttdeci">void on_comboBox_currentIndexChanged(int index)</div><div class="ttdef"><b>Definition:</b> reportsView.cpp:201</div></div>
 <div class="ttc" id="structbbb_1_1_row_html"><div class="ttname"><a href="structbbb_1_1_row.html">bbb::Row</a></div><div class="ttdoc">Ui Object Layer : Inventory Table Row. </div><div class="ttdef"><b>Definition:</b> item.h:74</div></div>
 <div class="ttc" id="class_reports_view_html_a2f558ef578ac827d53638af002a8b93d"><div class="ttname"><a href="class_reports_view.html#a2f558ef578ac827d53638af002a8b93d">ReportsView::makePair</a></div><div class="ttdeci">QPair&lt; QString, bbb::Row &gt; makePair(QString orgName, bbb::Row r2)</div></div>
 <div class="ttc" id="class_reports_view_html_ad5cf98addd840c1e257a556598ce66d7"><div class="ttname"><a href="class_reports_view.html#ad5cf98addd840c1e257a556598ce66d7">ReportsView::on_tableWidget_inv_cellDoubleClicked</a></div><div class="ttdeci">void on_tableWidget_inv_cellDoubleClicked(int row, int column)</div><div class="ttdef"><b>Definition:</b> reportsView.cpp:31</div></div>
 <div class="ttc" id="class_reports_view_html_a5fd0369f81da5afd34b31e35c6583a59"><div class="ttname"><a href="class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59">ReportsView::on_pushButton_edit_clicked</a></div><div class="ttdeci">void on_pushButton_edit_clicked()</div><div class="ttdef"><b>Definition:</b> reportsView.cpp:122</div></div>
+<div class="ttc" id="class_reports_view_html_afa5f5644331a9f66811b2a21aad02b36"><div class="ttname"><a href="class_reports_view.html#afa5f5644331a9f66811b2a21aad02b36">ReportsView::on_pushButton_makeReport_clicked</a></div><div class="ttdeci">void on_pushButton_makeReport_clicked()</div><div class="ttdef"><b>Definition:</b> reportsView.cpp:230</div></div>
 <div class="ttc" id="class_reports_view_html_a4064f31cbc74f7b75a9f5fa558564a9f"><div class="ttname"><a href="class_reports_view.html#a4064f31cbc74f7b75a9f5fa558564a9f">ReportsView::~ReportsView</a></div><div class="ttdeci">~ReportsView()</div><div class="ttdef"><b>Definition:</b> reportsView.cpp:24</div></div>
-<div class="ttc" id="class_reports_view_html_a240fa116969d30a53c2409712c3b65f4"><div class="ttname"><a href="class_reports_view.html#a240fa116969d30a53c2409712c3b65f4">ReportsView::fullInventory</a></div><div class="ttdeci">QVector&lt; bbb::Item &gt; fullInventory</div><div class="ttdef"><b>Definition:</b> reportsView.h:57</div></div>
+<div class="ttc" id="class_reports_view_html_a240fa116969d30a53c2409712c3b65f4"><div class="ttname"><a href="class_reports_view.html#a240fa116969d30a53c2409712c3b65f4">ReportsView::fullInventory</a></div><div class="ttdeci">QVector&lt; bbb::Item &gt; fullInventory</div><div class="ttdef"><b>Definition:</b> reportsView.h:60</div></div>
 <div class="ttc" id="class_reports_view_html_aadf024949bd7935f99e9fd8194edb181"><div class="ttname"><a href="class_reports_view.html#aadf024949bd7935f99e9fd8194edb181">ReportsView::fillTableInv</a></div><div class="ttdeci">void fillTableInv()</div><div class="ttdoc">Fills the inventory table from the database. </div><div class="ttdef"><b>Definition:</b> reportsView.cpp:98</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

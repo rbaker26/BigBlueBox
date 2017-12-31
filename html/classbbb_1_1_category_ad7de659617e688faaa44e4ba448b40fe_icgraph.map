@@ -1,6 +1,5 @@
 <map id="bbb::Category::categoryToQString" name="bbb::Category::categoryToQString">
 <area shape="rect" id="node2" href="$classbbb_1_1___file_writer.html#af6d37d4db77fb49e8c7169694d28317a" title="Writes Inventory Report to xml file. " alt="" coords="241,5,418,46"/>
-<area shape="rect" id="node4" href="$classbbb_1_1_item.html#ad3fe5a44215dbfe95ee2fe68e1b2965d" title="Uses the toString method in catagory class. " alt="" coords="232,71,427,97"/>
-<area shape="rect" id="node5" href="$classbbb_test_1_1_category_test.html#a9ee3cfeeb3ef2f0d2ba25f5e8736fd03" title="Tests int to QString conversions. " alt="" coords="251,122,407,163"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="475,12,525,39"/>
+<area shape="rect" id="node3" href="$classbbb_1_1_item.html#ad3fe5a44215dbfe95ee2fe68e1b2965d" title="Uses the toString method in catagory class. " alt="" coords="232,71,427,97"/>
+<area shape="rect" id="node4" href="$classbbb_test_1_1_category_test.html#a9ee3cfeeb3ef2f0d2ba25f5e8736fd03" title="Tests int to QString conversions. " alt="" coords="251,122,407,163"/>
 </map>

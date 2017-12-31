@@ -1,6 +1,6 @@
 <map id="ReportsView::on_pushButton_edit_clicked" name="ReportsView::on_pushButton_edit_clicked">
 <area shape="rect" id="node2" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="486,52,679,79"/>
-<area shape="rect" id="node4" href="$classbbb_1_1_db_connect.html#a1794a5b641c117021fd6a2ffbde0028f" title="bbb::DbConnect::updateItem" alt="" coords="246,31,437,57"/>
+<area shape="rect" id="node4" href="$classbbb_1_1_db_connect.html#a1794a5b641c117021fd6a2ffbde0028f" title="Updates the contents of one item. " alt="" coords="246,31,437,57"/>
 <area shape="rect" id="node5" href="$class_reports_view.html#adc130acc6c8471c37855f233ed72b54f" title="ReportsView::clearTable" alt="" coords="259,81,424,108"/>
 <area shape="rect" id="node6" href="$class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d" title="Sets up the inventoy table. " alt="" coords="255,132,427,159"/>
 <area shape="rect" id="node7" href="$class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="257,183,425,209"/>

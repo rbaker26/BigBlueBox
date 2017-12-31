@@ -120,7 +120,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7986028e9b44516bff117a8255f377e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets full inventory.  <a href="#a7986028e9b44516bff117a8255f377e4">More...</a><br/></td></tr>
 <tr class="separator:a7986028e9b44516bff117a8255f377e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1794a5b641c117021fd6a2ffbde0028f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_db_connect.html#a1794a5b641c117021fd6a2ffbde0028f">updateItem</a> (QString orgName, <a class="el" href="structbbb_1_1_row.html">Row</a> newRowInfo)</td></tr>
+<tr class="memdesc:a1794a5b641c117021fd6a2ffbde0028f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the contents of one item.  <a href="#a1794a5b641c117021fd6a2ffbde0028f">More...</a><br/></td></tr>
 <tr class="separator:a1794a5b641c117021fd6a2ffbde0028f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad230717781e28a912e4d388b8faef996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_db_connect.html#ad230717781e28a912e4d388b8faef996">addNewItem</a> (<a class="el" href="classbbb_1_1_item.html">Item</a> newItem)</td></tr>
+<tr class="memdesc:ad230717781e28a912e4d388b8faef996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addes a new item to the database.  <a href="#ad230717781e28a912e4d388b8faef996">More...</a><br/></td></tr>
+<tr class="separator:ad230717781e28a912e4d388b8faef996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -139,6 +143,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a732b78f5fcf21aa52cae5abbdbad1c0c"><td class="memItemLeft" align="right" valign="top">QSqlDatabase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_db_connect.html#a732b78f5fcf21aa52cae5abbdbad1c0c">bbb_db</a></td></tr>
 <tr class="memdesc:a732b78f5fcf21aa52cae5abbdbad1c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Database object.  <a href="#a732b78f5fcf21aa52cae5abbdbad1c0c">More...</a><br/></td></tr>
 <tr class="separator:a732b78f5fcf21aa52cae5abbdbad1c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db7fa2d8af97a71ebf33676eb7c4d9b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_db_connect.html#a7db7fa2d8af97a71ebf33676eb7c4d9b">dateFormat</a> = &quot;yyyy/MM/dd hh:mm::ss&quot;</td></tr>
+<tr class="memdesc:a7db7fa2d8af97a71ebf33676eb7c4d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server DateTime format for all Date.toString()'s.  <a href="#a7db7fa2d8af97a71ebf33676eb7c4d9b">More...</a><br/></td></tr>
+<tr class="separator:a7db7fa2d8af97a71ebf33676eb7c4d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -207,6 +214,41 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad230717781e28a912e4d388b8faef996"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DbConnect::addNewItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbbb_1_1_item.html">Item</a>&#160;</td>
+          <td class="paramname"><em>newItem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Addes a new item to the database. </p>
+<p>Items must be unique or the sql will fail. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="classbbb_1_1_item.html" title="Business Object Layer : Inventory Item. ">Item</a></td><td>newItem </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Author</dt><dd>Bob Baker </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbbb_1_1_db_connect_ad230717781e28a912e4d388b8faef996_icgraph.png" border="0" usemap="#classbbb_1_1_db_connect_ad230717781e28a912e4d388b8faef996_icgraph" alt=""/></div>
+<map name="classbbb_1_1_db_connect_ad230717781e28a912e4d388b8faef996_icgraph" id="classbbb_1_1_db_connect_ad230717781e28a912e4d388b8faef996_icgraph">
+<area shape="rect" id="node2" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="253,5,304,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a7986028e9b44516bff117a8255f377e4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -306,6 +348,16 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Updates the contents of one item. </p>
+<p>Take a QString containing the org name, and a <a class="el" href="structbbb_1_1_row.html" title="Ui Object Layer : Inventory Table Row. ">Row</a> containing the new info for the item. A <a class="el" href="structbbb_1_1_row.html" title="Ui Object Layer : Inventory Table Row. ">Row</a> is a empty inheritance of <a class="el" href="classbbb_1_1_item.html" title="Business Object Layer : Inventory Item. ">Item</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">QString</td><td>orgName, <a class="el" href="structbbb_1_1_row.html" title="Ui Object Layer : Inventory Table Row. ">Row</a> newRowInfo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Author</dt><dd>Bob Baker </dd></dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -337,6 +389,28 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Database object. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7db7fa2d8af97a71ebf33676eb7c4d9b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString bbb::DbConnect::dateFormat = &quot;yyyy/MM/dd hh:mm::ss&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Server DateTime format for all Date.toString()'s. </p>
 
 </div>
 </div>

@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['on_5factiongoto_5fhome_5ftriggered',['on_actionGoto_Home_triggered',['../class_main_window.html#a293283717ca41f7e4b26d45dfaafeedd',1,'MainWindow']]],
-  ['on_5factionhome_5ftriggered',['on_actionHome_triggered',['../class_main_window.html#a313c36eed19a71e2525da1e8041eb6a0',1,'MainWindow']]],
-  ['on_5fcheckbox_5feditson_5fclicked',['on_checkBox_editsOn_clicked',['../class_reports_view.html#a89b2e4e29486ddb2a1f8a129edb59367',1,'ReportsView']]],
-  ['on_5fcombobox_5fadddel_5factivated',['on_comboBox_addDel_activated',['../class_reports_view.html#ada0efc617e671329badefe711a815f16',1,'ReportsView']]],
-  ['on_5fcombobox_5fcurrentindexchanged',['on_comboBox_currentIndexChanged',['../class_reports_view.html#a2f849e56c1e598de3ae680bf01a6cc96',1,'ReportsView']]],
-  ['on_5fpushbutton_5fedit_5fclicked',['on_pushButton_edit_clicked',['../class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59',1,'ReportsView']]],
-  ['on_5ftablewidget_5finv_5fcelldoubleclicked',['on_tableWidget_inv_cellDoubleClicked',['../class_reports_view.html#ad5cf98addd840c1e257a556598ce66d7',1,'ReportsView']]]
+  ['main',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.cpp'],['../test_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.cpp']]],
+  ['mainwindow',['MainWindow',['../class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db',1,'MainWindow']]],
+  ['makepair',['makePair',['../class_reports_view.html#a2f558ef578ac827d53638af002a8b93d',1,'ReportsView']]],
+  ['maketxtinvreport',['makeTxtInvReport',['../classbbb_1_1___file_writer.html#aa45ea2af057e9074e3f83b97a1d44256',1,'bbb::_FileWriter']]],
+  ['makexmlinvreport',['makeXmlInvReport',['../classbbb_1_1___file_writer.html#af6d37d4db77fb49e8c7169694d28317a',1,'bbb::_FileWriter']]]
 ];

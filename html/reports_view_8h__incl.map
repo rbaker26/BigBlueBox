@@ -1,6 +1,7 @@
 <map id="/home/travis/build/rbaker26/BigBlueBox/src/reportsView.h" name="/home/travis/build/rbaker26/BigBlueBox/src/reportsView.h">
-<area shape="rect" id="node4" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="471,109,564,136"/>
-<area shape="rect" id="node13" href="$item_8h.html" title="item.h" alt="" coords="807,184,864,211"/>
-<area shape="rect" id="node17" href="$__regex_8h.html" title="_regex.h" alt="" coords="924,109,996,136"/>
-<area shape="rect" id="node14" href="$category_8h.html" title="category.h" alt="" coords="795,259,876,285"/>
+<area shape="rect" id="node4" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="564,109,657,136"/>
+<area shape="rect" id="node13" href="$item_8h.html" title="item.h" alt="" coords="803,184,860,211"/>
+<area shape="rect" id="node17" href="$__regex_8h.html" title="_regex.h" alt="" coords="468,109,540,136"/>
+<area shape="rect" id="node19" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="1097,109,1185,136"/>
+<area shape="rect" id="node14" href="$category_8h.html" title="category.h" alt="" coords="839,259,920,285"/>
 </map>

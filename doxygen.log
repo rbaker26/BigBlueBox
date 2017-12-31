@@ -228,6 +228,13 @@ Generating caller graph for function ReportsView::initTable/home/travis/build/rb
 /home/travis/build/rbaker26/BigBlueBox/src/category.h:51: warning: argument 'int' of command @param is not found in the argument list of bbb::Category::categoryToQString(int cat)
 /home/travis/build/rbaker26/BigBlueBox/src/category.h:51: warning: The following parameters of bbb::Category::categoryToQString(int cat) are not documented:
   parameter 'cat'
+/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:98: warning: argument 'Item' of command @param is not found in the argument list of bbb::DbConnect::addNewItem(Item newItem)
+/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:98: warning: The following parameters of bbb::DbConnect::addNewItem(Item newItem) are not documented:
+  parameter 'newItem'
+/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:88: warning: argument 'QString' of command @param is not found in the argument list of bbb::DbConnect::updateItem(QString orgName, Row newRowInfo)
+/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:88: warning: The following parameters of bbb::DbConnect::updateItem(QString orgName, Row newRowInfo) are not documented:
+  parameter 'orgName'
+  parameter 'newRowInfo'
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:54: warning: argument 'Category' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:54: warning: argument 'categoryType' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:54: warning: The following parameters of bbb::Item::categoryToQString(bbb::Category::categoryType category) are not documented:
@@ -235,6 +242,7 @@ Generating caller graph for function ReportsView::initTable/home/travis/build/rb
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:72: warning: Found unknown command `\inherits'
 Inv
 Generating call graph for function ReportsView::on_pushButton_edit_clicked
+Generating call graph for function ReportsView::on_pushButton_makeReport_clicked
 Generating call graph for function ReportsView::on_tableWidget_inv_cellDoubleClicked
 Generating caller graph for function ReportsView::sendRowToToolBox
 Generating namespace index...
@@ -243,16 +251,15 @@ Generating docs for compound bbb::_FileWriter...
 Generating caller graph for function bbb::_FileWriter::_FileWriter
 Generating caller graph for function bbb::_FileWriter::getDesktopPath
 Generating call graph for function bbb::_FileWriter::getInstance
-Generating caller graph for function bbb::_FileWriter::getInstance
 Generating call graph for function bbb::_FileWriter::makeTxtInvReport
 Generating caller graph for function bbb::_FileWriter::makeTxtInvReport
 Generating call graph for function bbb::_FileWriter::makeXmlInvReport
-Generating caller graph for function bbb::_FileWriter::makeXmlInvReport
 Generating docs for compound bbb::_Regex...
 Generating docs for compound bbb::Category...
 Generating caller graph for function bbb::Category::categoryToQString
 Generating docs for compound bbb::DbConnect...
 Generating caller graph for function bbb::DbConnect::DbConnect
+Generating caller graph for function bbb::DbConnect::addNewItem
 Generating caller graph for function bbb::DbConnect::getFullInvAsVector
 Generating call graph for function bbb::DbConnect::getInstance
 Generating caller graph for function bbb::DbConnect::getInstance
@@ -439,5 +446,5 @@ Patching output file 39/42
 Patching output file 40/42
 Patching output file 41/42
 Patching output file 42/42
-lookup cache used 288/65536 hits=1373 misses=301
+lookup cache used 299/65536 hits=1404 misses=312
 finished...
