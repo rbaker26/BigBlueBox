@@ -17,8 +17,8 @@ _FileWriter::_FileWriter()
 //*********************************************************************************
 _FileWriter::~_FileWriter()
 {
-//    delete instance;
-//    instance = nullptr;
+    delete instance;
+    instance = nullptr;
 }
 //*********************************************************************************
 

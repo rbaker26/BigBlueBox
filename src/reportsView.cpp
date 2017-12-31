@@ -200,7 +200,7 @@ bbb::Row ReportsView::getNewRowFromToolBox()
 //*********************************************************************************
 void ReportsView::on_comboBox_currentIndexChanged(int index)
 {
-
+    // mark_for_delete
 }
 //*********************************************************************************
 
@@ -232,7 +232,8 @@ void ReportsView::on_pushButton_makeReport_clicked()
     typedef  bbb::_FileWriter fw;
 
     // sets the type based on the radio buttons on the Reports Tab
-    fw::ReportType type;
+    fw::ReportType type = fw::ReportType::Full;
+
     if(ui->radioButton_FullR->isChecked())      {type = fw::Full;}
     else if(ui->radioButton_LowR->isChecked())  {type = fw::Low;}
     else if(ui->radioButton_CLowR->isChecked()) {type = fw::Critical;}

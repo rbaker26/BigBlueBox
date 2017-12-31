@@ -34,7 +34,7 @@ namespace bbb {
 //*********************************************************************************
 class DbConnect
 {
-protected:
+private:
     //**********************************************************
     //! \brief Database object
     QSqlDatabase bbb_db;
@@ -51,6 +51,11 @@ protected:
     //!          Sets the path for the database.
     //! \author  Bob Baker
     DbConnect();
+    //**********************************************************
+
+    //**********************************************************
+    //! \brief Server DateTime format for all Date.toString()'s
+    QString dateFormat = "yyyy/MM/dd hh:mm::ss";
     //**********************************************************
 public:
     //**********************************************************
@@ -85,6 +90,14 @@ public:
     //! \param   QString orgName, Row newRowInfo
     //! \author  Bob Baker
     void updateItem(QString orgName, Row newRowInfo);
+    //**********************************************************
+
+    //**********************************************************
+    //! \brief Addes a new item to the database.
+    //! \details Items must be unique or the sql will fail.
+    //! \param Item newItem
+    //! \author Bob Baker
+    void addNewItem(Item newItem);
     //**********************************************************
 
 }; // end class

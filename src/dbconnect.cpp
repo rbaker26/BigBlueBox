@@ -110,7 +110,7 @@ void DbConnect::updateItem(QString orgName, Row newRowInfo)
     query.bindValue(":target_quantity", newRowInfo.effectiveOnHand);
     query.bindValue(":cat",             static_cast<int>(newRowInfo.category));
     query.bindValue(":box_num",         newRowInfo.boxNum);
-    query.bindValue(":date_modified", newRowInfo.dateModified.toString("yyyy/MM/dd hh:mm:ss"));
+    query.bindValue(":date_modified", newRowInfo.dateModified.toString(dateFormat));
 
     query.bindValue(":item_name_new",   newRowInfo.itemName);
 
@@ -119,5 +119,30 @@ void DbConnect::updateItem(QString orgName, Row newRowInfo)
     {
         qDebug() << "Exec err:\t" << query.lastError().text();
     }
+}
+//*********************************************************************************
+
+//*********************************************************************************
+void DbConnect::addNewItem(Item newItem)
+{
+    QSqlQuery query;
+    query.prepare("INSERT INTO inventory (item_name, quantity, target_quantity, "
+                                         "cat, can_expire, box_num, date_modified) "
+                  "VALUES (:item_name, :quantity, :target_quantity, "
+                          ":cat, :can_expire, :box_num, :date_modified)");
+
+    query.bindValue(":item_name", newItem.itemName);
+    query.bindValue(":quantity", newItem.quantity);
+    query.bindValue(":target_quantity", newItem.effectiveOnHand);
+    query.bindValue(":cat", static_cast<int>(newItem.category) );
+    query.bindValue(":can_expire", newItem.canExpire);
+    query.bindValue(":box_num", newItem.boxNum);
+    query.bindValue(":date_modified", newItem.dateModified.toString(dateFormat));
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+
 }
 //*********************************************************************************

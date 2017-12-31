@@ -29,7 +29,7 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="label_title">
        <property name="layoutDirection">
         <enum>Qt::LeftToRight</enum>
        </property>
@@ -502,6 +502,13 @@ p, li { white-space: pre-wrap; }
                 </spacer>
                </item>
               </layout>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_canExpireNew">
+               <property name="text">
+                <string>Can Expire</string>
+               </property>
+              </widget>
              </item>
              <item>
               <widget class="Line" name="line_2">
