@@ -19,6 +19,7 @@
 // Business Objects
 //#include "Gear.h"
 #include "item.h"
+//#include "dbConnect/dbConnectItem.h"
 //*********************************************************************************
 
 namespace bbb {
@@ -28,6 +29,8 @@ namespace bbb {
 //! \details Contains all push/pull/update functions for communication between
 //!          DataBase Layer and Business Object Layers.
 //! \author  Bob Baker
+// I know there is a lot of stuff in this class, I'm sorry.  I did not want to
+//  mess with inherting singletons and building interfaces.
 //*********************************************************************************
 class DbConnect
 {
@@ -50,6 +53,10 @@ private:
     DbConnect();
     //**********************************************************
 
+    //**********************************************************
+    //! \brief Server DateTime format for all Date.toString()'s
+    QString dateFormat = "yyyy/MM/dd hh:mm::ss";
+    //**********************************************************
 public:
     //**********************************************************
     //! \brief   Default non-args de-constructor
@@ -75,9 +82,23 @@ public:
     QVector<Item> getFullInvAsVector();
     //**********************************************************
 
-
+    //**********************************************************
+    //! \brief   Updates the contents of one item
+    //! \details Take a QString containing the org name, and a
+    //!           Row containing the new info for the item.  A
+    //!           Row is a empty inheritance of Item.
+    //! \param   QString orgName, Row newRowInfo
+    //! \author  Bob Baker
     void updateItem(QString orgName, Row newRowInfo);
+    //**********************************************************
 
+    //**********************************************************
+    //! \brief Addes a new item to the database.
+    //! \details Items must be unique or the sql will fail.
+    //! \param Item newItem
+    //! \author Bob Baker
+    void addNewItem(Item newItem);
+    //**********************************************************
 
 }; // end class
 //*********************************************************************************

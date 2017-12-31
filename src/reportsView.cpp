@@ -131,25 +131,28 @@ void ReportsView::on_pushButton_edit_clicked()
     thisRow.category = static_cast<bbb::Category::categoryType>(ui->lineEdit_cat->text().toInt());
     thisRow.effectiveOnHand = ui->spinBox_targetQ->value();
     thisRow.boxNum = ui->lineEdit_box->text().toInt();
+    thisRow.dateModified = QDateTime::currentDateTime();
+    //thisRow.modifiedBy // do something
+
 //    bool inputFieldsHaveChanged = 0;
+
+    // ***************
+    qDebug() <<
+    (rx::isItemName( ui->lineEdit_itemName->text()) ? "REGEX SUCCESS" : "REGEX FAIL" );
+    // ***************
     if(regexPass)
     {
         // push to db
         bbb::DbConnect::getInstance()->updateItem(orgItemName, thisRow);
         qDebug() << "Push to db";
-
     }
-    // ***************
-    qDebug() <<
-    (rx::isItemName( ui->lineEdit_itemName->text()) ? "REGEX SUCCESS" : "REGEX FAIL" );
-    // ***************
-
 
     ui->lineEdit_itemName->clear();
     ui->lineEdit_cat->clear();
     ui->lineEdit_box->clear();
     ui->spinBox_quantity->clear();
     ui->spinBox_targetQ->clear();
+    // these update the ui table after the edit
     clearTable();
     initTableInv();
     fillTableInv();
@@ -197,7 +200,7 @@ bbb::Row ReportsView::getNewRowFromToolBox()
 //*********************************************************************************
 void ReportsView::on_comboBox_currentIndexChanged(int index)
 {
-
+    // mark_for_delete
 }
 //*********************************************************************************
 
@@ -220,5 +223,33 @@ void ReportsView::on_comboBox_addDel_activated(int index)
         ui->spinBox_quantityNew->setEnabled(false);
         ui->spinBox_targetQNew->setEnabled(false);
     }
+}
+//*********************************************************************************
+
+//*********************************************************************************
+void ReportsView::on_pushButton_makeReport_clicked()
+{
+    typedef  bbb::_FileWriter fw;
+
+    // sets the type based on the radio buttons on the Reports Tab
+    fw::ReportType type = fw::ReportType::Full;
+
+    if(ui->radioButton_FullR->isChecked())      {type = fw::Full;}
+    else if(ui->radioButton_LowR->isChecked())  {type = fw::Low;}
+    else if(ui->radioButton_CLowR->isChecked()) {type = fw::Critical;}
+    else if(ui->radioButton_ExpR->isChecked())  {type = fw::Expirable;}
+
+    // Uses the combo box to decided what file format to use.
+    // _FileWriter will write to a default location.
+    // The Default loc should be %desktop%.
+    if(ui->comboBox_fileFormat->currentText() == "txt")
+    {
+        fw::getInstance()->makeTxtInvReport(fullInventory, type);
+    }
+    else if(ui->comboBox_fileFormat->currentText() == "XML")
+    {
+        fw::getInstance()->makeXmlInvReport(fullInventory, type);
+    }
+
 }
 //*********************************************************************************

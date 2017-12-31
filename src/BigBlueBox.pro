@@ -42,7 +42,7 @@ SOURCES += \
         _regex.cpp      \
         gearcentral.cpp \
         usersession.cpp \
-        _filewriter.cpp \
+        _filewriter.cpp
 
 
 
@@ -57,7 +57,7 @@ HEADERS += \
         gearcentral.h   \
         usersession.h   \
         _filewriter.h   \
-        bbb.h           \
+        bbb.h
 
 
 

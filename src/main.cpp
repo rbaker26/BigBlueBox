@@ -14,7 +14,7 @@
 
 //*********************************************************************************
 // test header
-// remove after test
+// remove after testing
 #include "item.h"
 #include "dbconnect.h"
 #include "QDebug"
@@ -27,17 +27,21 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon(":/img/nyltIcon.png"));
-    a.setApplicationName("BigBlueBox v1.1");
+    a.setApplicationName("BigBlueBox v0.3.0");
     MainWindow w;
-    w.setWindowTitle("BigBlueBox v1.1");
+    w.setWindowTitle("BigBlueBox v0.3.0");
     w.show();
 
+   bbb::Item myItem;
+   myItem.itemName = "test";
+   myItem.quantity = 55;
+   myItem.effectiveOnHand = 100;
+   myItem.canExpire = false;
+   myItem.category = bbb::Category::KITCHEN;
+   myItem.boxNum = 16;
+   myItem.dateModified = QDateTime::currentDateTime();
 
-//    _FileWriter* fw = _FileWriter::getInstance();
-//    fw->makeReport(DbConnect::getInstance()->getFullInvAsVector());
-
-    bbb::_FileWriter::getInstance()->makeReport(bbb::DbConnect::getInstance()->getFullInvAsVector());
-
+   bbb::DbConnect::getInstance()->addNewItem(myItem);
    return a.exec();
 }
 //*********************************************************************************
