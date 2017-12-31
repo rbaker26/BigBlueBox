@@ -38,4 +38,7 @@ Makefile*
 CMakeLists.txt.user*
 DEBUG/
 RELEASE/
+
+# Misc.
+*.xml
 FULL_INVENTORY_REPORT.txt
