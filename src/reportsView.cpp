@@ -253,3 +253,18 @@ void ReportsView::on_pushButton_makeReport_clicked()
 
 }
 //*********************************************************************************
+
+void ReportsView::on_comboBox_addDel_currentIndexChanged(const QString &arg1)
+{
+    ui->pushButton_addDelete->setText(arg1);
+}
+
+void ReportsView::on_pushButton_addDelete_clicked()
+{
+    bbb::Item item;
+
+    item.itemName = ui->lineEdit_itemNameNew->text();
+    item.quantity = ui->spinBox_quantityNew->value();
+    item.effectiveOnHand = ui->spinBox_targetQNew->value();
+    //item.boxNum = ui->lineEdit_cat
+}

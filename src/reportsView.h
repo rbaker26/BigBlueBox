@@ -35,6 +35,10 @@ private slots:
 
     void on_pushButton_makeReport_clicked();
 
+    void on_comboBox_addDel_currentIndexChanged(const QString &arg1);
+
+    void on_pushButton_addDelete_clicked();
+
 private:
     Ui::ReportsView *ui;
     //**********************************************************
