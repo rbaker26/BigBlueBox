@@ -38,7 +38,7 @@ __Qt__
 
   1. Download from website provided.
   2. Run the installer. 
-  3. Login with a Qt Account or follow the steps provided to creare one.
+  3. Login with a Qt Account or follow the steps provided to create one.
   4. Specify the directory where Qt will be installed.  (~30 GB) 
   
   5. <b> Select Components </b>  
