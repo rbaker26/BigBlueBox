@@ -1,3 +1,9 @@
 <map id="/home/travis/build/rbaker26/BigBlueBox/src/mainmenu.cpp" name="/home/travis/build/rbaker26/BigBlueBox/src/mainmenu.cpp">
-<area shape="rect" id="node2" href="$mainmenu_8h.html" title="mainmenu.h" alt="" coords="5,109,99,136"/>
+<area shape="rect" id="node2" href="$mainmenu_8h.html" title="mainmenu.h" alt="" coords="568,109,661,136"/>
+<area shape="rect" id="node4" href="$reports_view_8h.html" title="reportsView.h" alt="" coords="633,184,735,211"/>
+<area shape="rect" id="node7" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="901,259,995,285"/>
+<area shape="rect" id="node16" href="$item_8h.html" title="item.h" alt="" coords="653,333,711,360"/>
+<area shape="rect" id="node20" href="$__regex_8h.html" title="_regex.h" alt="" coords="1479,259,1551,285"/>
+<area shape="rect" id="node22" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="525,259,613,285"/>
+<area shape="rect" id="node17" href="$category_8h.html" title="category.h" alt="" coords="689,408,771,435"/>
 </map>
