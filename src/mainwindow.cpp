@@ -7,10 +7,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+    this->showMaximized();
     //function to change the central widget
     QWidget* reportsView = new ReportsView(this);
     setCentralWidget(reportsView);
+
 
 }
 //*********************************************************************************
