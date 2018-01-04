@@ -78,6 +78,9 @@
          <property name="alternatingRowColors">
           <bool>true</bool>
          </property>
+         <property name="sortingEnabled">
+          <bool>false</bool>
+         </property>
         </widget>
        </item>
        <item>
@@ -521,6 +524,13 @@ p, li { white-space: pre-wrap; }
               </layout>
              </item>
              <item>
+              <widget class="QCheckBox" name="checkBox_canExpireNew">
+               <property name="text">
+                <string>Can Expire</string>
+               </property>
+              </widget>
+             </item>
+             <item>
               <layout class="QHBoxLayout" name="horizontalLayout_8">
                <item>
                 <spacer name="horizontalSpacer_5">
@@ -563,13 +573,6 @@ p, li { white-space: pre-wrap; }
                 </spacer>
                </item>
               </layout>
-             </item>
-             <item>
-              <widget class="QCheckBox" name="checkBox_canExpireNew">
-               <property name="text">
-                <string>Can Expire</string>
-               </property>
-              </widget>
              </item>
              <item>
               <widget class="Line" name="line_2">
@@ -778,43 +781,78 @@ p, li { white-space: pre-wrap; }
               </layout>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBox_adjCat">
+              <layout class="QHBoxLayout" name="horizontalLayout_15">
                <item>
-                <property name="text">
-                 <string>N/A</string>
-                </property>
+                <widget class="QLabel" name="label_11">
+                 <property name="text">
+                  <string>Category</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <property name="text">
-                 <string>Kitchen</string>
-                </property>
+                <widget class="QComboBox" name="comboBox_adjCat">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>5</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>N/A</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Kitchen</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Propane / Stoves</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Arts &amp; Crafts</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Traps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Office</string>
+                  </property>
+                 </item>
+                </widget>
                </item>
-               <item>
-                <property name="text">
-                 <string>Propane / Stoves</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Arts &amp; Crafts</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Traps</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Office</string>
-                </property>
-               </item>
-              </widget>
+              </layout>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_box">
-               <property name="placeholderText">
-                <string>box number</string>
+              <layout class="QHBoxLayout" name="horizontalLayout_16">
+               <item>
+                <widget class="QLabel" name="label_12">
+                 <property name="text">
+                  <string>Box Number</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_box">
+                 <property name="placeholderText">
+                  <string>box number</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_canExp_adj">
+               <property name="text">
+                <string>Can Expire</string>
                </property>
               </widget>
              </item>

@@ -176,6 +176,8 @@ void _FileWriter::makeTxtInvReport(QVector<Item> inventory, ReportType type)
             }
             it++;
         }
+        break;
+
     default :
         ofs << "Error, bad ReportType enum passed";
          break;
@@ -200,10 +202,15 @@ void _FileWriter::makeXmlInvReport(QVector<Item> inventory, ReportType type)
                 << "db_dump.xml";
 
     int reportIndex = static_cast<int>(type);
-    qDebug() << reportIndex;
+
+    //qDebug() << reportIndex;
     QFile file(getDesktopPath() + oFileNames.at(reportIndex));
 
-    file.open(QIODevice::WriteOnly);
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
+    {
+        qDebug() << file.errorString();
+    }
+
     QXmlStreamWriter stream(&file);
 
     QVector<Item>::iterator it = inventory.begin();

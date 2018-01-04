@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QPair>
+#include <QMessageBox>
 
 #include "dbconnect.h"
 #include "item.h"

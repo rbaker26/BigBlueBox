@@ -54,7 +54,12 @@ public:
     static QString categoryToQString(int cat);
     //**********************************************************
 
+    //**********************************************************
+    //! \brief  Turns a QString into a int
+    //! \param  QString catStr
+    //! \author Bob Baker
     static int intFromString(QString catStr);
+    //**********************************************************
 
 }; // end class
 //*********************************************************************************

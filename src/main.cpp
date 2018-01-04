@@ -32,16 +32,17 @@ int main(int argc, char *argv[])
     w.setWindowTitle("BigBlueBox v0.3.0");
     w.show();
 
-   bbb::Item myItem;
-   myItem.itemName = "test";
-   myItem.quantity = 55;
-   myItem.effectiveOnHand = 100;
-   myItem.canExpire = false;
-   myItem.category = bbb::Category::KITCHEN;
-   myItem.boxNum = 16;
-   myItem.dateModified = QDateTime::currentDateTime();
+    // test code
+//   bbb::Item myItem;
+//   myItem.itemName = "test";
+//   myItem.quantity = 55;
+//   myItem.effectiveOnHand = 100;
+//   myItem.canExpire = false;
+//   myItem.category = bbb::Category::KITCHEN;
+//   myItem.boxNum = 16;
+//   myItem.dateModified = QDateTime::currentDateTime();
 
-   bbb::DbConnect::getInstance()->addNewItem(myItem);
+//   bbb::DbConnect::getInstance()->addNewItem(myItem);
    return a.exec();
 }
 //*********************************************************************************

@@ -35,7 +35,11 @@ public:
     int      effectiveOnHand;
 
     //! \brief Box item is in
+    //! \obsolete Replaced by box string
     int      boxNum;
+
+    //! \brief Box item is in
+    QString boxStr;
 
     //! \brief If it can expire
     bool     canExpire;

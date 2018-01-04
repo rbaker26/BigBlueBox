@@ -54,6 +54,7 @@ void ReportsView::sendRowToToolBox(QStringList row)
     int target = QString((row.at(2))).toInt();
     QString catString = (QString(row.at(3)));
     QString  boxNum = row.at(4);
+    bool isChecked = (row.at(5) == "Yes" ? true : false);
 
     int index = bbb::Category::intFromString(catString); // for cat combo boxes
     //***********************************************
@@ -65,6 +66,8 @@ void ReportsView::sendRowToToolBox(QStringList row)
     //ui->lineEdit_cat->setText(catString);
     ui->comboBox_adjCat->setCurrentIndex(index);
     ui->lineEdit_box->setText(boxNum);
+    // this sets the checkbox depending on the Yes/"" string
+    ui->checkBox_canExp_adj->setCheckState( (isChecked ? Qt::CheckState::Checked : Qt::CheckState::Unchecked) );
     //***********************************************
 
     //***********************************************
@@ -76,6 +79,7 @@ void ReportsView::sendRowToToolBox(QStringList row)
     //ui->lineEdit_catNew->setText(catString);
     ui->comboBox_addDelCat->setCurrentIndex(index);
     ui->lineEdit_boxNew->setText(boxNum);
+    ui->checkBox_canExpireNew->setCheckState( (isChecked ? Qt::CheckState::Checked : Qt::CheckState::Unchecked) );
     //***********************************************
 
 }
@@ -85,8 +89,8 @@ void ReportsView::sendRowToToolBox(QStringList row)
 void ReportsView::initTableInv()
 {
     QStringList header;
-    header << "Name" << "Quantity" << "EFOH" << "Cat" << "BOX#";
-    ui->tableWidget_inv->setColumnCount(5);
+    header << "Name" << "Quantity" << "Target Quantity" << "Category" << "BOX#" << "Can Expire";
+    ui->tableWidget_inv->setColumnCount(6);
     ui->tableWidget_inv->setHorizontalHeaderLabels(header);
     ui->tableWidget_inv->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     ui->tableWidget_inv->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
@@ -103,6 +107,8 @@ void ReportsView::fillTableInv()
     QVector<bbb::Item>::iterator it              = fullInventory.begin();
     const QVector<bbb::Item>::iterator EXIT_FLAG = fullInventory.end();
 
+    ui->tableWidget_inv->setSortingEnabled(false);
+    QString canExp;
     int rowCount = 0;
     while(it != EXIT_FLAG)
     { // Start While loop
@@ -117,10 +123,15 @@ void ReportsView::fillTableInv()
         //ui->tableWidget_inv->setItem(rowCount ,3, new QTableWidgetItem(QString::number(static_cast<int>(it->category))));
 
         ui->tableWidget_inv->setItem(rowCount ,3, new QTableWidgetItem(catagoryS));
-        ui->tableWidget_inv->setItem(rowCount ,4, new QTableWidgetItem(QString::number(it->boxNum)));
+        ui->tableWidget_inv->setItem(rowCount ,4, new QTableWidgetItem(it->boxStr));
+
+        canExp = (it->canExpire ? "Yes" : "");
+        ui->tableWidget_inv->setItem(rowCount ,5, new QTableWidgetItem(canExp));
         rowCount++;
         it++;
     }// end while-loop
+    //ui->tableWidget_inv->setSortingEnabled(true);
+    // no sorting for now. The order it is sorting in for nums is (0, 1, 10, 11, 2, 20, 22, ..)
 }
 //*********************************************************************************
 
@@ -137,11 +148,14 @@ void ReportsView::on_pushButton_edit_clicked()
     //thisRow.category = static_cast<bbb::Category::categoryType>(ui->lineEdit_cat->text().toInt());
     thisRow.category = static_cast<bbb::Category::categoryType>(ui->comboBox_adjCat->currentIndex());
     thisRow.effectiveOnHand = ui->spinBox_targetQ->value();
-    thisRow.boxNum = ui->lineEdit_box->text().toInt();
+    thisRow.boxNum = ui->lineEdit_box->text().toInt();                                              // mark for delete
+    thisRow.boxStr = ui->lineEdit_box->text();
+    //qDebug() << thisRow.boxStr;
     thisRow.dateModified = QDateTime::currentDateTime();
-    //thisRow.modifiedBy // do something
+    //thisRow.modifiedBy // do something                                                               // todo
 
-//    bool inputFieldsHaveChanged = 0;
+    thisRow.canExpire = ui->checkBox_canExp_adj->isChecked();
+    //qDebug() << thisRow.canExpire;
 
     // ***************
     qDebug() <<
@@ -160,6 +174,7 @@ void ReportsView::on_pushButton_edit_clicked()
     ui->lineEdit_box->clear();
     ui->spinBox_quantity->clear();
     ui->spinBox_targetQ->clear();
+    ui->checkBox_canExp_adj->setCheckState(Qt::CheckState::Unchecked);
     // these update the ui table after the edit
     clearTable();
     initTableInv();
@@ -223,6 +238,7 @@ void ReportsView::on_comboBox_addDel_activated(int index)
         ui->lineEdit_boxNew->setEnabled(true);
         ui->spinBox_quantityNew->setEnabled(true);
         ui->spinBox_targetQNew->setEnabled(true);
+        ui->checkBox_canExpireNew->setEnabled(true);
     }
     else if(index == 1 /* 1 = "remove" */)
     {
@@ -232,6 +248,7 @@ void ReportsView::on_comboBox_addDel_activated(int index)
         ui->lineEdit_boxNew->setEnabled(false);
         ui->spinBox_quantityNew->setEnabled(false);
         ui->spinBox_targetQNew->setEnabled(false);
+        ui->checkBox_canExpireNew->setEnabled(false);
     }
 }
 //*********************************************************************************
@@ -264,18 +281,79 @@ void ReportsView::on_pushButton_makeReport_clicked()
 }
 //*********************************************************************************
 
+//*********************************************************************************
 void ReportsView::on_comboBox_addDel_currentIndexChanged(const QString &arg1)
 {
     ui->pushButton_addDelete->setText(arg1);
 }
 //*********************************************************************************
 
+//*********************************************************************************
 void ReportsView::on_pushButton_addDelete_clicked()
+{
+    if(ui->comboBox_addDel->currentIndex() == 0)
+    {
+        addItem();
+    }
+    else if(ui->comboBox_addDel->currentIndex() == 1)
+    {
+        QMessageBox msgBox;
+        msgBox.setText("Are you sure you want to delete this item?\n"
+                       "Deleting is not the same as setting the quantity to zero.");
+        msgBox.setInformativeText("Do you want to save these changes?");
+        msgBox.setStandardButtons(QMessageBox::Save | QMessageBox::Discard);
+        msgBox.setDefaultButton(QMessageBox::Discard);
+        int ret = msgBox.exec();
+
+        switch (ret)
+        {
+        case QMessageBox::Save :
+            deleteItem();
+            break;
+        case QMessageBox::Discard :
+            break;
+        }
+
+    }
+
+    // reset all the fields after query
+    ui->lineEdit_boxNew->clear();
+    ui->lineEdit_itemNameNew->clear();
+    ui->comboBox_addDelCat->setCurrentIndex(0);
+    ui->spinBox_quantityNew->setValue(0);
+    ui->spinBox_targetQNew->setValue(0);
+    ui->checkBox_canExpireNew->setCheckState(Qt::CheckState::Unchecked);
+
+    clearTable();
+    initTableInv();
+    fillTableInv();
+
+}
+//*********************************************************************************
+
+//*********************************************************************************
+void ReportsView::addItem()
 {
     bbb::Item item;
 
     item.itemName = ui->lineEdit_itemNameNew->text();
     item.quantity = ui->spinBox_quantityNew->value();
     item.effectiveOnHand = ui->spinBox_targetQNew->value();
-    //
+    item.category = static_cast<bbb::Category::categoryType>( ui->comboBox_addDelCat->currentIndex() );
+    item.canExpire = ui->checkBox_canExpireNew->isChecked();
+    item.boxStr = ui->lineEdit_boxNew->text();
+    item.dateModified = QDateTime::currentDateTime();
+    item.modifiedBy = "sys-add";
+
+    bbb::DbConnect::getInstance()->addNewItem(item);
+
 }
+//*********************************************************************************
+
+//*********************************************************************************
+void ReportsView::deleteItem()
+{
+    QString itemName = ui->lineEdit_itemNameNew->text();
+    bbb::DbConnect::getInstance()->deleteItem(itemName);
+}
+//*********************************************************************************
