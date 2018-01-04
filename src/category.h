@@ -54,7 +54,7 @@ public:
     static QString categoryToQString(int cat);
     //**********************************************************
 
-
+    static int intFromString(QString catStr);
 
 }; // end class
 //*********************************************************************************

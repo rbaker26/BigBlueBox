@@ -446,18 +446,79 @@ p, li { white-space: pre-wrap; }
               </layout>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_catNew">
-               <property name="placeholderText">
-                <string>catagory</string>
-               </property>
-              </widget>
+              <layout class="QHBoxLayout" name="horizontalLayout_13">
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                   <horstretch>1</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>Category</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="comboBox_addDelCat">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>5</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>N/A</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Kitchen</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Propane / Stoves</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Arts and Crafts</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Tarps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Office</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_boxNew">
-               <property name="placeholderText">
-                <string>box number</string>
-               </property>
-              </widget>
+              <layout class="QHBoxLayout" name="horizontalLayout_14">
+               <item>
+                <widget class="QLabel" name="label_10">
+                 <property name="text">
+                  <string>Box Number</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_boxNew">
+                 <property name="placeholderText">
+                  <string>box number</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_8">
@@ -717,10 +778,37 @@ p, li { white-space: pre-wrap; }
               </layout>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_cat">
-               <property name="placeholderText">
-                <string>catagory</string>
-               </property>
+              <widget class="QComboBox" name="comboBox_adjCat">
+               <item>
+                <property name="text">
+                 <string>N/A</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Kitchen</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Propane / Stoves</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Arts &amp; Crafts</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Traps</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Office</string>
+                </property>
+               </item>
               </widget>
              </item>
              <item>

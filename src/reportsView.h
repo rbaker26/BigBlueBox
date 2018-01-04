@@ -63,7 +63,8 @@ private:
 
     QVector<bbb::Item> fullInventory;
 
-
+    void addItem();
+    void deleteItem();
 
     // 5 col size
     QString orgItemName;

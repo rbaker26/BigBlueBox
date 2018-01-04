@@ -55,14 +55,15 @@ void ReportsView::sendRowToToolBox(QStringList row)
     QString catString = (QString(row.at(3)));
     QString  boxNum = row.at(4);
 
-
+    int index = bbb::Category::intFromString(catString); // for cat combo boxes
     //***********************************************
     //* Adjust tool box
     //***********************************************
     ui->lineEdit_itemName->setText(name);
     ui->spinBox_quantity->setValue(quantity);
     ui->spinBox_targetQ->setValue(target);
-    ui->lineEdit_cat->setText(catString);
+    //ui->lineEdit_cat->setText(catString);
+    ui->comboBox_adjCat->setCurrentIndex(index);
     ui->lineEdit_box->setText(boxNum);
     //***********************************************
 
@@ -72,7 +73,8 @@ void ReportsView::sendRowToToolBox(QStringList row)
     ui->lineEdit_itemNameNew->setText(name);
     ui->spinBox_quantityNew->setValue(quantity);
     ui->spinBox_targetQNew->setValue(target);
-    ui->lineEdit_catNew->setText(catString);
+    //ui->lineEdit_catNew->setText(catString);
+    ui->comboBox_addDelCat->setCurrentIndex(index);
     ui->lineEdit_boxNew->setText(boxNum);
     //***********************************************
 
@@ -109,8 +111,12 @@ void ReportsView::fillTableInv()
         ui->tableWidget_inv->setItem(rowCount ,0, new QTableWidgetItem(it->itemName));
         ui->tableWidget_inv->setItem(rowCount ,1, new QTableWidgetItem(QString::number((it->quantity))));
         ui->tableWidget_inv->setItem(rowCount ,2, new QTableWidgetItem(QString::number(it->effectiveOnHand)));
-        //QString catagoryS = Category::categoryToQString(QString::number(it->category).toInt()-1);
-        ui->tableWidget_inv->setItem(rowCount ,3, new QTableWidgetItem(QString::number(static_cast<int>(it->category))));
+        QString catagoryS = bbb::Category::categoryToQString(QString::number(it->category).toInt());
+        //qDebug() << catagoryS;
+        // good code below, only does ints
+        //ui->tableWidget_inv->setItem(rowCount ,3, new QTableWidgetItem(QString::number(static_cast<int>(it->category))));
+
+        ui->tableWidget_inv->setItem(rowCount ,3, new QTableWidgetItem(catagoryS));
         ui->tableWidget_inv->setItem(rowCount ,4, new QTableWidgetItem(QString::number(it->boxNum)));
         rowCount++;
         it++;
@@ -128,7 +134,8 @@ void ReportsView::on_pushButton_edit_clicked()
     bbb::Row thisRow;
     thisRow.itemName = ui->lineEdit_itemName->text();
     thisRow.quantity = ui->spinBox_quantity->value();
-    thisRow.category = static_cast<bbb::Category::categoryType>(ui->lineEdit_cat->text().toInt());
+    //thisRow.category = static_cast<bbb::Category::categoryType>(ui->lineEdit_cat->text().toInt());
+    thisRow.category = static_cast<bbb::Category::categoryType>(ui->comboBox_adjCat->currentIndex());
     thisRow.effectiveOnHand = ui->spinBox_targetQ->value();
     thisRow.boxNum = ui->lineEdit_box->text().toInt();
     thisRow.dateModified = QDateTime::currentDateTime();
@@ -148,7 +155,8 @@ void ReportsView::on_pushButton_edit_clicked()
     }
 
     ui->lineEdit_itemName->clear();
-    ui->lineEdit_cat->clear();
+    //ui->lineEdit_cat->clear();
+    ui->comboBox_adjCat->setCurrentIndex(0);
     ui->lineEdit_box->clear();
     ui->spinBox_quantity->clear();
     ui->spinBox_targetQ->clear();
@@ -210,7 +218,8 @@ void ReportsView::on_comboBox_addDel_activated(int index)
     if(index == 0 /* 0 = "add" */)
     {
         ui->lineEdit_itemNameNew->setEnabled(true);
-        ui->lineEdit_catNew->setEnabled(true);
+        //ui->lineEdit_catNew->setEnabled(true);
+        ui->comboBox_addDelCat->setEnabled(true);
         ui->lineEdit_boxNew->setEnabled(true);
         ui->spinBox_quantityNew->setEnabled(true);
         ui->spinBox_targetQNew->setEnabled(true);
@@ -218,7 +227,8 @@ void ReportsView::on_comboBox_addDel_activated(int index)
     else if(index == 1 /* 1 = "remove" */)
     {
         ui->lineEdit_itemNameNew->setEnabled(true);
-        ui->lineEdit_catNew->setEnabled(false);
+        //ui->lineEdit_catNew->setEnabled(false);
+        ui->comboBox_addDelCat->setEnabled(false);
         ui->lineEdit_boxNew->setEnabled(false);
         ui->spinBox_quantityNew->setEnabled(false);
         ui->spinBox_targetQNew->setEnabled(false);
@@ -258,6 +268,7 @@ void ReportsView::on_comboBox_addDel_currentIndexChanged(const QString &arg1)
 {
     ui->pushButton_addDelete->setText(arg1);
 }
+//*********************************************************************************
 
 void ReportsView::on_pushButton_addDelete_clicked()
 {
@@ -266,5 +277,5 @@ void ReportsView::on_pushButton_addDelete_clicked()
     item.itemName = ui->lineEdit_itemNameNew->text();
     item.quantity = ui->spinBox_quantityNew->value();
     item.effectiveOnHand = ui->spinBox_targetQNew->value();
-    //item.boxNum = ui->lineEdit_cat
+    //
 }
