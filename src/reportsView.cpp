@@ -7,7 +7,7 @@ ReportsView::ReportsView(QWidget *parent) :
     ui(new Ui::ReportsView)
 {
     ui->setupUi(this);
-    ui->toolBox->setCurrentIndex(3);
+    ui->toolBox->setCurrentIndex(2);
 
     clearTable();
 
