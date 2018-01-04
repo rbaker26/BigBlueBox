@@ -7,6 +7,7 @@
 
 // test code, del when finshed
 #include "reportsView.h"
+#include "mainmenu.h"
 
 namespace Ui {
 class MainWindow;
