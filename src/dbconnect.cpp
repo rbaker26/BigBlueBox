@@ -63,6 +63,8 @@ DbConnect* DbConnect::getInstance()
     int efOnHandFieldNum  = query.record().indexOf("target_quantity");
     int categoryFieldNum  = query.record().indexOf("cat");
     int boxNumFieldNum    = query.record().indexOf("box_num");
+    int canExpFieldNum    = query.record().indexOf("can_expire");
+
 
     query.first();
     do
@@ -71,7 +73,8 @@ DbConnect* DbConnect::getInstance()
         tempItem.quantity        = query.value(quantityFieldNum).toInt();
         tempItem.effectiveOnHand = query.value(efOnHandFieldNum).toInt();
         tempItem.category        = static_cast<Category::categoryType>(query.value(categoryFieldNum).toInt());
-        tempItem.boxNum          = query.value(boxNumFieldNum).toInt();
+        tempItem.boxStr          = query.value(boxNumFieldNum).toString();
+        tempItem.canExpire       = query.value(canExpFieldNum).toBool();
 //**************************************************************
 //*                       * Test Code *                        *
 //**************************************************************
@@ -100,6 +103,7 @@ void DbConnect::updateItem(QString orgName, Row newRowInfo)
                       "quantity        = (:quantity), "
                       "target_quantity = (:target_quantity), "
                       "cat             = (:cat), "
+                      "can_expire      = (:can_expire), "
                       "box_num         = (:box_num), "
                       "date_modified   = (:date_modified) "
                   "WHERE item_name = (:item_name_org)");
@@ -109,8 +113,10 @@ void DbConnect::updateItem(QString orgName, Row newRowInfo)
     query.bindValue(":quantity",        newRowInfo.quantity);
     query.bindValue(":target_quantity", newRowInfo.effectiveOnHand);
     query.bindValue(":cat",             static_cast<int>(newRowInfo.category));
-    query.bindValue(":box_num",         newRowInfo.boxNum);
-    query.bindValue(":date_modified", newRowInfo.dateModified.toString(dateFormat));
+    query.bindValue(":can_expire",      static_cast<int>(newRowInfo.canExpire));
+    qDebug() << newRowInfo.canExpire;
+    query.bindValue(":box_num",         newRowInfo.boxStr);  // this should be boxStr, not boxNum.  Boxnum is obsol.
+    query.bindValue(":date_modified",   newRowInfo.dateModified.toString(dateFormat));
 
     query.bindValue(":item_name_new",   newRowInfo.itemName);
 
@@ -136,7 +142,7 @@ void DbConnect::addNewItem(Item newItem)
     query.bindValue(":target_quantity", newItem.effectiveOnHand);
     query.bindValue(":cat", static_cast<int>(newItem.category) );
     query.bindValue(":can_expire", newItem.canExpire);
-    query.bindValue(":box_num", newItem.boxNum);
+    query.bindValue(":box_num", newItem.boxStr);
     query.bindValue(":date_modified", newItem.dateModified.toString(dateFormat));
 
     if(!query.exec())
@@ -144,5 +150,19 @@ void DbConnect::addNewItem(Item newItem)
         qDebug() << query.lastError().text();
     }
 
+}
+//*********************************************************************************
+
+//*********************************************************************************
+void DbConnect::deleteItem(QString name)
+{
+    QSqlQuery query;
+    query.prepare("DELETE FROM inventory WHERE item_name = (:item_name)");
+    query.bindValue(":item_name", name);
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
 }
 //*********************************************************************************

@@ -53,11 +53,12 @@ private:
     DbConnect();
     //**********************************************************
 
+public:
     //**********************************************************
     //! \brief Server DateTime format for all Date.toString()'s
-    QString dateFormat = "yyyy/MM/dd hh:mm::ss";
+    const QString dateFormat = "yyyy/MM/dd hh:mm::ss";
     //**********************************************************
-public:
+
     //**********************************************************
     //! \brief   Default non-args de-constructor
     //! \details Closes database.
@@ -99,6 +100,16 @@ public:
     //! \author Bob Baker
     void addNewItem(Item newItem);
     //**********************************************************
+
+    //**********************************************************
+    //! \brief Deletes a item from the database.
+    //! \details Removes a item from the db based on a matching
+    //!           Item name
+    //! \param QString itemName
+    //! \author Bob Baker
+    void deleteItem(QString name);
+    //**********************************************************
+
 
 }; // end class
 //*********************************************************************************

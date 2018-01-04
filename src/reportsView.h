@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QPair>
+#include <QMessageBox>
 
 #include "dbconnect.h"
 #include "item.h"
@@ -35,6 +36,10 @@ private slots:
 
     void on_pushButton_makeReport_clicked();
 
+    void on_comboBox_addDel_currentIndexChanged(const QString &arg1);
+
+    void on_pushButton_addDelete_clicked();
+
 private:
     Ui::ReportsView *ui;
     //**********************************************************
@@ -59,7 +64,8 @@ private:
 
     QVector<bbb::Item> fullInventory;
 
-
+    void addItem();
+    void deleteItem();
 
     // 5 col size
     QString orgItemName;
