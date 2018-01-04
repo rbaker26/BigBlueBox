@@ -55,7 +55,7 @@ Below is an example
 
 ## Doxygen Commenting
 
-All Doxygen comments should be in the .h files with the declarations and prototypes.
+All Doxygen comments should be in the .h files with the declarations and prototypes. 
 
 ### Example Class with Doxygen
 
