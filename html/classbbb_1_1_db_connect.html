@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
@@ -125,12 +126,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad230717781e28a912e4d388b8faef996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_db_connect.html#ad230717781e28a912e4d388b8faef996">addNewItem</a> (<a class="el" href="classbbb_1_1_item.html">Item</a> newItem)</td></tr>
 <tr class="memdesc:ad230717781e28a912e4d388b8faef996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addes a new item to the database.  <a href="#ad230717781e28a912e4d388b8faef996">More...</a><br/></td></tr>
 <tr class="separator:ad230717781e28a912e4d388b8faef996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5224412c4d1a753857f5ef0cefb6e49e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_db_connect.html#a5224412c4d1a753857f5ef0cefb6e49e">deleteItem</a> (QString name)</td></tr>
+<tr class="memdesc:a5224412c4d1a753857f5ef0cefb6e49e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a item from the database.  <a href="#a5224412c4d1a753857f5ef0cefb6e49e">More...</a><br/></td></tr>
+<tr class="separator:a5224412c4d1a753857f5ef0cefb6e49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a857222eb39d70d8c437f0c583dfcbb53"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbbb_1_1_db_connect.html">DbConnect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53">getInstance</a> ()</td></tr>
 <tr class="memdesc:a857222eb39d70d8c437f0c583dfcbb53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton pointer return function.  <a href="#a857222eb39d70d8c437f0c583dfcbb53">More...</a><br/></td></tr>
 <tr class="separator:a857222eb39d70d8c437f0c583dfcbb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a844e551b081d8f0271c1ef5bf7ec1257"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_db_connect.html#a844e551b081d8f0271c1ef5bf7ec1257">dateFormat</a> = &quot;yyyy/MM/dd hh:mm::ss&quot;</td></tr>
+<tr class="memdesc:a844e551b081d8f0271c1ef5bf7ec1257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server DateTime format for all Date.toString()'s.  <a href="#a844e551b081d8f0271c1ef5bf7ec1257">More...</a><br/></td></tr>
+<tr class="separator:a844e551b081d8f0271c1ef5bf7ec1257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -143,9 +153,6 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a732b78f5fcf21aa52cae5abbdbad1c0c"><td class="memItemLeft" align="right" valign="top">QSqlDatabase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_db_connect.html#a732b78f5fcf21aa52cae5abbdbad1c0c">bbb_db</a></td></tr>
 <tr class="memdesc:a732b78f5fcf21aa52cae5abbdbad1c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Database object.  <a href="#a732b78f5fcf21aa52cae5abbdbad1c0c">More...</a><br/></td></tr>
 <tr class="separator:a732b78f5fcf21aa52cae5abbdbad1c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7db7fa2d8af97a71ebf33676eb7c4d9b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_db_connect.html#a7db7fa2d8af97a71ebf33676eb7c4d9b">dateFormat</a> = &quot;yyyy/MM/dd hh:mm::ss&quot;</td></tr>
-<tr class="memdesc:a7db7fa2d8af97a71ebf33676eb7c4d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server DateTime format for all Date.toString()'s.  <a href="#a7db7fa2d8af97a71ebf33676eb7c4d9b">More...</a><br/></td></tr>
-<tr class="separator:a7db7fa2d8af97a71ebf33676eb7c4d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -188,7 +195,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbbb_1_1_db_connect_acc835e712f6917c01f3d555dd1666fdd_icgraph.png" border="0" usemap="#classbbb_1_1_db_connect_acc835e712f6917c01f3d555dd1666fdd_icgraph" alt=""/></div>
 <map name="classbbb_1_1_db_connect_acc835e712f6917c01f3d555dd1666fdd_icgraph" id="classbbb_1_1_db_connect_acc835e712f6917c01f3d555dd1666fdd_icgraph">
-<area shape="rect" id="node2" href="classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="246,56,439,83"/><area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="547,5,597,32"/><area shape="rect" id="node4" href="class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="488,56,656,83"/><area shape="rect" id="node6" href="class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59" title="ReportsView::on_pushButton\l_edit_clicked" alt="" coords="704,99,896,141"/><area shape="rect" id="node5" href="class_reports_view.html#a3386fadacc4633e21c1759df01a45efd" title="ReportsView::ReportsView" alt="" coords="710,48,890,75"/></map>
+<area shape="rect" id="node2" href="classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="246,93,439,120"/><area shape="rect" id="node3" href="class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="488,68,656,95"/><area shape="rect" id="node5" href="class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59" title="ReportsView::on_pushButton\l_edit_clicked" alt="" coords="704,5,896,46"/><area shape="rect" id="node7" href="class_reports_view.html#aa84fa8f8ac767b2d33e99930a47457f0" title="ReportsView::addItem" alt="" coords="496,119,648,145"/><area shape="rect" id="node8" href="class_reports_view.html#aa28380314a1a52fc664bf58322a69a18" title="ReportsView::deleteItem" alt="" coords="489,169,655,196"/><area shape="rect" id="node4" href="class_reports_view.html#a3386fadacc4633e21c1759df01a45efd" title="ReportsView::ReportsView" alt="" coords="710,71,890,97"/><area shape="rect" id="node6" href="class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="704,122,896,163"/></map>
 </div>
 </p>
 
@@ -243,7 +250,42 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbbb_1_1_db_connect_ad230717781e28a912e4d388b8faef996_icgraph.png" border="0" usemap="#classbbb_1_1_db_connect_ad230717781e28a912e4d388b8faef996_icgraph" alt=""/></div>
 <map name="classbbb_1_1_db_connect_ad230717781e28a912e4d388b8faef996_icgraph" id="classbbb_1_1_db_connect_ad230717781e28a912e4d388b8faef996_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="253,5,304,32"/></map>
+<area shape="rect" id="node2" href="class_reports_view.html#aa84fa8f8ac767b2d33e99930a47457f0" title="ReportsView::addItem" alt="" coords="253,12,405,39"/><area shape="rect" id="node3" href="class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="453,5,645,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5224412c4d1a753857f5ef0cefb6e49e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DbConnect::deleteItem </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes a item from the database. </p>
+<p>Removes a item from the db based on a matching <a class="el" href="classbbb_1_1_item.html" title="Business Object Layer : Inventory Item. ">Item</a> name </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">QString</td><td>itemName </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Author</dt><dd>Bob Baker </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbbb_1_1_db_connect_a5224412c4d1a753857f5ef0cefb6e49e_icgraph.png" border="0" usemap="#classbbb_1_1_db_connect_a5224412c4d1a753857f5ef0cefb6e49e_icgraph" alt=""/></div>
+<map name="classbbb_1_1_db_connect_a5224412c4d1a753857f5ef0cefb6e49e_icgraph" id="classbbb_1_1_db_connect_a5224412c4d1a753857f5ef0cefb6e49e_icgraph">
+<area shape="rect" id="node2" href="class_reports_view.html#aa28380314a1a52fc664bf58322a69a18" title="ReportsView::deleteItem" alt="" coords="241,12,407,39"/><area shape="rect" id="node3" href="class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="456,5,648,46"/></map>
 </div>
 </p>
 
@@ -272,7 +314,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbbb_1_1_db_connect_a7986028e9b44516bff117a8255f377e4_icgraph.png" border="0" usemap="#classbbb_1_1_db_connect_a7986028e9b44516bff117a8255f377e4_icgraph" alt=""/></div>
 <map name="classbbb_1_1_db_connect_a7986028e9b44516bff117a8255f377e4_icgraph" id="classbbb_1_1_db_connect_a7986028e9b44516bff117a8255f377e4_icgraph">
-<area shape="rect" id="node2" href="class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="237,35,405,61"/><area shape="rect" id="node3" href="class_reports_view.html#a3386fadacc4633e21c1759df01a45efd" title="ReportsView::ReportsView" alt="" coords="459,5,639,32"/><area shape="rect" id="node4" href="class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59" title="ReportsView::on_pushButton\l_edit_clicked" alt="" coords="453,57,645,98"/></map>
+<area shape="rect" id="node2" href="class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="237,64,405,91"/><area shape="rect" id="node3" href="class_reports_view.html#a3386fadacc4633e21c1759df01a45efd" title="ReportsView::ReportsView" alt="" coords="459,5,639,32"/><area shape="rect" id="node4" href="class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59" title="ReportsView::on_pushButton\l_edit_clicked" alt="" coords="453,57,645,98"/><area shape="rect" id="node5" href="class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="453,122,645,163"/></map>
 </div>
 </p>
 
@@ -318,7 +360,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbbb_1_1_db_connect_a857222eb39d70d8c437f0c583dfcbb53_icgraph.png" border="0" usemap="#classbbb_1_1_db_connect_a857222eb39d70d8c437f0c583dfcbb53_icgraph" alt=""/></div>
 <map name="classbbb_1_1_db_connect_a857222eb39d70d8c437f0c583dfcbb53_icgraph" id="classbbb_1_1_db_connect_a857222eb39d70d8c437f0c583dfcbb53_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="307,5,357,32"/><area shape="rect" id="node3" href="class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="248,56,416,83"/><area shape="rect" id="node5" href="class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59" title="ReportsView::on_pushButton\l_edit_clicked" alt="" coords="464,99,656,141"/><area shape="rect" id="node4" href="class_reports_view.html#a3386fadacc4633e21c1759df01a45efd" title="ReportsView::ReportsView" alt="" coords="470,48,650,75"/></map>
+<area shape="rect" id="node2" href="class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="248,68,416,95"/><area shape="rect" id="node4" href="class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59" title="ReportsView::on_pushButton\l_edit_clicked" alt="" coords="464,5,656,46"/><area shape="rect" id="node6" href="class_reports_view.html#aa84fa8f8ac767b2d33e99930a47457f0" title="ReportsView::addItem" alt="" coords="256,119,408,145"/><area shape="rect" id="node7" href="class_reports_view.html#aa28380314a1a52fc664bf58322a69a18" title="ReportsView::deleteItem" alt="" coords="249,169,415,196"/><area shape="rect" id="node3" href="class_reports_view.html#a3386fadacc4633e21c1759df01a45efd" title="ReportsView::ReportsView" alt="" coords="470,71,650,97"/><area shape="rect" id="node5" href="class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="464,122,656,163"/></map>
 </div>
 </p>
 
@@ -392,22 +434,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a7db7fa2d8af97a71ebf33676eb7c4d9b"></a>
+<a class="anchor" id="a844e551b081d8f0271c1ef5bf7ec1257"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QString bbb::DbConnect::dateFormat = &quot;yyyy/MM/dd hh:mm::ss&quot;</td>
+          <td class="memname">const QString bbb::DbConnect::dateFormat = &quot;yyyy/MM/dd hh:mm::ss&quot;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Server DateTime format for all Date.toString()'s. </p>

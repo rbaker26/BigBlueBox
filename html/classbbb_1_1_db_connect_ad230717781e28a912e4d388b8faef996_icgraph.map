@@ -1,3 +1,4 @@
 <map id="bbb::DbConnect::addNewItem" name="bbb::DbConnect::addNewItem">
-<area shape="rect" id="node2" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="253,5,304,32"/>
+<area shape="rect" id="node2" href="$class_reports_view.html#aa84fa8f8ac767b2d33e99930a47457f0" title="ReportsView::addItem" alt="" coords="253,12,405,39"/>
+<area shape="rect" id="node3" href="$class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="453,5,645,46"/>
 </map>

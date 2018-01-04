@@ -2,7 +2,8 @@
 <area shape="rect" id="node2" href="$classbbb_1_1___file_writer.html#af6d37d4db77fb49e8c7169694d28317a" title="Writes Inventory Report to xml file. " alt="" coords="241,5,418,46"/>
 <area shape="rect" id="node3" href="$classbbb_1_1_item.html#ad3fe5a44215dbfe95ee2fe68e1b2965d" title="Uses the toString method in catagory class. " alt="" coords="232,71,427,97"/>
 <area shape="rect" id="node4" href="$class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="245,121,413,148"/>
-<area shape="rect" id="node7" href="$classbbb_test_1_1_category_test.html#a9ee3cfeeb3ef2f0d2ba25f5e8736fd03" title="Tests int to QString conversions. " alt="" coords="251,173,407,214"/>
-<area shape="rect" id="node5" href="$class_reports_view.html#a3386fadacc4633e21c1759df01a45efd" title="ReportsView::ReportsView" alt="" coords="481,92,661,119"/>
-<area shape="rect" id="node6" href="$class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59" title="ReportsView::on_pushButton\l_edit_clicked" alt="" coords="475,143,667,185"/>
+<area shape="rect" id="node8" href="$classbbb_test_1_1_category_test.html#a9ee3cfeeb3ef2f0d2ba25f5e8736fd03" title="Tests int to QString conversions. " alt="" coords="251,173,407,214"/>
+<area shape="rect" id="node5" href="$class_reports_view.html#a3386fadacc4633e21c1759df01a45efd" title="ReportsView::ReportsView" alt="" coords="481,63,661,89"/>
+<area shape="rect" id="node6" href="$class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59" title="ReportsView::on_pushButton\l_edit_clicked" alt="" coords="475,114,667,155"/>
+<area shape="rect" id="node7" href="$class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="475,179,667,221"/>
 </map>

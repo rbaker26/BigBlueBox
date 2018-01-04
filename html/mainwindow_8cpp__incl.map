@@ -1,10 +1,10 @@
 <map id="/home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp" name="/home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp">
-<area shape="rect" id="node2" href="$mainwindow_8h.html" title="mainwindow.h" alt="" coords="484,109,589,136"/>
-<area shape="rect" id="node4" href="$gearcentral_8h.html" title="gearcentral.h" alt="" coords="488,184,585,211"/>
-<area shape="rect" id="node6" href="$reports_view_8h.html" title="reportsView.h" alt="" coords="649,184,751,211"/>
-<area shape="rect" id="node8" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="654,259,747,285"/>
-<area shape="rect" id="node17" href="$item_8h.html" title="item.h" alt="" coords="805,333,862,360"/>
-<area shape="rect" id="node21" href="$__regex_8h.html" title="_regex.h" alt="" coords="558,259,630,285"/>
-<area shape="rect" id="node23" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="1016,259,1105,285"/>
-<area shape="rect" id="node18" href="$category_8h.html" title="category.h" alt="" coords="941,408,1022,435"/>
+<area shape="rect" id="node2" href="$mainwindow_8h.html" title="mainwindow.h" alt="" coords="445,109,549,136"/>
+<area shape="rect" id="node4" href="$gearcentral_8h.html" title="gearcentral.h" alt="" coords="449,184,545,211"/>
+<area shape="rect" id="node6" href="$reports_view_8h.html" title="reportsView.h" alt="" coords="634,184,736,211"/>
+<area shape="rect" id="node9" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="901,259,995,285"/>
+<area shape="rect" id="node18" href="$item_8h.html" title="item.h" alt="" coords="653,333,711,360"/>
+<area shape="rect" id="node22" href="$__regex_8h.html" title="_regex.h" alt="" coords="1479,259,1551,285"/>
+<area shape="rect" id="node24" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="525,259,613,285"/>
+<area shape="rect" id="node19" href="$category_8h.html" title="category.h" alt="" coords="689,408,771,435"/>
 </map>
