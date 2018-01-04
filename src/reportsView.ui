@@ -100,79 +100,13 @@
          <property name="lineWidth">
           <number>3</number>
          </property>
-         <widget class="QWidget" name="toolBoxPage1">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>232</width>
-            <height>450</height>
-           </rect>
-          </property>
-          <property name="acceptDrops">
-           <bool>false</bool>
-          </property>
-          <attribute name="label">
-           <string>Filter List</string>
-          </attribute>
-          <widget class="QWidget" name="verticalLayoutWidget">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>201</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_2"/>
-          </widget>
-          <widget class="QRadioButton" name="radioButton">
-           <property name="geometry">
-            <rect>
-             <x>30</x>
-             <y>150</y>
-             <width>82</width>
-             <height>17</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>Name</string>
-           </property>
-          </widget>
-          <widget class="QRadioButton" name="radioButton_2">
-           <property name="geometry">
-            <rect>
-             <x>120</x>
-             <y>150</y>
-             <width>82</width>
-             <height>17</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>RadioButton</string>
-           </property>
-          </widget>
-          <widget class="QRadioButton" name="radioButton_3">
-           <property name="geometry">
-            <rect>
-             <x>30</x>
-             <y>170</y>
-             <width>82</width>
-             <height>17</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>RadioButton</string>
-           </property>
-          </widget>
-         </widget>
          <widget class="QWidget" name="toolBoxPage2">
           <property name="geometry">
            <rect>
             <x>0</x>
             <y>0</y>
             <width>232</width>
-            <height>450</height>
+            <height>477</height>
            </rect>
           </property>
           <attribute name="label">
@@ -386,7 +320,7 @@ p, li { white-space: pre-wrap; }
             <x>0</x>
             <y>0</y>
             <width>232</width>
-            <height>450</height>
+            <height>477</height>
            </rect>
           </property>
           <attribute name="label">
@@ -718,7 +652,7 @@ p, li { white-space: pre-wrap; }
             <x>0</x>
             <y>0</y>
             <width>232</width>
-            <height>450</height>
+            <height>477</height>
            </rect>
           </property>
           <attribute name="label">
