@@ -6,5 +6,6 @@ var searchData=
   ['dbconnect',['DbConnect',['../classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd',1,'bbb::DbConnect']]],
   ['dbconnect_2ecpp',['dbconnect.cpp',['../dbconnect_8cpp.html',1,'']]],
   ['dbconnect_2eh',['dbconnect.h',['../dbconnect_8h.html',1,'']]],
-  ['dbdump',['DbDump',['../classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c57b7daee896abc41328a888e8a95f',1,'bbb::_FileWriter']]]
+  ['dbdump',['DbDump',['../classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c57b7daee896abc41328a888e8a95f',1,'bbb::_FileWriter']]],
+  ['deleteitem',['deleteItem',['../class_reports_view.html#aa28380314a1a52fc664bf58322a69a18',1,'ReportsView']]]
 ];

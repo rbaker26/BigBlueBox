@@ -1,4 +1,5 @@
 <map id="ReportsView::on_tableWidget_inv_cellDoubleClicked" name="ReportsView::on_tableWidget_inv_cellDoubleClicked">
 <area shape="rect" id="node2" href="$class_reports_view.html#ae67b95dd993a575d09b467f89557aae2" title="Sends the doubleclicked row to the tool box. " alt="" coords="249,5,471,32"/>
-<area shape="rect" id="node3" href="$class_reports_view.html#a4429438a75b0fa80149e7e711d6c19a8" title="ReportsView::getOrgItemName\lFromToolBox" alt="" coords="257,57,463,98"/>
+<area shape="rect" id="node4" href="$class_reports_view.html#a4429438a75b0fa80149e7e711d6c19a8" title="ReportsView::getOrgItemName\lFromToolBox" alt="" coords="257,57,463,98"/>
+<area shape="rect" id="node3" href="$classbbb_1_1_category.html#a4618426a49f54f11db3012b456ec4308" title="bbb::Category::intFromString" alt="" coords="521,5,711,32"/>
 </map>
