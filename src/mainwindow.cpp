@@ -9,8 +9,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     this->showMaximized();
     //function to change the central widget
-    QWidget* reportsView = new ReportsView(this);
-    setCentralWidget(reportsView);
+//    QWidget* reportsView = new ReportsView(this);
+//    setCentralWidget(reportsView);
+
+    QWidget* mainMenu = new MainMenu(this);
+    setCentralWidget(mainMenu);
 
 
 }
@@ -35,8 +38,7 @@ void MainWindow::on_actionHome_triggered()
 void MainWindow::on_actionGoto_Home_triggered()
 {
     //This is the home botton.
-    QWidget* gearView = new GearCentral(this);
-    setCentralWidget(gearView);
-    qDebug() << "Trigger";
+    QWidget* mainMenu = new MainMenu(this);
+    setCentralWidget(mainMenu);
 }
 //*********************************************************************************

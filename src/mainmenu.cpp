@@ -12,3 +12,10 @@ MainMenu::~MainMenu()
 {
     delete ui;
 }
+
+void MainMenu::on_pushButton_gotoInv_clicked()
+{
+    QWidget * inventoryPage = new ReportsView(this);
+    ui->horizontalStackedWidget->addWidget(inventoryPage);
+    ui->horizontalStackedWidget->setCurrentWidget(inventoryPage);
+}
