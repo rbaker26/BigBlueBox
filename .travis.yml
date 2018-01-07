@@ -43,6 +43,7 @@ script:
  # This will make the coverage reports. 
  #- ./build.sh
  - qmake src/BigBlueBox.pro
+ - make
  - ./BigBlueBox
  - ./get_code_cov.sh
 
