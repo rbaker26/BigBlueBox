@@ -41,7 +41,9 @@ install:
  
 script:
  # This will make the coverage reports. 
- - ./build.sh
+ #- ./build.sh
+ qmake BigBlueBox.pro
+ make
  - ./BigBlueBox
  - ./get_code_cov.sh
 
