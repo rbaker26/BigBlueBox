@@ -40,10 +40,14 @@ install:
 script:
  #- ./configure --enable-gcov && make && make check
  - qmake "CONFIG+=test" src/BigBlueBox.pro #we gonna compile for Unit test first
- - make
+ - clang -coverage
  - ./BigBlueBox #run unit test
  - rm Makefile BigBlueBox *.o #remove files (which are generated from unit test) for next build
-  
+ 
+after_success:
+ - bash <(curl -s https://codecov.io/bash)
+ 
+script:
  - qmake -project
  - qmake src/BigBlueBox.pro
  - make
