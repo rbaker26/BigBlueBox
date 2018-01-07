@@ -1,6 +1,5 @@
 language: cpp
-compiler:
- - gcc
+compiler: gcc
 
 sudo: false
 dist: trusty
