@@ -1,7 +1,7 @@
 language: cpp
 compiler: gcc
 
-sudo: false
+sudo: true
 dist: trusty
 # Blacklist
 branches:
