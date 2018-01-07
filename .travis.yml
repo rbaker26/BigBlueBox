@@ -43,7 +43,7 @@ install:
 script:
  # This will make the coverage reports. 
  - ./build.sh
- - ./travis_qmake_gcc_cpp11_gcov
+ - ./BigBlueBox
  - ./get_code_cov.sh
 
  # This will build and run teh program with unit tests
