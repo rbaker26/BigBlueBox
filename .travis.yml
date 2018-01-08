@@ -47,7 +47,7 @@ script:
  - qmake "CONFIG+=test" src/BigBlueBox.pro
  - make
  - ./BigBlueBox
- #- ./get_code_cov.sh
+ - ./get_code_cov.sh
  - codecov -s ./src
 
  # This will build and run teh program with unit tests
