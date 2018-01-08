@@ -9,5 +9,5 @@ ignore:
   - "src/mainmenu.cpp"
   - "src/reportsView.cpp"
   - "src/mainwindow.cpp"
-  # The "pages" folder only contains more UI files
-  - "src/pages/.*"
+  - "src/pages/settingspage.cpp"
+  - "src/pages/settingspage.h"
