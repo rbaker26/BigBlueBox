@@ -48,7 +48,7 @@ script:
  - make
  - ./BigBlueBox
  #- ./get_code_cov.sh
- - codecov
+ - codecov -s ./src
 
  # This will build and run teh program with unit tests
  # It will then display the results of the unit tests.
