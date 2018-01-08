@@ -16,6 +16,9 @@ void CategoryTest::testTest()
     //************************************************************
     // this is test code for the test code. lol
     //QCOMPARE( actual, expected)
+
+    bbb::Category myCat(); // tests constructor
+
     QString str = "hello";
     QVERIFY(str.toUpper() == QString("HELLO"));
     QCOMPARE(5,5); //QCOMPARE( actual, expected)
