@@ -1,4 +1,5 @@
 #include "directoryhandler.h"
+using namespace bbb;
 
 DirectoryHandler::DirectoryHandler()
 {

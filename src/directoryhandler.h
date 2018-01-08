@@ -10,6 +10,7 @@
 #include <QXmlStreamReader>
 #include <QXmlStreamReader>
 
+namespace bbb {
 class DirectoryHandler
 {
 private:
@@ -32,6 +33,7 @@ public:
 
 
 
-};
+}; // end class
 
+} // end namespace bbb
 #endif // DIRECTORYHANDLER_H
