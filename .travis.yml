@@ -43,15 +43,6 @@ script:
  - chmod +x ./scripts/build.sh
  - ./scripts/build.sh
  
- 
- 
- # This will build the project without tests.
- # It will not run the application because the GUI will timeout.
- - qmake -project
- - qmake src/BigBlueBox.pro
- - make
-
-
 after_success:
  - chmod +x ./scripts/after_sucess.sh
  - ./scripts/after_sucess.sh
