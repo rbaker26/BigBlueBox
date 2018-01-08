@@ -1,0 +1,11 @@
+ignore:
+  # This is the file that starts the unit tests, therefor it cannot be tested.
+  - "unittest.h"
+  
+  # The .cpp files that belong to the UI will be ignored for the coverage testing.
+  # There is no way to test these files because they are UI-glue-code.
+  # They use 100% of the tested files to do all of there operations.  
+  - "src/gearcentral.cpp"
+  - "src/mainmenu.cpp"
+  - "src/reportsView.cpp"
+  - "src/mainwindow.cpp"
