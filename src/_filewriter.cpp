@@ -269,8 +269,9 @@ void _FileWriter::makeXmlInvReport(QVector<Item> inventory, ReportType type)
                 stream.writeTextElement("needed", QString::number(it->quantity < it->effectiveOnHand
                                                                   ? it->effectiveOnHand - it->quantity
                                                                 : 0));
+                stream.writeEndElement();
             }
-            stream.writeEndElement();
+
             it++;
 
         }
@@ -292,8 +293,9 @@ void _FileWriter::makeXmlInvReport(QVector<Item> inventory, ReportType type)
                 stream.writeTextElement("needed", QString::number(it->quantity < it->effectiveOnHand
                                                                   ? it->effectiveOnHand - it->quantity
                                                                   : 0));
+                stream.writeEndElement();
             }
-            stream.writeEndElement();
+
             it++;
 
         }
@@ -311,8 +313,9 @@ void _FileWriter::makeXmlInvReport(QVector<Item> inventory, ReportType type)
                 stream.writeTextElement("needed", QString::number(it->quantity < it->effectiveOnHand
                                                                   ? it->effectiveOnHand - it->quantity
                                                                   : 0));
+                stream.writeEndElement();
             }
-            stream.writeEndElement();
+
             it++;
         }
 
@@ -338,9 +341,8 @@ void _FileWriter::makeXmlInvReport(QVector<Item> inventory, ReportType type)
         stream.writeComment("Bad Enum passed to xml function");
 
     }
-    //stream.writeAttribute("createdOn", QDateTime::currentDateTime().toString());
 
-    stream.writeEndElement();
+    stream.writeEndElement(); // end inventory
 
 
     stream.writeEndDocument();

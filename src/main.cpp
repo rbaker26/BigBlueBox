@@ -13,36 +13,15 @@
 #include <QApplication>
 
 //*********************************************************************************
-// test header
-// remove after testing
-#include "item.h"
-#include "dbconnect.h"
-#include "QDebug"
-#include <QVector>
-#include "_filewriter.h"
-//*********************************************************************************
-
-//*********************************************************************************
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon(":/img/nyltIcon.png"));
-    a.setApplicationName("BigBlueBox v0.3.0");
+    a.setApplicationName("BigBlueBox v0.4.0");
     MainWindow w;
-    w.setWindowTitle("BigBlueBox v0.3.0");
+    w.setWindowTitle("BigBlueBox v0.4.0");
     w.show();
 
-    // test code
-//   bbb::Item myItem;
-//   myItem.itemName = "test";
-//   myItem.quantity = 55;
-//   myItem.effectiveOnHand = 100;
-//   myItem.canExpire = false;
-//   myItem.category = bbb::Category::KITCHEN;
-//   myItem.boxNum = 16;
-//   myItem.dateModified = QDateTime::currentDateTime();
-
-//   bbb::DbConnect::getInstance()->addNewItem(myItem);
    return a.exec();
 }
 //*********************************************************************************

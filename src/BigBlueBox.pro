@@ -45,9 +45,9 @@ SOURCES += \
         gearcentral.cpp \
         usersession.cpp \
         _filewriter.cpp \
-    mainmenu.cpp \
-    pages/settingspage.cpp \
-    directoryhandler.cpp
+        mainmenu.cpp    \
+        pages/settingspage.cpp \
+        directoryhandler.cpp   \
 
 
 
@@ -62,10 +62,10 @@ HEADERS += \
         gearcentral.h   \
         usersession.h   \
         _filewriter.h   \
-        bbb.h \
-    mainmenu.h \
-    pages/settingspage.h \
-    directoryhandler.h
+        bbb.h           \
+        mainmenu.h      \
+        pages/settingspage.h \
+        directoryhandler.h   \
 
 
 
@@ -74,8 +74,8 @@ FORMS += \
         mainwindow.ui   \
         reportsView.ui  \
         gearcentral.ui  \
-    mainmenu.ui \
-    pages/settingspage.ui
+        mainmenu.ui     \
+        pages/settingspage.ui \
         
 RESOURCES += \
     ../rec/rec.qrc \
