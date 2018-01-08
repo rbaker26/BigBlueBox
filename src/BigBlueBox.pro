@@ -75,6 +75,9 @@ RESOURCES += \
 
 test {
 
+QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+LIBS += -lgcov
+
 SOURCES -= main.cpp
 
 SOURCES += \
