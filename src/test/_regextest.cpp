@@ -17,7 +17,7 @@ void _RegexTest::testTest()
     //QCOMPARE( actual, expected)
 
     // Tests the constructor
-    bbb::_Regex rx();
+    bbb::_Regex rx;
     QVERIFY(rx.isBoxName("myBox"));
 
     QString str = "hello";
