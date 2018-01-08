@@ -8,8 +8,9 @@ var searchData=
   ['dbconnect_2eh',['dbconnect.h',['../dbconnect_8h.html',1,'']]],
   ['dbdump',['DbDump',['../classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c57b7daee896abc41328a888e8a95f',1,'bbb::_FileWriter']]],
   ['deleteitem',['deleteItem',['../classbbb_1_1_db_connect.html#a5224412c4d1a753857f5ef0cefb6e49e',1,'bbb::DbConnect::deleteItem()'],['../class_reports_view.html#aa28380314a1a52fc664bf58322a69a18',1,'ReportsView::deleteItem()']]],
-  ['desktop',['DESKTOP',['../class_directory_handler.html#ae3f51a042bd8b3e06420ccb725c61e43a981b2dae6198e556bd4bc49aca1836e0',1,'DirectoryHandler']]],
-  ['directoryhandler',['DirectoryHandler',['../class_directory_handler.html',1,'DirectoryHandler'],['../class_directory_handler.html#ad3be6490dfdfd3d7cb27ccc1a3caaee3',1,'DirectoryHandler::DirectoryHandler()']]],
+  ['desktop',['DESKTOP',['../classbbb_1_1_directory_handler.html#a90ac7899c0d61130b62c4104a64ef5d6a768efe29412298abb13aa59d43ab3190',1,'bbb::DirectoryHandler']]],
+  ['directoryhandler',['DirectoryHandler',['../classbbb_1_1_directory_handler.html#ad3be6490dfdfd3d7cb27ccc1a3caaee3',1,'bbb::DirectoryHandler']]],
+  ['directoryhandler',['DirectoryHandler',['../classbbb_1_1_directory_handler.html',1,'bbb']]],
   ['directoryhandler_2ecpp',['directoryhandler.cpp',['../directoryhandler_8cpp.html',1,'']]],
   ['directoryhandler_2eh',['directoryhandler.h',['../directoryhandler_8h.html',1,'']]]
 ];
