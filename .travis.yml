@@ -39,6 +39,7 @@ install:
  - sudo apt-get install qt5-default qttools5-dev-tools
  - sudo apt-get install -qq g++-5
  - sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-5 90
+ - sudo pip install codecov
  
 script:
  # This will make the coverage reports. 
@@ -46,7 +47,8 @@ script:
  - qmake "CONFIG+=test" src/BigBlueBox.pro
  - make
  - ./BigBlueBox
- - ./get_code_cov.sh
+ #- ./get_code_cov.sh
+ - codecov
 
  # This will build and run teh program with unit tests
  # It will then display the results of the unit tests.
