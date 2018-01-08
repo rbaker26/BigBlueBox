@@ -8,4 +8,5 @@ rm *.pro.user
 rm *.gcda
 rm BigBlueBox_gcov
 
-rm Makefile BigBlueBox *.o #remove files (which are generated from unit test) for next build
+rm Makefile BigBlueBox *.o #remove files
+
