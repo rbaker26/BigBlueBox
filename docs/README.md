@@ -3,8 +3,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/n5w5hxdsnvb7jpm9/branch/master?svg=true)](https://ci.appveyor.com/project/rbaker26/bigbluebox/branch/master)
 [![codecov](https://codecov.io/gh/rbaker26/BigBlueBox/branch/master/graph/badge.svg)](https://codecov.io/gh/rbaker26/BigBlueBox)
 [![GitHub (pre-)release](https://img.shields.io/github/release/rbaker26/BigBlueBox/all.svg)](https://travis-ci.org/rbaker26/BigBlueBox)
-<!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) -->
-<!--[![codecov](https://codecov.io/gh/rbaker26/BigBlueBox/branch/master/graph/badge.svg)](https://codecov.io/gh/rbaker26/BigBlueBox) -->
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/rbaker26/BigBlueBox/blob/master/LICENSE)
 <br>
 
 A Inventory Management System for a NYLT Course or other Boy Scout Programs.
@@ -57,17 +56,26 @@ Testing will include continuous integration testing using Travis.ci and regressi
 
 ### CI Testing
 
-This is simply ci test.  Travis.ci will use a .yml to build the files.  If any new addtions create compile-time conflicts, they 
-will be shown here.  
+This is simply ci test. This project uses two online ci services, Travis and Appveyor. 
 
+#### Travis
+Travis.ci will use .travis.yml and Shell build scripts to build the project.  If any new addtions create compile-time conflicts, they 
+will be shown here.  <br>
 
- [Click here](https://travis-ci.org/rbaker26/BigBlueBox) to see the latest travis.ci build status.
+[Click here](https://travis-ci.org/rbaker26/BigBlueBox) to see the latest travis.ci build status.
  
+#### Appveyor
+Appveyor will use appveyor.yml to build the project. If any new addtions create compile-time conflicts, they 
+will be shown here.  <br>
+
+[![Build history](https://buildstats.info/appveyor/chart/rbaker26/BigBlueBox)](https://ci.appveyor.com/project/rbaker26/BigBlueBox/history) <br>
+
 
 ### Regression Testing
 
 Unit tests written with the QtTestLib will be run on travis.ci.  If any tests fail, travis.ci build state will be set to 
-failed.   
+failed.  Tests will be exported to Codecov for a coverage report.  UI classes will not be tested. <br>
+Tests will be verbose and should cover all possible paths within a function. <br> 
 This project will follow the examples at [this](http://doc.qt.io/qt-5/qttestlib-tutorial1-example.html) link.
 
 <br>
