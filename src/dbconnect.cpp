@@ -29,6 +29,7 @@ DbConnect::~DbConnect()
 {
     bbb_db.close();
     // do not delete instance
+    qDebug() << "Db Closed";
 }
 //*********************************************************************************
 

@@ -19,3 +19,10 @@ void MainMenu::on_pushButton_gotoInv_clicked()
     ui->horizontalStackedWidget->addWidget(inventoryPage);
     ui->horizontalStackedWidget->setCurrentWidget(inventoryPage);
 }
+
+void MainMenu::on_pushButton_gotoSettings_clicked()
+{
+    QWidget* settingsPage = new SettingsPage(this);
+    ui->horizontalStackedWidget->addWidget(settingsPage);
+    ui->horizontalStackedWidget->setCurrentWidget(settingsPage);
+}

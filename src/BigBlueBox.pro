@@ -15,6 +15,7 @@
 
 QT       += core gui sql testlib
 CONFIG   += c++11
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET   = BigBlueBox
@@ -43,7 +44,9 @@ SOURCES += \
         gearcentral.cpp \
         usersession.cpp \
         _filewriter.cpp \
-    mainmenu.cpp
+    mainmenu.cpp \
+    pages/settingspage.cpp \
+    directoryhandler.cpp
 
 
 
@@ -59,7 +62,9 @@ HEADERS += \
         usersession.h   \
         _filewriter.h   \
         bbb.h \
-    mainmenu.h
+    mainmenu.h \
+    pages/settingspage.h \
+    directoryhandler.h
 
 
 
@@ -68,7 +73,8 @@ FORMS += \
         mainwindow.ui   \
         reportsView.ui  \
         gearcentral.ui  \
-    mainmenu.ui
+    mainmenu.ui \
+    pages/settingspage.ui
         
 RESOURCES += \
     ../rec/rec.qrc \

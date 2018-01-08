@@ -36,6 +36,7 @@ private:
     static _FileWriter* instance;
     //**********************************************************
 
+    // todo - change this to getFileWriterPathFromDirHandler() &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     //**********************************************************
     //! \brief Gets the path to desktop
     QString getDesktopPath();

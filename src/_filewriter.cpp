@@ -60,6 +60,7 @@ void _FileWriter::makeTxtInvReport(QVector<Item> inventory, ReportType type)
     int reportIndex = static_cast<int>(type);
     QFile file(getDesktopPath() + oFileNames.at(reportIndex) );
 
+
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
     {
         qDebug() << file.errorString();

@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "reportsView.h"
+#include "pages/settingspage.h"
 
 namespace Ui {
 class MainMenu;
@@ -18,6 +19,8 @@ public:
 
 private slots:
     void on_pushButton_gotoInv_clicked();
+
+    void on_pushButton_gotoSettings_clicked();
 
 private:
     Ui::MainMenu *ui;
