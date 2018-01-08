@@ -39,6 +39,14 @@ private slots:
     //! \brief Tests int to QString conversions
     //! \author Bob Baker
     void testIntToString();
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //! \brief Test Data for String to int convertions
+    //! \author Bob Baker
+    void testStringToInt_data();
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //! \brief Tests for String to int convertions
+    //! \author Bob Baker
+    void testStringToInt();
     //************************************************************
 
 }; // end class

@@ -67,3 +67,35 @@ void CategoryTest::testIntToString()
 }
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+void CategoryTest::testStringToInt_data()
+{
+    QTest::addColumn<QString>("catString");
+    QTest::addColumn<int>("result");
+
+    QTest::newRow("N/A      ") << "N/A"              << 0;
+    QTest::newRow("NO_OPP   ") << "NO_OPP"           << 0;
+    QTest::newRow("Kitchen  ") << "Kitchen"          << 1;
+    QTest::newRow("Propane  ") << "Propane"          << 2;
+    QTest::newRow("Propane 2") << "Propane / Stoves" << 2;
+    QTest::newRow("Crafts   ") << "Crafts"           << 3;
+    QTest::newRow("Crafts 2 ") << "Arts and Crafts"  << 3;
+    QTest::newRow("Tarps    ") << "Tarps"            << 4;
+    QTest::newRow("Office   ") << "Office"           << 5;
+}
+
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+void CategoryTest::testStringToInt()
+{
+    //************************************************************
+    //* Testing begins here
+    //************************************************************
+    QFETCH(QString, catString);
+    QFETCH(int,     result);
+    QCOMPARE(bbb::Category::intFromString(catString), result);
+    //************************************************************
+}
+
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
