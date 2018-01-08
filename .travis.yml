@@ -37,12 +37,19 @@ install:
  - sudo pip install codecov
  
 script:
+ # Builds the project in testing mode, and then pushes the unit tests to codecov.
  - chmod +x ./scripts/test_build_and_run.sh
  - ./scripts/test_build_and_run.sh
  
+ # Cleans up binaries before next build.
+ - chmod +x ./scripts/clean.sh
+ - ./scripts/clean.sh
+ 
+ # Builds the project in normal mode.
  - chmod +x ./scripts/build.sh
  - ./scripts/build.sh
  
 after_success:
+ # This script sends the generated coverage reports to codecov and Doxygen documentation to github-pages.
  - chmod +x ./scripts/after_sucess.sh
  - ./scripts/after_sucess.sh
