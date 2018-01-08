@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
  #before_install script for travis.ci
 sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
 sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
