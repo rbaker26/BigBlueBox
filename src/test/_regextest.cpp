@@ -126,3 +126,96 @@ void _RegexTest::testIsItemName()
     //************************************************************
 }
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+void _RegexTest::testIsBoxName_data()
+{
+    // Setting up Columns for testing.
+    QTest::addColumn<QString>("boxName");
+    QTest::addColumn<bool>("result");
+
+    // Casing
+    QTest::newRow("all lower ") << "mybox"  << true;
+    QTest::newRow("mixed case") << "MyBox"  << true;
+    QTest::newRow("upper case") << "MYBOX"  << true;
+
+    // Illegal Length
+    QTest::newRow("too long  ") << "abcdefghijklmnop"
+                                   "qrstuvwxyz012345"
+                                   "678910"
+                                            << false;
+
+    // Legal Symbols
+    QTest::newRow("beg w. num") << "5myBox" << true;
+    QTest::newRow("beg w. (  ") << "(myBox" << true;
+    QTest::newRow("beg w. )  ") << ")myBox" << true;
+    QTest::newRow("beg w. .  ") << ".myBox" << true;
+    QTest::newRow("beg w. -  ") << "-myBox" << true;
+    QTest::newRow("beg w. _  ") << "_myBox" << true;
+
+    QTest::newRow("end w. num") << "5myBox" << true;
+    QTest::newRow("end w. (  ") << "myBox(" << true;
+    QTest::newRow("end w. )  ") << "myBox)" << true;
+    QTest::newRow("end w. .  ") << "myBox." << true;
+    QTest::newRow("end w. -  ") << "myBox-" << true;
+    QTest::newRow("end w. _  ") << "myBox_" << true;
+
+    QTest::newRow("has ()    ") << "myB()x" << true;
+    QTest::newRow("has )(    ") << "myB)(x" << true;
+    QTest::newRow("has ..    ") << "my..ox" << true;
+    QTest::newRow("has _num  ") << "my_6ox" << true;
+    QTest::newRow("has (num) ") << "myB(4)" << true;
+
+    // Illegal Symbols
+    QTest::newRow("beg w. !  ") << "!myBox" << false;
+    QTest::newRow("has    !  ") << "my!Box" << false;
+    QTest::newRow("end w. !  ") << "myBox!" << false;
+    QTest::newRow("beg w. @  ") << "@myBox" << false;
+    QTest::newRow("has    @  ") << "my@Box" << false;
+    QTest::newRow("end w. @  ") << "myBox@" << false;
+    QTest::newRow("beg w. #  ") << "#myBox" << false;
+    QTest::newRow("has    #  ") << "my#Box" << false;
+    QTest::newRow("end w. #  ") << "myBox#" << false;
+    QTest::newRow("beg w. $  ") << "$myBox" << false;
+    QTest::newRow("has    $  ") << "my$Box" << false;
+    QTest::newRow("end w. $  ") << "myBox$" << false;
+    QTest::newRow("beg w. %  ") << "%myBox" << false;
+    QTest::newRow("has    %  ") << "my%Box" << false;
+    QTest::newRow("end w. %  ") << "myBox%" << false;
+    QTest::newRow("beg w. ^  ") << "^myBox" << false;
+    QTest::newRow("has    ^  ") << "my^Box" << false;
+    QTest::newRow("end w. ^  ") << "myBox^" << false;
+    QTest::newRow("beg w. &  ") << "&myBox" << false;
+    QTest::newRow("has    &  ") << "my&Box" << false;
+    QTest::newRow("end w. &  ") << "myBox&" << false;
+    QTest::newRow("beg w. *  ") << "*myBox" << false;
+    QTest::newRow("has    *  ") << "my*Box" << false;
+    QTest::newRow("end w. *  ") << "myBox*" << false;
+    QTest::newRow("beg w. +  ") << "+myBox" << false;
+    QTest::newRow("has    +  ") << "my+Box" << false;
+    QTest::newRow("end w. +  ") << "myBox+" << false;
+    QTest::newRow("beg w. =  ") << "=myBox" << false;
+    QTest::newRow("has    =  ") << "my=Box" << false;
+    QTest::newRow("end w. =  ") << "myBox=" << false;
+    QTest::newRow("beg w. ~  ") << "~myBox" << false;
+    QTest::newRow("has    ~  ") << "my~Box" << false;
+    QTest::newRow("end w. ~  ") << "myPot~" << false;
+}
+
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+void _RegexTest::testIsBoxName()
+{
+    //************************************************************
+    //* Testing begins here
+    //************************************************************
+    QFETCH(QString, boxName);
+    QFETCH(bool, result);
+
+    typedef bbb::_Regex rx;
+
+    //QCOMPARE( actual, expected)
+    QCOMPARE(rx::isBoxName(itemName), result);
+    //************************************************************
+    //************************************************************
+
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&

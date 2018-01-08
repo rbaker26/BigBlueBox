@@ -37,6 +37,11 @@ private slots:
     //! \author Bob Baker
     void testIsItemName();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //! \brief Test Data for testIsBoxName
+    //! \author Bob Baker
+    void testIsBoxName_data();
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    void testIsBoxName();
     //************************************************************
 
 }; // end class
