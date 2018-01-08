@@ -50,7 +50,8 @@ script:
  
 after_success:
  # This script sends the generated coverage reports to codecov and Doxygen documentation to github-pages.
- - chmod +x ./scripts/after_sucess.sh
- - ./scripts/after_sucess.sh
+ - chmod +x ./scripts/after_success.sh
+ - ./scripts/after_success.sh
+ 
  - chmod +x ./scripts/clean.sh
  - ./scripts/clean.sh
