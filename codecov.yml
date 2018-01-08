@@ -9,3 +9,5 @@ ignore:
   - "src/mainmenu.cpp"
   - "src/reportsView.cpp"
   - "src/mainwindow.cpp"
+  - "src/pages/settingspage.cpp"
+  - "src/pages/settingspage.h"
