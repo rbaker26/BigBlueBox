@@ -29,6 +29,8 @@ void CategoryTest::testTest()
 
 void CategoryTest::testCatEnumVals()
 {
+    qDebug() << endl; // For spacing
+
     typedef bbb::Category::categoryType cat;
     //************************************************************
     //* Testing begins here
@@ -45,6 +47,7 @@ void CategoryTest::testCatEnumVals()
 
 void CategoryTest::testIntToString_data()
 {
+
     QTest::addColumn<int>("catNum");
     QTest::addColumn<QString>("result");
 
@@ -59,6 +62,8 @@ void CategoryTest::testIntToString_data()
 
 void CategoryTest::testIntToString()
 {
+
+    qDebug() << endl; // For spacing
 
     //************************************************************
     //* Testing begins here
