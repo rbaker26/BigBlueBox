@@ -214,7 +214,7 @@ void _RegexTest::testIsBoxName()
     typedef bbb::_Regex rx;
 
     //QCOMPARE( actual, expected)
-    QCOMPARE(rx::isBoxName(itemName), result);
+    QCOMPARE(rx::isBoxName(boxName), result);
     //************************************************************
     //************************************************************
 
