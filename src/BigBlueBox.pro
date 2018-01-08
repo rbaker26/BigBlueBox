@@ -14,7 +14,7 @@
 #after 2018, empty all patrol boxs.  then add them back in to make a patrol box standered.
 
 QT       += core gui sql testlib
-CONFIG   += c++14
+CONFIG   += c++11
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET   = BigBlueBox
