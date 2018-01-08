@@ -1,6 +1,6 @@
 ignore:
   # This is the file that starts the unit tests, therefor it cannot be tested.
-  - "unittest.h"
+  - "src/test/unittest.h"
   
   # The .cpp files that belong to the UI will be ignored for the coverage testing.
   # There is no way to test these files because they are UI-glue-code.
