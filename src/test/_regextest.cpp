@@ -16,10 +16,6 @@ void _RegexTest::testTest()
     // this is test code for the test code. lol
     //QCOMPARE( actual, expected)
 
-    // Tests the constructor
-    bbb::_Regex rx;
-    QVERIFY(rx.isBoxName("myBox"));
-
     QString str = "hello";
     QVERIFY(str.toUpper() == QString("HELLO"));
     QCOMPARE(5,5); //QCOMPARE( actual, expected)
