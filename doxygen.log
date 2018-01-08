@@ -30,6 +30,7 @@ Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/docs
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/rec
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/scripts
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/src
+Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/src/pages
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/src/test
 Reading and parsing tag files
 Parsing files
@@ -53,6 +54,10 @@ Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h...
+Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/directoryhandler.cpp...
+Parsing file /home/travis/build/rbaker26/BigBlueBox/src/directoryhandler.cpp...
+Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/directoryhandler.h...
+Parsing file /home/travis/build/rbaker26/BigBlueBox/src/directoryhandler.h...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.h...
@@ -71,15 +76,18 @@ Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.h...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.h...
+Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.cpp.error: Project logo '../rec/nyltIcon.png' specified by PROJECT_LOGO does not exist!
+..
+Parsing file /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.cpp...
+Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.h...
+Parsing file /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.h...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
-Preprocessing /home/traerror: Project logo '../rec/nyltIcon.png' specified by PROJECT_LOGO does not exist!
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
-vis/build/rbaker26/BigBlueBox/src/test/_regextest.h...
+Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.h...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.h...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/test/categorytest.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/test/categorytest.cpp...
@@ -152,11 +160,14 @@ Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/_filewriter.cpp
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/_filewriter.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/_regex.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/_regex.h...
-Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/bbb.h...
+Generating code for file /home/travis/build/rbaker26/BigBlueBox/s/home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
+rc/bbb.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/category.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/category.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h...
+Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/directoryhandler.cpp...
+Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/directoryhandler.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/item.cpp...
@@ -167,6 +178,8 @@ Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/mainmenu.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/mainmenu.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.h...
+Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.cpp...
+Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
@@ -192,27 +205,14 @@ Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/category.cpp
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/category.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/directoryhandler.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/directoryhandler.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/gearcentral.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/item.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/item.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/main.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/main.cpp...
-Generating call graph for function main
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainmenu.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainmenu.h...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.h...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.h...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/categorytest.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/categorytest.h...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/unittest.cpp...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/unittest.h...
-Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp...
-Generating docs for file /home/travis/buil/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
+Generating docs for file /home/t/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
   parameter 'boxName'
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
@@ -234,22 +234,28 @@ Generating docs for file /home/travis/buil/home/travis/build/rbaker26/BigBlueBox
 /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:107: warning: argument 'QString' of command @param is not found in the argument list of bbb::DbConnect::deleteItem(QString name)
 /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:107: warning: The following parameters of bbb::DbConnect::deleteItem(QString name) are not documented:
   parameter 'name'
-/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:89: warning: argument 'QString' of command @param is not found in the argument list of bbb::DbConnect::updateItem(QString orgName, Row newRowInfo)
-/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:89: warning: The following parameters of bbb::DbConnect::updateItem(QString orgName, Row newRowInfo) are not documented:
-  parameter 'orgName'
-  parameter 'newRowInfo'
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:58: warning: argument 'Category' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:58: warning: argument 'categoryType' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:58: warning: The following parameters of bbb::Item::categoryToQString(bbb::Category::categoryType category) are not documented:
-  parameter 'category'
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:76: warning: Found unknown command `\inherits'
-d/rbaker26/BigBlueBox/src/usersession.h...
+ravis/build/rbaker26/BigBlueBox/src/test/main.cpp...
+Generating call graph for function main
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainmenu.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainmenu.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/categorytest.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/categorytest.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/unittest.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/unittest.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/usersession.h...
 Generating page documentation...
 Generating group documentation...
 Generating class documentation...
+Generating docs for compound DirectoryHandler...
 Generating docs for compound GearCentral...
 Generating docs for compound MainMenu...
 Generating docs for compound MainWindow...
@@ -270,6 +276,7 @@ Generating call graph for function ReportsView::on_pushButton_makeReport_clicked
 Generating call graph for function ReportsView::on_tableWidget_inv_cellDoubleClicked
 Generating call graph for function ReportsView::sendRowToToolBox
 Generating caller graph for function ReportsView::sendRowToToolBox
+Generating docs for compound SettingsPage...
 Generating namespace index...
 Generating docs for namespace bbb
 Generating docs for compound bbb::_FileWriter...
@@ -289,7 +296,19 @@ Generating caller graph for function bbb::DbConnect::addNewItem
 Generating caller graph for function bbb::DbConnect::deleteItem
 Generating caller graph for function bbb::DbConnect::getFullInvAsVector
 Generating call graph for function bbb::DbConnect::getInstance
-Generating caller graph for function bbb::DbConnect::getInstance
+Generating caller graph for funct/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:89: warning: argument 'QString' of command @param is not found in the argument list of bbb::DbConnect::updateItem(QString orgName, Row newRowInfo)
+/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:89: warning: The following parameters of bbb::DbConnect::updateItem(QString orgName, Row newRowInfo) are not documented:
+  parameter 'orgName'
+  parameter 'newRowInfo'
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:58: warning: argument 'Category' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:58: warning: argument 'categoryType' of command @param is not found in the argument list of bbb::Item::categoryToQString(bbb::Category::categoryType category)
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:58: warning: The following parameters of bbb::Item::categoryToQString(bbb::Category::categoryType category) are not documented:
+  parameter 'category'
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:76: warning: Found unknown command `\inherits'
+ion bbb::DbConnect::getInstance
 Generating caller graph for function bbb::DbConnect::updateItem
 Generating docs for compound bbb::Item...
 Generating call graph for function bbb::Item::categoryToQString
@@ -308,6 +327,7 @@ Generating caller graph for function bbbTest::UnitTest::run
 Generating docs for namespace Ui
 Generating graph info page...
 Generating directory documentation...
+Generating dependency graph for directory /home/travis/build/rbaker26/BigBlueBox/src/pages
 Generating dependency graph for directory /home/travis/build/rbaker26/BigBlueBox/src
 Generating dependency graph for directory /home/travis/build/rbaker26/BigBlueBox/src/test
 Generating index page...
@@ -326,167 +346,183 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 3 parallel threads...
-Running dot for graph 1/117
-Running dot for graph 2/117
-Running dot for graph 3/117
-Running dot for graph 4/117
-Running dot for graph 5/117
-Running dot for graph 6/117
-Running dot for graph 7/117
-Running dot for graph 8/117
-Running dot for graph 9/117
-Running dot for graph 10/117
-Running dot for graph 11/117
-Running dot for graph 12/117
-Running dot for graph 13/117
-Running dot for graph 14/117
-Running dot for graph 15/117
-Running dot for graph 16/117
-Running dot for graph 17/117
-Running dot for graph 18/117
-Running dot for graph 19/117
-Running dot for graph 20/117
-Running dot for graph 21/117
-Running dot for graph 22/117
-Running dot for graph 23/117
-Running dot for graph 24/117
-Running dot for graph 25/117
-Running dot for graph 26/117
-Running dot for graph 27/117
-Running dot for graph 28/117
-Running dot for graph 29/117
-Running dot for graph 30/117
-Running dot for graph 31/117
-Running dot for graph 32/117
-Running dot for graph 33/117
-Running dot for graph 34/117
-Running dot for graph 35/117
-Running dot for graph 36/117
-Running dot for graph 37/117
-Running dot for graph 38/117
-Running dot for graph 39/117
-Running dot for graph 40/117
-Running dot for graph 41/117
-Running dot for graph 42/117
-Running dot for graph 43/117
-Running dot for graph 44/117
-Running dot for graph 45/117
-Running dot for graph 46/117
-Running dot for graph 47/117
-Running dot for graph 48/117
-Running dot for graph 49/117
-Running dot for graph 50/117
-Running dot for graph 51/117
-Running dot for graph 52/117
-Running dot for graph 53/117
-Running dot for graph 54/117
-Running dot for graph 55/117
-Running dot for graph 56/117
-Running dot for graph 57/117
-Running dot for graph 58/117
-Running dot for graph 59/117
-Running dot for graph 60/117
-Running dot for graph 61/117
-Running dot for graph 62/117
-Running dot for graph 63/117
-Running dot for graph 64/117
-Running dot for graph 65/117
-Running dot for graph 66/117
-Running dot for graph 67/117
-Running dot for graph 68/117
-Running dot for graph 69/117
-Running dot for graph 70/117
-Running dot for graph 71/117
-Running dot for graph 72/117
-Running dot for graph 73/117
-Running dot for graph 74/117
-Running dot for graph 75/117
-Running dot for graph 76/117
-Running dot for graph 77/117
-Running dot for graph 78/117
-Running dot for graph 79/117
-Running dot for graph 80/117
-Running dot for graph 81/117
-Running dot for graph 82/117
-Running dot for graph 83/117
-Running dot for graph 84/117
-Running dot for graph 85/117
-Running dot for graph 86/117
-Running dot for graph 87/117
-Running dot for graph 88/117
-Running dot for graph 89/117
-Running dot for graph 90/117
-Running dot for graph 91/117
-Running dot for graph 92/117
-Running dot for graph 93/117
-Running dot for graph 94/117
-Running dot for graph 95/117
-Running dot for graph 96/117
-Running dot for graph 97/117
-Running dot for graph 98/117
-Running dot for graph 99/117
-Running dot for graph 100/117
-Running dot for graph 101/117
-Running dot for graph 102/117
-Running dot for graph 103/117
-Running dot for graph 104/117
-Running dot for graph 105/117
-Running dot for graph 106/117
-Running dot for graph 107/117
-Running dot for graph 108/117
-Running dot for graph 109/117
-Running dot for graph 110/117
-Running dot for graph 111/117
-Running dot for graph 112/117
-Running dot for graph 113/117
-Running dot for graph 114/117
-Running dot for graph 115/117
-Running dot for graph 116/117
-Running dot for graph 117/117
-Patching output file 1/45
-Patching output file 2/45
-Patching output file 3/45
-Patching output file 4/45
-Patching output file 5/45
-Patching output file 6/45
-Patching output file 7/45
-Patching output file 8/45
-Patching output file 9/45
-Patching output file 10/45
-Patching output file 11/45
-Patching output file 12/45
-Patching output file 13/45
-Patching output file 14/45
-Patching output file 15/45
-Patching output file 16/45
-Patching output file 17/45
-Patching output file 18/45
-Patching output file 19/45
-Patching output file 20/45
-Patching output file 21/45
-Patching output file 22/45
-Patching output file 23/45
-Patching output file 24/45
-Patching output file 25/45
-Patching output file 26/45
-Patching output file 27/45
-Patching output file 28/45
-Patching output file 29/45
-Patching output file 30/45
-Patching output file 31/45
-Patching output file 32/45
-Patching output file 33/45
-Patching output file 34/45
-Patching output file 35/45
-Patching output file 36/45
-Patching output file 37/45
-Patching output file 38/45
-Patching output file 39/45
-Patching output file 40/45
-Patching output file 41/45
-Patching output file 42/45
-Patching output file 43/45
-Patching output file 44/45
-Patching output file 45/45
-lookup cache used 322/65536 hits=1635 misses=335
+Running dot for graph 1/127
+Running dot for graph 2/127
+Running dot for graph 3/127
+Running dot for graph 4/127
+Running dot for graph 5/127
+Running dot for graph 6/127
+Running dot for graph 7/127
+Running dot for graph 8/127
+Running dot for graph 9/127
+Running dot for graph 10/127
+Running dot for graph 11/127
+Running dot for graph 12/127
+Running dot for graph 13/127
+Running dot for graph 14/127
+Running dot for graph 15/127
+Running dot for graph 16/127
+Running dot for graph 17/127
+Running dot for graph 18/127
+Running dot for graph 19/127
+Running dot for graph 20/127
+Running dot for graph 21/127
+Running dot for graph 22/127
+Running dot for graph 23/127
+Running dot for graph 24/127
+Running dot for graph 25/127
+Running dot for graph 26/127
+Running dot for graph 27/127
+Running dot for graph 28/127
+Running dot for graph 29/127
+Running dot for graph 30/127
+Running dot for graph 31/127
+Running dot for graph 32/127
+Running dot for graph 33/127
+Running dot for graph 34/127
+Running dot for graph 35/127
+Running dot for graph 36/127
+Running dot for graph 37/127
+Running dot for graph 38/127
+Running dot for graph 39/127
+Running dot for graph 40/127
+Running dot for graph 41/127
+Running dot for graph 42/127
+Running dot for graph 43/127
+Running dot for graph 44/127
+Running dot for graph 45/127
+Running dot for graph 46/127
+Running dot for graph 47/127
+Running dot for graph 48/127
+Running dot for graph 49/127
+Running dot for graph 50/127
+Running dot for graph 51/127
+Running dot for graph 52/127
+Running dot for graph 53/127
+Running dot for graph 54/127
+Running dot for graph 55/127
+Running dot for graph 56/127
+Running dot for graph 57/127
+Running dot for graph 58/127
+Running dot for graph 59/127
+Running dot for graph 60/127
+Running dot for graph 61/127
+Running dot for graph 62/127
+Running dot for graph 63/127
+Running dot for graph 64/127
+Running dot for graph 65/127
+Running dot for graph 66/127
+Running dot for graph 67/127
+Running dot for graph 68/127
+Running dot for graph 69/127
+Running dot for graph 70/127
+Running dot for graph 71/127
+Running dot for graph 72/127
+Running dot for graph 73/127
+Running dot for graph 74/127
+Running dot for graph 75/127
+Running dot for graph 76/127
+Running dot for graph 77/127
+Running dot for graph 78/127
+Running dot for graph 79/127
+Running dot for graph 80/127
+Running dot for graph 81/127
+Running dot for graph 82/127
+Running dot for graph 83/127
+Running dot for graph 84/127
+Running dot for graph 85/127
+Running dot for graph 86/127
+Running dot for graph 87/127
+Running dot for graph 88/127
+Running dot for graph 89/127
+Running dot for graph 90/127
+Running dot for graph 91/127
+Running dot for graph 92/127
+Running dot for graph 93/127
+Running dot for graph 94/127
+Running dot for graph 95/127
+Running dot for graph 96/127
+Running dot for graph 97/127
+Running dot for graph 98/127
+Running dot for graph 99/127
+Running dot for graph 100/127
+Running dot for graph 101/127
+Running dot for graph 102/127
+Running dot for graph 103/127
+Running dot for graph 104/127
+Running dot for graph 105/127
+Running dot for graph 106/127
+Running dot for graph 107/127
+Running dot for graph 108/127
+Running dot for graph 109/127
+Running dot for graph 110/127
+Running dot for graph 111/127
+Running dot for graph 112/127
+Running dot for graph 113/127
+Running dot for graph 114/127
+Running dot for graph 115/127
+Running dot for graph 116/127
+Running dot for graph 117/127
+Running dot for graph 118/127
+Running dot for graph 119/127
+Running dot for graph 120/127
+Running dot for graph 121/127
+Running dot for graph 122/127
+Running dot for graph 123/127
+Running dot for graph 124/127
+Running dot for graph 125/127
+Running dot for graph 126/127
+Running dot for graph 127/127
+Patching output file 1/51
+Patching output file 2/51
+Patching output file 3/51
+Patching output file 4/51
+Patching output file 5/51
+Patching output file 6/51
+Patching output file 7/51
+Patching output file 8/51
+Patching output file 9/51
+Patching output file 10/51
+Patching output file 11/51
+Patching output file 12/51
+Patching output file 13/51
+Patching output file 14/51
+Patching output file 15/51
+Patching output file 16/51
+Patching output file 17/51
+Patching output file 18/51
+Patching output file 19/51
+Patching output file 20/51
+Patching output file 21/51
+Patching output file 22/51
+Patching output file 23/51
+Patching output file 24/51
+Patching output file 25/51
+Patching output file 26/51
+Patching output file 27/51
+Patching output file 28/51
+Patching output file 29/51
+Patching output file 30/51
+Patching output file 31/51
+Patching output file 32/51
+Patching output file 33/51
+Patching output file 34/51
+Patching output file 35/51
+Patching output file 36/51
+Patching output file 37/51
+Patching output file 38/51
+Patching output file 39/51
+Patching output file 40/51
+Patching output file 41/51
+Patching output file 42/51
+Patching output file 43/51
+Patching output file 44/51
+Patching output file 45/51
+Patching output file 46/51
+Patching output file 47/51
+Patching output file 48/51
+Patching output file 49/51
+Patching output file 50/51
+Patching output file 51/51
+lookup cache used 350/65536 hits=1791 misses=364
 finished...

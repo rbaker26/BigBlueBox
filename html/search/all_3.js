@@ -12,6 +12,7 @@ var searchData=
   ['categorytoqstring',['categoryToQString',['../classbbb_1_1_category.html#ad7de659617e688faaa44e4ba448b40fe',1,'bbb::Category::categoryToQString(Category::categoryType cat)'],['../classbbb_1_1_category.html#aee6f34ea5864f751d92b25e95af1c1de',1,'bbb::Category::categoryToQString(int cat)'],['../classbbb_1_1_item.html#ad3fe5a44215dbfe95ee2fe68e1b2965d',1,'bbb::Item::categoryToQString()']]],
   ['categorytype',['categoryType',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98da',1,'bbb::Category']]],
   ['cleartable',['clearTable',['../class_reports_view.html#adc130acc6c8471c37855f233ed72b54f',1,'ReportsView']]],
+  ['commondirs',['CommonDirs',['../class_directory_handler.html#ae3f51a042bd8b3e06420ccb725c61e43',1,'DirectoryHandler']]],
   ['crafts',['CRAFTS',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daadb67e967ccdceba26f4e68b4bfc9b388',1,'bbb::Category']]],
   ['critical',['Critical',['../classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c0304f38003019270f01baa455e4ec',1,'bbb::_FileWriter']]]
 ];
