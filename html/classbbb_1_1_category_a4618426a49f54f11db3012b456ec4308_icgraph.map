@@ -1,4 +1,5 @@
 <map id="bbb::Category::intFromString" name="bbb::Category::intFromString">
 <area shape="rect" id="node2" href="$class_reports_view.html#ae67b95dd993a575d09b467f89557aae2" title="Sends the doubleclicked row to the tool box. " alt="" coords="246,12,469,39"/>
+<area shape="rect" id="node4" href="$classbbb_test_1_1_category_test.html#a12940acd2aeb674e62cde75ce96aec37" title="Tests for String to int convertions. " alt="" coords="279,63,435,105"/>
 <area shape="rect" id="node3" href="$class_reports_view.html#ad5cf98addd840c1e257a556598ce66d7" title="ReportsView::on_tableWidget\l_inv_cellDoubleClicked" alt="" coords="517,5,712,46"/>
 </map>
