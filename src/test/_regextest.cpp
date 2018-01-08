@@ -15,6 +15,9 @@ void _RegexTest::testTest()
     //************************************************************
     // this is test code for the test code. lol
     //QCOMPARE( actual, expected)
+
+    bbb::_Regex rx();  // tests the constructor
+
     QString str = "hello";
     QVERIFY(str.toUpper() == QString("HELLO"));
     QCOMPARE(5,5); //QCOMPARE( actual, expected)
@@ -40,6 +43,8 @@ void _RegexTest::testIsItemName_data()
                                    "qrstuvwxyz012345"
                                    "678910"
                                             << false;
+    qDebug() << endl;  // Just for spacing
+
     // Legal Symbols
     QTest::newRow("beg w. num") << "5myPot" << true;
     QTest::newRow("beg w. (  ") << "(myPot" << true;
@@ -60,6 +65,8 @@ void _RegexTest::testIsItemName_data()
     QTest::newRow("has ..    ") << "my..ot" << true;
     QTest::newRow("has _num  ") << "my_6ot" << true;
     QTest::newRow("has (num) ") << "myP(4)" << true;
+
+    qDebug() << endl;  // Just for spacing
 
     // Illegal Symbols
     QTest::newRow("beg w. !  ") << "!myPot" << false;
@@ -101,6 +108,8 @@ void _RegexTest::testIsItemName_data()
 
 void _RegexTest::testIsItemName()
 {
+    qDebug() << endl; // For spacing
+
     //************************************************************
     //* Testing begins here
     //************************************************************
