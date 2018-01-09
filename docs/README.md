@@ -1,12 +1,5 @@
 # BigBlueBox
-[![Build Status](https://travis-ci.org/rbaker26/BigBlueBox.svg?branch=master)](https://travis-ci.org/rbaker26/BigBlueBox) 
-[![Build status](https://ci.appveyor.com/api/projects/status/n5w5hxdsnvb7jpm9/branch/master?svg=true)](https://ci.appveyor.com/project/rbaker26/bigbluebox/branch/master)
-[![codecov](https://codecov.io/gh/rbaker26/BigBlueBox/branch/master/graph/badge.svg)](https://codecov.io/gh/rbaker26/BigBlueBox)
-[![GitHub (pre-)release](https://img.shields.io/github/release/rbaker26/BigBlueBox/all.svg)](https://travis-ci.org/rbaker26/BigBlueBox)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/rbaker26/BigBlueBox/blob/master/LICENSE)
 
-<br />
-<br />
 <div align="center">
   <!-- Travis -->
   <a href="https://travis-ci.org/rbaker26/BigBlueBox">
@@ -24,7 +17,7 @@
       alt="Code Coverage" />
   </a>
   <!-- SamVer -->
-  <a href="https://travis-ci.org/rbaker26/BigBlueBox">
+  <a href="https://github.com/rbaker26/BigBlueBox/releases">
     <img src="https://img.shields.io/github/release/rbaker26/BigBlueBox/all.svg"
       alt="Version" />
   </a>
