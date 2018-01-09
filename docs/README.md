@@ -1,5 +1,10 @@
 <h1 align="center">BigBlueBox</h1>
 
+<p align="center">
+A Inventory Management System for a NYLT Course or other Boy Scout Programs. <br>
+For documentation for source code, <a href="https://rbaker26.github.io/BigBlueBox/html/index.html">click here</a>
+</p>
+
 <div align="center">
   <!-- Travis -->
   <a href="https://travis-ci.org/rbaker26/BigBlueBox">
@@ -29,10 +34,6 @@
 </div>
 <br />
 
-<p align="center">
-A Inventory Management System for a NYLT Course or other Boy Scout Programs. <br>
-For documentation for source code, <a href="https://rbaker26.github.io/BigBlueBox/html/index.html">click here</a>
-</p>
 
 
 
