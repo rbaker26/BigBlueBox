@@ -11,7 +11,7 @@ var searchData=
   ['categorytest_2ecpp',['categorytest.cpp',['../categorytest_8cpp.html',1,'']]],
   ['categorytest_2eh',['categorytest.h',['../categorytest_8h.html',1,'']]],
   ['categorytoqstring',['categoryToQString',['../classbbb_1_1_category.html#ad7de659617e688faaa44e4ba448b40fe',1,'bbb::Category::categoryToQString(Category::categoryType cat)'],['../classbbb_1_1_category.html#aee6f34ea5864f751d92b25e95af1c1de',1,'bbb::Category::categoryToQString(int cat)']]],
-  ['categorytoqstringtest',['categoryToQStringTest',['../classbbb_test_1_1_item_test.html#a3f29750899687585478be213162b5669',1,'bbbTest::ItemTest']]],
+  ['categorytoqstringtest',['categoryToQStringTest',['../classbbb_test_1_1_item_test.html#ad56dd983ad38e75637db6617fbbf4e2c',1,'bbbTest::ItemTest']]],
   ['categorytoqstringtest_5fdata',['categoryToQStringTest_data',['../classbbb_test_1_1_item_test.html#a774572b8788dc0ce5b7e9b94983da38e',1,'bbbTest::ItemTest']]],
   ['categorytype',['categoryType',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98da',1,'bbb::Category']]],
   ['cleartable',['clearTable',['../class_reports_view.html#adc130acc6c8471c37855f233ed72b54f',1,'ReportsView']]],
