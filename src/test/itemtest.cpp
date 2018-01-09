@@ -57,7 +57,7 @@ void ItemTest::categoryToQStringTest(int cat)
     //************************************************************
     QFETCH(int, catNum);
     QFETCH(QString, result);
-    QCOMPARE(bbb::Category::categoryToQString(catNum), result);
+    QCOMPARE(bbb::Item::categoryIntToQString(catNum), result);
     //************************************************************
 }
 
