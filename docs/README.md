@@ -1,15 +1,74 @@
-# BigBlueBox
-[![Build Status](https://travis-ci.org/rbaker26/BigBlueBox.svg?branch=master)](https://travis-ci.org/rbaker26/BigBlueBox) 
-[![Build status](https://ci.appveyor.com/api/projects/status/n5w5hxdsnvb7jpm9/branch/master?svg=true)](https://ci.appveyor.com/project/rbaker26/bigbluebox/branch/master)
-[![codecov](https://codecov.io/gh/rbaker26/BigBlueBox/branch/master/graph/badge.svg)](https://codecov.io/gh/rbaker26/BigBlueBox)
-[![GitHub (pre-)release](https://img.shields.io/github/release/rbaker26/BigBlueBox/all.svg)](https://travis-ci.org/rbaker26/BigBlueBox)
-<!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) -->
-<!--[![codecov](https://codecov.io/gh/rbaker26/BigBlueBox/branch/master/graph/badge.svg)](https://codecov.io/gh/rbaker26/BigBlueBox) -->
-<br>
+<h1 align="center">BigBlueBox</h1>
 
-A Inventory Management System for a NYLT Course or other Boy Scout Programs.
+<p align="center">
+A Inventory Management System for a NYLT Course or other Boy Scout Programs. <br>
+For documentation for source code, <a href="https://rbaker26.github.io/BigBlueBox/html/index.html">click here</a>
+</p>
 
-For documentation for source code, [click here](https://rbaker26.github.io/BigBlueBox/html/index.html).
+<div align="center">
+  <!-- Travis -->
+  <a href="https://travis-ci.org/rbaker26/BigBlueBox">
+    <img src="https://travis-ci.org/rbaker26/BigBlueBox.svg?branch=master"
+      alt="Travis Build Status" />
+  </a>
+  <!-- Appveyor -->
+  <a href="https://ci.appveyor.com/project/rbaker26/bigbluebox/branch/master">
+    <img src="https://ci.appveyor.com/api/projects/status/n5w5hxdsnvb7jpm9/branch/master?svg=true"
+      alt="Appveyor Build Status" />
+  </a>
+  <!-- Code Coverage via Codecov -->
+  <a href="https://codecov.io/gh/rbaker26/BigBlueBox">
+    <img src="https://codecov.io/gh/rbaker26/BigBlueBox/branch/master/graph/badge.svg"
+      alt="Code Coverage" />
+  </a>
+  <!-- SamVer -->
+  <a href="https://github.com/rbaker26/BigBlueBox/releases">
+    <img src="https://img.shields.io/github/release/rbaker26/BigBlueBox/all.svg"
+      alt="Version" />
+  </a>
+  <!-- License -->
+  <a href="https://github.com/rbaker26/BigBlueBox/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg"
+      alt="License" />
+  </a>
+</div>
+<br />
+
+<!-- Later I will add more links to the readme here--> 
+<!--
+<div align="center">
+  <h3>
+    <a href="">
+      Website
+    </a>
+    <span> | </span>
+    <a href="">
+      Handbook
+    </a>
+    <span> | </span>
+    <a href="">
+      Ecosystem
+    </a>
+    <span> | </span> 
+-->
+   
+<!--
+    <a href="">
+      Contributing
+    </a>
+    <span> | </span>
+    <a href="">
+      Reddit
+    </a>
+    <span> | </span>
+    <a href="">
+      Chat
+    </a>
+  </h3>
+</div>
+
+-->
+
 
 ## Getting Started
 
@@ -57,17 +116,26 @@ Testing will include continuous integration testing using Travis.ci and regressi
 
 ### CI Testing
 
-This is simply ci test.  Travis.ci will use a .yml to build the files.  If any new addtions create compile-time conflicts, they 
-will be shown here.  
+This is simply ci test. This project uses two online ci services, Travis and Appveyor. 
 
+#### Travis
+Travis.ci will use .travis.yml and Shell build scripts to build the project.  If any new addtions create compile-time conflicts, they 
+will be shown here.  <br>
 
- [Click here](https://travis-ci.org/rbaker26/BigBlueBox) to see the latest travis.ci build status.
+[Click here](https://travis-ci.org/rbaker26/BigBlueBox) to see the latest travis.ci build status.
  
+#### Appveyor
+Appveyor will use appveyor.yml to build the project. If any new addtions create compile-time conflicts, they 
+will be shown here.  <br>
+
+[![Build history](https://buildstats.info/appveyor/chart/rbaker26/BigBlueBox)](https://ci.appveyor.com/project/rbaker26/BigBlueBox/history) <br>
+
 
 ### Regression Testing
 
 Unit tests written with the QtTestLib will be run on travis.ci.  If any tests fail, travis.ci build state will be set to 
-failed.   
+failed.  Tests will be exported to Codecov for a coverage report.  UI classes will not be tested. <br>
+Tests will be verbose and should cover all possible paths within a function. <br> 
 This project will follow the examples at [this](http://doc.qt.io/qt-5/qttestlib-tutorial1-example.html) link.
 
 <br>
