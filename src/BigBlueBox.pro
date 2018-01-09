@@ -48,10 +48,6 @@ SOURCES += \
         mainmenu.cpp    \
         pages/settingspage.cpp \
         directoryhandler.cpp   \
-    test/itemtest.cpp
-
-
-
         
 HEADERS += \
         mainwindow.h    \
@@ -67,9 +63,6 @@ HEADERS += \
         mainmenu.h      \
         pages/settingspage.h \
         directoryhandler.h   \
-    test/itemtest.h
-
-
 
         
 FORMS += \
@@ -94,12 +87,14 @@ SOURCES += \
         test/main.cpp         \
         test/_regextest.cpp   \
         test/categorytest.cpp \
+        test/itemtest.cpp     \
 
 
 HEADERS += \
         test/unittest.h     \
         test/_regextest.h   \
         test/categorytest.h \
+        test/itemtest.h     \
 
 RESOURCES -= \
     ../rec/rec.qrc \
