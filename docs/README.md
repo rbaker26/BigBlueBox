@@ -18,7 +18,7 @@ For source code documentation, <a href="https://rbaker26.github.io/BigBlueBox/ht
   </a>
   <!-- Issues -->
   <a href="https://github.com/rbaker26/BigBlueBox/issues">
-    <img src="https://img.shields.io/github/issues/rbaker26/BigBlueBox/shields.svg"  alt="Open Issues" />
+    <img src="https://img.shields.io/github/issues/rbaker26/BigBlueBox/shields.svg)"  alt="Open Issues" />
   </a>
   <!-- Code Coverage via Codecov -->
   <a href="https://codecov.io/gh/rbaker26/BigBlueBox">
