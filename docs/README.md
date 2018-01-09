@@ -1,6 +1,6 @@
 
 
-<h1 align="center">BigBlueBox</h1>
+<h1 align="center">BigBlueBox IMS</h1>
 <div align="center">
   <img align="center" src="../rec/bluebox25x25.png" />
   <img align="center" src="../rec/bluebox25x25.png" />
