@@ -32,6 +32,7 @@ For documentation for source code, <a href="https://rbaker26.github.io/BigBlueBo
       alt="License" />
   </a>
 </div>
+<br />
 
 <!-- Later I will add more links to the readme here--> 
 <!--
