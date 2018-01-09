@@ -48,12 +48,10 @@ For documentation for source code, <a href="https://rbaker26.github.io/BigBlueBo
     <a href="">
       Ecosystem
     </a>
-    <span> | </span>
-    <!-- <a href=""> -->
-    <!--   CLI -->
-    <!-- </a> -->
-    <!-- <span> | </span> -->
-    <!--
+    <span> | </span> 
+-->
+   
+<!--
     <a href="">
       Contributing
     </a>
