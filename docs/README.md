@@ -31,7 +31,7 @@
 
 <p align="center">
 A Inventory Management System for a NYLT Course or other Boy Scout Programs. <br>
-For documentation for source code, [click here](https://rbaker26.github.io/BigBlueBox/html/index.html).
+For documentation for source code, <a href="https://rbaker26.github.io/BigBlueBox/html/index.html">click here</a>
 </p>
 
 
