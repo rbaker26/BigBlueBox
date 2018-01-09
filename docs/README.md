@@ -143,7 +143,7 @@ This project will follow the examples at [this](http://doc.qt.io/qt-5/qttestlib-
 ## Code Coverage
 Coverage will be handled by Codecove.  The coverage report is generated during the test build in travis.ci.  The reports are uploaded from travis back to Codecov. <br>
 <sub>Graph of Code Coverage over Time</sub>
-<img scr="https://codecov.io/gh/rbaker26/BigBlueBox/branch/master/graphs/commits.svg" slt="Coverage Graph"/>
+<img src="https://codecov.io/gh/rbaker26/BigBlueBox/branch/master/graphs/commits.svg" slt="Coverage Graph"/>
 <br>
 
 ## Style
