@@ -8,35 +8,30 @@
 <br />
 <br />
 <div align="center">
-  <!-- Stability -->
-  <a href="https://nodejs.org/api/documentation.html#documentation_stability_index">
-    <img src="https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square"
-      alt="API stability" />
+  <!-- Travis -->
+  <a href="https://travis-ci.org/rbaker26/BigBlueBox">
+    <img src="https://travis-ci.org/rbaker26/BigBlueBox.svg?branch=master"
+      alt="Travis Build Status" />
   </a>
-  <!-- NPM version -->
-  <a href="https://npmjs.org/package/choo">
-    <img src="https://img.shields.io/npm/v/choo.svg?style=flat-square"
-      alt="NPM version" />
+  <!-- Appveyor -->
+  <a href="https://ci.appveyor.com/project/rbaker26/bigbluebox/branch/master">
+    <img src="https://ci.appveyor.com/api/projects/status/n5w5hxdsnvb7jpm9/branch/master?svg=true"
+      alt="Appveyor Build Status" />
   </a>
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/choojs/choo">
-    <img src="https://img.shields.io/travis/choojs/choo/master.svg?style=flat-square"
-      alt="Build Status" />
+  <!-- Code Coverage via Codecov -->
+  <a href="https://codecov.io/gh/rbaker26/BigBlueBox">
+    <img src="https://codecov.io/gh/rbaker26/BigBlueBox/branch/master/graph/badge.svg"
+      alt="Code Coverage" />
   </a>
-  <!-- Test Coverage -->
-  <a href="https://codecov.io/github/choojs/choo">
-    <img src="https://img.shields.io/codecov/c/github/choojs/choo/master.svg?style=flat-square"
-      alt="Test Coverage" />
+  <!-- SamVer -->
+  <a href="https://travis-ci.org/rbaker26/BigBlueBox">
+    <img src="https://img.shields.io/github/release/rbaker26/BigBlueBox/all.svg"
+      alt="Version" />
   </a>
-  <!-- Downloads -->
-  <a href="https://npmjs.org/package/choo">
-    <img src="https://img.shields.io/npm/dm/choo.svg?style=flat-square"
-      alt="Downloads" />
-  </a>
-  <!-- Standard -->
-  <a href="https://standardjs.com">
-    <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square"
-      alt="Standard" />
+  <!-- License -->
+  <a href="https://github.com/rbaker26/BigBlueBox/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg"
+      alt="License" />
   </a>
 </div>
 <br />
