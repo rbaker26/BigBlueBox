@@ -58,12 +58,13 @@ void ItemTest::categoryToQStringTest_data()
 
 void ItemTest::categoryToQStringTest()
 {
+    bbb::Item myItem;
     //************************************************************
     //* Testing begins here
     //************************************************************
     QFETCH(int, catNum);
     QFETCH(QString, result);
-    QCOMPARE(bbb::Item::categoryIntToQString(catNum), result);
+    QCOMPARE(myItem.categoryIntToQString(catNum), result);
     //************************************************************
 }
 
