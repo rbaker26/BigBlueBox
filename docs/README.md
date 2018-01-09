@@ -16,6 +16,10 @@ For source code documentation, <a href="https://rbaker26.github.io/BigBlueBox/ht
     <img src="https://ci.appveyor.com/api/projects/status/n5w5hxdsnvb7jpm9/branch/master?svg=true"
       alt="Appveyor Build Status" />
   </a>
+  <!-- Issues -->
+  <a href="https://github.com/rbaker26/BigBlueBox/issues">
+    <img src="https://img.shields.io/github/issues/rbaker26/BigBlueBox/shields.svg"  alt="Open Issues" />
+  </a>
   <!-- Code Coverage via Codecov -->
   <a href="https://codecov.io/gh/rbaker26/BigBlueBox">
     <img src="https://codecov.io/gh/rbaker26/BigBlueBox/branch/master/graph/badge.svg"
@@ -31,10 +35,7 @@ For source code documentation, <a href="https://rbaker26.github.io/BigBlueBox/ht
     <img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg"
       alt="License" />
   </a>
-  <!-- Issues -->
-  <a href="https://github.com/rbaker26/BigBlueBox/issues">
-    <img src="https://img.shields.io/github/issues/rbaker26/BigBlueBox/shields.svg"  alt="Open Issues" />
-  </a>
+  
 </div>
 <br />
 
