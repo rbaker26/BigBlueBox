@@ -49,7 +49,7 @@ private slots:
     //! \brief Tests the Category to string fx
     //! \test
     //! \author Bob Baker
-    void categoryToQStringTest(int cat);
+    void categoryToQStringTest();
     //************************************************************
 
 }; // end class

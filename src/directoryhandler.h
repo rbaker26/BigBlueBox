@@ -2,7 +2,7 @@
 #define DIRECTORYHANDLER_H
 
 #include <QDir>
-#include <QFile>;
+#include <QFile>
 #include <QString>
 
 #include <QStandardPaths>

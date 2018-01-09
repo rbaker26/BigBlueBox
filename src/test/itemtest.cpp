@@ -56,7 +56,7 @@ void ItemTest::categoryToQStringTest_data()
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-void ItemTest::categoryToQStringTest(int cat)
+void ItemTest::categoryToQStringTest()
 {
     //************************************************************
     //* Testing begins here
