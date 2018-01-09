@@ -15,6 +15,7 @@
 
 #include "test/_regextest.h"
 #include "test/categorytest.h"
+#include "test/itemtest.h"
 
 namespace bbbTest {
 /***********************************************************************************/
@@ -23,6 +24,7 @@ namespace bbbTest {
 //! \details This file is only on included in test builds.  It will not be
 //!             complied debug or release builds. It will be used by travis.ci to
 //!             run unit tests.
+//! \test
 //! \author Bob Baker
 /***********************************************************************************/
 class UnitTest : public QObject
@@ -37,6 +39,7 @@ public:
 
     /***********************************************************************************/
     //! \brief Static fx, calls all unit test objects and executes them.
+    //! \test
     //! \return void
     //! \author Bob Baker
     static void run();

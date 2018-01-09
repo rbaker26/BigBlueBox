@@ -10,8 +10,9 @@ Item::Item()
 //*********************************************************************************
 
 //*********************************************************************************
- QString Item::categoryToQString(Category::categoryType category)
+ QString Item::categoryIntToQString(int cat)
  {
-    return Category::categoryToQString(category);
+    return Category::categoryToQString(cat);
  }
 //*********************************************************************************
+

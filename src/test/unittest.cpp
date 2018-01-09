@@ -29,4 +29,15 @@ void UnitTest::run()
     QTest::qExec(&catTest);
     //********************************************************
 
+    //********************************************************
+    //* Testing the class bbb::Item
+    //*-------------------------------------------------------
+    //* This will test the methods in the Item class.  If
+    //*  any tests fails, travis.ci will display the failed
+    //*  test in the log file and the build will fail.
+    //********************************************************
+    ItemTest itemTest;
+    QTest::qExec(&itemTest);
+    //********************************************************
+
 }
