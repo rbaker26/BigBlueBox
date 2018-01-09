@@ -12,7 +12,7 @@ branches:
 env:
   global:
     - GH_REPO_NAME: BigBlueBox
-    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
+    - DOXYFILE: $TRAVIS_BUILD_DIR/rec/Doxyfile
     - GH_REPO_REF: github.com/rbaker26/BigBlueBox.git
     
 # Install dependencies
