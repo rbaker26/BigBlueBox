@@ -19,9 +19,13 @@ For source code documentation, <a href="https://rbaker26.github.io/BigBlueBox/ht
       alt="Appveyor Build Status" />
   </a>
   <!-- Issues -->
-  
   <a href="https://github.com/rbaker26/BigBlueBox/issues">
-    <img src="https://img.shields.io/github/issues/rbaker26/BigBlueBox.svg)"  alt="Open Issues" />
+    <img src="https://img.shields.io/github/issues/rbaker26/BigBlueBox.svg"
+      alt="Open Issues" />
+  </a>
+  <a href="https://github.com/rbaker26/BigBlueBox/issues">
+    <img src="https://img.shields.io/github/issues-closed/rbaker26/BigBlueBox.svg"
+      alt="Open Issues" />
   </a>
   
   <!-- Code Coverage via Codecov -->
