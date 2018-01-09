@@ -1,7 +1,14 @@
 
 
 <h1 align="center">BigBlueBox</h1>
-
+<div align="center">
+  <img align="center" src="../rec/bluebox25x25.png" />
+  <img align="center" src="../rec/bluebox25x25.png" />
+  <img align="center" src="../rec/bluebox25x25.png" />
+  <img align="center" src="../rec/bluebox25x25.png" />
+  <img align="center" src="../rec/bluebox25x25.png" />
+</div>
+  
 <p align="center">
 A Inventory Management System for a NYLT Course or other Boy Scout Programs. <br>
 For source code documentation, <a href="https://rbaker26.github.io/BigBlueBox/html/index.html">click here</a>
