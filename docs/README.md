@@ -31,6 +31,10 @@ For source code documentation, <a href="https://rbaker26.github.io/BigBlueBox/ht
     <img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg"
       alt="License" />
   </a>
+  <!-- Issues -->
+  <a href="https://github.com/rbaker26/BigBlueBox/issues">
+    <img src="https://img.shields.io/github/issues/rbaker26/BigBlueBox/shields.svg"  alt="Open Issues" />
+  </a>
 </div>
 <br />
 
