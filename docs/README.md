@@ -32,9 +32,43 @@ For documentation for source code, <a href="https://rbaker26.github.io/BigBlueBo
       alt="License" />
   </a>
 </div>
-<br />
 
+<!-- Later I will add more links to the readme here--> 
+<!--
+<div align="center">
+  <h3>
+    <a href="">
+      Website
+    </a>
+    <span> | </span>
+    <a href="">
+      Handbook
+    </a>
+    <span> | </span>
+    <a href="">
+      Ecosystem
+    </a>
+    <span> | </span>
+    <!-- <a href=""> -->
+    <!--   CLI -->
+    <!-- </a> -->
+    <!-- <span> | </span> -->
+    <!--
+    <a href="">
+      Contributing
+    </a>
+    <span> | </span>
+    <a href="">
+      Reddit
+    </a>
+    <span> | </span>
+    <a href="">
+      Chat
+    </a>
+  </h3>
+</div>
 
+-->
 
 
 ## Getting Started
