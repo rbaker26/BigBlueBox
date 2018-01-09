@@ -31,6 +31,12 @@ void ItemTest::constructorTest()
     QVERIFY(testItem.itemName   == "");
     QVERIFY(testItem.boxStr     == "");
     QVERIFY(testItem.modifiedBy == "");
+
+    bbb::Row testRow;
+    QVERIFY(testRow.itemName   == "");
+    QVERIFY(testRow.boxStr     == "");
+    QVERIFY(testRow.modifiedBy == "");
+
 }
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
