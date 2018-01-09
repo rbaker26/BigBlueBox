@@ -85,6 +85,7 @@ void CategoryTest::testStringToInt_data()
     QTest::newRow("Crafts 2 ") << "Arts and Crafts"  << 3;
     QTest::newRow("Tarps    ") << "Tarps"            << 4;
     QTest::newRow("Office   ") << "Office"           << 5;
+    QTest::newRow("Other    ") << "Other"            << 0;
 }
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&

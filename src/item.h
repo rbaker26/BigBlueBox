@@ -58,7 +58,7 @@ public:
     //! \brief Uses the toString method in catagory class
     //! \param Category::categoryType category
     //! \author Bob Baker
-    QString categoryToQString(bbb::Category::categoryType category);
+    QString categoryIntToQString(int cat);
     //**********************************************************
 }; // end class
 //*********************************************************************************

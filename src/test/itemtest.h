@@ -1,30 +1,29 @@
-#ifndef CATEGORYTEST_H
-#define CATEGORYTEST_H
+#ifndef ITEMTEST_H
+#define ITEMTEST_H
 
 #include <QObject>
 #include <QtTest>
-#include <QString>
 
-#include "category.h"
+#include <item.h>
 
 namespace bbbTest {
 /***********************************************************************************/
-//! \class   CategoryTest
-//! \brief   Contains the tests for the Category class
+//! \class   ItemTest
+//! \brief   Contains the tests for the Item class
 //! \details This file is only on included in test builds.  It will not be
 //!             complied debug or release builds. It will be used by travis.ci to
-//!             run unit tests for the Category class
+//!             run unit tests for the Item class
 //! \test
 //! \author Bob Baker
 /***********************************************************************************/
-class CategoryTest : public QObject
+class ItemTest : public QObject
 {
     Q_OBJECT
 public:
     //************************************************************
     //! \brief Default Constructor
     //! \author Bob Baker
-    CategoryTest();
+    ItemTest();
     //************************************************************
 
 // All testing functions must be in private slots.
@@ -37,34 +36,25 @@ private slots:
     //! \author Bob Baker
     void testTest();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-    //! \brief Tests the int values of the enums
+    //! \brief Tests that the constructor sets the correct vals
     //! \test
     //! \author Bob Baker
-    void testCatEnumVals();
+    void constructorTest();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-    //! \brief Test Data for testIntToString()
+    //! \brief Test data for Category to string fx
     //! \test
     //! \author Bob Baker
-    void testIntToString_data();
+    void categoryToQStringTest_data();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-    //! \brief Tests int to QString conversions
+    //! \brief Tests the Category to string fx
     //! \test
     //! \author Bob Baker
-    void testIntToString();
-    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-    //! \brief Test Data for String to int convertions
-    //! \test
-    //! \author Bob Baker
-    void testStringToInt_data();
-    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-    //! \brief Tests for String to int convertions
-    //! \test
-    //! \author Bob Baker
-    void testStringToInt();
+    void categoryToQStringTest();
     //************************************************************
 
 }; // end class
 /***********************************************************************************/
-
 } // end namespace
-#endif // CATEGORYTEST_H
+
+/***********************************************************************************/
+#endif // ITEMTEST_H

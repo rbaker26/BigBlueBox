@@ -48,6 +48,7 @@ SOURCES += \
         mainmenu.cpp    \
         pages/settingspage.cpp \
         directoryhandler.cpp   \
+    test/itemtest.cpp
 
 
 
@@ -66,6 +67,7 @@ HEADERS += \
         mainmenu.h      \
         pages/settingspage.h \
         directoryhandler.h   \
+    test/itemtest.h
 
 
 

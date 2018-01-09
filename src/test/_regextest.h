@@ -9,6 +9,14 @@
 
 namespace bbbTest {
 /***********************************************************************************/
+//! \class   _RegexTest
+//! \brief   Contains the tests for the _Regex class
+//! \details This file is only on included in test builds.  It will not be
+//!             complied debug or release builds. It will be used by travis.ci to
+//!             run unit tests for the _Regex class
+//! \test
+//! \author Bob Baker
+/***********************************************************************************/
 class _RegexTest : public QObject
 {
     Q_OBJECT // Qt Object macro
@@ -26,21 +34,28 @@ private slots:
     //* Testing Functions
     //************************************************************
     //! \brief Makes sure QTest, .yml an travis.ci are working.
+    //! \test
     //! \author Bob Baker
     void testTest();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     //! \brief Data for testIsItemName()
+    //! \test
     //! \author  Bob Baker
     void testIsItemName_data();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     //! \brief Tests regex on isItemName
+    //! \test
     //! \author Bob Baker
     void testIsItemName();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     //! \brief Test Data for testIsBoxName
+    //! \test
     //! \author Bob Baker
     void testIsBoxName_data();
     //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    //! \brief Tests regec on isBoxName
+    //! \test
+    //! \author Bob Baker
     void testIsBoxName();
     //************************************************************
 
