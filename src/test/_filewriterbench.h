@@ -28,11 +28,10 @@ private:
     QVector<bbb::Item> itemMaker();
 
 private slots:
-    //void txtBenchmark_data();
+
     void txtBenchmark();
 
-//    void xmlBenchmark_data();
-//    void xmlBenchmark();
+    void xmlBenchmark();
 
 }; // end class
 } // end namespace
