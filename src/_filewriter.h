@@ -97,9 +97,6 @@ public:
      //! \author Bob Baker
      void makeXmlInvReport(QVector<Item> inventory, ReportType type = Full);
      //**********************************************************
-
-    // only for QtTest Suit
-     void setFilePath();
 }; // end class
 //*********************************************************************************
 } // end namespace
