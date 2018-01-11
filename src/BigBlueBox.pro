@@ -48,7 +48,6 @@ SOURCES += \
         mainmenu.cpp    \
         pages/settingspage.cpp \
         directoryhandler.cpp   \
-    test/_filewriterbench.cpp
         
 HEADERS += \
         mainwindow.h    \
@@ -64,7 +63,6 @@ HEADERS += \
         mainmenu.h      \
         pages/settingspage.h \
         directoryhandler.h   \
-    test/_filewriterbench.h
 
         
 FORMS += \
@@ -90,6 +88,7 @@ SOURCES += \
         test/_regextest.cpp   \
         test/categorytest.cpp \
         test/itemtest.cpp     \
+        test/_filewriterbench.cpp \
 
 
 HEADERS += \
@@ -97,6 +96,7 @@ HEADERS += \
         test/_regextest.h   \
         test/categorytest.h \
         test/itemtest.h     \
+        test/_filewriterbench.h \
 
 RESOURCES -= \
     ../rec/rec.qrc \

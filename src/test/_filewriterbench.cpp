@@ -5,6 +5,7 @@ using namespace bbbTest;
 
 _FileWriterBench::_FileWriterBench()
 {
+    qDebug() << "\n";
     this->fileLoc = "./";
     this->textFileName = "text.txt";
     this->xmlFileName  = "myXml.xml";
@@ -46,23 +47,30 @@ QVector<bbb::Item> _FileWriterBench::itemMaker()
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-//void _FileWriterBench::txtBenchmark_data()
-//{
-////    using namespace bbb;
-////    QVector<Item> iventory = this->tempVector;
-
-////    QTest::addColumn<(QVector<Item>)>("itemVector");
-////    QTest::newRow("Item Vector") << iventory;
-//}
-
-//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-
 void _FileWriterBench::txtBenchmark()
 {
-    //set new file path for linux platform for testing.
+    typedef bbb::_FileWriter::ReportType rt;
+
+    // Normal Printout
     QBENCHMARK{
          bbb::_FileWriter::getInstance()->makeTxtInvReport(this->tempVector);
     }
+
+    // Low Report
+    QBENCHMARK{
+         bbb::_FileWriter::getInstance()->makeTxtInvReport(this->tempVector, rt::Low);
+    }
+
+    // Crit Low Report
+    QBENCHMARK{
+         bbb::_FileWriter::getInstance()->makeTxtInvReport(this->tempVector, rt::Critical);
+    }
+
+    // Expirable Report
+    QBENCHMARK{
+         bbb::_FileWriter::getInstance()->makeTxtInvReport(this->tempVector, rt::Expirable);
+    }
+
 
 
 }
