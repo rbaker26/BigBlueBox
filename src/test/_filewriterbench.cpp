@@ -21,11 +21,11 @@ QVector<bbb::Item> _FileWriterBench::itemMaker()
     // Total number of Items in Vector
     // This should be a somewhat large number so we can get meaningfull benchmarks.
     // Around 200 - 500 Items
-    const int numItemInVector = 200;
+    const int numItemInVector = 300;
 
     // Some default vals for these meaningless items.
     QString name = "ItemName";
-    int count    = 0;
+    int count    = 10;
     int target   = 0;
 
     bbb::Item tempItem;
@@ -33,8 +33,9 @@ QVector<bbb::Item> _FileWriterBench::itemMaker()
     for(int i = 0; i < numItemInVector; i++)
     {
         // Somewhat random vals
+        // The target will overtake the quantity
         tempItem.quantity = count * 3;
-        tempItem.effectiveOnHand = target * 2;
+        tempItem.effectiveOnHand = target * 4;
 
         // increment val "seeds"
         count++;
