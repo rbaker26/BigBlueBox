@@ -1,4 +1,5 @@
 <map id="bbb::_FileWriter::_FileWriter" name="bbb::_FileWriter::_FileWriter">
-<area shape="rect" id="node2" href="$classbbb_1_1___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa" title="Singleton pointer return function. " alt="" coords="177,12,367,39"/>
+<area shape="rect" id="node2" href="$classbbb_1_1___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa" title="Singleton pointer return function. " alt="" coords="177,45,367,72"/>
 <area shape="rect" id="node3" href="$classbbb_test_1_1___file_writer_bench.html#a9bbd4743e4a59730cb6b721dd25da6ca" title="bbbTest::_FileWriterBench\l::txtBenchmark" alt="" coords="417,5,594,46"/>
+<area shape="rect" id="node4" href="$classbbb_test_1_1___file_writer_bench.html#a2a113d377a969d7c606a9ea764572811" title="bbbTest::_FileWriterBench\l::xmlBenchmark" alt="" coords="417,70,594,111"/>
 </map>

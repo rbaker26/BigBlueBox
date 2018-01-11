@@ -1,6 +1,7 @@
 <map id="bbb::_FileWriter::getDesktopPath" name="bbb::_FileWriter::getDesktopPath">
-<area shape="rect" id="node2" href="$classbbb_1_1___file_writer.html#aa45ea2af057e9074e3f83b97a1d44256" title="Writes a Inventory Report to txt file. " alt="" coords="272,37,445,78"/>
-<area shape="rect" id="node5" href="$classbbb_1_1___file_writer.html#af6d37d4db77fb49e8c7169694d28317a" title="Writes Inventory Report to xml file. " alt="" coords="270,102,447,143"/>
+<area shape="rect" id="node2" href="$classbbb_1_1___file_writer.html#aa45ea2af057e9074e3f83b97a1d44256" title="Writes a Inventory Report to txt file. " alt="" coords="272,70,445,111"/>
+<area shape="rect" id="node5" href="$classbbb_1_1___file_writer.html#af6d37d4db77fb49e8c7169694d28317a" title="Writes Inventory Report to xml file. " alt="" coords="270,135,447,177"/>
 <area shape="rect" id="node3" href="$class_reports_view.html#afa5f5644331a9f66811b2a21aad02b36" title="ReportsView::on_pushButton\l_makeReport_clicked" alt="" coords="496,5,688,46"/>
 <area shape="rect" id="node4" href="$classbbb_test_1_1___file_writer_bench.html#a9bbd4743e4a59730cb6b721dd25da6ca" title="bbbTest::_FileWriterBench\l::txtBenchmark" alt="" coords="503,70,681,111"/>
+<area shape="rect" id="node6" href="$classbbb_test_1_1___file_writer_bench.html#a2a113d377a969d7c606a9ea764572811" title="bbbTest::_FileWriterBench\l::xmlBenchmark" alt="" coords="503,135,681,177"/>
 </map>
