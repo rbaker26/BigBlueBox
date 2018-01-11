@@ -48,6 +48,7 @@ SOURCES += \
         mainmenu.cpp    \
         pages/settingspage.cpp \
         directoryhandler.cpp   \
+    test/_filewriterbench.cpp
         
 HEADERS += \
         mainwindow.h    \
@@ -63,6 +64,7 @@ HEADERS += \
         mainmenu.h      \
         pages/settingspage.h \
         directoryhandler.h   \
+    test/_filewriterbench.h
 
         
 FORMS += \

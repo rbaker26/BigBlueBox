@@ -349,3 +349,9 @@ void _FileWriter::makeXmlInvReport(QVector<Item> inventory, ReportType type)
     file.close();
 }
 //*********************************************************************************
+
+
+void setFilePath()
+{
+
+}

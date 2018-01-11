@@ -43,6 +43,7 @@ private:
     //**********************************************************
 
 
+
 public:
     //**********************************************************
     //! \brief This enum discribes the various reports to be
@@ -97,7 +98,8 @@ public:
      void makeXmlInvReport(QVector<Item> inventory, ReportType type = Full);
      //**********************************************************
 
-
+    // only for QtTest Suit
+     void setFilePath();
 }; // end class
 //*********************************************************************************
 } // end namespace

@@ -40,4 +40,8 @@ void UnitTest::run()
     QTest::qExec(&itemTest);
     //********************************************************
 
+    _FileWriterBench bench;
+    QTest::qExec(&bench);
+
+
 }
