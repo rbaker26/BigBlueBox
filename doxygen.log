@@ -76,8 +76,7 @@ Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.h...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/mainwindow.h...
-Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.cpp.error: Project logo '../rec/nyltIcon.png' specified by PROJECT_LOGO does not exist!
-..
+Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.h...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.h...
@@ -85,6 +84,10 @@ Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
+Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/test/_filewriterbench.cpp...
+Parsing file /home/travis/build/rbaker26/BigBlueBox/src/test/_filewriterbench.cpp...
+Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/test/_filewriterbench.h...
+Parsing file /home/travis/build/rbaker26/BigBlueBox/src/test/_filewriterbench.h...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
 Parsing file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
 Preprocessing /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.h...
@@ -153,7 +156,9 @@ Counting data structures...
 Resolving user defined references...
 Finding anchors and sections in the documentation...
 Transferring function references...
-Combining using relations...
+Combierror: Project logo '../rec/nyltIcon.png' specified by PROJECT_LOGO does not exist!
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
+ning using relations...
 Adding members to index pages...
 Generating style sheet...
 Generating search indices...
@@ -161,8 +166,7 @@ Generating example documentation...
 Generating file sources...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/qrc_rec.cpp...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/_filewriter.cpp...
-Gen/home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
-erating code for file /home/travis/build/rbaker26/BigBlueBox/src/_filewriter.h...
+Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/_filewriter.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/_regex.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/_regex.h...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/bbb.h...
@@ -186,6 +190,8 @@ Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/pages/settingsp
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
+Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/test/_filewriterbench.cpp...
+Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/test/_filewriterbench.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
 Generating code for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.h...
 Parsing code for file /home/travis/build/rbaker26/BigBlueBox/src/test/categorytest.cpp...
@@ -228,6 +234,8 @@ Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/pages/settin
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/reportsView.h...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/_filewriterbench.cpp...
+Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/_filewriterbench.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.cpp...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/_regextest.h...
 Generating docs for file /home/travis/build/rbaker26/BigBlueBox/src/test/categorytest.cpp...
@@ -259,19 +267,7 @@ Generating caller graph for function ReportsView::initTableInv
 Generating call graph for function ReportsView::on_pushButton_addDelete_clicked
 Generating call graph for function ReportsView::on_pushButton_edit_clicked
 Generating call graph for function ReportsView::on_pushButton_makeReport_clicked
-Generating call graph for function ReportsView::on_tableWidget_inv_cellDoubleClicked
-Generating call graph for function ReportsView::sendRowToToolBox
-Generating caller graph for function ReportsView::sendRowToToolBox
-Generating docs for compound SettingsPage...
-Generating namespace index...
-Generating docs for namespace bbb
-Generating docs for compound bbb::_FileWriter...
-Generating caller graph for function bbb::_FileWriter::_FileWriter
-Generating caller graph for function bbb::_FileWriter::getDesktopPath
-Generating call graph for function bbb::_FileWriter::getInstance
-Generating call graph for function bbb::_FileWriter::makeTxtInvReport
-Generating caller graph for function bbb::_FileWriter::makeTxtInvReport
-Generating call graph for function bbb::_FileWriter::makeXmlInv/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
+Generating call graph for function ReportsView::on_tableWidget_/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
   parameter 'boxName'
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
@@ -305,7 +301,20 @@ Generating call graph for function bbb::_FileWriter::makeXmlInv/home/travis/buil
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:76: warning: Found unknown command `\inherits'
-Report
+inv_cellDoubleClicked
+Generating call graph for function ReportsView::sendRowToToolBox
+Generating caller graph for function ReportsView::sendRowToToolBox
+Generating docs for compound SettingsPage...
+Generating namespace index...
+Generating docs for namespace bbb
+Generating docs for compound bbb::_FileWriter...
+Generating caller graph for function bbb::_FileWriter::_FileWriter
+Generating caller graph for function bbb::_FileWriter::getDesktopPath
+Generating call graph for function bbb::_FileWriter::getInstance
+Generating caller graph for function bbb::_FileWriter::getInstance
+Generating call graph for function bbb::_FileWriter::makeTxtInvReport
+Generating caller graph for function bbb::_FileWriter::makeTxtInvReport
+Generating call graph for function bbb::_FileWriter::makeXmlInvReport
 Generating docs for compound bbb::_Regex...
 Generating docs for compound bbb::Category...
 Generating caller graph for function bbb::Category::categoryToQString
@@ -329,6 +338,10 @@ Generating call graph for function bbb::UserSession::~UserSession
 Generating call graph for function bbb::UserSession::getInstance
 Generating caller graph for function bbb::UserSession::logout
 Generating docs for namespace bbbTest
+Generating docs for compound bbbTest::_FileWriterBench...
+Generating call graph for function bbbTest::_FileWriterBench::_FileWriterBench
+Generating caller graph for function bbbTest::_FileWriterBench::itemMaker
+Generating call graph for function bbbTest::_FileWriterBench::txtBenchmark
 Generating docs for compound bbbTest::_RegexTest...
 Generating docs for compound bbbTest::CategoryTest...
 Generating call graph for function bbbTest::CategoryTest::testIntToString
@@ -359,194 +372,206 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 3 parallel threads...
-Running dot for graph 1/135
-Running dot for graph 2/135
-Running dot for graph 3/135
-Running dot for graph 4/135
-Running dot for graph 5/135
-Running dot for graph 6/135
-Running dot for graph 7/135
-Running dot for graph 8/135
-Running dot for graph 9/135
-Running dot for graph 10/135
-Running dot for graph 11/135
-Running dot for graph 12/135
-Running dot for graph 13/135
-Running dot for graph 14/135
-Running dot for graph 15/135
-Running dot for graph 16/135
-Running dot for graph 17/135
-Running dot for graph 18/135
-Running dot for graph 19/135
-Running dot for graph 20/135
-Running dot for graph 21/135
-Running dot for graph 22/135
-Running dot for graph 23/135
-Running dot for graph 24/135
-Running dot for graph 25/135
-Running dot for graph 26/135
-Running dot for graph 27/135
-Running dot for graph 28/135
-Running dot for graph 29/135
-Running dot for graph 30/135
-Running dot for graph 31/135
-Running dot for graph 32/135
-Running dot for graph 33/135
-Running dot for graph 34/135
-Running dot for graph 35/135
-Running dot for graph 36/135
-Running dot for graph 37/135
-Running dot for graph 38/135
-Running dot for graph 39/135
-Running dot for graph 40/135
-Running dot for graph 41/135
-Running dot for graph 42/135
-Running dot for graph 43/135
-Running dot for graph 44/135
-Running dot for graph 45/135
-Running dot for graph 46/135
-Running dot for graph 47/135
-Running dot for graph 48/135
-Running dot for graph 49/135
-Running dot for graph 50/135
-Running dot for graph 51/135
-Running dot for graph 52/135
-Running dot for graph 53/135
-Running dot for graph 54/135
-Running dot for graph 55/135
-Running dot for graph 56/135
-Running dot for graph 57/135
-Running dot for graph 58/135
-Running dot for graph 59/135
-Running dot for graph 60/135
-Running dot for graph 61/135
-Running dot for graph 62/135
-Running dot for graph 63/135
-Running dot for graph 64/135
-Running dot for graph 65/135
-Running dot for graph 66/135
-Running dot for graph 67/135
-Running dot for graph 68/135
-Running dot for graph 69/135
-Running dot for graph 70/135
-Running dot for graph 71/135
-Running dot for graph 72/135
-Running dot for graph 73/135
-Running dot for graph 74/135
-Running dot for graph 75/135
-Running dot for graph 76/135
-Running dot for graph 77/135
-Running dot for graph 78/135
-Running dot for graph 79/135
-Running dot for graph 80/135
-Running dot for graph 81/135
-Running dot for graph 82/135
-Running dot for graph 83/135
-Running dot for graph 84/135
-Running dot for graph 85/135
-Running dot for graph 86/135
-Running dot for graph 87/135
-Running dot for graph 88/135
-Running dot for graph 89/135
-Running dot for graph 90/135
-Running dot for graph 91/135
-Running dot for graph 92/135
-Running dot for graph 93/135
-Running dot for graph 94/135
-Running dot for graph 95/135
-Running dot for graph 96/135
-Running dot for graph 97/135
-Running dot for graph 98/135
-Running dot for graph 99/135
-Running dot for graph 100/135
-Running dot for graph 101/135
-Running dot for graph 102/135
-Running dot for graph 103/135
-Running dot for graph 104/135
-Running dot for graph 105/135
-Running dot for graph 106/135
-Running dot for graph 107/135
-Running dot for graph 108/135
-Running dot for graph 109/135
-Running dot for graph 110/135
-Running dot for graph 111/135
-Running dot for graph 112/135
-Running dot for graph 113/135
-Running dot for graph 114/135
-Running dot for graph 115/135
-Running dot for graph 116/135
-Running dot for graph 117/135
-Running dot for graph 118/135
-Running dot for graph 119/135
-Running dot for graph 120/135
-Running dot for graph 121/135
-Running dot for graph 122/135
-Running dot for graph 123/135
-Running dot for graph 124/135
-Running dot for graph 125/135
-Running dot for graph 126/135
-Running dot for graph 127/135
-Running dot for graph 128/135
-Running dot for graph 129/135
-Running dot for graph 130/135
-Running dot for graph 131/135
-Running dot for graph 132/135
-Running dot for graph 133/135
-Running dot for graph 134/135
-Running dot for graph 135/135
-Patching output file 1/54
-Patching output file 2/54
-Patching output file 3/54
-Patching output file 4/54
-Patching output file 5/54
-Patching output file 6/54
-Patching output file 7/54
-Patching output file 8/54
-Patching output file 9/54
-Patching output file 10/54
-Patching output file 11/54
-Patching output file 12/54
-Patching output file 13/54
-Patching output file 14/54
-Patching output file 15/54
-Patching output file 16/54
-Patching output file 17/54
-Patching output file 18/54
-Patching output file 19/54
-Patching output file 20/54
-Patching output file 21/54
-Patching output file 22/54
-Patching output file 23/54
-Patching output file 24/54
-Patching output file 25/54
-Patching output file 26/54
-Patching output file 27/54
-Patching output file 28/54
-Patching output file 29/54
-Patching output file 30/54
-Patching output file 31/54
-Patching output file 32/54
-Patching output file 33/54
-Patching output file 34/54
-Patching output file 35/54
-Patching output file 36/54
-Patching output file 37/54
-Patching output file 38/54
-Patching output file 39/54
-Patching output file 40/54
-Patching output file 41/54
-Patching output file 42/54
-Patching output file 43/54
-Patching output file 44/54
-Patching output file 45/54
-Patching output file 46/54
-Patching output file 47/54
-Patching output file 48/54
-Patching output file 49/54
-Patching output file 50/54
-Patching output file 51/54
-Patching output file 52/54
-Patching output file 53/54
-Patching output file 54/54
-lookup cache used 373/65536 hits=1857 misses=387
+Running dot for graph 1/144
+Running dot for graph 2/144
+Running dot for graph 3/144
+Running dot for graph 4/144
+Running dot for graph 5/144
+Running dot for graph 6/144
+Running dot for graph 7/144
+Running dot for graph 8/144
+Running dot for graph 9/144
+Running dot for graph 10/144
+Running dot for graph 11/144
+Running dot for graph 12/144
+Running dot for graph 13/144
+Running dot for graph 14/144
+Running dot for graph 15/144
+Running dot for graph 16/144
+Running dot for graph 17/144
+Running dot for graph 18/144
+Running dot for graph 19/144
+Running dot for graph 20/144
+Running dot for graph 21/144
+Running dot for graph 22/144
+Running dot for graph 23/144
+Running dot for graph 24/144
+Running dot for graph 25/144
+Running dot for graph 26/144
+Running dot for graph 27/144
+Running dot for graph 28/144
+Running dot for graph 29/144
+Running dot for graph 30/144
+Running dot for graph 31/144
+Running dot for graph 32/144
+Running dot for graph 33/144
+Running dot for graph 34/144
+Running dot for graph 35/144
+Running dot for graph 36/144
+Running dot for graph 37/144
+Running dot for graph 38/144
+Running dot for graph 39/144
+Running dot for graph 40/144
+Running dot for graph 41/144
+Running dot for graph 42/144
+Running dot for graph 43/144
+Running dot for graph 44/144
+Running dot for graph 45/144
+Running dot for graph 46/144
+Running dot for graph 47/144
+Running dot for graph 48/144
+Running dot for graph 49/144
+Running dot for graph 50/144
+Running dot for graph 51/144
+Running dot for graph 52/144
+Running dot for graph 53/144
+Running dot for graph 54/144
+Running dot for graph 55/144
+Running dot for graph 56/144
+Running dot for graph 57/144
+Running dot for graph 58/144
+Running dot for graph 59/144
+Running dot for graph 60/144
+Running dot for graph 61/144
+Running dot for graph 62/144
+Running dot for graph 63/144
+Running dot for graph 64/144
+Running dot for graph 65/144
+Running dot for graph 66/144
+Running dot for graph 67/144
+Running dot for graph 68/144
+Running dot for graph 69/144
+Running dot for graph 70/144
+Running dot for graph 71/144
+Running dot for graph 72/144
+Running dot for graph 73/144
+Running dot for graph 74/144
+Running dot for graph 75/144
+Running dot for graph 76/144
+Running dot for graph 77/144
+Running dot for graph 78/144
+Running dot for graph 79/144
+Running dot for graph 80/144
+Running dot for graph 81/144
+Running dot for graph 82/144
+Running dot for graph 83/144
+Running dot for graph 84/144
+Running dot for graph 85/144
+Running dot for graph 86/144
+Running dot for graph 87/144
+Running dot for graph 88/144
+Running dot for graph 89/144
+Running dot for graph 90/144
+Running dot for graph 91/144
+Running dot for graph 92/144
+Running dot for graph 93/144
+Running dot for graph 94/144
+Running dot for graph 95/144
+Running dot for graph 96/144
+Running dot for graph 97/144
+Running dot for graph 98/144
+Running dot for graph 99/144
+Running dot for graph 100/144
+Running dot for graph 101/144
+Running dot for graph 102/144
+Running dot for graph 103/144
+Running dot for graph 104/144
+Running dot for graph 105/144
+Running dot for graph 106/144
+Running dot for graph 107/144
+Running dot for graph 108/144
+Running dot for graph 109/144
+Running dot for graph 110/144
+Running dot for graph 111/144
+Running dot for graph 112/144
+Running dot for graph 113/144
+Running dot for graph 114/144
+Running dot for graph 115/144
+Running dot for graph 116/144
+Running dot for graph 117/144
+Running dot for graph 118/144
+Running dot for graph 119/144
+Running dot for graph 120/144
+Running dot for graph 121/144
+Running dot for graph 122/144
+Running dot for graph 123/144
+Running dot for graph 124/144
+Running dot for graph 125/144
+Running dot for graph 126/144
+Running dot for graph 127/144
+Running dot for graph 128/144
+Running dot for graph 129/144
+Running dot for graph 130/144
+Running dot for graph 131/144
+Running dot for graph 132/144
+Running dot for graph 133/144
+Running dot for graph 134/144
+Running dot for graph 135/144
+Running dot for graph 136/144
+Running dot for graph 137/144
+Running dot for graph 138/144
+Running dot for graph 139/144
+Running dot for graph 140/144
+Running dot for graph 141/144
+Running dot for graph 142/144
+Running dot for graph 143/144
+Running dot for graph 144/144
+Patching output file 1/57
+Patching output file 2/57
+Patching output file 3/57
+Patching output file 4/57
+Patching output file 5/57
+Patching output file 6/57
+Patching output file 7/57
+Patching output file 8/57
+Patching output file 9/57
+Patching output file 10/57
+Patching output file 11/57
+Patching output file 12/57
+Patching output file 13/57
+Patching output file 14/57
+Patching output file 15/57
+Patching output file 16/57
+Patching output file 17/57
+Patching output file 18/57
+Patching output file 19/57
+Patching output file 20/57
+Patching output file 21/57
+Patching output file 22/57
+Patching output file 23/57
+Patching output file 24/57
+Patching output file 25/57
+Patching output file 26/57
+Patching output file 27/57
+Patching output file 28/57
+Patching output file 29/57
+Patching output file 30/57
+Patching output file 31/57
+Patching output file 32/57
+Patching output file 33/57
+Patching output file 34/57
+Patching output file 35/57
+Patching output file 36/57
+Patching output file 37/57
+Patching output file 38/57
+Patching output file 39/57
+Patching output file 40/57
+Patching output file 41/57
+Patching output file 42/57
+Patching output file 43/57
+Patching output file 44/57
+Patching output file 45/57
+Patching output file 46/57
+Patching output file 47/57
+Patching output file 48/57
+Patching output file 49/57
+Patching output file 50/57
+Patching output file 51/57
+Patching output file 52/57
+Patching output file 53/57
+Patching output file 54/57
+Patching output file 55/57
+Patching output file 56/57
+Patching output file 57/57
+lookup cache used 401/65536 hits=1926 misses=416
 finished...
