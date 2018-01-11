@@ -573,5 +573,5 @@ Patching output file 54/57
 Patching output file 55/57
 Patching output file 56/57
 Patching output file 57/57
-lookup cache used 401/65536 hits=1926 misses=416
+lookup cache used 406/65536 hits=1952 misses=421
 finished...
