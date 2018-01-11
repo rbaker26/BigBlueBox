@@ -13,7 +13,7 @@
 
 
 namespace bbbTest {
-class _FileWriterBench
+class _FileWriterBench : public QObject
 {
     Q_OBJECT
 public:
