@@ -1,9 +1,14 @@
 #ifndef USERSESSION_H
 #define USERSESSION_H
 
+// showing / hiding the tool boxes is prob the best way to handle the auth
+// or enabling or disabling
+
 //*********************************************************************************
 #include <QString>
-#include <QDate>
+#include <QDateTime>
+//*********************************************************************************
+#include "dbconnect.h"
 //*********************************************************************************
 
 namespace bbb {
@@ -18,25 +23,38 @@ private:
     //***********************************************************
     enum Roles
     {
-        ROOT  = 0, // can add users + ADMIN + USER
-        ADMIN = 1, // can change all item info + USER
-        USER  = 2  // can change item quantities and checkout gear
+        ROOT  = 0,  // can add users + ADMIN + USER
+        ADMIN = 1,  // can change all item info + USER
+        USER  = 2,  // can change item quantities and checkout gear + GUEST
+        GUEST = 3   // can view inventory and make reports
     };
     //***********************************************************
 
-    QString userName;
-    QString password;
+    //***********************************************************
+    struct AuthSessionInfo
+    {
+        QString authUserName;
+        Roles   authUserRole;
+        QDateTime loginTime;
+    };
+    //***********************************************************
 
-    Roles userRole;
+    static QString userName;
+    static QString password;
+
+    static Roles userRole;
     //QDate expDate;
 
+     static AuthSessionInfo getSessionInfoFromDb();
 public:
     static UserSession* getInstance();
     static void logout();
 
-    void setUsername(QString userName);
-    void setPassword(QString password);
-    bool validateSessionInfo();
+    static void submitUsername(QString userName);
+    static void submitPassword(QString password);
+    static Roles getRoll();
+    static bool validateSessionInfo();
+
 
 }; // end class
 //*********************************************************************************

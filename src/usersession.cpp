@@ -1,20 +1,29 @@
 #include "usersession.h"
 using namespace bbb;
 
-UserSession* UserSession::instance = nullptr;
+//*********************************************************************************
+UserSession*       UserSession::instance = nullptr;
+UserSession::Roles UserSession::userRole = UserSession::GUEST;
+QString            UserSession::userName = "";
+QString            UserSession::password = "null""";
+//*********************************************************************************
 
-
+//*********************************************************************************
 UserSession::UserSession()
 {
 
 }
+//*********************************************************************************
 
+//*********************************************************************************
 UserSession::~UserSession()
 {
     // logout deletes the instance pointer
     logout();
 }
+//*********************************************************************************
 
+//*********************************************************************************
 UserSession* UserSession::getInstance()
 {
     if(instance == nullptr)
@@ -23,8 +32,9 @@ UserSession* UserSession::getInstance()
     }
     return instance;
 }
+//*********************************************************************************
 
-
+//*********************************************************************************
 void UserSession::logout()
 {
     if(instance != nullptr)
@@ -33,21 +43,37 @@ void UserSession::logout()
         instance = nullptr;
     }
 }
+//*********************************************************************************
 
-void UserSession::setUsername(QString userName)
+//*********************************************************************************
+void UserSession::submitUsername(QString userNameP)
 {
-    this->userName = userName;
+    userName = userNameP;
 }
+//*********************************************************************************
 
-
-void UserSession::setPassword(QString password)
+//*********************************************************************************
+void UserSession::submitPassword(QString passwordP)
 {
-    this->password = password;
+    password = passwordP;
 }
+//*********************************************************************************
 
+//*********************************************************************************
+UserSession::Roles UserSession::getRoll()
+{
+    return UserSession::GUEST;
+}
+//*********************************************************************************
 
+//*********************************************************************************
 bool UserSession::validateSessionInfo()
 {
     // sql query to check the passed name&pw to the values in the db.
     return true;
 }
+//*********************************************************************************
+
+//*********************************************************************************
+
+//*********************************************************************************

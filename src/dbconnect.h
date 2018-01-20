@@ -19,7 +19,6 @@
 // Business Objects
 //#include "Gear.h"
 #include "item.h"
-//#include "dbConnect/dbConnectItem.h"
 //*********************************************************************************
 
 namespace bbb {

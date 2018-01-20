@@ -38,6 +38,8 @@ void MainWindow::on_actionHome_triggered()
 void MainWindow::on_actionGoto_Home_triggered()
 {
     //This is the home botton.
+    // It might make more sense to do a CurrentIndex-- type of thing here,
+    //  That way we are not creating "extra" widgets on the stack.
     QWidget* mainMenu = new MainMenu(this);
     setCentralWidget(mainMenu);
 }
