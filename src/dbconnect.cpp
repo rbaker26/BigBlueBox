@@ -52,7 +52,7 @@ DbConnect* DbConnect::getInstance()
     Item tempItem;
 
     QSqlQuery query;
-    query.prepare("Select * FROM inventory");
+    query.prepare("Select * FROM inventory  ORDER BY cat ASC, item_name ASC");
 
     if(!query.exec())
     {

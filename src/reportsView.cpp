@@ -130,8 +130,7 @@ void ReportsView::fillTableInv()
         rowCount++;
         it++;
     }// end while-loop
-    //ui->tableWidget_inv->setSortingEnabled(true);
-    // no sorting for now. The order it is sorting in for nums is (0, 1, 10, 11, 2, 20, 22, ..)
+    // table is sorted at the SQL level.
 }
 //*********************************************************************************
 
