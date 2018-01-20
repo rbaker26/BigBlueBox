@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['canexpire',['canExpire',['../classbbb_1_1_item.html#a33a10821b7b0b51f6b66fad9de1e3dfd',1,'bbb::Item']]],
-  ['category',['category',['../classbbb_1_1_item.html#ab6b8590e64eadac77a70cf6bc3d32edd',1,'bbb::Item']]]
+  ['dateformat',['dateFormat',['../classbbb_1_1_db_connect.html#a844e551b081d8f0271c1ef5bf7ec1257',1,'bbb::DbConnect']]],
+  ['datemodified',['dateModified',['../classbbb_1_1_item.html#ac0be572e29277998e98faca2e53eab55',1,'bbb::Item']]]
 ];

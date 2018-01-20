@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['guest',['GUEST',['../classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cbaa98a86ca679f6d4d315a60395dcb084f',1,'bbb::UserSession']]]
+  ['kitchen',['KITCHEN',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daa4726a4611f4ed2e1e07cad81c9bf4910',1,'bbb::Category']]]
 ];

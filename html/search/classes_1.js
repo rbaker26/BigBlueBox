@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['authsessioninfo',['AuthSessionInfo',['../structbbb_1_1_user_session_1_1_auth_session_info.html',1,'bbb::UserSession']]]
+  ['category',['Category',['../classbbb_1_1_category.html',1,'bbb']]],
+  ['categorytest',['CategoryTest',['../classbbb_test_1_1_category_test.html',1,'bbbTest']]]
 ];

@@ -1,12 +1,10 @@
 <map id="/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h" name="/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h">
-<area shape="rect" id="node2" href="$dbconnect_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/dbconnect.cpp" alt="" coords="117,109,264,165"/>
-<area shape="rect" id="node3" href="$reports_view_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/reportsView.h" alt="" coords="289,109,436,165"/>
-<area shape="rect" id="node10" href="$usersession_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/usersession.h" alt="" coords="461,109,608,165"/>
+<area shape="rect" id="node2" href="$dbconnect_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/dbconnect.cpp" alt="" coords="30,109,177,165"/>
+<area shape="rect" id="node3" href="$reports_view_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/reportsView.h" alt="" coords="202,109,349,165"/>
 <area shape="rect" id="node4" href="$mainwindow_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainwindow.h" alt="" coords="90,317,237,373"/>
 <area shape="rect" id="node7" href="$mainmenu_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainmenu.h" alt="" coords="202,213,349,269"/>
 <area shape="rect" id="node9" href="$reports_view_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/reportsView.cpp" alt="" coords="374,213,521,269"/>
 <area shape="rect" id="node5" href="$main_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/main.cpp" alt="" coords="5,421,152,477"/>
 <area shape="rect" id="node6" href="$mainwindow_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainwindow.cpp" alt="" coords="177,421,324,477"/>
 <area shape="rect" id="node8" href="$mainmenu_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainmenu.cpp" alt="" coords="262,317,409,373"/>
-<area shape="rect" id="node11" href="$usersession_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/usersession.cpp" alt="" coords="546,213,693,269"/>
 </map>
