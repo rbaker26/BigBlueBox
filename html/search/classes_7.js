@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['settingspage',['SettingsPage',['../class_settings_page.html',1,'']]]
+  ['reportsview',['ReportsView',['../class_reports_view.html',1,'']]],
+  ['row',['Row',['../structbbb_1_1_row.html',1,'bbb']]]
 ];

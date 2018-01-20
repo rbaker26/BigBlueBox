@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['reportsview',['ReportsView',['../class_reports_view.html',1,'']]],
-  ['row',['Row',['../structbbb_1_1_row.html',1,'bbb']]]
+  ['mainmenu',['MainMenu',['../class_main_menu.html',1,'']]],
+  ['mainwindow',['MainWindow',['../class_main_window.html',1,'']]]
 ];

@@ -89,11 +89,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classbbb_1_1_user_session-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -110,14 +110,10 @@ Collaboration diagram for bbb::UserSession:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:af2e2f336538818015e642545db39571a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#af2e2f336538818015e642545db39571a">setUsername</a> (QString <a class="el" href="classbbb_1_1_user_session.html#a50067338e5bf30abb481e9cef523b9bd">userName</a>)</td></tr>
-<tr class="separator:af2e2f336538818015e642545db39571a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2453e321df5422f34aad1abced2ecf10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#a2453e321df5422f34aad1abced2ecf10">setPassword</a> (QString <a class="el" href="classbbb_1_1_user_session.html#affc75e2397262f8645bc03154b43f677">password</a>)</td></tr>
-<tr class="separator:a2453e321df5422f34aad1abced2ecf10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41638ea015b8f3b58961287fd25e1029"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#a41638ea015b8f3b58961287fd25e1029">validateSessionInfo</a> ()</td></tr>
-<tr class="separator:a41638ea015b8f3b58961287fd25e1029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbbb_1_1_user_session_1_1_auth_session_info.html">AuthSessionInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -125,12 +121,21 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a4225aafd0e70ac73303b31ef8ae66f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4a7a52bedaae41bd759c79eb7c6d9f3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#ab4a7a52bedaae41bd759c79eb7c6d9f3">logout</a> ()</td></tr>
 <tr class="separator:ab4a7a52bedaae41bd759c79eb7c6d9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc3bd9d9b1a22f6aea60901d2624555"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#aefc3bd9d9b1a22f6aea60901d2624555">submitUsername</a> (QString <a class="el" href="classbbb_1_1_user_session.html#a30e97e0ce0ee8416eedf10d47d66f8a1">userName</a>)</td></tr>
+<tr class="separator:aefc3bd9d9b1a22f6aea60901d2624555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f229a3f3d6a2b8197ea1f49051d601"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#a31f229a3f3d6a2b8197ea1f49051d601">submitPassword</a> (QString <a class="el" href="classbbb_1_1_user_session.html#aa2d8230e2e1e898eb3c553320c5ed457">password</a>)</td></tr>
+<tr class="separator:a31f229a3f3d6a2b8197ea1f49051d601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ba7fe7990a7f85186ae339ed231c12"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cb">Roles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#a67ba7fe7990a7f85186ae339ed231c12">getRoll</a> ()</td></tr>
+<tr class="separator:a67ba7fe7990a7f85186ae339ed231c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41638ea015b8f3b58961287fd25e1029"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#a41638ea015b8f3b58961287fd25e1029">validateSessionInfo</a> ()</td></tr>
+<tr class="separator:a41638ea015b8f3b58961287fd25e1029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:a8c43ffc9b1eac311544d74988b4b37cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cb">Roles</a> { <a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cba17df6dcf118c88604b92ffe2d99cd998">ROOT</a> = 0, 
 <a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cbaac482a5009ae293f7c17c3718fb09161">ADMIN</a> = 1, 
-<a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cbafd5e188e220dab8b0166ff4602089cc0">USER</a> = 2
+<a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cbafd5e188e220dab8b0166ff4602089cc0">USER</a> = 2, 
+<a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cbaa98a86ca679f6d4d315a60395dcb084f">GUEST</a> = 3
  }</td></tr>
 <tr class="separator:a8c43ffc9b1eac311544d74988b4b37cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -141,19 +146,21 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a59f41b80cb84acc89f2a545f9376082a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#a59f41b80cb84acc89f2a545f9376082a">~UserSession</a> ()</td></tr>
 <tr class="separator:a59f41b80cb84acc89f2a545f9376082a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a50067338e5bf30abb481e9cef523b9bd"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#a50067338e5bf30abb481e9cef523b9bd">userName</a></td></tr>
-<tr class="separator:a50067338e5bf30abb481e9cef523b9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affc75e2397262f8645bc03154b43f677"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#affc75e2397262f8645bc03154b43f677">password</a></td></tr>
-<tr class="separator:affc75e2397262f8645bc03154b43f677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca3af942c451749634dd550b2be249a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cb">Roles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#aca3af942c451749634dd550b2be249a1">userRole</a></td></tr>
-<tr class="separator:aca3af942c451749634dd550b2be249a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a09c522b1a84320b29ead4e19ad87c5f0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structbbb_1_1_user_session_1_1_auth_session_info.html">AuthSessionInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#a09c522b1a84320b29ead4e19ad87c5f0">getSessionInfoFromDb</a> ()</td></tr>
+<tr class="separator:a09c522b1a84320b29ead4e19ad87c5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:ad88c3a571d7699a3a366712ffa38f3c1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbbb_1_1_user_session.html">UserSession</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#ad88c3a571d7699a3a366712ffa38f3c1">instance</a> = nullptr</td></tr>
 <tr class="separator:ad88c3a571d7699a3a366712ffa38f3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e97e0ce0ee8416eedf10d47d66f8a1"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#a30e97e0ce0ee8416eedf10d47d66f8a1">userName</a> = &quot;&quot;</td></tr>
+<tr class="separator:a30e97e0ce0ee8416eedf10d47d66f8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d8230e2e1e898eb3c553320c5ed457"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#aa2d8230e2e1e898eb3c553320c5ed457">password</a> = &quot;null&quot;&quot;&quot;</td></tr>
+<tr class="separator:aa2d8230e2e1e898eb3c553320c5ed457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe5f5f46a468f6fa3f7e6829ae34586"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cb">Roles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbbb_1_1_user_session.html#a5fe5f5f46a468f6fa3f7e6829ae34586">userRole</a> = <a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cbaa98a86ca679f6d4d315a60395dcb084f">UserSession::GUEST</a></td></tr>
+<tr class="separator:a5fe5f5f46a468f6fa3f7e6829ae34586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a8c43ffc9b1eac311544d74988b4b37cb"></a>
@@ -179,6 +186,8 @@ Static Private Attributes</h2></td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a8c43ffc9b1eac311544d74988b4b37cbaac482a5009ae293f7c17c3718fb09161"></a>ADMIN</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a8c43ffc9b1eac311544d74988b4b37cbafd5e188e220dab8b0166ff4602089cc0"></a>USER</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a8c43ffc9b1eac311544d74988b4b37cbaa98a86ca679f6d4d315a60395dcb084f"></a>GUEST</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -282,6 +291,52 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a67ba7fe7990a7f85186ae339ed231c12"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cb">UserSession::Roles</a> UserSession::getRoll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09c522b1a84320b29ead4e19ad87c5f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structbbb_1_1_user_session_1_1_auth_session_info.html">AuthSessionInfo</a> bbb::UserSession::getSessionInfoFromDb </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab4a7a52bedaae41bd759c79eb7c6d9f3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -314,34 +369,50 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a2453e321df5422f34aad1abced2ecf10"></a>
+<a class="anchor" id="a31f229a3f3d6a2b8197ea1f49051d601"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void UserSession::setPassword </td>
+          <td class="memname">void UserSession::submitPassword </td>
           <td>(</td>
           <td class="paramtype">QString&#160;</td>
           <td class="paramname"><em>password</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="af2e2f336538818015e642545db39571a"></a>
+<a class="anchor" id="aefc3bd9d9b1a22f6aea60901d2624555"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void UserSession::setUsername </td>
+          <td class="memname">void UserSession::submitUsername </td>
           <td>(</td>
           <td class="paramtype">QString&#160;</td>
           <td class="paramname"><em>userName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -349,6 +420,9 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="a41638ea015b8f3b58961287fd25e1029"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool UserSession::validateSessionInfo </td>
@@ -357,6 +431,11 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -382,7 +461,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="affc75e2397262f8645bc03154b43f677"></a>
+<a class="anchor" id="aa2d8230e2e1e898eb3c553320c5ed457"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -390,19 +469,19 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QString bbb::UserSession::password</td>
+          <td class="memname">QString UserSession::password = &quot;null&quot;&quot;&quot;</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a50067338e5bf30abb481e9cef523b9bd"></a>
+<a class="anchor" id="a30e97e0ce0ee8416eedf10d47d66f8a1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -410,19 +489,19 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QString bbb::UserSession::userName</td>
+          <td class="memname">QString UserSession::userName = &quot;&quot;</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aca3af942c451749634dd550b2be249a1"></a>
+<a class="anchor" id="a5fe5f5f46a468f6fa3f7e6829ae34586"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -430,12 +509,12 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cb">Roles</a> bbb::UserSession::userRole</td>
+          <td class="memname"><a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cb">UserSession::Roles</a> UserSession::userRole = <a class="el" href="classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cbaa98a86ca679f6d4d315a60395dcb084f">UserSession::GUEST</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

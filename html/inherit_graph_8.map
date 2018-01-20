@@ -1,6 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$class_gear_central.html" title="GearCentral" alt="" coords="133,5,225,32"/>
-<area shape="rect" id="node3" href="$class_main_menu.html" title="MainMenu" alt="" coords="137,56,220,83"/>
-<area shape="rect" id="node4" href="$class_reports_view.html" title="ReportsView" alt="" coords="130,107,227,133"/>
-<area shape="rect" id="node5" href="$class_settings_page.html" title="SettingsPage" alt="" coords="129,157,229,184"/>
+<area shape="rect" id="node2" href="$classbbb_test_1_1___file_writer_bench.html" title="bbbTest::_FileWriterBench" alt="" coords="126,5,303,32"/>
+<area shape="rect" id="node3" href="$classbbb_test_1_1___regex_test.html" title="Contains the tests for the _Regex class. " alt="" coords="141,56,289,83"/>
+<area shape="rect" id="node4" href="$classbbb_test_1_1_category_test.html" title="Contains the tests for the Category class. " alt="" coords="137,107,293,133"/>
+<area shape="rect" id="node5" href="$classbbb_test_1_1_item_test.html" title="Contains the tests for the Item class. " alt="" coords="150,157,279,184"/>
+<area shape="rect" id="node6" href="$classbbb_test_1_1_unit_test.html" title="Starts the regression and unit testing. " alt="" coords="151,208,278,235"/>
 </map>
