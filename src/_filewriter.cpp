@@ -34,11 +34,13 @@ _FileWriter* _FileWriter::getInstance()
 //*********************************************************************************
 
 //*********************************************************************************
-QString _FileWriter::getDesktopPath()
+QString _FileWriter::getReportsPath()
 {
-    return QStandardPaths::locate(QStandardPaths::DesktopLocation,
-                                  "",
-                                  QStandardPaths::LocateDirectory);
+//    return QStandardPaths::locate(QStandardPaths::DesktopLocation,
+//                                  "",
+//                                  QStandardPaths::LocateDirectory);
+    //qDebug() << _FileReader::readReportsDir();
+    return QString(_FileReader::readReportsDir() + "/");
 }
 //*********************************************************************************
 
@@ -58,7 +60,7 @@ void _FileWriter::makeTxtInvReport(QVector<Item> inventory, ReportType type)
                 << "error.txt";
 
     int reportIndex = static_cast<int>(type);
-    QFile file(getDesktopPath() + oFileNames.at(reportIndex) );
+    QFile file(getReportsPath() + oFileNames.at(reportIndex) );
 
 
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
@@ -205,7 +207,7 @@ void _FileWriter::makeXmlInvReport(QVector<Item> inventory, ReportType type)
     int reportIndex = static_cast<int>(type);
 
     //qDebug() << reportIndex;
-    QFile file(getDesktopPath() + oFileNames.at(reportIndex));
+    QFile file(getReportsPath() + oFileNames.at(reportIndex));
 
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
     {
@@ -346,6 +348,42 @@ void _FileWriter::makeXmlInvReport(QVector<Item> inventory, ReportType type)
 
 
     stream.writeEndDocument();
+    file.close();
+}
+//*********************************************************************************
+
+
+//*********************************************************************************
+void _FileWriter::writeDbFileLoc(QString path)
+{
+    QFile dbFile("C:/Users/007ds/Documents/GitHub/BigBlueBox/rec/db_path.data");  // todo correct to proper final path
+
+    dbFile.open(QIODevice::ReadWrite | QIODevice::Truncate | QIODevice::Text);
+
+    QTextStream ofs(&dbFile);
+
+    ofs << path;
+    ofs.flush();
+
+    dbFile.close();
+
+
+}
+//*********************************************************************************
+
+
+//*********************************************************************************
+void _FileWriter::writeReportsDir(QString path)
+{
+    QFile file("C:/Users/007ds/Documents/GitHub/BigBlueBox/rec/report_dir.data");  // todo correct to proper final path
+
+    file.open(QIODevice::ReadWrite | QIODevice::Truncate | QIODevice::Text);
+
+    QTextStream ofs(&file);
+
+    ofs << path;
+    ofs.flush();
+
     file.close();
 }
 //*********************************************************************************

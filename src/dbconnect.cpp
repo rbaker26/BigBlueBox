@@ -9,7 +9,8 @@ DbConnect::DbConnect()
 {
     bbb_db = QSqlDatabase::addDatabase("QSQLITE");
 
-    bbb_db.setDatabaseName("C:/Users/007ds/Documents/GitHub/BigBlueBox/rec/BigBlueBox.db");
+    QString dbPath = bbb::_FileReader::readDbFileLoc();
+    bbb_db.setDatabaseName(dbPath);
 
     if(!bbb_db.open())
     {
@@ -28,7 +29,8 @@ DbConnect::DbConnect()
 DbConnect::~DbConnect()
 {
     bbb_db.close();
-    // do not delete instance
+
+    delete instance;
     qDebug() << "Db Closed";
 }
 //*********************************************************************************

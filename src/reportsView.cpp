@@ -361,22 +361,36 @@ void ReportsView::on_pushButton_addDelete_clicked()
     }
     else if(ui->comboBox_addDel->currentIndex() == 1)
     {
-        QMessageBox msgBox;
-        msgBox.setText("Are you sure you want to delete this item?\n"
-                       "Deleting is not the same as setting the quantity to zero.");
-        msgBox.setInformativeText("Do you want to save these changes?");
-        msgBox.setStandardButtons(QMessageBox::Save | QMessageBox::Discard);
-        msgBox.setDefaultButton(QMessageBox::Discard);
-        int ret = msgBox.exec();
-
-        switch (ret)
+        if(uniquePass) // item doesnt exist
         {
-        case QMessageBox::Save :
-            deleteItem();
-            break;
-        case QMessageBox::Discard :
-            break;
+            QMessageBox msgBox;
+            msgBox.setText("Item Not Found Error.\n"
+                           "No item with that name exists.\n");
+            msgBox.setInformativeText("Please provide valid name.");
+            msgBox.setStandardButtons(QMessageBox::Ok);
+            msgBox.setDefaultButton(QMessageBox::Ok);
+            msgBox.exec();
         }
+        else
+        {
+            QMessageBox msgBox;
+            msgBox.setText("Are you sure you want to delete this item?\n"
+                           "Deleting is not the same as setting the quantity to zero.");
+            msgBox.setInformativeText("Do you want to save these changes?");
+            msgBox.setStandardButtons(QMessageBox::Save | QMessageBox::Discard);
+            msgBox.setDefaultButton(QMessageBox::Discard);
+            int ret = msgBox.exec();
+
+            switch (ret)
+            {
+            case QMessageBox::Save :
+                deleteItem();
+                break;
+            case QMessageBox::Discard :
+                break;
+            }
+        }
+
 
     }
 

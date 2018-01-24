@@ -112,6 +112,9 @@
             </item>
             <item row="0" column="1">
              <widget class="QLineEdit" name="lineEdit_dbFile">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="sizePolicy">
                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -135,6 +138,9 @@
                 <width>0</width>
                 <height>0</height>
                </size>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
               </property>
              </widget>
             </item>
@@ -191,6 +197,9 @@
              <widget class="QLineEdit" name="lineEdit_reportsDir">
               <property name="toolTip">
                <string>The direcotry where all generated reports will be writen.</string>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
               </property>
              </widget>
             </item>

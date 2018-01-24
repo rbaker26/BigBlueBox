@@ -11,6 +11,7 @@
 
 #include <QDebug>
 #include "item.h"
+#include "_filereader.h"
 //*************************************************************************************
 
 
@@ -39,7 +40,7 @@ private:
     // todo - change this to getFileWriterPathFromDirHandler() &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     //**********************************************************
     //! \brief Gets the path to desktop
-    QString getDesktopPath();
+    QString getReportsPath();
     //**********************************************************
 
 
@@ -97,6 +98,12 @@ public:
      //! \author Bob Baker
      void makeXmlInvReport(QVector<Item> inventory, ReportType type = Full);
      //**********************************************************
+
+
+
+     static void writeDbFileLoc(QString path);
+     static void writeReportsDir(QString path);
+
 }; // end class
 //*********************************************************************************
 } // end namespace
