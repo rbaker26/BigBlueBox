@@ -1,9 +1,9 @@
 <map id="bbb::DbConnect::DbConnect" name="bbb::DbConnect::DbConnect">
-<area shape="rect" id="node2" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="246,93,439,120"/>
-<area shape="rect" id="node3" href="$class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="488,68,656,95"/>
+<area shape="rect" id="node2" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="246,113,439,140"/>
+<area shape="rect" id="node3" href="$class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="488,63,656,89"/>
 <area shape="rect" id="node5" href="$class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59" title="ReportsView::on_pushButton\l_edit_clicked" alt="" coords="704,5,896,46"/>
-<area shape="rect" id="node7" href="$class_reports_view.html#aa84fa8f8ac767b2d33e99930a47457f0" title="ReportsView::addItem" alt="" coords="496,119,648,145"/>
-<area shape="rect" id="node8" href="$class_reports_view.html#aa28380314a1a52fc664bf58322a69a18" title="ReportsView::deleteItem" alt="" coords="489,169,655,196"/>
+<area shape="rect" id="node6" href="$class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="704,139,896,181"/>
+<area shape="rect" id="node7" href="$class_reports_view.html#aa84fa8f8ac767b2d33e99930a47457f0" title="ReportsView::addItem" alt="" coords="496,113,648,140"/>
+<area shape="rect" id="node8" href="$class_reports_view.html#aa28380314a1a52fc664bf58322a69a18" title="ReportsView::deleteItem" alt="" coords="489,164,655,191"/>
 <area shape="rect" id="node4" href="$class_reports_view.html#a3386fadacc4633e21c1759df01a45efd" title="ReportsView::ReportsView" alt="" coords="710,71,890,97"/>
-<area shape="rect" id="node6" href="$class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="704,122,896,163"/>
 </map>

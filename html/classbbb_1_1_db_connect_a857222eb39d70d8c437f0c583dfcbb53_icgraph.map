@@ -1,8 +1,8 @@
 <map id="bbb::DbConnect::getInstance" name="bbb::DbConnect::getInstance">
-<area shape="rect" id="node2" href="$class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="248,68,416,95"/>
+<area shape="rect" id="node2" href="$class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="248,63,416,89"/>
 <area shape="rect" id="node4" href="$class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59" title="ReportsView::on_pushButton\l_edit_clicked" alt="" coords="464,5,656,46"/>
-<area shape="rect" id="node6" href="$class_reports_view.html#aa84fa8f8ac767b2d33e99930a47457f0" title="ReportsView::addItem" alt="" coords="256,119,408,145"/>
-<area shape="rect" id="node7" href="$class_reports_view.html#aa28380314a1a52fc664bf58322a69a18" title="ReportsView::deleteItem" alt="" coords="249,169,415,196"/>
+<area shape="rect" id="node5" href="$class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="464,139,656,181"/>
+<area shape="rect" id="node6" href="$class_reports_view.html#aa84fa8f8ac767b2d33e99930a47457f0" title="ReportsView::addItem" alt="" coords="256,113,408,140"/>
+<area shape="rect" id="node7" href="$class_reports_view.html#aa28380314a1a52fc664bf58322a69a18" title="ReportsView::deleteItem" alt="" coords="249,164,415,191"/>
 <area shape="rect" id="node3" href="$class_reports_view.html#a3386fadacc4633e21c1759df01a45efd" title="ReportsView::ReportsView" alt="" coords="470,71,650,97"/>
-<area shape="rect" id="node5" href="$class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="464,122,656,163"/>
 </map>
