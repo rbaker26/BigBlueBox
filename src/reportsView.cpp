@@ -141,6 +141,35 @@ void ReportsView::on_pushButton_edit_clicked()
     bool regexPass = ( rx::isItemName( ui->lineEdit_itemName->text()) &&
                        rx::isBoxName(ui->lineEdit_box->text())  );
 
+    if(!rx::isItemName( ui->lineEdit_itemName->text()))
+    {
+        QMessageBox msgBox;
+        msgBox.setText("Invalid Character Error.\n"
+                       "The only valid characters are:\n"
+                       "- 0-9 . () _ A-Z\n"
+                       "Also, item names cannot start with a space.");
+        msgBox.setInformativeText("Enter a vaild item name.");
+        msgBox.setStandardButtons(QMessageBox::Ok);
+        msgBox.setDefaultButton(QMessageBox::Ok);
+        msgBox.exec();
+    }
+    else if(!rx::isBoxName(ui->lineEdit_box->text()))
+    {
+        QMessageBox msgBox;
+        msgBox.setText("Invalid Character Error.\n"
+                       "The only valid characters are:\n"
+                       "- 0-9 . () _ A-Z\n"
+                       "Also, box names cannot start with a space.");
+        msgBox.setInformativeText("Enter a vaild box name.");
+        msgBox.setStandardButtons(QMessageBox::Ok);
+        msgBox.setDefaultButton(QMessageBox::Ok);
+        msgBox.exec();
+    }
+
+
+
+
+
     bbb::Row thisRow;
     thisRow.itemName = ui->lineEdit_itemName->text();
     thisRow.quantity = ui->spinBox_quantity->value();
