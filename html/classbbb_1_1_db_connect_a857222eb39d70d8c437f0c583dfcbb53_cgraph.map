@@ -1,3 +1,4 @@
 <map id="bbb::DbConnect::getInstance" name="bbb::DbConnect::getInstance">
-<area shape="rect" id="node2" href="$classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="249,5,439,32"/>
+<area shape="rect" id="node2" href="$classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="249,12,439,39"/>
+<area shape="rect" id="node3" href="$classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6" title="bbb::_FileReader::readDb\lFileLoc" alt="" coords="488,5,659,46"/>
 </map>

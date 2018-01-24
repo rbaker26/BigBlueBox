@@ -1,6 +1,7 @@
 <map id="bbbTest::_FileWriterBench::txtBenchmark" name="bbbTest::_FileWriterBench::txtBenchmark">
 <area shape="rect" id="node2" href="$classbbb_1_1___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa" title="Singleton pointer return function. " alt="" coords="233,12,423,39"/>
 <area shape="rect" id="node4" href="$classbbb_1_1___file_writer.html#aa45ea2af057e9074e3f83b97a1d44256" title="Writes a Inventory Report to txt file. " alt="" coords="241,63,415,105"/>
-<area shape="rect" id="node3" href="$classbbb_1_1___file_writer.html#abfb28b4697018a402c6e70afe8cc0320" title="Default no&#45;args constructor. " alt="" coords="519,5,641,46"/>
-<area shape="rect" id="node5" href="$classbbb_1_1___file_writer.html#ab533a812e8150ea2e92c99a1da2d7a36" title="Gets the path to desktop. " alt="" coords="472,71,688,97"/>
+<area shape="rect" id="node3" href="$classbbb_1_1___file_writer.html#abfb28b4697018a402c6e70afe8cc0320" title="Default no&#45;args constructor. " alt="" coords="517,5,640,46"/>
+<area shape="rect" id="node5" href="$classbbb_1_1___file_writer.html#a261e167c8c1e55701c5b6d4b063f55c7" title="Gets the path to desktop. " alt="" coords="472,71,685,97"/>
+<area shape="rect" id="node6" href="$classbbb_1_1___file_reader.html#a84a82fafca657fac8d48cf1ca451cb88" title="bbb::_FileReader::readReportsDir" alt="" coords="734,71,951,97"/>
 </map>

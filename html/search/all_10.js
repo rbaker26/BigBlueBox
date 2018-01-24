@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['readdbfileloc',['readDbFileLoc',['../classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6',1,'bbb::_FileReader']]],
+  ['readreportsdir',['readReportsDir',['../classbbb_1_1___file_reader.html#a84a82fafca657fac8d48cf1ca451cb88',1,'bbb::_FileReader']]],
   ['reportsview',['ReportsView',['../class_reports_view.html',1,'ReportsView'],['../class_reports_view.html#a3386fadacc4633e21c1759df01a45efd',1,'ReportsView::ReportsView()']]],
   ['reportsview_2ecpp',['reportsView.cpp',['../reports_view_8cpp.html',1,'']]],
   ['reportsview_2eh',['reportsView.h',['../reports_view_8h.html',1,'']]],

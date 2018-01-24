@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['initpaths',['initPaths',['../class_settings_page.html#a8ee41bc1b63e09ecf439e551a21eec9b',1,'SettingsPage']]],
   ['inittableinv',['initTableInv',['../class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d',1,'ReportsView']]],
   ['intfromstring',['intFromString',['../classbbb_1_1_category.html#a4618426a49f54f11db3012b456ec4308',1,'bbb::Category']]],
   ['isboxname',['isBoxName',['../classbbb_1_1___regex.html#a23e37deda14af81e47c12224176257f0',1,'bbb::_Regex']]],
