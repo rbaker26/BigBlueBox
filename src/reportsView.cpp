@@ -141,6 +141,35 @@ void ReportsView::on_pushButton_edit_clicked()
     bool regexPass = ( rx::isItemName( ui->lineEdit_itemName->text()) &&
                        rx::isBoxName(ui->lineEdit_box->text())  );
 
+    if(!rx::isItemName( ui->lineEdit_itemName->text()))
+    {
+        QMessageBox msgBox;
+        msgBox.setText("Invalid Character Error.\n"
+                       "The only valid characters are:\n"
+                       "- 0-9 . () _ A-Z\n"
+                       "Also, item names cannot start with a space.");
+        msgBox.setInformativeText("Enter a vaild item name.");
+        msgBox.setStandardButtons(QMessageBox::Ok);
+        msgBox.setDefaultButton(QMessageBox::Ok);
+        msgBox.exec();
+    }
+    else if(!rx::isBoxName(ui->lineEdit_box->text()))
+    {
+        QMessageBox msgBox;
+        msgBox.setText("Invalid Character Error.\n"
+                       "The only valid characters are:\n"
+                       "- 0-9 . () _ A-Z\n"
+                       "Also, box names cannot start with a space.");
+        msgBox.setInformativeText("Enter a vaild box name.");
+        msgBox.setStandardButtons(QMessageBox::Ok);
+        msgBox.setDefaultButton(QMessageBox::Ok);
+        msgBox.exec();
+    }
+
+
+
+
+
     bbb::Row thisRow;
     thisRow.itemName = ui->lineEdit_itemName->text();
     thisRow.quantity = ui->spinBox_quantity->value();
@@ -290,9 +319,45 @@ void ReportsView::on_comboBox_addDel_currentIndexChanged(const QString &arg1)
 //*********************************************************************************
 void ReportsView::on_pushButton_addDelete_clicked()
 {
+    typedef bbb::_Regex rx;
+    bool regexPass  = rx::isItemName(ui->lineEdit_itemNameNew->text());
+    bool uniquePass = !(bbb::DbConnect::getInstance()->itemAlreadyExists(ui->lineEdit_itemNameNew->text())) ;
+
+    //qDebug() << "uniquePass\t" << uniquePass;
     if(ui->comboBox_addDel->currentIndex() == 0)
     {
-        addItem();
+
+        if(regexPass)
+        {
+            if(uniquePass)
+            {
+                addItem();
+            }
+            else
+            {
+                QMessageBox msgBox;
+                msgBox.setText("Unique Item Error.\n"
+                               "An item with the smae name already exists.\n");
+                msgBox.setInformativeText("Please provide a unique name.");
+                msgBox.setStandardButtons(QMessageBox::Ok);
+                msgBox.setDefaultButton(QMessageBox::Ok);
+                msgBox.exec();
+            }
+
+        }
+        else
+        {
+            QMessageBox msgBox;
+            msgBox.setText("Invalid Character Error.\n"
+                           "The only valid characters are:\n"
+                           "- 0-9 . () _ A-Z\n"
+                           "Also, item names cannot start with a space.");
+            msgBox.setInformativeText("Enter a vaild item name.");
+            msgBox.setStandardButtons(QMessageBox::Ok);
+            msgBox.setDefaultButton(QMessageBox::Ok);
+            msgBox.exec();
+        }
+
     }
     else if(ui->comboBox_addDel->currentIndex() == 1)
     {

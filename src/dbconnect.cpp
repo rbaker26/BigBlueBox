@@ -167,3 +167,33 @@ void DbConnect::deleteItem(QString name)
     }
 }
 //*********************************************************************************
+
+//*********************************************************************************
+bool DbConnect::itemAlreadyExists(QString name)
+{
+    // This function will query the db for one row that matches item_name.
+    // It will then return false if it already exists and true if it does
+    //  not exist.
+    bool alreadyExists;
+    QSqlQuery query;
+
+    query.prepare("SELECT CASE WHEN EXISTS (        "
+                  "  SELECT *                       "
+                  "  FROM inventory                 "
+                  "  WHERE item_name = (:item_name) "
+                  "  LIMIT 1                        "
+                  ")                                "
+                  "THEN CAST(1 AS BIT)              "
+                  "ELSE CAST(0 AS BIT) END          " );
+
+    query.bindValue(":item_name", name);
+    alreadyExists = query.exec();
+
+    query.first();
+    alreadyExists = query.value(0).toBool();
+
+
+    return alreadyExists;
+}
+//*********************************************************************************
+
