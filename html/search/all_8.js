@@ -9,6 +9,7 @@ var searchData=
   ['item',['Item',['../classbbb_1_1_item.html#a297720c02984eab37332ae795d22189d',1,'bbb::Item']]],
   ['item_2ecpp',['item.cpp',['../item_8cpp.html',1,'']]],
   ['item_2eh',['item.h',['../item_8h.html',1,'']]],
+  ['itemalreadyexists',['itemAlreadyExists',['../classbbb_1_1_db_connect.html#af65b86f30da143b6226c5b3cce4978e4',1,'bbb::DbConnect']]],
   ['itemmaker',['itemMaker',['../classbbb_test_1_1___file_writer_bench.html#a5cbc869bd38c52cf2fb26bb7e11cf415',1,'bbbTest::_FileWriterBench']]],
   ['itemname',['itemName',['../classbbb_1_1_item.html#af241539c54059c265f13b112bc4514a7',1,'bbb::Item']]],
   ['itemtest',['ItemTest',['../classbbb_test_1_1_item_test.html',1,'bbbTest']]],
