@@ -110,6 +110,13 @@ public:
     void deleteItem(QString name);
     //**********************************************************
 
+    //**********************************************************
+    //! \brief Checks to see if an item exists.
+    //! \details Queries DB with itemName to see if any records
+    //!          with the same name exist.  If they exist,
+    //!          the function will return true.
+    bool itemAlreadyExists(QString name);
+    //**********************************************************
 
 }; // end class
 //*********************************************************************************
