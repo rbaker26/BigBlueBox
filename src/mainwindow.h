@@ -2,11 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "gearcentral.h"
 
-
-// test code, del when finshed
-#include "reportsView.h"
 #include "mainmenu.h"
 
 namespace Ui {

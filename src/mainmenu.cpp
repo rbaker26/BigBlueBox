@@ -26,3 +26,10 @@ void MainMenu::on_pushButton_gotoSettings_clicked()
     ui->horizontalStackedWidget->addWidget(settingsPage);
     ui->horizontalStackedWidget->setCurrentWidget(settingsPage);
 }
+
+void MainMenu::on_pushButton_gotoGear_clicked()
+{
+    QWidget* gearPage = new GearCenter(this);
+    ui->horizontalStackedWidget->addWidget(gearPage);
+    ui->horizontalStackedWidget->setCurrentWidget(gearPage);
+}

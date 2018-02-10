@@ -4,6 +4,8 @@
 #include <QWidget>
 #include "reportsView.h"
 #include "pages/settingspage.h"
+#include "pages/gearCenter.h"
+#include "pages/gearCenter.h"
 
 namespace Ui {
 class MainMenu;
@@ -21,6 +23,8 @@ private slots:
     void on_pushButton_gotoInv_clicked();
 
     void on_pushButton_gotoSettings_clicked();
+
+    void on_pushButton_gotoGear_clicked();
 
 private:
     Ui::MainMenu *ui;

@@ -15,7 +15,7 @@
 
 QT       += core gui sql testlib
 CONFIG   += c++14
-QMAKE_CXXFLAGS += -std=c++11
+#QMAKE_CXXFLAGS += -std=c++11
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -42,13 +42,18 @@ SOURCES += \
         dbconnect.cpp   \
         reportsView.cpp \
         _regex.cpp      \
-        gearcentral.cpp \
         usersession.cpp \
         _filewriter.cpp \
         mainmenu.cpp    \
         pages/settingspage.cpp \
         directoryhandler.cpp   \
-    _filereader.cpp
+        _filereader.cpp        \
+        pages/gearCenter.cpp   \
+        qr/BitBuffer.cpp \
+        qr/QrCode.cpp    \
+        qr/QrSegment.cpp \
+        qr/QrCodeGeneratorWorker.cpp \
+
         
 HEADERS += \
         mainwindow.h    \
@@ -57,22 +62,25 @@ HEADERS += \
         category.h      \
         dbconnect.h     \
         _regex.h        \
-        gearcentral.h   \
         usersession.h   \
         _filewriter.h   \
         bbb.h           \
         mainmenu.h      \
         pages/settingspage.h \
         directoryhandler.h   \
-    _filereader.h
+        _filereader.h        \
+        pages/gearCenter.h   \
+        qr/BitBuffer.h   \
+        qr/QrCode.h      \
+        qr/QrSegment.h   \
 
         
 FORMS += \
         mainwindow.ui   \
         reportsView.ui  \
-        gearcentral.ui  \
         mainmenu.ui     \
         pages/settingspage.ui \
+        pages/gearCenter.ui   \
         
 RESOURCES += \
     ../rec/rec.qrc \
