@@ -52,7 +52,6 @@ SOURCES += \
         qr/BitBuffer.cpp \
         qr/QrCode.cpp    \
         qr/QrSegment.cpp \
-        qr/QrCodeGeneratorWorker.cpp \
 
         
 HEADERS += \
