@@ -16,4 +16,5 @@ GearCenter::~GearCenter()
 void GearCenter::on_pushButton_checkInOut_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
+
 }

@@ -12,9 +12,24 @@
 #include "mainwindow.h"
 #include <QApplication>
 
+
+// for testing
+#include <QString>
+#include <QFile>
+#include "qr/QrInterface.h"
 //*********************************************************************************
 int main(int argc, char *argv[])
 {
+    QrInterface qri;
+
+    QString s = qri.testsss();
+
+    QFile file("test.svg");
+    file.open(QIODevice::WriteOnly | QIODevice::Text);
+    QTextStream ofs(&file);
+    ofs << s;
+    file.close();
+
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon(":/img/nyltIcon.png"));
     a.setApplicationName("BigBlueBox v0.4.0");

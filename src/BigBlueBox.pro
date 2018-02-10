@@ -52,6 +52,7 @@ SOURCES += \
         qr/BitBuffer.cpp \
         qr/QrCode.cpp    \
         qr/QrSegment.cpp \
+        qr/QrInterface.cpp \
 
         
 HEADERS += \
@@ -71,7 +72,8 @@ HEADERS += \
         pages/gearCenter.h   \
         qr/BitBuffer.h   \
         qr/QrCode.h      \
-        qr/QrSegment.h   \
+        qr/QrSegment.h \
+        qr/QrInterface.h \
 
         
 FORMS += \
