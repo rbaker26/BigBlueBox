@@ -13,7 +13,7 @@
 #2019 year, make a patrol box standered and put that into system,
 #after 2018, empty all patrol boxs.  then add them back in to make a patrol box standered.
 
-QT       += core gui sql testlib
+QT       += core gui sql svg testlib
 CONFIG   += c++14
 #QMAKE_CXXFLAGS += -std=c++11
 

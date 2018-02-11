@@ -2,6 +2,15 @@
 #define GEARCENTER_H
 
 #include <QWidget>
+#include <QtSvg>
+
+
+
+// for testing
+#include <QString>
+#include <QFile>
+#include "qr/QrInterface.h"
+
 
 namespace Ui {
 class GearCenter;
@@ -17,6 +26,8 @@ public:
 
 private slots:
     void on_pushButton_checkInOut_clicked();
+
+    void on_pushButton_checkinOut_clicked();
 
 private:
     Ui::GearCenter *ui;
