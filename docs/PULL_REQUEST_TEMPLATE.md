@@ -1,9 +1,9 @@
-<!--- Provide a general summary of your changes in the Title above -->
+
 
 ## Pull Request check-list - For Qt, C++ and SQL
 
 _Please make sure to review and check all of these items:_
-
+<!--- For the "- []" lines, once done, change them to "- [x]".  This will "check" the checkbox -->
 - [ ] Does the travis.ci build pass?
 - [ ] Did all unit tests pass in travis?
 - [ ] Does the AppVeyor build pass?
@@ -18,6 +18,7 @@ _NOTE: these things are not required to open a PR and can be done afterwards / w
 
 ### Types of changes
 <!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
+<!--- For the "- []" lines, once done, change them to "- [x]".  This will "check" the checkbox -->
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
