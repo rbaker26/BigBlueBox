@@ -226,6 +226,8 @@ This project is licensed under the GPL 3.0 License - see the [LICENSE.md](https:
 
 
 ## Acknowledgments
-* [*Jeroen de Bruijn*](https://gist.github.com/vidavidorra) - Auto generation and deployment [script](https://github.com/rbaker26/BigBlueBox/blob/master/generateDocumentationAndDeploy.sh) for Doxygen after successful travis.ci build.  
+* [*Jeroen de Bruijn*](https://gist.github.com/vidavidorra) - Auto generation and deployment [script](https://github.com/rbaker26/BigBlueBox/blob/master/scripts/generateDocumentationAndDeploy.sh) for Doxygen after successful travis.ci build.  
+* [*Nayuki*](https://github.com/nayuki) - Full featured Svg [encoder](https://github.com/rbaker26/BigBlueBox/tree/master/src/qr) 
+for QR-Codes 
 
 
