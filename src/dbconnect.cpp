@@ -252,9 +252,9 @@ QVector<GearNote> DbConnect::getGearNotes(int catId, int idvId)
 //**************************************************************
 //*                       * Test Code *                        *
 //**************************************************************
-        qDebug() << "Note:\t" << tempNote.noteText;
-        qDebug() << "Author:\t" << tempNote.author;
-        qDebug() << "dtMade:\t" << tempNote.dtMade.toString(dateFormat);
+//        qDebug() << "Note:\t" << tempNote.noteText;
+//        qDebug() << "Author:\t" << tempNote.author;
+//        qDebug() << "dtMade:\t" << tempNote.dtMade.toString(dateFormat);
 //**************************************************************
 
         returnVector.push_back(tempNote);

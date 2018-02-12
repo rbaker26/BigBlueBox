@@ -119,6 +119,7 @@ public:
     //**********************************************************
 
 
+    // this is a slow query.  Make sure to thread it.
     QVector<GearNote> getGearNotes(int catId, int idvId);
     // not really <int>, i just havnt made that struct yet
     // Use a join om two cols

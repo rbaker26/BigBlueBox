@@ -21,11 +21,12 @@
 #include <QApplication>
 //#############################################################################################
 
-
+// test code
 #include <QVector>
 //#############################################################################################
 int main(int argc, char *argv[])
 {
+    // test code
     QVector<GearNote> gn = bbb::DbConnect::getInstance()->getGearNotes(1, 1);
 
     QApplication a(argc, argv);
