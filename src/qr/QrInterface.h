@@ -22,7 +22,7 @@
 //  3. Click "Check-In"
 //
 // ORDER OF SCANNING SHOULD NOT MATTER
-// They should be able to scan a patrol or Itam first.
+// They should be able to scan a patrol or Item first.
 //
 //
 //********************************************************************************

@@ -21,9 +21,13 @@
 #include <QApplication>
 //#############################################################################################
 
+
+#include <QVector>
 //#############################################################################################
 int main(int argc, char *argv[])
 {
+    QVector<GearNote> gn = bbb::DbConnect::getInstance()->getGearNotes(1, 1);
+
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon(":/img/nyltIcon.png"));
     a.setApplicationName("BigBlueBox v0.4.0");

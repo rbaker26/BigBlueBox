@@ -17,10 +17,9 @@
 #include <algorithm>
 
 // Business Objects
-//#include "Gear.h"
 #include "item.h"
 #include "_filereader.h"
-//#include "dbConnect/dbConnectItem.h"
+#include "gear.h"
 //*********************************************************************************
 
 namespace bbb {
@@ -118,6 +117,20 @@ public:
     //!          the function will return true.
     bool itemAlreadyExists(QString name);
     //**********************************************************
+
+
+    QVector<GearNote> getGearNotes(int catId, int idvId);
+    // not really <int>, i just havnt made that struct yet
+    // Use a join om two cols
+    // JOIN ON
+    //   gear_list.gear_cat_id = gear_notes.gear_cat_id
+    //  AND
+    //   gear_list.gear_idv_id = gear_notes.gear_idv_id
+    //
+    // will prob have to use a GROUP BY to make them come in together
+
+
+
 
 }; // end class
 //*********************************************************************************

@@ -199,3 +199,68 @@ bool DbConnect::itemAlreadyExists(QString name)
 }
 //*********************************************************************************
 
+
+
+QVector<GearNote> DbConnect::getGearNotes(int catId, int idvId)
+{
+    QVector<GearNote> returnVector;
+    GearNote tempNote;
+
+    QSqlQuery query;
+
+    // This query doesn't really need the join, it is just here in case
+    //  I want to expand its functionality.
+    // It just allows the connection of the gear_name.
+    // It also adds the possiblity of adding Heath_status to the notes
+    //  reports.
+    // I plan on making a xml/txt report genrator like I did with the
+    //  inventory page.
+    // For this, I will need to print out the name of the item as well
+    //  as some stats.  I will try to reuse this query / function.
+
+    query.prepare("SELECT gear_list.gear_name,                          "
+                  "       gear_notes.note, gear_notes.author,           "
+                  "       gear_notes.time_stamp                         "
+                  "FROM gear_list LEFT JOIN gear_notes                  "
+                  "WHERE gear_list.gear_cat_id = gear_notes.gear_cat_id "
+                  "      AND                                            "
+                  "      gear_list.gear_idv_id = gear_notes.gear_idv_id "
+                  "      AND                                            "
+                  "      gear_list.gear_cat_id = (:catId)               "
+                  "      AND                                            "
+                  "      gear_list.gear_idv_id = (:idvId);              ");
+
+    query.bindValue(":catId", catId);
+    query.bindValue(":idvId", idvId);
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+
+    int noteFieldNum      = query.record().indexOf("note");
+    int authorFieldNum    = query.record().indexOf("author");
+    int timeStampFieldNUm = query.record().indexOf("time_stamp");
+
+    query.first();
+    do
+    {
+        tempNote.noteText        = query.value(noteFieldNum).toString();
+        tempNote.author          = query.value(authorFieldNum).toString();
+        tempNote.dtMade          = QDateTime::fromString( query.value(timeStampFieldNUm).toString(), dateFormat);
+
+//**************************************************************
+//*                       * Test Code *                        *
+//**************************************************************
+        qDebug() << "Note:\t" << tempNote.noteText;
+        qDebug() << "Author:\t" << tempNote.author;
+        qDebug() << "dtMade:\t" << tempNote.dtMade.toString(dateFormat);
+//**************************************************************
+
+        returnVector.push_back(tempNote);
+    }while(query.next());
+
+    returnVector.squeeze();
+    return returnVector;
+
+}

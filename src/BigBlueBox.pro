@@ -48,6 +48,7 @@ SOURCES += \
         qr/QrCode.cpp    \
         qr/QrSegment.cpp \
         qr/QrInterface.cpp \
+    gear.cpp
 
         
 HEADERS += \
@@ -69,6 +70,7 @@ HEADERS += \
         qr/QrCode.h      \
         qr/QrSegment.h \
         qr/QrInterface.h \
+    gear.h
 
         
 FORMS += \

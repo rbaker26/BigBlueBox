@@ -6,6 +6,10 @@ GearCenter::GearCenter(QWidget *parent) :
     ui(new Ui::GearCenter)
 {
     ui->setupUi(this);
+    //ui->lineEdit_scanCode->setFocus();
+    ui->lineEdit_scanCode->setInputMask("AAA:HHHHH:HHHHH");
+    //ui->lineEdit_scanCode->grabKeyboard();
+    //ui->lineEdit_scanCode->
 }
 
 GearCenter::~GearCenter()
