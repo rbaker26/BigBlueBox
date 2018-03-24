@@ -11,3 +11,4 @@ ignore:
   - "src/mainwindow.cpp"
   - "src/pages/settingspage.cpp"
   - "src/pages/settingspage.h" 
+  
