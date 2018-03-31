@@ -14,6 +14,9 @@
   <img align="center" src="../rec/bluebox25x25.png" />
   <img align="center" src="../rec/bluebox25x25.png" />
 </div>
+<div>
+  [![Analytics](https://ga-beacon.appspot.com/UA-XXXXX-X/welcome-page)](https://github.com/igrigorik/ga-beacon)
+</div>
   
 <p align="center">
 A Inventory Management System for a NYLT Course or other Boy Scout Programs. <br>
