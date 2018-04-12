@@ -1,5 +1,6 @@
 <map id="ReportsView::addItem" name="ReportsView::addItem">
-<area shape="rect" id="node2" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="209,5,402,32"/>
-<area shape="rect" id="node4" href="$classbbb_1_1_db_connect.html#ad230717781e28a912e4d388b8faef996" title="Addes a new item to the database. " alt="" coords="206,56,405,83"/>
-<area shape="rect" id="node3" href="$classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="454,5,645,32"/>
+<area shape="rect" id="node2" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="209,12,402,39"/>
+<area shape="rect" id="node5" href="$classbbb_1_1_db_connect.html#ad230717781e28a912e4d388b8faef996" title="Addes a new item to the database. " alt="" coords="206,63,405,89"/>
+<area shape="rect" id="node3" href="$classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="454,12,645,39"/>
+<area shape="rect" id="node4" href="$classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6" title="bbb::_FileReader::readDb\lFileLoc" alt="" coords="693,5,864,46"/>
 </map>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['canexpire',['canExpire',['../classbbb_1_1_item.html#a33a10821b7b0b51f6b66fad9de1e3dfd',1,'bbb::Item']]],
-  ['category',['Category',['../classbbb_1_1_category.html#adeee911f773db1ebeb1005a00da45e08',1,'bbb::Category::Category()'],['../classbbb_1_1_item.html#ab6b8590e64eadac77a70cf6bc3d32edd',1,'bbb::Item::category()']]],
+  ['category',['category',['../classbbb_1_1_item.html#ab6b8590e64eadac77a70cf6bc3d32edd',1,'bbb::Item::category()'],['../classbbb_1_1_category.html#adeee911f773db1ebeb1005a00da45e08',1,'bbb::Category::Category()']]],
   ['category',['Category',['../classbbb_1_1_category.html',1,'bbb']]],
   ['category_2ecpp',['category.cpp',['../category_8cpp.html',1,'']]],
   ['category_2eh',['category.h',['../category_8h.html',1,'']]],
