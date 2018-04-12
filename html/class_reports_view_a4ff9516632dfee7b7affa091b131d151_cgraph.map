@@ -1,15 +1,13 @@
 <map id="ReportsView::on_pushButton_addDelete_clicked" name="ReportsView::on_pushButton_addDelete_clicked">
-<area shape="rect" id="node2" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="491,56,685,83"/>
-<area shape="rect" id="node5" href="$classbbb_1_1_db_connect.html#af65b86f30da143b6226c5b3cce4978e4" title="Checks to see if an item exists. " alt="" coords="245,209,440,250"/>
-<area shape="rect" id="node6" href="$class_reports_view.html#aa84fa8f8ac767b2d33e99930a47457f0" title="ReportsView::addItem" alt="" coords="267,5,419,32"/>
-<area shape="rect" id="node8" href="$class_reports_view.html#aa28380314a1a52fc664bf58322a69a18" title="ReportsView::deleteItem" alt="" coords="259,107,426,133"/>
-<area shape="rect" id="node10" href="$class_reports_view.html#adc130acc6c8471c37855f233ed72b54f" title="ReportsView::clearTable" alt="" coords="260,275,425,301"/>
-<area shape="rect" id="node11" href="$class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d" title="Sets up the inventoy table. " alt="" coords="257,325,429,352"/>
-<area shape="rect" id="node12" href="$class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="259,157,427,184"/>
-<area shape="rect" id="node3" href="$classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="737,56,927,83"/>
-<area shape="rect" id="node4" href="$classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6" title="bbb::_FileReader::readDb\lFileLoc" alt="" coords="976,49,1147,90"/>
-<area shape="rect" id="node7" href="$classbbb_1_1_db_connect.html#ad230717781e28a912e4d388b8faef996" title="Addes a new item to the database. " alt="" coords="489,5,687,32"/>
-<area shape="rect" id="node9" href="$classbbb_1_1_db_connect.html#a5224412c4d1a753857f5ef0cefb6e49e" title="Deletes a item from the database. " alt="" coords="495,107,681,133"/>
-<area shape="rect" id="node13" href="$classbbb_1_1_db_connect.html#a7986028e9b44516bff117a8255f377e4" title="Gets full inventory. " alt="" coords="497,223,679,265"/>
-<area shape="rect" id="node14" href="$classbbb_1_1_category.html#ad7de659617e688faaa44e4ba448b40fe" title="Turns enum to string. " alt="" coords="499,158,677,199"/>
+<area shape="rect" id="node2" href="$class_reports_view.html#aa84fa8f8ac767b2d33e99930a47457f0" title="ReportsView::addItem" alt="" coords="256,107,408,133"/>
+<area shape="rect" id="node6" href="$class_reports_view.html#aa28380314a1a52fc664bf58322a69a18" title="ReportsView::deleteItem" alt="" coords="249,56,415,83"/>
+<area shape="rect" id="node8" href="$class_reports_view.html#adc130acc6c8471c37855f233ed72b54f" title="ReportsView::clearTable" alt="" coords="249,208,415,235"/>
+<area shape="rect" id="node9" href="$class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d" title="Sets up the inventoy table. " alt="" coords="246,259,418,285"/>
+<area shape="rect" id="node10" href="$class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="248,157,416,184"/>
+<area shape="rect" id="node3" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="470,107,663,133"/>
+<area shape="rect" id="node5" href="$classbbb_1_1_db_connect.html#ad230717781e28a912e4d388b8faef996" title="Addes a new item to the database. " alt="" coords="467,56,666,83"/>
+<area shape="rect" id="node4" href="$classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="715,107,906,133"/>
+<area shape="rect" id="node7" href="$classbbb_1_1_db_connect.html#a5224412c4d1a753857f5ef0cefb6e49e" title="Deletes a item from the database. " alt="" coords="473,5,660,32"/>
+<area shape="rect" id="node11" href="$classbbb_1_1_db_connect.html#a7986028e9b44516bff117a8255f377e4" title="Gets full inventory. " alt="" coords="475,223,658,265"/>
+<area shape="rect" id="node12" href="$classbbb_1_1_category.html#ad7de659617e688faaa44e4ba448b40fe" title="Turns enum to string. " alt="" coords="478,158,655,199"/>
 </map>
