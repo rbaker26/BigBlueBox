@@ -8,10 +8,8 @@
 #            (_____|                                                      #
 ###########################################################################
 
-QT       += core gui sql svg testlib
+QT       += core gui sql svg testlib    # Test lib only needed in test build after project is done
 CONFIG   += c++14
-#QMAKE_CXXFLAGS += -std=c++11
-QMAKE_CXXFLAGS += -std=c++11
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET   = BigBlueBox
@@ -30,109 +28,134 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp        \
-        mainwindow.cpp  \
-        item.cpp        \
-        category.cpp    \
-        dbconnect.cpp   \
-        reportsView.cpp \
-        _regex.cpp      \
-        usersession.cpp \
-        _filewriter.cpp \
-        mainmenu.cpp    \
-        pages/settingspage.cpp \
-        directoryhandler.cpp   \
-        _filereader.cpp        \
-        pages/gearCenter.cpp   \
-        qr/BitBuffer.cpp \
-        qr/QrCode.cpp    \
-        qr/QrSegment.cpp \
-        qr/QrInterface.cpp \
-        gear.cpp            \
+        main.cpp                \
+        mainwindow.cpp          \
+        item.cpp                \
+        category.cpp            \
+        dbconnect.cpp           \
+        reportsView.cpp         \
+        _regex.cpp              \
+        usersession.cpp         \
+        _filewriter.cpp         \
+        mainmenu.cpp            \
+        pages/settingspage.cpp  \
+        directoryhandler.cpp    \
+        _filereader.cpp         \
+        pages/gearCenter.cpp    \
+        qr/BitBuffer.cpp        \
+        qr/QrCode.cpp           \
+        qr/QrSegment.cpp        \
+        qr/QrInterface.cpp      \
+        gear.cpp                \
 
         
 HEADERS += \
-        mainwindow.h    \
-        reportsView.h   \
-        item.h          \
-        category.h      \
-        dbconnect.h     \
-        _regex.h        \
-        usersession.h   \
-        _filewriter.h   \
-        bbb.h           \
-        mainmenu.h      \
-        pages/settingspage.h \
-        directoryhandler.h   \
-        _filereader.h        \
-        pages/gearCenter.h   \
-        qr/BitBuffer.h   \
-        qr/QrCode.h      \
-        qr/QrSegment.h \
-        qr/QrInterface.h \
-        gear.h           \
+        mainwindow.h            \
+        reportsView.h           \
+        item.h                  \
+        category.h              \
+        dbconnect.h             \
+        _regex.h                \
+        usersession.h           \
+        _filewriter.h           \
+        bbb.h                   \
+        mainmenu.h              \
+        pages/settingspage.h    \
+        directoryhandler.h      \
+        _filereader.h           \
+        pages/gearCenter.h      \
+        qr/BitBuffer.h          \
+        qr/QrCode.h             \
+        qr/QrSegment.h          \
+        qr/QrInterface.h        \
+        gear.h                  \
 
         
 FORMS += \
-        mainwindow.ui   \
-        reportsView.ui  \
-        mainmenu.ui     \
-        pages/settingspage.ui \
-        pages/gearCenter.ui   \
+        mainwindow.ui           \
+        reportsView.ui          \
+        mainmenu.ui             \
+        pages/settingspage.ui   \
+        pages/gearCenter.ui     \
         
 RESOURCES += \
     ../rec/rec.qrc \
 
+
+
+
+###########################################################
+# UNIT TESTING BUILD
+###########################################################
 test {
 
-#QT -= svg
-
+# These are for CodeCov
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
 
-SOURCES -= main.cpp \
 
+SOURCES -= main.cpp \ # Remove normal main.cpp file
+                      # This main will launch the GUI, not the testing
 
+# Add the Unit Testing Files
 SOURCES += \
-        test/unittest.cpp     \
-        test/main.cpp         \
-        test/_regextest.cpp   \
-        test/categorytest.cpp \
-        test/itemtest.cpp     \
+        test/main.cpp           \ # The unit testing main
+        test/unittest.cpp       \
+        test/_regextest.cpp     \
+        test/categorytest.cpp   \
+        test/itemtest.cpp       \
 
 
-
+# Add the Unit Testing Headers
 HEADERS += \
-        test/unittest.h     \
-        test/_regextest.h   \
-        test/categorytest.h \
-        test/itemtest.h     \
+        test/unittest.h         \
+        test/_regextest.h       \
+        test/categorytest.h     \
+        test/itemtest.h         \
 
 
-
+# Removing unnecessary files for unit testing
 SOURCES -= \
-        pages/gearCenter.cpp   \
-        qr/BitBuffer.cpp \
-        qr/QrCode.cpp    \
-        qr/QrSegment.cpp \
-        qr/QrInterface.cpp \
-        gear.cpp            \
-        _filewriter.cpp \
+        mainwindow.cpp          \
+        mainmenu.cpp            \
+        pages/gearCenter.cpp    \
+        pages/settingspage.cpp  \
+        pages/gearCenter.cpp    \
+        qr/BitBuffer.cpp        \ # Prob can write svg tests later
+        qr/QrCode.cpp           \
+        qr/QrSegment.cpp        \
+        qr/QrInterface.cpp      \
+        gear.cpp                \
+        _filewriter.cpp         \
+        reportsView.cpp         \
 
+# Removing unnecessary header for unit testing
 HEADERS -= \
-        pages/gearCenter.h   \
-        qr/BitBuffer.h   \
-        qr/QrCode.h      \
-        qr/QrSegment.h   \
-        qr/QrInterface.h \
-        gear.h           \
-        _filewriter.h   \
+        mainwindow.h            \
+        pages/gearCenter.h      \
+        pages/settingspage.h    \
+        qr/BitBuffer.h          \
+        qr/QrCode.h             \
+        qr/QrSegment.h          \
+        qr/QrInterface.h        \
+        gear.h                  \
+        _filewriter.h           \
+        reportsView.h           \
 
+# Remove all Forms
+FORMS -= \
+        mainwindow.ui           \
+        reportsView.ui          \
+        mainmenu.ui             \
+        pages/settingspage.ui   \
+        pages/gearCenter.ui     \
 
-
+# Remove all recources
 RESOURCES -= \
     ../rec/rec.qrc \
+
 }
+###########################################################
 
 
 
