@@ -9,7 +9,11 @@
 // for testing
 #include <QString>
 #include <QFile>
+#include <QEvent>
 #include "qr/QrInterface.h"
+#include "dbconnect.h"
+
+#include "_filewriter.h"
 
 
 namespace Ui {
@@ -24,10 +28,21 @@ public:
     explicit GearCenter(QWidget *parent = 0);
     ~GearCenter();
 
+private:
+    bool itemScanned;
+    bool pidScanned;
+
 private slots:
+
     void on_pushButton_checkInOut_clicked();
 
     void on_pushButton_checkinOut_clicked();
+
+    void on_lineEdit_scanCode_returnPressed();
+
+    void on_pushButton_enterCode_clicked();
+
+    void on_comboBox_troopNames_currentIndexChanged(int index);
 
 private:
     Ui::GearCenter *ui;

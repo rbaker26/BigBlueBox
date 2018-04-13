@@ -200,7 +200,7 @@ bool DbConnect::itemAlreadyExists(QString name)
 //*********************************************************************************
 
 
-
+//*********************************************************************************
 QVector<GearNote> DbConnect::getGearNotes(int catId, int idvId)
 {
     QVector<GearNote> returnVector;
@@ -218,17 +218,28 @@ QVector<GearNote> DbConnect::getGearNotes(int catId, int idvId)
     // For this, I will need to print out the name of the item as well
     //  as some stats.  I will try to reuse this query / function.
 
-    query.prepare("SELECT gear_list.gear_name,                          "
-                  "       gear_notes.note, gear_notes.author,           "
-                  "       gear_notes.time_stamp                         "
-                  "FROM gear_list LEFT JOIN gear_notes                  "
-                  "WHERE gear_list.gear_cat_id = gear_notes.gear_cat_id "
-                  "      AND                                            "
-                  "      gear_list.gear_idv_id = gear_notes.gear_idv_id "
-                  "      AND                                            "
-                  "      gear_list.gear_cat_id = (:catId)               "
-                  "      AND                                            "
-                  "      gear_list.gear_idv_id = (:idvId);              ");
+//    query.prepare("SELECT gear_list.gear_name,                          "
+//                  "       gear_notes.note, gear_notes.author,           "
+//                  "       gear_notes.time_stamp                         "
+//                  "FROM gear_list LEFT JOIN gear_notes                  "
+//                  "WHERE gear_list.gear_cat_id = gear_notes.gear_cat_id "
+//                  "      AND                                            "
+//                  "      gear_list.gear_idv_id = gear_notes.gear_idv_id "
+//                  "      AND                                            "
+//                  "      gear_list.gear_cat_id = (:catId)               "
+//                  "      AND                                            "
+//                  "      gear_list.gear_idv_id = (:idvId);              ");
+
+
+    query.prepare("SELECT                           "
+                  "       note, author,             "
+                  "       time_stamp                "
+                  "FROM  gear_notes                 "
+                  "WHERE                            "
+                  "                                 "
+                  "      gear_cat_id = (:catId)     "
+                  "      AND                        "
+                  "      gear_idv_id = (:idvId)     ");
 
     query.bindValue(":catId", catId);
     query.bindValue(":idvId", idvId);
@@ -249,13 +260,13 @@ QVector<GearNote> DbConnect::getGearNotes(int catId, int idvId)
         tempNote.author          = query.value(authorFieldNum).toString();
         tempNote.dtMade          = QDateTime::fromString( query.value(timeStampFieldNUm).toString(), dateFormat);
 
-//**************************************************************
-//*                       * Test Code *                        *
-//**************************************************************
-//        qDebug() << "Note:\t" << tempNote.noteText;
-//        qDebug() << "Author:\t" << tempNote.author;
-//        qDebug() << "dtMade:\t" << tempNote.dtMade.toString(dateFormat);
-//**************************************************************
+    //***********************************2***************************
+    //*                       * Test Code *                        *
+    //**************************************************************
+    //        qDebug() << "Note:\t" << tempNote.noteText;
+    //        qDebug() << "Author:\t" << tempNote.author;
+    //        qDebug() << "dtMade:\t" << tempNote.dtMade.toString(dateFormat);
+    //**************************************************************
 
         returnVector.push_back(tempNote);
     }while(query.next());
@@ -264,3 +275,83 @@ QVector<GearNote> DbConnect::getGearNotes(int catId, int idvId)
     return returnVector;
 
 }
+//*********************************************************************************
+
+
+//*********************************************************************************
+QStringList DbConnect::getTroopNames()
+{
+    QStringList list;
+
+    QSqlQuery query;
+    query.prepare("SELECT * FROM troop_names "
+                  "ORDER BY troop_id ASC");
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+
+    int troopLetterNum = query.record().indexOf("troop_letter");
+
+    query.first();
+    do
+    {
+
+        //qDebug() << query.value(troopLetterNum).toString();
+        list << query.value(troopLetterNum).toString();
+    }while(query.next());
+
+    //**************************************************************
+    //*                       * Test Code *                        *
+    //**************************************************************
+    //qDebug() << list;
+    //**************************************************************
+
+    return list;
+
+}
+//*********************************************************************************
+
+
+
+
+//*********************************************************************************
+bool DbConnect::isCheckedOut(int catId, int idvId)
+{
+    QSqlQuery query;
+
+    bool bIsCheckedOut = false;
+
+    query.prepare(" SELECT is_checked_out           "
+                  " FROM gear_list                  "
+                  " WHERE                           "
+                  "  gear_cat_id = (:gear_cat_id)   "
+                  "  AND                            "
+                  "  gear_idv_id = (:gear_idv_id)   "
+                  " LIMIT 1;                        ");
+
+    query.bindValue(":gear_cat_id", catId);
+    query.bindValue(":gear_idv_id", idvId);
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+
+    query.first();
+    bIsCheckedOut = query.value(0).toBool();
+
+    qDebug() << "Is checked out:\t" << (bIsCheckedOut ? "yes\n" : "no\n");
+    return bIsCheckedOut;
+
+}
+//*********************************************************************************
+
+
+
+
+
+
+
+

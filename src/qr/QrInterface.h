@@ -28,18 +28,15 @@
 //********************************************************************************
 //
 // QrCode String Format
-// To help the program tell the difference between a Patrol Name QR and a Item QR,
+// To help the program tell the difference between a Troop/Patrol QR and a Item QR,
 // they need to be formated to a standered.
-// This is the standed we will be using/
+// This is the standard we will be using
 //
-// Patrol Name
-//  "PAT:<troop_letter>:<patrol_name pad(0)for20>
-//
-// Troop Letter
-//  "TRP:<troop_letter>"
+// Troop/Patrol/Person
+//  "PID:<troop_ID> (2 digit hex):<patrol_ID> (2 digit hex):<personal_ID>(6 digit hex)
 //
 // Item
-//  "ITM:<catagory_num (5 digit hex)>:<item_id (5 digit hex)>"
+//  "ITM:<catagory_num (4 digit hex)>:<item_id (6 digit hex)>"
 //********************************************************************************
 
 #include "qr/QrCode.h"
@@ -51,10 +48,10 @@ class QrInterface
 public:
     QrInterface();
 
-    QString testsss()
+    static QString strToSvg(QString s)
     {
         using namespace qrcodegen;
-        QrCode qr0 = QrCode::encodeText("TRP:B", QrCode::Ecc::MEDIUM);
+        QrCode qr0 = QrCode::encodeText(s.toStdString().c_str(), QrCode::Ecc::MEDIUM);
         std::string svg = qr0.toSvgString(4);
 
         return QString::fromStdString(svg);

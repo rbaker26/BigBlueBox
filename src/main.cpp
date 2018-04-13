@@ -26,8 +26,7 @@
 //#############################################################################################
 int main(int argc, char *argv[])
 {
-    // test code
-    QVector<GearNote> gn = bbb::DbConnect::getInstance()->getGearNotes(1, 1);
+    //qDebug() << "Checked in\t" << isCheckedOut;
 
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon(":/img/nyltIcon.png"));

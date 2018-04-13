@@ -131,6 +131,9 @@ public:
     // will prob have to use a GROUP BY to make them come in together
 
 
+    QStringList getTroopNames();
+
+    bool isCheckedOut(int catId, int idvId);
 
 
 }; // end class

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1158</width>
-    <height>693</height>
+    <height>766</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -429,6 +429,13 @@
                </widget>
               </item>
               <item>
+               <widget class="QPushButton" name="pushButton_enterCode">
+                <property name="text">
+                 <string>Enter</string>
+                </property>
+               </widget>
+              </item>
+              <item>
                <widget class="QLabel" name="label_2">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -458,7 +465,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QSvgWidget" name="widget" native="true">
+               <widget class="QSvgWidget" name="widget_itemQr" native="true">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -514,7 +521,7 @@
                  </widget>
                 </item>
                 <item>
-                 <widget class="QSvgWidget" name="widget_2" native="true">
+                 <widget class="QSvgWidget" name="widget_PidQr" native="true">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                     <horstretch>250</horstretch>
@@ -633,7 +640,7 @@
              <item row="0" column="0">
               <layout class="QGridLayout" name="gridLayout_5">
                <item row="1" column="1">
-                <widget class="QComboBox" name="comboBox_2"/>
+                <widget class="QComboBox" name="comboBox_troopNames"/>
                </item>
                <item row="1" column="0">
                 <widget class="QLabel" name="label_11">
@@ -643,7 +650,7 @@
                 </widget>
                </item>
                <item row="2" column="1">
-                <widget class="QComboBox" name="comboBox_3"/>
+                <widget class="QComboBox" name="comboBox_patrolNames"/>
                </item>
                <item row="0" column="0">
                 <widget class="QLabel" name="label_10">

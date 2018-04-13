@@ -5,6 +5,7 @@
 #include <QTextStream>
 #include <QXmlStreamWriter>
 #include <QStandardPaths>
+#include <QDir>
 
 #include <QVector>
 #include <QStringList>
@@ -103,6 +104,18 @@ public:
 
      static void writeDbFileLoc(QString path);
      static void writeReportsDir(QString path);
+     static QString getAndCheckRoamingPath()
+     {
+         QString filePath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+
+         QDir dir(filePath);
+         if(!dir.exists())
+         {
+             dir.mkpath(filePath);
+         }
+
+         return filePath;
+     }
 
 }; // end class
 //*********************************************************************************

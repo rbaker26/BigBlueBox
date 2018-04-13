@@ -6,9 +6,23 @@
 
 class Gear
 {
+
+
 public:
+
+    enum HealthStatus
+    {
+        HEALTHY,
+        MISSING_PARTS,
+        NEEDS_MAINTENANCE,
+        NEEDS_REPAIR,
+        NEEDS_REPLACE
+    };
+
     Gear();
 
+private:
+    HealthStatus gearHealth;
 };
 
 //############################################################################
