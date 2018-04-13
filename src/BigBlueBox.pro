@@ -117,6 +117,7 @@ SOURCES -= \
         qr/QrSegment.cpp \
         qr/QrInterface.cpp \
         gear.cpp            \
+        _filewriter.cpp \
 
 HEADERS -= \
         pages/gearCenter.h   \
@@ -125,6 +126,8 @@ HEADERS -= \
         qr/QrSegment.h   \
         qr/QrInterface.h \
         gear.h           \
+        _filewriter.h   \
+
 
 
 RESOURCES -= \
