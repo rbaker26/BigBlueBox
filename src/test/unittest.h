@@ -16,7 +16,7 @@
 #include "test/_regextest.h"
 #include "test/categorytest.h"
 #include "test/itemtest.h"
-#include "test/_filewriterbench.h"
+//#include "test/_filewriterbench.h"
 
 namespace bbbTest {
 /***********************************************************************************/

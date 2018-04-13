@@ -125,6 +125,7 @@ SOURCES -= \
         dbconnect.cpp           \
         reportsView.cpp         \
         usersession.cpp         \
+        _filewriter.cpp         \
         mainmenu.cpp            \
         pages/settingspage.cpp  \
         directoryhandler.cpp    \
@@ -142,6 +143,7 @@ HEADERS -= \
         reportsView.h           \
         dbconnect.h             \
         usersession.h           \
+        _filewriter.h           \
         bbb.h                   \
         mainmenu.h              \
         pages/settingspage.h    \
