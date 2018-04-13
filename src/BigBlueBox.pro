@@ -122,7 +122,7 @@ HEADERS += \
 SOURCES -= \
         main.cpp \
         mainwindow.cpp          \
-        dbconnect.cpp           \
+        #dbconnect.cpp           \
         reportsView.cpp         \
         usersession.cpp         \
         _filewriter.cpp         \
@@ -141,7 +141,7 @@ SOURCES -= \
 HEADERS -= \
         mainwindow.h            \
         reportsView.h           \
-        dbconnect.h             \
+        #dbconnect.h             \
         usersession.h           \
         _filewriter.h           \
         bbb.h                   \
