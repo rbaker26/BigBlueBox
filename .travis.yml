@@ -42,11 +42,11 @@ script:
  - ./scripts/test_build_and_run.sh
  
  # Cleans up binaries before next build.
- - rm Makefile BigBlueBox *.o #remove files (which are generated from unit test) for next build
+ #- rm Makefile BigBlueBox *.o #remove files (which are generated from unit test) for next build
 
  # Builds the project in normal mode.
- - chmod +x ./scripts/build.sh
- - ./scripts/build.sh
+ #- chmod +x ./scripts/build.sh
+ #- ./scripts/build.sh
  
 after_success:
  # This script sends the generated coverage reports to codecov and Doxygen documentation to github-pages.
