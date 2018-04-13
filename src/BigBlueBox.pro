@@ -93,13 +93,8 @@ test {
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
 
-
-SOURCES -= main.cpp \ # Remove normal main.cpp file
+# Remove normal main.cpp file
                       # This main will launch the GUI, not the testing
-
-
-
-
 
 
 
@@ -122,7 +117,8 @@ HEADERS += \
 
 
 # Removing unnecessary files for unit testing
-SOURCES -=
+SOURCES -= \
+        main.cpp \
         mainwindow.cpp          \
         dbconnect.cpp           \
         reportsView.cpp         \
@@ -137,19 +133,6 @@ SOURCES -=
         qr/QrSegment.cpp        \
         qr/QrInterface.cpp      \
         gear.cpp                \
-
-#        mainwindow.cpp          \
-#        mainmenu.cpp            \
-#        pages/gearCenter.cpp    \
-#        pages/settingspage.cpp  \
-#        pages/gearCenter.cpp    \
-#        qr/BitBuffer.cpp        \
-#        qr/QrCode.cpp           \
-#        qr/QrSegment.cpp        \
-#        qr/QrInterface.cpp      \
-#        gear.cpp                \
-#        _filewriter.cpp         \
-#        reportsView.cpp         \
 
 ## Removing unnecessary header for unit testing
 HEADERS -= \
