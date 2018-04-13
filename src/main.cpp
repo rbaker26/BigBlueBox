@@ -11,6 +11,7 @@
 // Authors:
 // Bobby Baker
 // Alex Hwang
+// Patrick Beemer
 //*********************************************************************************
 #include "mainwindow.h"
 #include <QApplication>
