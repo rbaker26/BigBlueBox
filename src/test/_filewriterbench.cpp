@@ -50,27 +50,27 @@ QVector<bbb::Item> _FileWriterBench::itemMaker()
 
 void _FileWriterBench::txtBenchmark()
 {
-    typedef bbb::_FileWriter::ReportType rt;
+//    typedef bbb::_FileWriter::ReportType rt;
 
-    // Normal Printout
-    QBENCHMARK{
-         bbb::_FileWriter::getInstance()->makeTxtInvReport(this->tempVector);
-    }
+//    // Normal Printout
+//    QBENCHMARK{
+//         bbb::_FileWriter::getInstance()->makeTxtInvReport(this->tempVector);
+//    }
 
-    // Low Report
-    QBENCHMARK{
-         bbb::_FileWriter::getInstance()->makeTxtInvReport(this->tempVector, rt::Low);
-    }
+//    // Low Report
+//    QBENCHMARK{
+//         bbb::_FileWriter::getInstance()->makeTxtInvReport(this->tempVector, rt::Low);
+//    }
 
-    // Crit Low Report
-    QBENCHMARK{
-         bbb::_FileWriter::getInstance()->makeTxtInvReport(this->tempVector, rt::Critical);
-    }
+//    // Crit Low Report
+//    QBENCHMARK{
+//         bbb::_FileWriter::getInstance()->makeTxtInvReport(this->tempVector, rt::Critical);
+//    }
 
-    // Expirable Report
-    QBENCHMARK{
-         bbb::_FileWriter::getInstance()->makeTxtInvReport(this->tempVector, rt::Expirable);
-    }
+//    // Expirable Report
+//    QBENCHMARK{
+//         bbb::_FileWriter::getInstance()->makeTxtInvReport(this->tempVector, rt::Expirable);
+//    }
 
 
 
@@ -83,29 +83,29 @@ void _FileWriterBench::xmlBenchmark()
     typedef bbb::_FileWriter::ReportType rt;
 
     // Normal Printout
-    QBENCHMARK{
-         bbb::_FileWriter::getInstance()->makeXmlInvReport(this->tempVector);
-    }
+//    QBENCHMARK{
+//         bbb::_FileWriter::getInstance()->makeXmlInvReport(this->tempVector);
+//    }
 
-    // Low Report
-    QBENCHMARK{
-         bbb::_FileWriter::getInstance()->makeXmlInvReport(this->tempVector, rt::Low);
-    }
+//    // Low Report
+//    QBENCHMARK{
+//         bbb::_FileWriter::getInstance()->makeXmlInvReport(this->tempVector, rt::Low);
+//    }
 
-    // Crit Low Report
-    QBENCHMARK{
-         bbb::_FileWriter::getInstance()->makeXmlInvReport(this->tempVector, rt::Critical);
-    }
+//    // Crit Low Report
+//    QBENCHMARK{
+//         bbb::_FileWriter::getInstance()->makeXmlInvReport(this->tempVector, rt::Critical);
+//    }
 
-    // Expirable Report
-    QBENCHMARK{
-         bbb::_FileWriter::getInstance()->makeXmlInvReport(this->tempVector, rt::Expirable);
-    }
+//    // Expirable Report
+//    QBENCHMARK{
+//         bbb::_FileWriter::getInstance()->makeXmlInvReport(this->tempVector, rt::Expirable);
+//    }
 
-    // Full Db Dump - XML ONLY
-    QBENCHMARK{
-         bbb::_FileWriter::getInstance()->makeXmlInvReport(this->tempVector, rt::DbDump);
-    }
+//    // Full Db Dump - XML ONLY
+//    QBENCHMARK{
+//         bbb::_FileWriter::getInstance()->makeXmlInvReport(this->tempVector, rt::DbDump);
+//    }
 
 
 
