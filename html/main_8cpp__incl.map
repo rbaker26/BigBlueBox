@@ -1,18 +1,18 @@
 <map id="/home/travis/build/rbaker26/BigBlueBox/src/main.cpp" name="/home/travis/build/rbaker26/BigBlueBox/src/main.cpp">
-<area shape="rect" id="node2" href="$mainwindow_8h.html" title="mainwindow.h" alt="" coords="1513,109,1617,136"/>
-<area shape="rect" id="node4" href="$mainmenu_8h.html" title="mainmenu.h" alt="" coords="1519,184,1612,211"/>
-<area shape="rect" id="node6" href="$reports_view_8h.html" title="reportsView.h" alt="" coords="1514,259,1616,285"/>
-<area shape="rect" id="node33" href="$settingspage_8h.html" title="pages/settingspage.h" alt="" coords="1868,259,2015,285"/>
-<area shape="rect" id="node35" href="$gear_center_8h.html" title="pages/gearCenter.h" alt="" coords="597,259,732,285"/>
-<area shape="rect" id="node9" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="919,333,1012,360"/>
-<area shape="rect" id="node18" href="$item_8h.html" title="item.h" alt="" coords="1536,408,1593,435"/>
-<area shape="rect" id="node24" href="$__regex_8h.html" title="_regex.h" alt="" coords="1456,333,1528,360"/>
-<area shape="rect" id="node26" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="1774,333,1863,360"/>
-<area shape="rect" id="node22" href="$gear_8h.html" title="gear.h" alt="" coords="529,408,587,435"/>
-<area shape="rect" id="node19" href="$category_8h.html" title="category.h" alt="" coords="1563,483,1644,509"/>
-<area shape="rect" id="node32" href="$__filereader_8h.html" title="_filereader.h" alt="" coords="2289,408,2383,435"/>
-<area shape="rect" id="node38" href="$_qr_interface_8h.html" title="qr/QrInterface.h" alt="" coords="290,333,403,360"/>
-<area shape="rect" id="node39" href="$_qr_code_8h.html" title="qr/QrCode.h" alt="" coords="209,408,303,435"/>
-<area shape="rect" id="node43" href="$_qr_segment_8h.html" title="qr/QrSegment.h" alt="" coords="87,483,201,509"/>
-<area shape="rect" id="node44" href="$_bit_buffer_8h.html" title="qr/BitBuffer.h" alt="" coords="73,557,172,584"/>
+<area shape="rect" id="node2" href="$mainwindow_8h.html" title="mainwindow.h" alt="" coords="1319,109,1424,136"/>
+<area shape="rect" id="node4" href="$mainmenu_8h.html" title="mainmenu.h" alt="" coords="989,184,1083,211"/>
+<area shape="rect" id="node6" href="$reports_view_8h.html" title="reportsView.h" alt="" coords="601,259,703,285"/>
+<area shape="rect" id="node33" href="$settingspage_8h.html" title="pages/settingspage.h" alt="" coords="805,259,952,285"/>
+<area shape="rect" id="node35" href="$gear_center_8h.html" title="pages/gearCenter.h" alt="" coords="1187,259,1321,285"/>
+<area shape="rect" id="node9" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="1208,333,1301,360"/>
+<area shape="rect" id="node18" href="$item_8h.html" title="item.h" alt="" coords="273,408,331,435"/>
+<area shape="rect" id="node27" href="$__regex_8h.html" title="_regex.h" alt="" coords="209,333,281,360"/>
+<area shape="rect" id="node29" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="669,333,757,360"/>
+<area shape="rect" id="node22" href="$__filereader_8h.html" title="_filereader.h" alt="" coords="780,408,873,435"/>
+<area shape="rect" id="node25" href="$gear_8h.html" title="gear.h" alt="" coords="1661,408,1719,435"/>
+<area shape="rect" id="node19" href="$category_8h.html" title="category.h" alt="" coords="359,483,440,509"/>
+<area shape="rect" id="node38" href="$_qr_interface_8h.html" title="qr/QrInterface.h" alt="" coords="1986,333,2099,360"/>
+<area shape="rect" id="node39" href="$_qr_code_8h.html" title="qr/QrCode.h" alt="" coords="2140,408,2233,435"/>
+<area shape="rect" id="node43" href="$_qr_segment_8h.html" title="qr/QrSegment.h" alt="" coords="2129,483,2244,509"/>
+<area shape="rect" id="node44" href="$_bit_buffer_8h.html" title="qr/BitBuffer.h" alt="" coords="2137,557,2236,584"/>
 </map>
