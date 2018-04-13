@@ -99,7 +99,7 @@ SOURCES += \
         test/_regextest.cpp   \
         test/categorytest.cpp \
         test/itemtest.cpp     \
-        test/_filewriterbench.cpp \
+
 
 
 HEADERS += \
@@ -107,7 +107,7 @@ HEADERS += \
         test/_regextest.h   \
         test/categorytest.h \
         test/itemtest.h     \
-        test/_filewriterbench.h \
+
 
 
 SOURCES -= \
