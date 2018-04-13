@@ -135,7 +135,7 @@ SOURCES -= \
         qr/QrCode.cpp           \
         qr/QrSegment.cpp        \
         qr/QrInterface.cpp      \
-        gear.cpp                \
+        #gear.cpp                \
 
 ## Removing unnecessary header for unit testing
 HEADERS -= \
@@ -154,7 +154,7 @@ HEADERS -= \
         qr/QrCode.h             \
         qr/QrSegment.h          \
         qr/QrInterface.h        \
-        gear.h                  \
+        #gear.h                  \
 
 #        mainwindow.h            \
 #        pages/gearCenter.h      \
