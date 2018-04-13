@@ -215,7 +215,9 @@ This project uses [SemVer](http://semver.org/) for versioning. For the versions 
 <br>
 
 ## Authors
-* **Robert Baker** - *Initial work* - [github profile](https://github.com/rbaker26)
+* **Robert Baker** - *Initial work & main author* - [github profile](https://github.com/rbaker26)
+* **Alex Hwang** - [github profile](https://github.com/Hwangsta)
+* **Patrick Beemer** - [github profile](https://github.com/TheCynicalBadger)
 
 See also the list of [contributors](https://github.com/rbaker26/BigBlueBox/graphs/contributors) who participated in this project.
 
