@@ -97,9 +97,16 @@ LIBS += -lgcov
 SOURCES -= main.cpp \ # Remove normal main.cpp file
                       # This main will launch the GUI, not the testing
 
+
+
+
+
+
+
+
 # Add the Unit Testing Files
 SOURCES += \
-        test/main.cpp           \ # The unit testing main
+        test/main.cpp           \
         test/unittest.cpp       \
         test/_regextest.cpp     \
         test/categorytest.cpp   \
