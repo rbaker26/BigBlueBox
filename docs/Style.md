@@ -30,7 +30,6 @@ The following uses some of google's C++ style guide.
  <br>
  
 ### Misc.
- * Use smart pointers.
  * Use auto sparingly.
  * Use pass-by-reference or const-pass-by-reference when passing objects.
 <br>
