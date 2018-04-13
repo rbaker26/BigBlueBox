@@ -125,8 +125,6 @@ HEADERS -= \
         qr/QrSegment.h   \
         qr/QrInterface.h \
         gear.h           \
-        _filewriter.h   \
-        _filewriter.cpp \
 
 
 RESOURCES -= \
