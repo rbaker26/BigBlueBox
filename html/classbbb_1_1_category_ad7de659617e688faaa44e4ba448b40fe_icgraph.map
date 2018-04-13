@@ -1,11 +1,10 @@
 <map id="bbb::Category::categoryToQString" name="bbb::Category::categoryToQString">
 <area shape="rect" id="node2" href="$classbbb_1_1___file_writer.html#af6d37d4db77fb49e8c7169694d28317a" title="Writes Inventory Report to xml file. " alt="" coords="233,5,410,46"/>
-<area shape="rect" id="node4" href="$classbbb_1_1_item.html#a0f7e005482f6e845c8a9f293ee702650" title="Uses the toString method in catagory class. " alt="" coords="239,70,404,111"/>
-<area shape="rect" id="node6" href="$class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="237,136,405,163"/>
-<area shape="rect" id="node10" href="$classbbb_test_1_1_category_test.html#a9ee3cfeeb3ef2f0d2ba25f5e8736fd03" title="Tests int to QString conversions. " alt="" coords="243,187,399,229"/>
-<area shape="rect" id="node3" href="$classbbb_test_1_1___file_writer_bench.html#a2a113d377a969d7c606a9ea764572811" title="bbbTest::_FileWriterBench\l::xmlBenchmark" alt="" coords="466,5,643,46"/>
-<area shape="rect" id="node5" href="$classbbb_test_1_1_item_test.html#ad56dd983ad38e75637db6617fbbf4e2c" title="Tests the Category to string fx. " alt="" coords="476,70,633,111"/>
-<area shape="rect" id="node7" href="$class_reports_view.html#a3386fadacc4633e21c1759df01a45efd" title="ReportsView::ReportsView" alt="" coords="465,136,645,163"/>
-<area shape="rect" id="node8" href="$class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59" title="ReportsView::on_pushButton\l_edit_clicked" alt="" coords="459,187,651,229"/>
-<area shape="rect" id="node9" href="$class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="459,253,651,294"/>
+<area shape="rect" id="node3" href="$classbbb_1_1_item.html#a0f7e005482f6e845c8a9f293ee702650" title="Uses the toString method in catagory class. " alt="" coords="239,70,404,111"/>
+<area shape="rect" id="node5" href="$class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="237,136,405,163"/>
+<area shape="rect" id="node9" href="$classbbb_test_1_1_category_test.html#a9ee3cfeeb3ef2f0d2ba25f5e8736fd03" title="Tests int to QString conversions. " alt="" coords="243,187,399,229"/>
+<area shape="rect" id="node4" href="$classbbb_test_1_1_item_test.html#ad56dd983ad38e75637db6617fbbf4e2c" title="Tests the Category to string fx. " alt="" coords="476,41,633,82"/>
+<area shape="rect" id="node6" href="$class_reports_view.html#a3386fadacc4633e21c1759df01a45efd" title="ReportsView::ReportsView" alt="" coords="465,107,645,133"/>
+<area shape="rect" id="node7" href="$class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59" title="ReportsView::on_pushButton\l_edit_clicked" alt="" coords="459,158,651,199"/>
+<area shape="rect" id="node8" href="$class_reports_view.html#a4ff9516632dfee7b7affa091b131d151" title="ReportsView::on_pushButton\l_addDelete_clicked" alt="" coords="459,223,651,265"/>
 </map>
