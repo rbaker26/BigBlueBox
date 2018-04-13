@@ -10,6 +10,8 @@
 
 QT       += core gui sql svg testlib    # Test lib only needed in test build after project is done
 CONFIG   += c++14
+QMAKE_CXXFLAGS += -std=c++11
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET   = BigBlueBox
