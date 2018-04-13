@@ -129,7 +129,7 @@ SOURCES -= \
         mainmenu.cpp            \
         pages/settingspage.cpp  \
         directoryhandler.cpp    \
-        _filereader.cpp         \
+        #_filereader.cpp         \
         pages/gearCenter.cpp    \
         qr/BitBuffer.cpp        \
         qr/QrCode.cpp           \
@@ -148,7 +148,7 @@ HEADERS -= \
         mainmenu.h              \
         pages/settingspage.h    \
         directoryhandler.h      \
-        _filereader.h           \
+        #_filereader.h           \
         pages/gearCenter.h      \
         qr/BitBuffer.h          \
         qr/QrCode.h             \
