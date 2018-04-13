@@ -48,7 +48,7 @@ SOURCES += \
         qr/QrCode.cpp    \
         qr/QrSegment.cpp \
         qr/QrInterface.cpp \
-    gear.cpp
+        gear.cpp            \
 
         
 HEADERS += \
@@ -70,7 +70,7 @@ HEADERS += \
         qr/QrCode.h      \
         qr/QrSegment.h \
         qr/QrInterface.h \
-    gear.h
+        gear.h           \
 
         
 FORMS += \
@@ -90,7 +90,8 @@ QT -= svg
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
 
-SOURCES -= main.cpp
+SOURCES -= main.cpp \
+
 
 SOURCES += \
         test/unittest.cpp     \
@@ -107,6 +108,24 @@ HEADERS += \
         test/categorytest.h \
         test/itemtest.h     \
         test/_filewriterbench.h \
+
+
+SOURCES -= \
+        pages/gearCenter.cpp   \
+        qr/BitBuffer.cpp \
+        qr/QrCode.cpp    \
+        qr/QrSegment.cpp \
+        qr/QrInterface.cpp \
+        gear.cpp            \
+
+HEADERS -= \
+        pages/gearCenter.h   \
+        qr/BitBuffer.h   \
+        qr/QrCode.h      \
+        qr/QrSegment.h   \
+        qr/QrInterface.h \
+        gear.h           \
+
 
 RESOURCES -= \
     ../rec/rec.qrc \
