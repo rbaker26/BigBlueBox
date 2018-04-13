@@ -5,6 +5,6 @@
  #- ./build.sh # I will make this later
  
 qmake "CONFIG+=test" src/BigBlueBox.pro
-make
+make -std=gnu++11
 ./BigBlueBox
 codecov
