@@ -26,6 +26,7 @@ Searching for files to process...
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/code_docs
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/code_docs/BigBlueBox
+Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/DLL-Files
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/docs
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/rec
 Searching for files in directory /home/travis/build/rbaker26/BigBlueBox/scripts
@@ -148,12 +149,12 @@ Determining which enums are documented
 Computing member relations...
 Building full member lists recursively...
 Adding members to member groups.
-Computing member references...
+Computing error: Project logo '../rec/nyltIcon.png' specified by PROJECT_LOGO does not exist!
+/home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
+member references...
 Inheriting documentation...
 Generating disk names...
-Adding serror: Project logo '../rec/nyltIcon.png' specified by PROJECT_LOGO does not exist!
-/home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
-ource references...
+Adding source references...
 Adding xrefitems...
 Sorting member lists...
 Computing dependencies between directories...
@@ -265,8 +266,7 @@ Generating docs for compound ReportsView...
 Generating call graph for function ReportsView::ReportsView
 Generating call graph for function ReportsView::addItem
 Generating caller graph for function ReportsView::addItem
-Generating caller graph for function ReportsView::clearTable
-Generating call graph for function ReportsV/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
+Generating caller grap/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
   parameter 'boxName'
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
@@ -300,7 +300,8 @@ Generating call graph for function ReportsV/home/travis/build/rbaker26/BigBlueBo
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:76: warning: Found unknown command `\inherits'
-iew::deleteItem
+h for function ReportsView::clearTable
+Generating call graph for function ReportsView::deleteItem
 Generating caller graph for function ReportsView::deleteItem
 Generating call graph for function ReportsView::fillTableInv
 Generating caller graph for function ReportsView::fillTableInv
