@@ -1,17 +1,7 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.cpp'],['../_qr_code_generator_demo_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;QrCodeGeneratorDemo.cpp'],['../_qr_code_generator_worker_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;QrCodeGeneratorWorker.cpp'],['../test_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.cpp']]],
-  ['mainmenu',['MainMenu',['../class_main_menu.html#afb529c0c966839b1dfc7e18ed74e4d76',1,'MainMenu']]],
-  ['mainwindow',['MainWindow',['../class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db',1,'MainWindow']]],
-  ['makealphanumeric',['makeAlphanumeric',['../classqrcodegen_1_1_qr_segment.html#ae2d00f78a60165d70faf5b56e36ae511',1,'qrcodegen::QrSegment']]],
-  ['makebytes',['makeBytes',['../classqrcodegen_1_1_qr_segment.html#a32ead40ba58149f5e5fe13a6417d8304',1,'qrcodegen::QrSegment']]],
-  ['makeeci',['makeEci',['../classqrcodegen_1_1_qr_segment.html#a2cb028d26ef5d9d970b344eee0b98de7',1,'qrcodegen::QrSegment']]],
-  ['makenumeric',['makeNumeric',['../classqrcodegen_1_1_qr_segment.html#a03484cb17296745b303f0bd48b213446',1,'qrcodegen::QrSegment']]],
-  ['makepair',['makePair',['../class_reports_view.html#a2f558ef578ac827d53638af002a8b93d',1,'ReportsView']]],
-  ['makesegments',['makeSegments',['../classqrcodegen_1_1_qr_segment.html#aa587c9cfcb4b28552d5d1e4c05b5b962',1,'qrcodegen::QrSegment']]],
-  ['maketxtinvreport',['makeTxtInvReport',['../classbbb_1_1___file_writer.html#aa45ea2af057e9074e3f83b97a1d44256',1,'bbb::_FileWriter']]],
-  ['makexmlinvreport',['makeXmlInvReport',['../classbbb_1_1___file_writer.html#af6d37d4db77fb49e8c7169694d28317a',1,'bbb::_FileWriter']]],
-  ['mode',['Mode',['../classqrcodegen_1_1_qr_segment_1_1_mode.html#a4b93f30c502459886ec29638dd3b7058',1,'qrcodegen::QrSegment::Mode']]],
-  ['module',['module',['../classqrcodegen_1_1_qr_code.html#a8dcdb7023b3115776756865d843e03f6',1,'qrcodegen::QrCode']]],
-  ['multiply',['multiply',['../classqrcodegen_1_1_qr_code_1_1_reed_solomon_generator.html#a6bfb36b0adbed3a24ac2b73c569f8922',1,'qrcodegen::QrCode::ReedSolomonGenerator']]]
+  ['readdbfileloc',['readDbFileLoc',['../classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6',1,'bbb::_FileReader']]],
+  ['readreportsdir',['readReportsDir',['../classbbb_1_1___file_reader.html#a84a82fafca657fac8d48cf1ca451cb88',1,'bbb::_FileReader']]],
+  ['reportsview',['ReportsView',['../class_reports_view.html#a3386fadacc4633e21c1759df01a45efd',1,'ReportsView']]],
+  ['run',['run',['../classbbb_test_1_1_unit_test.html#ab007b0ca0f5cf3f165305e71d67b20c0',1,'bbbTest::UnitTest']]]
 ];

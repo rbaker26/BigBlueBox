@@ -1,9 +1,0 @@
-<map id="qrcodegen::QrCode::getNumRawDataModules" name="qrcodegen::QrCode::getNumRawDataModules">
-<area shape="rect" id="node2" href="$classqrcodegen_1_1_qr_code.html#a35868e7511e7055000bab99c05214489" title="qrcodegen::QrCode::\lappendErrorCorrection" alt="" coords="437,70,589,111"/>
-<area shape="rect" id="node7" href="$classqrcodegen_1_1_qr_code.html#ad8121a3f90a11ea2594536569c6f4409" title="qrcodegen::QrCode::\ldrawCodewords" alt="" coords="442,5,585,46"/>
-<area shape="rect" id="node8" href="$classqrcodegen_1_1_qr_code.html#ac825e2de65024cfcd9ac8e2736e1e634" title="qrcodegen::QrCode::\lgetNumDataCodewords" alt="" coords="227,125,389,166"/>
-<area shape="rect" id="node3" href="$classqrcodegen_1_1_qr_code.html#ad82a191042caa6c94734f97a8b97a87c" title="qrcodegen::QrCode::\lQrCode" alt="" coords="638,70,781,111"/>
-<area shape="rect" id="node4" href="$classqrcodegen_1_1_qr_code.html#a78aa108015b15a8b1fd35d042aff34aa" title="qrcodegen::QrCode::\lencodeSegments" alt="" coords="830,99,973,141"/>
-<area shape="rect" id="node5" href="$classqrcodegen_1_1_qr_code.html#a15d9e26d273b8de6d0773e317ebd97d5" title="qrcodegen::QrCode::\lencodeText" alt="" coords="1022,66,1165,107"/>
-<area shape="rect" id="node6" href="$classqrcodegen_1_1_qr_code.html#a31efd868a933e2ea62a6f9694bf19606" title="qrcodegen::QrCode::\lencodeBinary" alt="" coords="1022,131,1165,173"/>
-</map>

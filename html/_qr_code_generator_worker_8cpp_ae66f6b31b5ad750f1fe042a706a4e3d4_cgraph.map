@@ -1,6 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="node2" href="$classqrcodegen_1_1_qr_code.html#ab6f8c7a6b01a1a33e73a6915ae228f75" title="qrcodegen::QrCode::\lgetVersion" alt="" coords="105,5,247,46"/>
-<area shape="rect" id="node3" href="$classqrcodegen_1_1_qr_code.html#a9f5fa20a1e0096d53c42c60a54dca173" title="qrcodegen::QrCode::\lgetSize" alt="" coords="105,70,247,111"/>
-<area shape="rect" id="node4" href="$classqrcodegen_1_1_qr_code.html#a6e89407e7b6565362e806bd23082ef7c" title="qrcodegen::QrCode::\lgetModule" alt="" coords="105,135,247,177"/>
-<area shape="rect" id="node5" href="$classqrcodegen_1_1_qr_code.html#a8dcdb7023b3115776756865d843e03f6" title="qrcodegen::QrCode::\lmodule" alt="" coords="297,135,439,177"/>
-</map>

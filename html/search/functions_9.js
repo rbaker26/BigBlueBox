@@ -1,15 +1,19 @@
 var searchData=
 [
-  ['initpaths',['initPaths',['../class_settings_page.html#a8ee41bc1b63e09ecf439e551a21eec9b',1,'SettingsPage']]],
-  ['inittableinv',['initTableInv',['../class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d',1,'ReportsView']]],
-  ['intfromstring',['intFromString',['../classbbb_1_1_category.html#a4618426a49f54f11db3012b456ec4308',1,'bbb::Category']]],
-  ['isalphanumeric',['isAlphanumeric',['../classqrcodegen_1_1_qr_segment.html#a28153ac814d7b3105473a33d6e6734f3',1,'qrcodegen::QrSegment']]],
-  ['isboxname',['isBoxName',['../classbbb_1_1___regex.html#a23e37deda14af81e47c12224176257f0',1,'bbb::_Regex']]],
-  ['ischeckedout',['isCheckedOut',['../classbbb_1_1_db_connect.html#ab9bee4d8ff3a10d30030d39d3182e83d',1,'bbb::DbConnect']]],
-  ['isitemname',['isItemName',['../classbbb_1_1___regex.html#ad73b4104a24a919c82a129288796025e',1,'bbb::_Regex']]],
-  ['isnumeric',['isNumeric',['../classqrcodegen_1_1_qr_segment.html#a9f2c32b351c0731c08fb170c2320f04d',1,'qrcodegen::QrSegment']]],
-  ['item',['Item',['../classbbb_1_1_item.html#a297720c02984eab37332ae795d22189d',1,'bbb::Item']]],
-  ['itemalreadyexists',['itemAlreadyExists',['../classbbb_1_1_db_connect.html#af65b86f30da143b6226c5b3cce4978e4',1,'bbb::DbConnect']]],
-  ['itemmaker',['itemMaker',['../classbbb_test_1_1___file_writer_bench.html#a5cbc869bd38c52cf2fb26bb7e11cf415',1,'bbbTest::_FileWriterBench']]],
-  ['itemtest',['ItemTest',['../classbbb_test_1_1_item_test.html#a310a8cf4a45615e897a3f3cceefc03e8',1,'bbbTest::ItemTest']]]
+  ['on_5factiongoto_5fhome_5ftriggered',['on_actionGoto_Home_triggered',['../class_main_window.html#a293283717ca41f7e4b26d45dfaafeedd',1,'MainWindow']]],
+  ['on_5factionhome_5ftriggered',['on_actionHome_triggered',['../class_main_window.html#a313c36eed19a71e2525da1e8041eb6a0',1,'MainWindow']]],
+  ['on_5fcheckbox_5feditson_5fclicked',['on_checkBox_editsOn_clicked',['../class_reports_view.html#a89b2e4e29486ddb2a1f8a129edb59367',1,'ReportsView']]],
+  ['on_5fcombobox_5fadddel_5factivated',['on_comboBox_addDel_activated',['../class_reports_view.html#ada0efc617e671329badefe711a815f16',1,'ReportsView']]],
+  ['on_5fcombobox_5fadddel_5fcurrentindexchanged',['on_comboBox_addDel_currentIndexChanged',['../class_reports_view.html#a13858bc2045f7739674bf683b57f8d2f',1,'ReportsView']]],
+  ['on_5fcombobox_5fcurrentindexchanged',['on_comboBox_currentIndexChanged',['../class_reports_view.html#a2f849e56c1e598de3ae680bf01a6cc96',1,'ReportsView']]],
+  ['on_5fpushbutton_5fadddelete_5fclicked',['on_pushButton_addDelete_clicked',['../class_reports_view.html#a4ff9516632dfee7b7affa091b131d151',1,'ReportsView']]],
+  ['on_5fpushbutton_5fedit_5fclicked',['on_pushButton_edit_clicked',['../class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59',1,'ReportsView']]],
+  ['on_5fpushbutton_5fgotoinv_5fclicked',['on_pushButton_gotoInv_clicked',['../class_main_menu.html#a4c727faa95f7b0dbf54bec733a1a8f98',1,'MainMenu']]],
+  ['on_5fpushbutton_5fgotosettings_5fclicked',['on_pushButton_gotoSettings_clicked',['../class_main_menu.html#ab399d99b84b5d09fc8d9d7d375ffb7ea',1,'MainMenu']]],
+  ['on_5fpushbutton_5fmakereport_5fclicked',['on_pushButton_makeReport_clicked',['../class_reports_view.html#afa5f5644331a9f66811b2a21aad02b36',1,'ReportsView']]],
+  ['on_5fpushbutton_5fsavedbdir_5fclicked',['on_pushButton_saveDbDir_clicked',['../class_settings_page.html#a3098069804572f2adf23455988abca3d',1,'SettingsPage']]],
+  ['on_5fpushbutton_5fsavereportdir_5fclicked',['on_pushButton_saveReportDir_clicked',['../class_settings_page.html#a4121381639d038b258e6411b6d955d34',1,'SettingsPage']]],
+  ['on_5ftablewidget_5finv_5fcelldoubleclicked',['on_tableWidget_inv_cellDoubleClicked',['../class_reports_view.html#ad5cf98addd840c1e257a556598ce66d7',1,'ReportsView']]],
+  ['on_5ftoolbutton_5ffilebrowse_5fclicked',['on_toolButton_fileBrowse_clicked',['../class_settings_page.html#a89e494c0da340e56e3ba14a551065a20',1,'SettingsPage']]],
+  ['on_5ftoolbutton_5freportsloc_5fclicked',['on_toolButton_reportsLoc_clicked',['../class_settings_page.html#ad3cb6b69bada10bfa67502aca6fbb19a',1,'SettingsPage']]]
 ];
