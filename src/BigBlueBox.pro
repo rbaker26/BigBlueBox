@@ -85,7 +85,7 @@ RESOURCES += \
 
 test {
 
-QT -= svg
+#QT -= svg
 
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
