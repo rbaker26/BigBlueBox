@@ -122,32 +122,63 @@ HEADERS += \
 
 
 # Removing unnecessary files for unit testing
-SOURCES -= \
+SOURCES -=
         mainwindow.cpp          \
+        dbconnect.cpp           \
+        reportsView.cpp         \
+        usersession.cpp         \
         mainmenu.cpp            \
-        pages/gearCenter.cpp    \
         pages/settingspage.cpp  \
+        directoryhandler.cpp    \
+        _filereader.cpp         \
         pages/gearCenter.cpp    \
-        qr/BitBuffer.cpp        \ # Prob can write svg tests later
+        qr/BitBuffer.cpp        \
         qr/QrCode.cpp           \
         qr/QrSegment.cpp        \
         qr/QrInterface.cpp      \
         gear.cpp                \
-        _filewriter.cpp         \
-        reportsView.cpp         \
 
-# Removing unnecessary header for unit testing
+#        mainwindow.cpp          \
+#        mainmenu.cpp            \
+#        pages/gearCenter.cpp    \
+#        pages/settingspage.cpp  \
+#        pages/gearCenter.cpp    \
+#        qr/BitBuffer.cpp        \
+#        qr/QrCode.cpp           \
+#        qr/QrSegment.cpp        \
+#        qr/QrInterface.cpp      \
+#        gear.cpp                \
+#        _filewriter.cpp         \
+#        reportsView.cpp         \
+
+## Removing unnecessary header for unit testing
 HEADERS -= \
         mainwindow.h            \
-        pages/gearCenter.h      \
+        reportsView.h           \
+        dbconnect.h             \
+        usersession.h           \
+        bbb.h                   \
+        mainmenu.h              \
         pages/settingspage.h    \
+        directoryhandler.h      \
+        _filereader.h           \
+        pages/gearCenter.h      \
         qr/BitBuffer.h          \
         qr/QrCode.h             \
         qr/QrSegment.h          \
         qr/QrInterface.h        \
         gear.h                  \
-        _filewriter.h           \
-        reportsView.h           \
+
+#        mainwindow.h            \
+#        pages/gearCenter.h      \
+#        pages/settingspage.h    \
+#        qr/BitBuffer.h          \
+#        qr/QrCode.h             \
+#        qr/QrSegment.h          \
+#        qr/QrInterface.h        \
+#        gear.h                  \
+#        _filewriter.h           \
+#        reportsView.h           \
 
 # Remove all Forms
 FORMS -= \
