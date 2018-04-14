@@ -1,6 +1,0 @@
-<map id="/home/travis/build/rbaker26/BigBlueBox/src/test/qrtest.h" name="/home/travis/build/rbaker26/BigBlueBox/src/test/qrtest.h">
-<area shape="rect" id="node5" href="$_qr_interface_8h.html" title="qr/QrInterface.h" alt="" coords="279,109,392,136"/>
-<area shape="rect" id="node6" href="$_qr_code_8h.html" title="qr/QrCode.h" alt="" coords="195,184,288,211"/>
-<area shape="rect" id="node10" href="$_qr_segment_8h.html" title="qr/QrSegment.h" alt="" coords="184,259,299,285"/>
-<area shape="rect" id="node11" href="$_bit_buffer_8h.html" title="qr/BitBuffer.h" alt="" coords="192,333,291,360"/>
-</map>

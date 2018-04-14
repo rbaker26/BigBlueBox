@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['low',['LOW',['../classqrcodegen_1_1_qr_code_1_1_ecc.html#a757346707ab9285f8278f7169fac10f6',1,'qrcodegen::QrCode::Ecc']]]
+  ['rowforupdate',['rowForUpdate',['../class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88',1,'ReportsView']]]
 ];

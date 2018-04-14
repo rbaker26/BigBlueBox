@@ -15,7 +15,6 @@ var searchData=
   ['categorytoqstringtest_5fdata',['categoryToQStringTest_data',['../classbbb_test_1_1_item_test.html#a774572b8788dc0ce5b7e9b94983da38e',1,'bbbTest::ItemTest']]],
   ['categorytype',['categoryType',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98da',1,'bbb::Category']]],
   ['cleartable',['clearTable',['../class_reports_view.html#adc130acc6c8471c37855f233ed72b54f',1,'ReportsView']]],
-  ['coefficients',['coefficients',['../classqrcodegen_1_1_qr_code_1_1_reed_solomon_generator.html#a25ff0ba911f3974a89466ae4e7e32d1f',1,'qrcodegen::QrCode::ReedSolomonGenerator']]],
   ['commondirs',['CommonDirs',['../classbbb_1_1_directory_handler.html#a90ac7899c0d61130b62c4104a64ef5d6',1,'bbb::DirectoryHandler']]],
   ['constructortest',['constructorTest',['../classbbb_test_1_1_item_test.html#a779886c6635cb473cbf762d7becd6a9d',1,'bbbTest::ItemTest']]],
   ['crafts',['CRAFTS',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daadb67e967ccdceba26f4e68b4bfc9b388',1,'bbb::Category']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qrcodegen',['qrcodegen',['../namespaceqrcodegen.html',1,'']]]
+  ['ui',['Ui',['../namespace_ui.html',1,'']]]
 ];

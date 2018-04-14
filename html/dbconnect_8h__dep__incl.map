@@ -1,12 +1,10 @@
 <map id="/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h" name="/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h">
-<area shape="rect" id="node2" href="$dbconnect_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/dbconnect.cpp" alt="" coords="5,109,152,165"/>
-<area shape="rect" id="node3" href="$reports_view_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/reportsView.h" alt="" coords="177,109,324,165"/>
-<area shape="rect" id="node10" href="$gear_center_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/pages/gearCenter.h" alt="" coords="349,109,512,165"/>
-<area shape="rect" id="node4" href="$mainmenu_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainmenu.h" alt="" coords="262,213,409,269"/>
-<area shape="rect" id="node9" href="$reports_view_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/reportsView.cpp" alt="" coords="90,213,237,269"/>
-<area shape="rect" id="node5" href="$mainwindow_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainwindow.h" alt="" coords="175,317,323,373"/>
-<area shape="rect" id="node8" href="$mainmenu_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainmenu.cpp" alt="" coords="347,317,495,373"/>
-<area shape="rect" id="node6" href="$main_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/main.cpp" alt="" coords="90,421,237,477"/>
-<area shape="rect" id="node7" href="$mainwindow_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainwindow.cpp" alt="" coords="262,421,409,477"/>
-<area shape="rect" id="node11" href="$gear_center_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/pages/gearCenter.cpp" alt="" coords="435,213,611,269"/>
+<area shape="rect" id="node2" href="$dbconnect_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/dbconnect.cpp" alt="" coords="30,109,177,165"/>
+<area shape="rect" id="node3" href="$reports_view_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/reportsView.h" alt="" coords="202,109,349,165"/>
+<area shape="rect" id="node4" href="$mainwindow_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainwindow.h" alt="" coords="90,317,237,373"/>
+<area shape="rect" id="node7" href="$mainmenu_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainmenu.h" alt="" coords="202,213,349,269"/>
+<area shape="rect" id="node9" href="$reports_view_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/reportsView.cpp" alt="" coords="374,213,521,269"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/main.cpp" alt="" coords="5,421,152,477"/>
+<area shape="rect" id="node6" href="$mainwindow_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainwindow.cpp" alt="" coords="177,421,324,477"/>
+<area shape="rect" id="node8" href="$mainmenu_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainmenu.cpp" alt="" coords="262,317,409,373"/>
 </map>
