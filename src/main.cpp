@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 {
     //qDebug() << "Checked in\t" << isCheckedOut;
 
-   qDebug() <<  QrInterface::strToSvg("itm:ffff:ffffff");
+   qDebug() <<  QrInterface::strToSvg("pid:abc:de0123");
 
 
 
