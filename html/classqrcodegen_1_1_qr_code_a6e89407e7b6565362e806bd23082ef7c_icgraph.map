@@ -1,12 +1,13 @@
 <map id="qrcodegen::QrCode::getModule" name="qrcodegen::QrCode::getModule">
-<area shape="rect" id="node2" href="$classqrcodegen_1_1_qr_code.html#a9da8bf1cc687d543a76f83285c69d743" title="qrcodegen::QrCode::\ltoSvgString" alt="" coords="198,51,341,93"/>
-<area shape="rect" id="node7" href="$_qr_code_generator_demo_8cpp.html#a311b4e68472b11512c60ef65c922fd47" title="printQr" alt="" coords="239,117,300,144"/>
-<area shape="rect" id="node11" href="$_qr_code_generator_worker_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="244,168,295,195"/>
-<area shape="rect" id="node3" href="$_qr_code_generator_demo_8cpp.html#aca0d4459e0b63c218fd664e39f720dac" title="doBasicDemo" alt="" coords="412,63,516,89"/>
-<area shape="rect" id="node5" href="$class_qr_interface.html#ad6003088f8934ed0da064b7312ab9127" title="QrInterface::strToSvg" alt="" coords="390,12,538,39"/>
-<area shape="rect" id="node4" href="$_qr_code_generator_demo_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="653,139,704,165"/>
-<area shape="rect" id="node6" href="$class_gear_center.html#ab09deefbe4834fd7e96bc5b0e07c908b" title="GearCenter::on_pushButton\l_enterCode_clicked" alt="" coords="587,5,771,46"/>
-<area shape="rect" id="node8" href="$_qr_code_generator_demo_8cpp.html#a3180b8bd2b30b0224a5ddce6fefb2e5a" title="doVarietyDemo" alt="" coords="408,113,520,140"/>
-<area shape="rect" id="node9" href="$_qr_code_generator_demo_8cpp.html#a5ad083c6e65c54376cca8d17038dce68" title="doSegmentDemo" alt="" coords="403,164,525,191"/>
-<area shape="rect" id="node10" href="$_qr_code_generator_demo_8cpp.html#a89047bb8a9209ac65d8f20ed21af78ca" title="doMaskDemo" alt="" coords="413,215,515,241"/>
+<area shape="rect" id="node2" href="$classqrcodegen_1_1_qr_code.html#a9da8bf1cc687d543a76f83285c69d743" title="qrcodegen::QrCode::\ltoSvgString" alt="" coords="198,154,341,195"/>
+<area shape="rect" id="node8" href="$_qr_code_generator_demo_8cpp.html#a311b4e68472b11512c60ef65c922fd47" title="printQr" alt="" coords="239,103,300,129"/>
+<area shape="rect" id="node12" href="$_qr_code_generator_worker_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="244,220,295,247"/>
+<area shape="rect" id="node3" href="$_qr_code_generator_demo_8cpp.html#aca0d4459e0b63c218fd664e39f720dac" title="doBasicDemo" alt="" coords="412,157,516,184"/>
+<area shape="rect" id="node5" href="$class_qr_interface.html#ad6003088f8934ed0da064b7312ab9127" title="QrInterface::strToSvg" alt="" coords="390,208,538,235"/>
+<area shape="rect" id="node4" href="$_qr_code_generator_demo_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="653,77,704,104"/>
+<area shape="rect" id="node6" href="$class_gear_center.html#ab09deefbe4834fd7e96bc5b0e07c908b" title="GearCenter::on_pushButton\l_enterCode_clicked" alt="" coords="587,150,771,191"/>
+<area shape="rect" id="node7" href="$classqrtest.html#a02b3029243b3e52d5555f793968862a6" title="qrtest::svgRenderTest" alt="" coords="603,216,755,243"/>
+<area shape="rect" id="node9" href="$_qr_code_generator_demo_8cpp.html#a3180b8bd2b30b0224a5ddce6fefb2e5a" title="doVarietyDemo" alt="" coords="408,5,520,32"/>
+<area shape="rect" id="node10" href="$_qr_code_generator_demo_8cpp.html#a5ad083c6e65c54376cca8d17038dce68" title="doSegmentDemo" alt="" coords="403,56,525,83"/>
+<area shape="rect" id="node11" href="$_qr_code_generator_demo_8cpp.html#a89047bb8a9209ac65d8f20ed21af78ca" title="doMaskDemo" alt="" coords="413,107,515,133"/>
 </map>

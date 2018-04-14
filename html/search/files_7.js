@@ -7,5 +7,7 @@ var searchData=
   ['qrinterface_2ecpp',['QrInterface.cpp',['../_qr_interface_8cpp.html',1,'']]],
   ['qrinterface_2eh',['QrInterface.h',['../_qr_interface_8h.html',1,'']]],
   ['qrsegment_2ecpp',['QrSegment.cpp',['../_qr_segment_8cpp.html',1,'']]],
-  ['qrsegment_2eh',['QrSegment.h',['../_qr_segment_8h.html',1,'']]]
+  ['qrsegment_2eh',['QrSegment.h',['../_qr_segment_8h.html',1,'']]],
+  ['qrtest_2ecpp',['qrtest.cpp',['../qrtest_8cpp.html',1,'']]],
+  ['qrtest_2eh',['qrtest.h',['../qrtest_8h.html',1,'']]]
 ];
