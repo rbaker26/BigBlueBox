@@ -23,13 +23,13 @@
 
 // test code
 #include <QVector>
-
+#include "qr/QrInterface.h"
 //#############################################################################################
 int main(int argc, char *argv[])
 {
     //qDebug() << "Checked in\t" << isCheckedOut;
-
-   qDebug() <<  QrInterface::strToSvg("pid:abc:de0123");
+    qDebug() << "SVG";
+   qDebug() <<  QrInterface::strToSvg("0123456789abcdefghijklmnopqqrstuvwxyz");
 
 
 
