@@ -50,6 +50,7 @@ SOURCES += \
         qr/QrInterface.cpp      \
         gear.cpp                \
 
+
         
 HEADERS += \
         mainwindow.h            \
@@ -71,6 +72,7 @@ HEADERS += \
         qr/QrSegment.h          \
         qr/QrInterface.h        \
         gear.h                  \
+
 
         
 FORMS += \
@@ -108,6 +110,7 @@ SOURCES += \
         test/_regextest.cpp     \
         test/categorytest.cpp   \
         test/itemtest.cpp       \
+        test/qrtest.cpp         \
 
 
 # Add the Unit Testing Headers
@@ -116,6 +119,7 @@ HEADERS += \
         test/_regextest.h       \
         test/categorytest.h     \
         test/itemtest.h         \
+        test/qrtest.h           \
 
 
 # Removing unnecessary files for unit testing

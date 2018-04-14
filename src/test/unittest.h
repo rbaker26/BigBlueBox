@@ -17,6 +17,7 @@
 #include "test/categorytest.h"
 #include "test/itemtest.h"
 //#include "test/_filewriterbench.h"
+#include "test/qrtest.h"
 
 namespace bbbTest {
 /***********************************************************************************/

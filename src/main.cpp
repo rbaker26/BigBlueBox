@@ -23,10 +23,14 @@
 
 // test code
 #include <QVector>
+
 //#############################################################################################
 int main(int argc, char *argv[])
 {
     //qDebug() << "Checked in\t" << isCheckedOut;
+
+
+
 
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon(":/img/nyltIcon.png"));
