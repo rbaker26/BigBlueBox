@@ -437,8 +437,8 @@ Generating call graph for function bbbTest::CategoryTest::testIntToString
 Generating call graph for function bbbTest::CategoryTest::testStringToInt
 Generating docs for compound bbbTest::ItemTest...
 Generating call graph for function bbbTest::ItemTest::categoryToQStringTest
-Generating docs for compound bbbTest::qrtest...
-Generating call graph for function bbbTest::qrtest::svgRenderTest
+Generating docs for compound bbbTest::QrTest...
+Generating call graph for function bbbTest::QrTest::svgRenderTest
 Generating docs for compound bbbTest::UnitTest...
 Generating caller graph for function bbbTest::UnitTest::run
 Generating docs for namespace qrcodegen
@@ -877,5 +877,5 @@ Patching output file 79/82
 Patching output file 80/82
 Patching output file 81/82
 Patching output file 82/82
-lookup cache used 762/65536 hits=4182 misses=800
+lookup cache used 766/65536 hits=4177 misses=804
 finished...

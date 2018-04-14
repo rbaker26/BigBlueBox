@@ -1,4 +1,4 @@
 <map id="QrInterface::strToSvg" name="QrInterface::strToSvg">
-<area shape="rect" id="node2" href="$class_gear_center.html#ab09deefbe4834fd7e96bc5b0e07c908b" title="GearCenter::on_pushButton\l_enterCode_clicked" alt="" coords="215,5,399,46"/>
-<area shape="rect" id="node3" href="$classbbb_test_1_1qrtest.html#a02b3029243b3e52d5555f793968862a6" title="bbbTest::qrtest::svgRenderTest" alt="" coords="203,71,410,97"/>
+<area shape="rect" id="node2" href="$class_gear_center.html#ab09deefbe4834fd7e96bc5b0e07c908b" title="GearCenter::on_pushButton\l_enterCode_clicked" alt="" coords="219,5,403,46"/>
+<area shape="rect" id="node3" href="$classbbb_test_1_1_qr_test.html#ada4e17d6073d9b05a8b53b01f3917b81" title="bbbTest::QrTest::svgRenderTest" alt="" coords="203,71,418,97"/>
 </map>
