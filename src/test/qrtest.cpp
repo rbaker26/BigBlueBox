@@ -1,12 +1,13 @@
 #include "qrtest.h"
+using namespace bbbTest;
 
-qrtest::qrtest()
+QrTest::QrTest()
 {
     qDebug() << "\n";
 }
 
 
-void qrtest::testTest()
+void QrTest::testTest()
 {
     //************************************************************
     //* Testing begins here
@@ -20,7 +21,7 @@ void qrtest::testTest()
     //************************************************************
 }
 
-void qrtest::svgRenderTest_data()
+void QrTest::svgRenderTest_data()
 {
     QTest::addColumn<QString>("input");
     QTest::addColumn<QString>("svg");
@@ -87,7 +88,7 @@ void qrtest::svgRenderTest_data()
      "M19,24h1v1h-1z M22,24h1v1h-1z M23,24h1v1h-1z\" fill=\"#000000\"/>\n</svg>\n";
 }
 
-void qrtest::svgRenderTest()
+void QrTest::svgRenderTest()
 {
     QFETCH(QString, input);
     QFETCH(QString, svg);

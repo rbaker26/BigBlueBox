@@ -44,7 +44,7 @@ void UnitTest::run()
 //    QTest::qExec(&bench);
 
 
-    qrtest qrTest;
+    QrTest qrTest;
     QTest::qExec(&qrTest);
 
 }

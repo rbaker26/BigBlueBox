@@ -9,11 +9,11 @@
 
 
 namespace bbbTest {
-class qrtest : public QObject
+class QrTest : public QObject
 {
     Q_OBJECT
 public:
-    qrtest();
+    QrTest();
 
 private slots:
     //************************************************************
