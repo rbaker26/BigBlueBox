@@ -38,7 +38,7 @@ install:
  
 script:
  # Builds the project in testing mode, and then pushes the unit tests to codecov.
- - chmod +x ./scripts/test_build_and_run.sh
+ - chmod +rwx ./scripts/test_build_and_run.sh
  - ./scripts/test_build_and_run.sh
  
  # Cleans up binaries before next build.
