@@ -10,6 +10,6 @@ var searchData=
   ['setusername',['setUsername',['../classbbb_1_1_user_session.html#af2e2f336538818015e642545db39571a',1,'bbb::UserSession']]],
   ['size',['size',['../classqrcodegen_1_1_qr_code.html#afb81ee27110cc6b6aec3dbe39891a0d8',1,'qrcodegen::QrCode']]],
   ['strtosvg',['strToSvg',['../class_qr_interface.html#ad6003088f8934ed0da064b7312ab9127',1,'QrInterface']]],
-  ['svgrendertest',['svgRenderTest',['../classqrtest.html#a02b3029243b3e52d5555f793968862a6',1,'qrtest']]],
-  ['svgrendertest_5fdata',['svgRenderTest_data',['../classqrtest.html#a218894a73c6dd34f7ea93d96ef6e0c0c',1,'qrtest']]]
+  ['svgrendertest',['svgRenderTest',['../classbbb_test_1_1qrtest.html#a02b3029243b3e52d5555f793968862a6',1,'bbbTest::qrtest']]],
+  ['svgrendertest_5fdata',['svgRenderTest_data',['../classbbb_test_1_1qrtest.html#a218894a73c6dd34f7ea93d96ef6e0c0c',1,'bbbTest::qrtest']]]
 ];
