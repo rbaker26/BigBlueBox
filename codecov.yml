@@ -11,4 +11,6 @@ ignore:
   - "src/mainwindow.cpp"
   - "src/pages/settingspage.cpp"
   - "src/pages/settingspage.h" 
+  - "src/dbconnect.cpp"
+  - "src/dbconnect.h"
   
