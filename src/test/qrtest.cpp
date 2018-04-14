@@ -236,7 +236,7 @@ void QrTest::svgRenderTest_data()
       "-1z M16,23h1v1h-1z M21,23h1v1h-1z M22,23h1v1h-1z M4,24h1v1h-"
       "1z M5,24h1v1h-1z M6,24h1v1h-1z M7,24h1v1h-1z M8,24h1v1h-1z M"
       "9,24h1v1h-1z M10,24h1v1h-1z M12,24h1v1h-1z M16,24h1v1h-1z M1"
-      "7,24h1v1h-1z M18,24h1v1h-1z M19,24h1v1h-1z M23,24h1v1h-1z\" fill=\"#000000\"/>\n</svg>\n"
+      "7,24h1v1h-1z M18,24h1v1h-1z M19,24h1v1h-1z M23,24h1v1h-1z\" fill=\"#000000\"/>\n</svg>\n";
 
 }
 
