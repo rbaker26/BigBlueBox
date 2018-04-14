@@ -7,7 +7,9 @@
 
 #include "qr/QrInterface.h"
 
-class qrtest
+
+namespace bbbTest {
+class qrtest : public QObject
 {
     Q_OBJECT
 public:
@@ -28,4 +30,5 @@ private slots:
 
 };
 
+}
 #endif // QRTEST_H
