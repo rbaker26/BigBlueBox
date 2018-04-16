@@ -1,0 +1,8 @@
+<map id="qrcodegen::QrCode::handleConstructorMasking" name="qrcodegen::QrCode::handleConstructorMasking">
+<area shape="rect" id="node2" href="$classqrcodegen_1_1_qr_code.html#a9136b9578bfb10db49eb3c7ad077282e" title="qrcodegen::QrCode::\ldrawFormatBits" alt="" coords="233,37,375,78"/>
+<area shape="rect" id="node5" href="$classqrcodegen_1_1_qr_code.html#a35008f2ed286dd6756cb9642866c72ec" title="qrcodegen::QrCode::\lapplyMask" alt="" coords="233,102,375,143"/>
+<area shape="rect" id="node6" href="$classqrcodegen_1_1_qr_code.html#a2d7de332f8f6029092fbb7c9faae192e" title="qrcodegen::QrCode::\lgetPenaltyScore" alt="" coords="233,167,375,209"/>
+<area shape="rect" id="node3" href="$classqrcodegen_1_1_qr_code_1_1_ecc.html#ab9793aa9e4f3fd2c32e530ce35b5c40d" title="qrcodegen::QrCode::\lEcc::getFormatBits" alt="" coords="425,5,567,46"/>
+<area shape="rect" id="node4" href="$classqrcodegen_1_1_qr_code.html#a6d5fa83f66288c89440542a5fbadcfe9" title="qrcodegen::QrCode::\lsetFunctionModule" alt="" coords="425,70,567,111"/>
+<area shape="rect" id="node7" href="$classqrcodegen_1_1_qr_code.html#a8dcdb7023b3115776756865d843e03f6" title="qrcodegen::QrCode::\lmodule" alt="" coords="425,167,567,209"/>
+</map>
