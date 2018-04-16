@@ -14,7 +14,7 @@ var searchData=
   ['on_5fmaximizebutton_5fclicked',['on_maximizeButton_clicked',['../class_frameless_window.html#a0118400a2e3ab73b47732dd6ba0cf9e4',1,'FramelessWindow']]],
   ['on_5fminimizebutton_5fclicked',['on_minimizeButton_clicked',['../class_frameless_window.html#acc7debf163002603ab1306ced779153f',1,'FramelessWindow']]],
   ['on_5fpushbutton_5fadddelete_5fclicked',['on_pushButton_addDelete_clicked',['../class_reports_view.html#a4ff9516632dfee7b7affa091b131d151',1,'ReportsView']]],
-  ['on_5fpushbutton_5fcheckinout_5fclicked',['on_pushButton_checkinOut_clicked',['../class_gear_center.html#a5e5c2bfb8341faf328276c47f0278774',1,'GearCenter::on_pushButton_checkinOut_clicked()'],['../class_gear_center.html#ad72839a69666a8c9a3e84d446805c432',1,'GearCenter::on_pushButton_checkInOut_clicked()']]],
+  ['on_5fpushbutton_5fcheckinout_5fclicked',['on_pushButton_checkInOut_clicked',['../class_gear_center.html#ad72839a69666a8c9a3e84d446805c432',1,'GearCenter::on_pushButton_checkInOut_clicked()'],['../class_gear_center.html#a5e5c2bfb8341faf328276c47f0278774',1,'GearCenter::on_pushButton_checkinOut_clicked()']]],
   ['on_5fpushbutton_5fedit_5fclicked',['on_pushButton_edit_clicked',['../class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59',1,'ReportsView']]],
   ['on_5fpushbutton_5fentercode_5fclicked',['on_pushButton_enterCode_clicked',['../class_gear_center.html#ab09deefbe4834fd7e96bc5b0e07c908b',1,'GearCenter']]],
   ['on_5fpushbutton_5fgotogear_5fclicked',['on_pushButton_gotoGear_clicked',['../class_main_menu.html#af06f7ca1f8aaee91a537436399c81b61',1,'MainMenu']]],

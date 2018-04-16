@@ -1,6 +1,7 @@
 var searchData=
 [
   ['initpaths',['initPaths',['../class_settings_page.html#a8ee41bc1b63e09ecf439e551a21eec9b',1,'SettingsPage']]],
+  ['inittable',['initTable',['../class_gear_center.html#a7a4d80dee6125971e9f5642c5227c247',1,'GearCenter']]],
   ['inittableinv',['initTableInv',['../class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d',1,'ReportsView']]],
   ['instance',['instance',['../classbbb_1_1___file_writer.html#ae08e07bb9731330e110629a64eb409e1',1,'bbb::_FileWriter::instance()'],['../classbbb_1_1_db_connect.html#a1593e67ff27718b1990ff713d10770e0',1,'bbb::DbConnect::instance()'],['../classbbb_1_1_user_session.html#ad88c3a571d7699a3a366712ffa38f3c1',1,'bbb::UserSession::instance()']]],
   ['intfromstring',['intFromString',['../classbbb_1_1_category.html#a4618426a49f54f11db3012b456ec4308',1,'bbb::Category']]],
@@ -18,8 +19,8 @@ var searchData=
   ['itemmaker',['itemMaker',['../classbbb_test_1_1___file_writer_bench.html#a5cbc869bd38c52cf2fb26bb7e11cf415',1,'bbbTest::_FileWriterBench']]],
   ['itemname',['itemName',['../classbbb_1_1_item.html#af241539c54059c265f13b112bc4514a7',1,'bbb::Item']]],
   ['itemscanned',['itemScanned',['../class_gear_center.html#a3561c331904fb618f2222c26ad6cda91',1,'GearCenter']]],
-  ['itemtest',['ItemTest',['../classbbb_test_1_1_item_test.html#a310a8cf4a45615e897a3f3cceefc03e8',1,'bbbTest::ItemTest']]],
   ['itemtest',['ItemTest',['../classbbb_test_1_1_item_test.html',1,'bbbTest']]],
+  ['itemtest',['ItemTest',['../classbbb_test_1_1_item_test.html#a310a8cf4a45615e897a3f3cceefc03e8',1,'bbbTest::ItemTest']]],
   ['itemtest_2ecpp',['itemtest.cpp',['../itemtest_8cpp.html',1,'']]],
   ['itemtest_2eh',['itemtest.h',['../itemtest_8h.html',1,'']]]
 ];

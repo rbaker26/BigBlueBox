@@ -8,5 +8,5 @@ var searchData=
   ['appendbits',['appendBits',['../classqrcodegen_1_1_bit_buffer.html#abeaf5adf83b987fa573c63a1ffad30ad',1,'qrcodegen::BitBuffer']]],
   ['appenderrorcorrection',['appendErrorCorrection',['../classqrcodegen_1_1_qr_code.html#a35868e7511e7055000bab99c05214489',1,'qrcodegen::QrCode']]],
   ['applymask',['applyMask',['../classqrcodegen_1_1_qr_code.html#a35008f2ed286dd6756cb9642866c72ec',1,'qrcodegen::QrCode']]],
-  ['author',['author',['../class_gear_note.html#a5350cc13e7cd7b8215361d3caa9c9e93',1,'GearNote']]]
+  ['author',['author',['../classbbb_1_1_gear_note.html#a39f4cbc8c8523a2cff06feca51daf87f',1,'bbb::GearNote']]]
 ];
