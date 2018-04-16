@@ -23,22 +23,27 @@
 
 // test code
 #include <QVector>
-#include "qr/QrInterface.h"
+
+#include "DarkStyle.h"
+#include "framelesswindow/framelesswindow.h"
+#include "DarkStyle.h"
 //#############################################################################################
 int main(int argc, char *argv[])
 {
-    //qDebug() << "Checked in\t" << isCheckedOut;
-    qDebug() << "SVG";
-   qDebug() <<  QrInterface::strToSvg("0123456789abcdefghijklmnopqqrstuvwxyz");
-
-
 
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon(":/img/nyltIcon.png"));
     a.setApplicationName("BigBlueBox v0.4.0");
-    MainWindow w;
-    w.setWindowTitle("BigBlueBox v0.4.0");
-    w.show();
+    a.setStyle(new DarkStyle);
+
+    FramelessWindow framelessWindow;
+    framelessWindow.setWindowTitle("BigBlueBox v0.4.0");
+    MainWindow *mainWindow = new MainWindow;
+   // w.setWindowTitle("BigBlueBox v0.4.0");
+   // w.show();
+
+    framelessWindow.setContent(mainWindow);
+    framelessWindow.show();
 
    return a.exec();
 }

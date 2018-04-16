@@ -14,6 +14,9 @@ QMAKE_CXXFLAGS += -std=c++11
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+
+INCLUDEPATH +="framelesswindow"
+
 TARGET   = BigBlueBox
 TEMPLATE = app
 
@@ -49,6 +52,9 @@ SOURCES += \
         qr/QrSegment.cpp        \
         qr/QrInterface.cpp      \
         gear.cpp                \
+       framelesswindow/framelesswindow.cpp \
+       framelesswindow/windowdragger.cpp   \
+       DarkStyle.cpp            \
 
 
         
@@ -72,6 +78,9 @@ HEADERS += \
         qr/QrSegment.h          \
         qr/QrInterface.h        \
         gear.h                  \
+       framelesswindow/framelesswindow.h \
+       framelesswindow/windowdragger.h   \
+       DarkStyle.h              \
 
 
         
@@ -83,7 +92,8 @@ FORMS += \
         pages/gearCenter.ui     \
         
 RESOURCES += \
-    ../rec/rec.qrc \
+        ../rec/rec.qrc \
+        framelesswindow.qrc \
 
 
 
@@ -181,7 +191,8 @@ FORMS -= \
 
 # Remove all recources
 RESOURCES -= \
-    ../rec/rec.qrc \
+        ../rec/rec.qrc \
+        framelesswindow.qrc \
 
 }
 ###########################################################
