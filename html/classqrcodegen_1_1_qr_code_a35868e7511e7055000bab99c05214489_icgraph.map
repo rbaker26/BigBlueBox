@@ -1,6 +1,0 @@
-<map id="qrcodegen::QrCode::appendErrorCorrection" name="qrcodegen::QrCode::appendErrorCorrection">
-<area shape="rect" id="node2" href="$classqrcodegen_1_1_qr_code.html#ad82a191042caa6c94734f97a8b97a87c" title="qrcodegen::QrCode::\lQrCode" alt="" coords="206,38,349,79"/>
-<area shape="rect" id="node3" href="$classqrcodegen_1_1_qr_code.html#a78aa108015b15a8b1fd35d042aff34aa" title="qrcodegen::QrCode::\lencodeSegments" alt="" coords="398,38,541,79"/>
-<area shape="rect" id="node4" href="$classqrcodegen_1_1_qr_code.html#a15d9e26d273b8de6d0773e317ebd97d5" title="qrcodegen::QrCode::\lencodeText" alt="" coords="590,5,733,46"/>
-<area shape="rect" id="node5" href="$classqrcodegen_1_1_qr_code.html#a31efd868a933e2ea62a6f9694bf19606" title="qrcodegen::QrCode::\lencodeBinary" alt="" coords="590,70,733,111"/>
-</map>

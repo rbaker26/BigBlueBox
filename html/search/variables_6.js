@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gearhealth',['gearHealth',['../class_gear.html#ab9b689643030cc0cb6235d0ca4e61d68',1,'Gear']]]
+  ['modifiedby',['modifiedBy',['../classbbb_1_1_item.html#a0df8e99e3061466708529c747619ee7c',1,'bbb::Item']]]
 ];

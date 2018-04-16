@@ -1,7 +1,0 @@
-<map id="printQr" name="printQr">
-<area shape="rect" id="node2" href="$_qr_code_generator_demo_8cpp.html#aca0d4459e0b63c218fd664e39f720dac" title="doBasicDemo" alt="" coords="124,5,228,32"/>
-<area shape="rect" id="node4" href="$_qr_code_generator_demo_8cpp.html#a3180b8bd2b30b0224a5ddce6fefb2e5a" title="doVarietyDemo" alt="" coords="120,56,232,83"/>
-<area shape="rect" id="node5" href="$_qr_code_generator_demo_8cpp.html#a5ad083c6e65c54376cca8d17038dce68" title="doSegmentDemo" alt="" coords="115,107,237,133"/>
-<area shape="rect" id="node6" href="$_qr_code_generator_demo_8cpp.html#a89047bb8a9209ac65d8f20ed21af78ca" title="doMaskDemo" alt="" coords="125,157,227,184"/>
-<area shape="rect" id="node3" href="$_qr_code_generator_demo_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="285,81,336,108"/>
-</map>
