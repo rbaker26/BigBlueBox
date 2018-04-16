@@ -1,9 +1,13 @@
 var searchData=
 [
+  ['darkstyle',['DarkStyle',['../class_dark_style.html',1,'DarkStyle'],['../class_dark_style.html#aab8e01ad4fc1f604cc3af5e49632bf34',1,'DarkStyle::DarkStyle()'],['../class_dark_style.html#a4a8a8fafd23d02f5e4df919a5d01c29e',1,'DarkStyle::DarkStyle(QStyle *style)']]],
+  ['darkstyle_2ecpp',['DarkStyle.cpp',['../_dark_style_8cpp.html',1,'']]],
+  ['darkstyle_2eh',['DarkStyle.h',['../_dark_style_8h.html',1,'']]],
+  ['data',['data',['../classqrcodegen_1_1_qr_segment.html#a310df78ffc24d3e7629f90caab29ce6e',1,'qrcodegen::QrSegment']]],
   ['dateformat',['dateFormat',['../classbbb_1_1_db_connect.html#a844e551b081d8f0271c1ef5bf7ec1257',1,'bbb::DbConnect']]],
   ['datemodified',['dateModified',['../classbbb_1_1_item.html#ac0be572e29277998e98faca2e53eab55',1,'bbb::Item']]],
-  ['dbconnect',['DbConnect',['../classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd',1,'bbb::DbConnect']]],
   ['dbconnect',['DbConnect',['../classbbb_1_1_db_connect.html',1,'bbb']]],
+  ['dbconnect',['DbConnect',['../classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd',1,'bbb::DbConnect']]],
   ['dbconnect_2ecpp',['dbconnect.cpp',['../dbconnect_8cpp.html',1,'']]],
   ['dbconnect_2eh',['dbconnect.h',['../dbconnect_8h.html',1,'']]],
   ['dbdump',['DbDump',['../classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53af8c57b7daee896abc41328a888e8a95f',1,'bbb::_FileWriter']]],
@@ -12,5 +16,17 @@ var searchData=
   ['directoryhandler',['DirectoryHandler',['../classbbb_1_1_directory_handler.html#ad3be6490dfdfd3d7cb27ccc1a3caaee3',1,'bbb::DirectoryHandler']]],
   ['directoryhandler',['DirectoryHandler',['../classbbb_1_1_directory_handler.html',1,'bbb']]],
   ['directoryhandler_2ecpp',['directoryhandler.cpp',['../directoryhandler_8cpp.html',1,'']]],
-  ['directoryhandler_2eh',['directoryhandler.h',['../directoryhandler_8h.html',1,'']]]
+  ['directoryhandler_2eh',['directoryhandler.h',['../directoryhandler_8h.html',1,'']]],
+  ['dobasicdemo',['doBasicDemo',['../_qr_code_generator_demo_8cpp.html#aca0d4459e0b63c218fd664e39f720dac',1,'QrCodeGeneratorDemo.cpp']]],
+  ['domaskdemo',['doMaskDemo',['../_qr_code_generator_demo_8cpp.html#a89047bb8a9209ac65d8f20ed21af78ca',1,'QrCodeGeneratorDemo.cpp']]],
+  ['dosegmentdemo',['doSegmentDemo',['../_qr_code_generator_demo_8cpp.html#a5ad083c6e65c54376cca8d17038dce68',1,'QrCodeGeneratorDemo.cpp']]],
+  ['doubleclicked',['doubleClicked',['../class_window_dragger.html#a5e9095527d7f32d7dec8018084d0d719',1,'WindowDragger']]],
+  ['dovarietydemo',['doVarietyDemo',['../_qr_code_generator_demo_8cpp.html#a3180b8bd2b30b0224a5ddce6fefb2e5a',1,'QrCodeGeneratorDemo.cpp']]],
+  ['drawalignmentpattern',['drawAlignmentPattern',['../classqrcodegen_1_1_qr_code.html#a8656d287fbd326eaf667496b741a0210',1,'qrcodegen::QrCode']]],
+  ['drawcodewords',['drawCodewords',['../classqrcodegen_1_1_qr_code.html#ad8121a3f90a11ea2594536569c6f4409',1,'qrcodegen::QrCode']]],
+  ['drawfinderpattern',['drawFinderPattern',['../classqrcodegen_1_1_qr_code.html#acf3678658d9945e9fa7a99a62651cebe',1,'qrcodegen::QrCode']]],
+  ['drawformatbits',['drawFormatBits',['../classqrcodegen_1_1_qr_code.html#a9136b9578bfb10db49eb3c7ad077282e',1,'qrcodegen::QrCode']]],
+  ['drawfunctionpatterns',['drawFunctionPatterns',['../classqrcodegen_1_1_qr_code.html#abb36239bb3bb30dc6e634c15a64e2beb',1,'qrcodegen::QrCode']]],
+  ['drawversion',['drawVersion',['../classqrcodegen_1_1_qr_code.html#a5b4cdbfb8d5dbbf390e534e679d2b218',1,'qrcodegen::QrCode']]],
+  ['dtmade',['dtMade',['../class_gear_note.html#ac36a0816563f1e8e78c970cd81aa50f4',1,'GearNote']]]
 ];

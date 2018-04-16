@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['writedbfileloc',['writeDbFileLoc',['../classbbb_1_1___file_writer.html#ad72b3420d6e78b5e1068fa79e172c7fe',1,'bbb::_FileWriter']]],
-  ['writereportsdir',['writeReportsDir',['../classbbb_1_1___file_writer.html#adb0ba36d7c4015a9ff7cd6de5d76c773',1,'bbb::_FileWriter']]]
+  ['validatesessioninfo',['validateSessionInfo',['../classbbb_1_1_user_session.html#a41638ea015b8f3b58961287fd25e1029',1,'bbb::UserSession']]],
+  ['version',['version',['../classqrcodegen_1_1_qr_code.html#a37ab4abf93ddea965fe715ffdf68b80e',1,'qrcodegen::QrCode']]]
 ];

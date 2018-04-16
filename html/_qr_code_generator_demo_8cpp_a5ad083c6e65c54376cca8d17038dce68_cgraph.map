@@ -1,0 +1,7 @@
+<map id="doSegmentDemo" name="doSegmentDemo">
+<area shape="rect" id="node2" href="$_qr_code_generator_demo_8cpp.html#a311b4e68472b11512c60ef65c922fd47" title="printQr" alt="" coords="216,45,277,72"/>
+<area shape="rect" id="node6" href="$classqrcodegen_1_1_bit_buffer.html#abeaf5adf83b987fa573c63a1ffad30ad" title="qrcodegen::BitBuffer\l::appendBits" alt="" coords="176,97,317,138"/>
+<area shape="rect" id="node3" href="$classqrcodegen_1_1_qr_code.html#a9f5fa20a1e0096d53c42c60a54dca173" title="qrcodegen::QrCode::\lgetSize" alt="" coords="366,5,509,46"/>
+<area shape="rect" id="node4" href="$classqrcodegen_1_1_qr_code.html#a6e89407e7b6565362e806bd23082ef7c" title="qrcodegen::QrCode::\lgetModule" alt="" coords="366,70,509,111"/>
+<area shape="rect" id="node5" href="$classqrcodegen_1_1_qr_code.html#a8dcdb7023b3115776756865d843e03f6" title="qrcodegen::QrCode::\lmodule" alt="" coords="558,70,701,111"/>
+</map>

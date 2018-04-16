@@ -1,0 +1,12 @@
+<map id="qrcodegen::QrCode::setFunctionModule" name="qrcodegen::QrCode::setFunctionModule">
+<area shape="rect" id="node2" href="$classqrcodegen_1_1_qr_code.html#abb36239bb3bb30dc6e634c15a64e2beb" title="qrcodegen::QrCode::\ldrawFunctionPatterns" alt="" coords="412,117,561,158"/>
+<area shape="rect" id="node7" href="$classqrcodegen_1_1_qr_code.html#a9136b9578bfb10db49eb3c7ad077282e" title="qrcodegen::QrCode::\ldrawFormatBits" alt="" coords="202,230,345,271"/>
+<area shape="rect" id="node9" href="$classqrcodegen_1_1_qr_code.html#a5b4cdbfb8d5dbbf390e534e679d2b218" title="qrcodegen::QrCode::\ldrawVersion" alt="" coords="202,34,345,75"/>
+<area shape="rect" id="node10" href="$classqrcodegen_1_1_qr_code.html#acf3678658d9945e9fa7a99a62651cebe" title="qrcodegen::QrCode::\ldrawFinderPattern" alt="" coords="202,99,345,141"/>
+<area shape="rect" id="node11" href="$classqrcodegen_1_1_qr_code.html#a8656d287fbd326eaf667496b741a0210" title="qrcodegen::QrCode::\ldrawAlignmentPattern" alt="" coords="198,165,349,206"/>
+<area shape="rect" id="node3" href="$classqrcodegen_1_1_qr_code.html#ad82a191042caa6c94734f97a8b97a87c" title="qrcodegen::QrCode::\lQrCode" alt="" coords="625,158,767,199"/>
+<area shape="rect" id="node4" href="$classqrcodegen_1_1_qr_code.html#a78aa108015b15a8b1fd35d042aff34aa" title="qrcodegen::QrCode::\lencodeSegments" alt="" coords="817,158,959,199"/>
+<area shape="rect" id="node5" href="$classqrcodegen_1_1_qr_code.html#a15d9e26d273b8de6d0773e317ebd97d5" title="qrcodegen::QrCode::\lencodeText" alt="" coords="1009,125,1151,166"/>
+<area shape="rect" id="node6" href="$classqrcodegen_1_1_qr_code.html#a31efd868a933e2ea62a6f9694bf19606" title="qrcodegen::QrCode::\lencodeBinary" alt="" coords="1009,190,1151,231"/>
+<area shape="rect" id="node8" href="$classqrcodegen_1_1_qr_code.html#a1232fb34df1edbb5a15c8ed9ac748525" title="qrcodegen::QrCode::\lhandleConstructorMasking" alt="" coords="398,198,575,239"/>
+</map>

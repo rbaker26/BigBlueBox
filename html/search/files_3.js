@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['darkstyle_2ecpp',['DarkStyle.cpp',['../_dark_style_8cpp.html',1,'']]],
+  ['darkstyle_2eh',['DarkStyle.h',['../_dark_style_8h.html',1,'']]],
   ['dbconnect_2ecpp',['dbconnect.cpp',['../dbconnect_8cpp.html',1,'']]],
   ['dbconnect_2eh',['dbconnect.h',['../dbconnect_8h.html',1,'']]],
   ['directoryhandler_2ecpp',['directoryhandler.cpp',['../directoryhandler_8cpp.html',1,'']]],

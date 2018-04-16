@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['unittest',['UnitTest',['../classbbb_test_1_1_unit_test.html',1,'bbbTest']]],
-  ['usersession',['UserSession',['../classbbb_1_1_user_session.html',1,'bbb']]]
+  ['mainmenu',['MainMenu',['../class_main_menu.html',1,'']]],
+  ['mainwindow',['MainWindow',['../class_main_window.html',1,'']]],
+  ['mode',['Mode',['../classqrcodegen_1_1_qr_segment_1_1_mode.html',1,'qrcodegen::QrSegment']]]
 ];
