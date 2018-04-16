@@ -20,8 +20,17 @@ GearCenter::GearCenter(QWidget *parent) :
     itemScanned = false;
     pidScanned = false;
 
+    // Set and fill the troop combo box
     ui->comboBox_troopNames->addItem("- Choose a Troop -");
     ui->comboBox_troopNames->addItems(bbb::DbConnect::getInstance()->getTroopNames());
+
+
+    // Set and fill the item health status combo box
+    ui->comboBox_itemHealth->addItems(bbb::DbConnect::getInstance()->getGearHealthStatusList());
+
+    // Init Table
+    initTable();
+
 }
 
 GearCenter::~GearCenter()
@@ -44,6 +53,28 @@ void GearCenter::on_pushButton_checkinOut_clicked()
 void GearCenter::on_lineEdit_scanCode_returnPressed()
 {
     ui->pushButton_enterCode->click();
+}
+
+void GearCenter::clearTable()
+{
+    ui->tableWidget->clear();
+    ui->tableWidget->setRowCount(0);
+}
+
+void GearCenter::initTable()
+{
+    clearTable();
+
+    QStringList header;
+    header << "Note" << "Author" << "Time Stamp";
+    ui->tableWidget->setColumnCount(3);
+    ui->tableWidget->setHorizontalHeaderLabels(header);
+    ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Fixed);
+    ui->tableWidget->horizontalHeader()->resizeSection(0,550);
+    ui->tableWidget->horizontalHeader()->setSectionResizeMode(1,QHeaderView::Stretch);
+    ui->tableWidget->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->tableWidget->verticalHeader()->hide();
+    ui->tableWidget->setSortingEnabled(false);
 }
 
 void GearCenter::on_pushButton_enterCode_clicked()
@@ -115,6 +146,34 @@ void GearCenter::on_pushButton_enterCode_clicked()
 //        qDebug() << "Checked in\t" << isCheckedOut;
 
 
+        //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+        // Fill the notes table widget
+        clearTable();
+        qDebug() << decCatId << decIdvId;
+        QVector<bbb::GearNote> notes = bbb::DbConnect::getInstance()->getGearNotes(decCatId, decIdvId);
+
+        // Init table
+        initTable();
+
+
+        // Fill table
+        QVector<bbb::GearNote>::iterator it             = notes.begin();
+        const QVector<bbb::GearNote>::iterator EXIT_FLAG =  notes.end();
+        int rowCount = 0;
+
+        while(it != EXIT_FLAG)
+        {
+            ui->tableWidget->insertRow(ui->tableWidget->rowCount());
+
+            ui->tableWidget->setItem(rowCount ,0, new QTableWidgetItem(it->noteText));
+            ui->tableWidget->setItem(rowCount ,1, new QTableWidgetItem((it->author)));
+            ui->tableWidget->setItem(rowCount ,2, new QTableWidgetItem(it->dtMade.toString("yy/MM/dd hh:mm")));
+
+            rowCount++;
+            it++;
+        }
+
+        //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
         //**********************************************************************
 
     }
@@ -174,6 +233,11 @@ void GearCenter::on_pushButton_enterCode_clicked()
             // Un-set the scanned bools
             pidScanned = false;
             itemScanned = false;
+
+            // Clear the item info out
+            ui->lineEdit_itemCode_infoBox->clear();
+            clearTable();
+            initTable();
         }
     }
 
@@ -187,4 +251,18 @@ void GearCenter::on_comboBox_troopNames_currentIndexChanged(int index)
     // It will use the pk / fk relation in the db to make this happen
 
     // also, after the second function is called, it should update the bool varibale and the Qr Code.
+
+    ui->comboBox_patrolNames->clear();
+
+    if(ui->comboBox_troopNames->currentIndex() != 0)
+    {
+        ui->comboBox_patrolNames->addItem("- Choose a Patrol -");
+        ui->comboBox_patrolNames->addItems(bbb::DbConnect::getInstance()
+                                           ->getPatrolNamesByTroop(index));
+
+    }
+    else
+    {
+        ui->comboBox_patrolNames->clear();
+    }
 }

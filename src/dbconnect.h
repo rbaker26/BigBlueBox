@@ -133,6 +133,10 @@ public:
 
     QStringList getTroopNames();
 
+    QStringList getPatrolNamesByTroop(int troopNum);
+
+    QStringList getGearHealthStatusList();
+
     bool isCheckedOut(int catId, int idvId);
 
 

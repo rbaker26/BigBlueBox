@@ -1,4 +1,5 @@
 #include "gear.h"
+using namespace bbb;
 
 Gear::Gear()
 {

@@ -28,6 +28,10 @@ public:
     explicit GearCenter(QWidget *parent = 0);
     ~GearCenter();
 
+    void initTable();
+    
+    void clearTable();
+
 private:
     bool itemScanned;
     bool pidScanned;

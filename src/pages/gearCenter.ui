@@ -42,7 +42,7 @@
          <item>
           <widget class="QLabel" name="label">
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#7383c8;&quot;&gt;Gear Management Center &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#93bfec;&quot;&gt;Gear Management Center &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
@@ -290,33 +290,7 @@
              <item row="0" column="0">
               <layout class="QGridLayout" name="gridLayout_3">
                <item row="2" column="1">
-                <widget class="QComboBox" name="comboBox">
-                 <item>
-                  <property name="text">
-                   <string>Healthy</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Missing Parts</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Needs Maintenance</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Needs Repair</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Needs Replacement</string>
-                  </property>
-                 </item>
-                </widget>
+                <widget class="QComboBox" name="comboBox_itemHealth"/>
                </item>
                <item row="2" column="0">
                 <widget class="QLabel" name="label_6">

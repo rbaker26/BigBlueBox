@@ -315,6 +315,71 @@ QStringList DbConnect::getTroopNames()
 
 
 
+//*********************************************************************************
+QStringList DbConnect::getPatrolNamesByTroop(int troopNum)
+{
+    QStringList list;
+
+    QSqlQuery query;
+
+    query.prepare("SELECT name                  "
+                  "FROM patrol_names            "
+                  "WHERE troop_id = (:troopNum);");
+    query.bindValue(":troopNum", troopNum);
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+
+    int nameFieldNum = query.record().indexOf("name");
+
+    query.first();
+    do
+    {
+        //qDebug() << query.value(nameFieldNum).toString();
+        list << query.value(nameFieldNum).toString();
+    }while(query.next());
+
+    return list;
+
+}
+//*********************************************************************************
+
+
+
+
+//*********************************************************************************
+QStringList DbConnect::getGearHealthStatusList()
+{
+    QStringList list;
+
+    QSqlQuery query;
+
+    query.prepare("SELECT health_string     "
+                  "FROM gear_status        ;");
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+
+    int statusFieldNum = query.record().indexOf("health_string");
+
+    query.first();
+    do
+    {
+        //qDebug() << query.value(statusFieldNum).toString();
+        list << query.value(statusFieldNum).toString();
+    }while(query.next());
+
+    return list;
+
+}
+//*********************************************************************************
+
+
+
 
 //*********************************************************************************
 bool DbConnect::isCheckedOut(int catId, int idvId)
