@@ -31,6 +31,9 @@ GearCenter::GearCenter(QWidget *parent) :
     // Init Table
     initTable();
 
+
+
+
 }
 
 GearCenter::~GearCenter()
