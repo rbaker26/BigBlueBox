@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1158</width>
-    <height>766</height>
+    <height>795</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -238,7 +238,7 @@
             </sizepolicy>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#7383c8;&quot;&gt;Check In / Out&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#93bfec;&quot;&gt;Check In / Out&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
@@ -325,22 +325,6 @@
                  </property>
                 </widget>
                </item>
-               <item row="1" column="0">
-                <widget class="QLineEdit" name="lineEdit_2">
-                 <property name="enabled">
-                  <bool>true</bool>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="readOnly">
-                  <bool>true</bool>
-                 </property>
-                 <property name="placeholderText">
-                  <string>item name</string>
-                 </property>
-                </widget>
-               </item>
                <item row="3" column="1">
                 <widget class="QDateEdit" name="dateEdit">
                  <property name="readOnly">
@@ -358,22 +342,60 @@
                  </property>
                 </widget>
                </item>
-               <item row="1" column="1">
-                <widget class="QLineEdit" name="lineEdit_4">
-                 <property name="readOnly">
-                  <bool>true</bool>
-                 </property>
-                 <property name="placeholderText">
-                  <string>item code</string>
-                 </property>
-                </widget>
-               </item>
                <item row="0" column="0">
                 <widget class="QLabel" name="label_9">
                  <property name="text">
                   <string>Item Info</string>
                  </property>
                 </widget>
+               </item>
+               <item row="1" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="label_14">
+                   <property name="text">
+                    <string>Item Code:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_itemCode_infoBox">
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                   <property name="placeholderText">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string>Item Name:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_2">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                   <property name="placeholderText">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
                </item>
               </layout>
              </item>

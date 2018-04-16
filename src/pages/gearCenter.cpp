@@ -71,6 +71,10 @@ void GearCenter::on_pushButton_enterCode_clicked()
     }
     else if(scanCodeString.left(3).toUpper() == "ITM")
     {
+        // Send the code to the "item code" UI box.
+        ui->lineEdit_itemCode_infoBox->setText(scanCodeString);
+
+
         filePath.append("/temp/ItemQr.svg");
 
         // Set the itemScanned to true

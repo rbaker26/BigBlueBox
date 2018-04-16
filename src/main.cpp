@@ -38,6 +38,8 @@ int main(int argc, char *argv[])
 
     FramelessWindow framelessWindow;
     framelessWindow.setWindowTitle("BigBlueBox v0.4.0");
+    framelessWindow.setWindowState(Qt::WindowMaximized);
+
     MainWindow *mainWindow = new MainWindow;
    // w.setWindowTitle("BigBlueBox v0.4.0");
    // w.show();
