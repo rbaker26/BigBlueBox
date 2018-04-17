@@ -75,9 +75,12 @@ void GearCenter::initTable()
     ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Fixed);
     ui->tableWidget->horizontalHeader()->resizeSection(0,550);
     ui->tableWidget->horizontalHeader()->setSectionResizeMode(1,QHeaderView::Stretch);
-    ui->tableWidget->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+
+    ui->tableWidget->verticalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
     ui->tableWidget->verticalHeader()->hide();
+
     ui->tableWidget->setSortingEnabled(false);
+    ui->tableWidget->setStyleSheet("QTableWidget::item { padding: 10px }");
 }
 
 void GearCenter::on_pushButton_enterCode_clicked()
@@ -152,7 +155,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
         //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
         // Fill the notes table widget
         clearTable();
-        qDebug() << decCatId << decIdvId;
+        //qDebug() << decCatId << decIdvId;
         QVector<bbb::GearNote> notes = bbb::DbConnect::getInstance()->getGearNotes(decCatId, decIdvId);
 
         // Init table
@@ -175,8 +178,12 @@ void GearCenter::on_pushButton_enterCode_clicked()
             rowCount++;
             it++;
         }
-
+        ui->tableWidget->scrollToBottom();
         //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+
+
         //**********************************************************************
 
     }
