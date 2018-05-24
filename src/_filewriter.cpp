@@ -84,7 +84,7 @@ void _FileWriter::makeTxtInvReport(QVector<Item> inventory, ReportType type)
     case Full      : ofs << "Full Inventory Report\n";                    break;
     case Low       : ofs << "Low Inventory Report (35% to target)\n";     break;
     case Critical  : ofs << "Critical Iventory Report (10% to target)\n"; break;
-    case Expirable : ofs << "Expirable Inventory Report";                 break;
+    case Expirable : ofs << "Expirable Inventory Report\n";                 break;
     default : ofs << "Bad enum value passed to txt writer\n"; break;
     }
     ofs << "-------------------------------------------------------------------------" << endl;
