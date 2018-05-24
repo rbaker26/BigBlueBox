@@ -9,7 +9,9 @@ class Gear
 
 
 public:
+    Gear();
 
+    QString gearName;
     enum HealthStatus
     {
         HEALTHY,
@@ -18,10 +20,10 @@ public:
         NEEDS_REPAIR,
         NEEDS_REPLACE
     };
+    QDate obsolDate;
 
-    Gear();
 
-private:
+
     HealthStatus gearHealth;
 };
 

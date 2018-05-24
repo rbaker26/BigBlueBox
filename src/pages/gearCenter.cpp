@@ -1,6 +1,8 @@
 #include "gearCenter.h"
 #include "ui_gearCenter.h"
 
+
+//********************************************************************************************
 GearCenter::GearCenter(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::GearCenter)
@@ -35,35 +37,59 @@ GearCenter::GearCenter(QWidget *parent) :
 
 
 }
+//********************************************************************************************
 
+
+
+//********************************************************************************************
 GearCenter::~GearCenter()
 {
     delete ui;
 }
+//********************************************************************************************
 
+
+
+//********************************************************************************************
 void GearCenter::on_pushButton_checkInOut_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
 
 }
+//********************************************************************************************
 
+
+
+//********************************************************************************************
 void GearCenter::on_pushButton_checkinOut_clicked()
 {
 
     // Start checkin / out procedure
 }
+//********************************************************************************************
 
+
+
+//********************************************************************************************
 void GearCenter::on_lineEdit_scanCode_returnPressed()
 {
     ui->pushButton_enterCode->click();
 }
+//********************************************************************************************
 
+
+
+//********************************************************************************************
 void GearCenter::clearTable()
 {
     ui->tableWidget->clear();
     ui->tableWidget->setRowCount(0);
 }
+//********************************************************************************************
 
+
+
+//********************************************************************************************
 void GearCenter::initTable()
 {
     clearTable();
@@ -82,7 +108,12 @@ void GearCenter::initTable()
     ui->tableWidget->setSortingEnabled(false);
     ui->tableWidget->setStyleSheet("QTableWidget::item { padding: 10px }");
 }
+//********************************************************************************************
 
+
+
+//********************************************************************************************
+//********************************************************************************************
 void GearCenter::on_pushButton_enterCode_clicked()
 {
     // Get the scan code from the box
@@ -118,12 +149,6 @@ void GearCenter::on_pushButton_enterCode_clicked()
         itemScanned = true;
 
         //**********************************************************************
-        // check to see if item is checked in or not, offer to check item in
-        //**********************************************************************
-        // check to see if the item is healthly or not. Ask person to check
-        // item if it is not healthy.
-
-
         // Get sub QString
         QString catIdString = scanCodeString.mid(4,4);
         QString idvIdString = scanCodeString.mid(9,6);
@@ -140,16 +165,44 @@ void GearCenter::on_pushButton_enterCode_clicked()
 
         //qDebug() << ok << " " << decCatId;
         //qDebug() << ok << " " << decIdvId;
+        //**********************************************************************
 
 
-        // Check to see if the item exists
-        //
-        //
 
-        // Check to see if the item is already checked out
+        //**********************************************************************
+        // Check to see if the item exists                                     *
+        //**********************************************************************
+
+        //**********************************************************************
+
+
+
+        //**********************************************************************
+        // Check to see if item is checked in or not, offer to check item in   *
+        //**********************************************************************
         bool isCheckedOut = bbb::DbConnect::getInstance()->isCheckedOut(decCatId, decIdvId);
+        qDebug() << "Checked in\t" << isCheckedOut;
+        //**********************************************************************
 
-//        qDebug() << "Checked in\t" << isCheckedOut;
+
+        //**********************************************************************
+        // Populate the Item info on the ui page                               *
+        //**********************************************************************
+        Gear temp = bbb::DbConnect::getInstance()->getGearInfo(decCatId, decIdvId);
+        ui->lineEdit_itemName->setText(temp.gearName);
+        ui->comboBox_itemHealth->setCurrentIndex(static_cast<int>(temp.gearHealth)-1);
+        ui->dateEdit_obsolDate->setDate(temp.obsolDate);
+        //**********************************************************************
+
+
+        //**********************************************************************
+        //Check to see if the item is healthly or not. Ask person to check     *
+        // item if it is not healthy.                                          *
+        //**********************************************************************
+
+        //**********************************************************************
+
+
 
 
         //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -163,7 +216,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
 
 
         // Fill table
-        QVector<bbb::GearNote>::iterator it             = notes.begin();
+        QVector<bbb::GearNote>::iterator it = notes.begin();
         const QVector<bbb::GearNote>::iterator EXIT_FLAG =  notes.end();
         int rowCount = 0;
 
@@ -173,7 +226,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
 
             ui->tableWidget->setItem(rowCount ,0, new QTableWidgetItem(it->noteText));
             ui->tableWidget->setItem(rowCount ,1, new QTableWidgetItem((it->author)));
-            ui->tableWidget->setItem(rowCount ,2, new QTableWidgetItem(it->dtMade.toString("yy/MM/dd hh:mm")));
+            ui->tableWidget->setItem(rowCount ,2, new QTableWidgetItem(it->dtMade.toString("MM/dd/yy hh:mm")));
 
             rowCount++;
             it++;
@@ -194,7 +247,6 @@ void GearCenter::on_pushButton_enterCode_clicked()
         msg.setText("Error: Bad Scan Code    ");
         msg.setStandardButtons(QMessageBox::Ok);
         msg.setDefaultButton(QMessageBox::Ok);
-
         msg.exec();
     }
 
@@ -244,6 +296,9 @@ void GearCenter::on_pushButton_enterCode_clicked()
             pidScanned = false;
             itemScanned = false;
 
+            // Grayout the added note button
+            ui->pushButton_addNote->setEnabled(false);
+
             // Clear the item info out
             ui->lineEdit_itemCode_infoBox->clear();
             clearTable();
@@ -252,8 +307,12 @@ void GearCenter::on_pushButton_enterCode_clicked()
     }
 
 }
+//********************************************************************************************
+//********************************************************************************************
 
 
+
+//********************************************************************************************
 void GearCenter::on_comboBox_troopNames_currentIndexChanged(int index)
 {
     // This will make sure only the correct patrol names
@@ -276,3 +335,12 @@ void GearCenter::on_comboBox_troopNames_currentIndexChanged(int index)
         ui->comboBox_patrolNames->clear();
     }
 }
+//********************************************************************************************
+
+
+//********************************************************************************************
+void GearCenter::on_pushButton_addNote_clicked()
+{
+
+}
+//********************************************************************************************

@@ -11,6 +11,7 @@
 
 // For strings
 #include <QString>
+#include <QStringList>
 
 // For returnings vectors of objects
 #include <QVector>
@@ -115,29 +116,56 @@ public:
     //! \details Queries DB with itemName to see if any records
     //!          with the same name exist.  If they exist,
     //!          the function will return true.
+    //! //! \author Bob Baker
     bool itemAlreadyExists(QString name);
     //**********************************************************
 
-
-    // this is a slow query.  Make sure to thread it.
+    //**********************************************************
+    //! \brief Gets notes for a gear item.
+    //! \details Queries DB with catId and idvId to find all
+    //!          related node for a certain gear item in chrono
+    //!          order.
+    //! \author Bob Baker
     QVector<GearNote> getGearNotes(int catId, int idvId);
-    // not really <int>, i just havnt made that struct yet
-    // Use a join om two cols
-    // JOIN ON
-    //   gear_list.gear_cat_id = gear_notes.gear_cat_id
-    //  AND
-    //   gear_list.gear_idv_id = gear_notes.gear_idv_id
-    //
-    // will prob have to use a GROUP BY to make them come in together
+    //**********************************************************
 
+    //**********************************************************
+    //! \brief Gets all info for a gear item.
+    //! \details Queries DB with catId and idvId to find all
+    //!          related info for a certain gear item.
+    //! \author Bob Baker
+    Gear getGearInfo(int catId, int idvId);
+    //**********************************************************
 
-    QStringList getTroopNames();
-
-    QStringList getPatrolNamesByTroop(int troopNum);
-
+    //**********************************************************
+    //! \brief Gets all Heath Statuses
+    //! \details Returns a QStringList containing all of the
+    //!          Health Status Text Code in the DB.
+    //! \author Bob Baker
     QStringList getGearHealthStatusList();
+    //**********************************************************
 
+    //**********************************************************
     bool isCheckedOut(int catId, int idvId);
+    //**********************************************************
+
+
+    //**********************************************************
+    //! \brief Gets Troop names
+    //! \details Will return all troop names in the DB in a
+    //!          QStringList
+    //! \author Bob Baker
+    QStringList getTroopNames();
+    //**********************************************************
+
+    //**********************************************************
+    //! \brief Gets Patrol names
+    //! \details Will return all patrol names for the given
+    //!          troop id in a QStringList
+    //! \author Bob Baker
+    QStringList getPatrolNamesByTroop(int troopNum);
+    //**********************************************************
+
 
 
 }; // end class

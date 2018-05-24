@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1158</width>
-    <height>795</height>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -314,7 +314,7 @@
                 </widget>
                </item>
                <item row="3" column="1">
-                <widget class="QDateEdit" name="dateEdit">
+                <widget class="QDateEdit" name="dateEdit_obsolDate">
                  <property name="readOnly">
                   <bool>true</bool>
                  </property>
@@ -368,7 +368,7 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLineEdit" name="lineEdit_2">
+                  <widget class="QLineEdit" name="lineEdit_itemName">
                    <property name="enabled">
                     <bool>true</bool>
                    </property>
@@ -617,17 +617,20 @@
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_6">
              <item>
-              <widget class="QLineEdit" name="lineEdit_5"/>
+              <widget class="QLineEdit" name="lineEdit_noteText"/>
              </item>
              <item>
-              <widget class="QToolButton" name="toolButton">
+              <widget class="QToolButton" name="toolButton_defaultNoteList">
                <property name="text">
                 <string>...</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton">
+              <widget class="QPushButton" name="pushButton_addNote">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                  <horstretch>0</horstretch>

@@ -277,6 +277,49 @@ QVector<GearNote> DbConnect::getGearNotes(int catId, int idvId)
 //*********************************************************************************
 
 
+
+//*********************************************************************************
+Gear DbConnect::getGearInfo(int catId, int idvId)
+{
+    Gear temp;
+
+    QSqlQuery query;
+    query.prepare("SELECT *                      "
+                  "FROM gear_list                "
+                  "WHERE                         "
+                  "   gear_cat_id = (:catId)     "
+                  "   AND                        "
+                  "   gear_idv_id = (:idvId)     "
+                  "LIMIT 1;                      ");
+
+    query.bindValue(":catId", catId);
+    query.bindValue(":idvId", idvId);
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+
+    int nameFieldNum   = query.record().indexOf("gear_name");
+    int dateFieldNum   = query.record().indexOf("obsol_date");
+    int healthFieldNum = query.record().indexOf("health_status");
+
+    query.first();
+    temp.gearName   = query.value(nameFieldNum).toString();
+    temp.obsolDate  = QDate::fromString( query.value(dateFieldNum).toString(), "yyyy/MM/dd");
+    temp.gearHealth = static_cast<Gear::HealthStatus>(query.value(healthFieldNum).toInt());
+
+    qDebug() << "Gear Name: " << temp.gearName;
+    qDebug() << query.value(dateFieldNum).toString();
+    qDebug() << "Gear Date: " << temp.obsolDate.toString("MM/dd/yyyy");
+    qDebug() << "Gear Heth: " << temp.gearHealth;
+    return temp;
+}
+//*********************************************************************************
+
+
+
+
 //*********************************************************************************
 QStringList DbConnect::getTroopNames()
 {
