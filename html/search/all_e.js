@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['obsoldate',['obsolDate',['../class_gear.html#a8420dff480d2ba536556c239779c1fc5',1,'Gear']]],
   ['office',['OFFICE',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daac410dd00e20c4ccb957c32905d2eb56f',1,'bbb::Category']]],
   ['on_5factiongoto_5fhome_5ftriggered',['on_actionGoto_Home_triggered',['../class_main_window.html#a293283717ca41f7e4b26d45dfaafeedd',1,'MainWindow']]],
   ['on_5factionhome_5ftriggered',['on_actionHome_triggered',['../class_main_window.html#a313c36eed19a71e2525da1e8041eb6a0',1,'MainWindow']]],

@@ -13,6 +13,7 @@ var searchData=
   ['getformatbits',['getFormatBits',['../classqrcodegen_1_1_qr_code_1_1_ecc.html#ab9793aa9e4f3fd2c32e530ce35b5c40d',1,'qrcodegen::QrCode::Ecc']]],
   ['getfullinvasvector',['getFullInvAsVector',['../classbbb_1_1_db_connect.html#a7986028e9b44516bff117a8255f377e4',1,'bbb::DbConnect']]],
   ['getgearhealthstatuslist',['getGearHealthStatusList',['../classbbb_1_1_db_connect.html#a1f987d950db93cf74f840bee7317d6b9',1,'bbb::DbConnect']]],
+  ['getgearinfo',['getGearInfo',['../classbbb_1_1_db_connect.html#a0f7cd9432c5b8796cf4bce9c97c62e04',1,'bbb::DbConnect']]],
   ['getgearnotes',['getGearNotes',['../classbbb_1_1_db_connect.html#a70b628468d25fa8361d9bf0ce75fc53a',1,'bbb::DbConnect']]],
   ['getinstance',['getInstance',['../classbbb_1_1___file_writer.html#a65f1d3f6b273766d8b224b330de66ffa',1,'bbb::_FileWriter::getInstance()'],['../classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53',1,'bbb::DbConnect::getInstance()'],['../classbbb_1_1_user_session.html#a4225aafd0e70ac73303b31ef8ae66f9d',1,'bbb::UserSession::getInstance()']]],
   ['getmask',['getMask',['../classqrcodegen_1_1_qr_code.html#a2e51801d95fa713271383bc3e2a5e26b',1,'qrcodegen::QrCode']]],
