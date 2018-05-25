@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['framelesswindow',['FramelessWindow',['../class_frameless_window.html',1,'']]]
+  ['mainmenu',['MainMenu',['../class_main_menu.html',1,'']]],
+  ['mainwindow',['MainWindow',['../class_main_window.html',1,'']]]
 ];

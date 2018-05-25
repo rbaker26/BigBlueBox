@@ -1,9 +1,0 @@
-<map id="qrcodegen::QrSegment::QrSegment" name="qrcodegen::QrSegment::QrSegment">
-<area shape="rect" id="node2" href="$classqrcodegen_1_1_qr_segment.html#a32ead40ba58149f5e5fe13a6417d8304" title="qrcodegen::QrSegment\l::makeBytes" alt="" coords="211,5,367,46"/>
-<area shape="rect" id="node6" href="$classqrcodegen_1_1_qr_segment.html#a03484cb17296745b303f0bd48b213446" title="qrcodegen::QrSegment\l::makeNumeric" alt="" coords="211,70,367,111"/>
-<area shape="rect" id="node7" href="$classqrcodegen_1_1_qr_segment.html#ae2d00f78a60165d70faf5b56e36ae511" title="qrcodegen::QrSegment\l::makeAlphanumeric" alt="" coords="211,135,367,177"/>
-<area shape="rect" id="node8" href="$classqrcodegen_1_1_qr_segment.html#a2cb028d26ef5d9d970b344eee0b98de7" title="qrcodegen::QrSegment\l::makeEci" alt="" coords="211,201,367,242"/>
-<area shape="rect" id="node3" href="$classqrcodegen_1_1_qr_code.html#a31efd868a933e2ea62a6f9694bf19606" title="qrcodegen::QrCode::\lencodeBinary" alt="" coords="423,5,566,46"/>
-<area shape="rect" id="node4" href="$classqrcodegen_1_1_qr_segment.html#aa587c9cfcb4b28552d5d1e4c05b5b962" title="qrcodegen::QrSegment\l::makeSegments" alt="" coords="417,70,573,111"/>
-<area shape="rect" id="node5" href="$classqrcodegen_1_1_qr_code.html#a15d9e26d273b8de6d0773e317ebd97d5" title="qrcodegen::QrCode::\lencodeText" alt="" coords="622,70,765,111"/>
-</map>

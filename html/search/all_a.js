@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['kanji',['KANJI',['../classqrcodegen_1_1_qr_segment_1_1_mode.html#a36b33d4af43c2c3b4026e07dbe95f62a',1,'qrcodegen::QrSegment::Mode']]],
-  ['kitchen',['KITCHEN',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daa4726a4611f4ed2e1e07cad81c9bf4910',1,'bbb::Category']]]
+  ['logout',['logout',['../classbbb_1_1_user_session.html#ab4a7a52bedaae41bd759c79eb7c6d9f3',1,'bbb::UserSession']]],
+  ['low',['Low',['../classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53a4a67b0f564d0e8c917919f34e6ded765',1,'bbb::_FileWriter']]]
 ];

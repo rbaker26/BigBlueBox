@@ -1,13 +1,21 @@
 var searchData=
 [
-  ['needs_5fmaintenance',['NEEDS_MAINTENANCE',['../class_gear.html#af2d6962c2bc8c2d531afc87b2f0db478a210b445e12743c2587d0a19f6ed22433',1,'Gear']]],
-  ['needs_5frepair',['NEEDS_REPAIR',['../class_gear.html#af2d6962c2bc8c2d531afc87b2f0db478ac8cbd8bd07feec9ff1486f235573bcd0',1,'Gear']]],
-  ['needs_5freplace',['NEEDS_REPLACE',['../class_gear.html#af2d6962c2bc8c2d531afc87b2f0db478a3234e4e58f79b3a326c7f35195518a72',1,'Gear']]],
-  ['no_5fopp',['NO_OPP',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daa1326e5f053fcc7d03c7f1015545fd9ad',1,'bbb::Category']]],
-  ['notetext',['noteText',['../classbbb_1_1_gear_note.html#afdfac239b11fd0d6db627042bbfa2396',1,'bbb::GearNote']]],
-  ['num_5ferror_5fcorrection_5fblocks',['NUM_ERROR_CORRECTION_BLOCKS',['../classqrcodegen_1_1_qr_code.html#adba3820a83cadf8c3e8694d6b0ec337b',1,'qrcodegen::QrCode']]],
-  ['numbitscharcount',['numBitsCharCount',['../classqrcodegen_1_1_qr_segment_1_1_mode.html#a178f9e9cc298c24746614daf254abbac',1,'qrcodegen::QrSegment::Mode']]],
-  ['numcharcountbits',['numCharCountBits',['../classqrcodegen_1_1_qr_segment_1_1_mode.html#a0365210dde34480c923753bbf6bad65b',1,'qrcodegen::QrSegment::Mode']]],
-  ['numchars',['numChars',['../classqrcodegen_1_1_qr_segment.html#a120b909db182961bf8a6689b05583187',1,'qrcodegen::QrSegment']]],
-  ['numeric',['NUMERIC',['../classqrcodegen_1_1_qr_segment_1_1_mode.html#ae4c4fd7f09b271a04e142d4d856e6bf6',1,'qrcodegen::QrSegment::Mode']]]
+  ['office',['OFFICE',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daac410dd00e20c4ccb957c32905d2eb56f',1,'bbb::Category']]],
+  ['on_5factiongoto_5fhome_5ftriggered',['on_actionGoto_Home_triggered',['../class_main_window.html#a293283717ca41f7e4b26d45dfaafeedd',1,'MainWindow']]],
+  ['on_5factionhome_5ftriggered',['on_actionHome_triggered',['../class_main_window.html#a313c36eed19a71e2525da1e8041eb6a0',1,'MainWindow']]],
+  ['on_5fcheckbox_5feditson_5fclicked',['on_checkBox_editsOn_clicked',['../class_reports_view.html#a89b2e4e29486ddb2a1f8a129edb59367',1,'ReportsView']]],
+  ['on_5fcombobox_5fadddel_5factivated',['on_comboBox_addDel_activated',['../class_reports_view.html#ada0efc617e671329badefe711a815f16',1,'ReportsView']]],
+  ['on_5fcombobox_5fadddel_5fcurrentindexchanged',['on_comboBox_addDel_currentIndexChanged',['../class_reports_view.html#a13858bc2045f7739674bf683b57f8d2f',1,'ReportsView']]],
+  ['on_5fcombobox_5fcurrentindexchanged',['on_comboBox_currentIndexChanged',['../class_reports_view.html#a2f849e56c1e598de3ae680bf01a6cc96',1,'ReportsView']]],
+  ['on_5fpushbutton_5fadddelete_5fclicked',['on_pushButton_addDelete_clicked',['../class_reports_view.html#a4ff9516632dfee7b7affa091b131d151',1,'ReportsView']]],
+  ['on_5fpushbutton_5fedit_5fclicked',['on_pushButton_edit_clicked',['../class_reports_view.html#a5fd0369f81da5afd34b31e35c6583a59',1,'ReportsView']]],
+  ['on_5fpushbutton_5fgotoinv_5fclicked',['on_pushButton_gotoInv_clicked',['../class_main_menu.html#a4c727faa95f7b0dbf54bec733a1a8f98',1,'MainMenu']]],
+  ['on_5fpushbutton_5fgotosettings_5fclicked',['on_pushButton_gotoSettings_clicked',['../class_main_menu.html#ab399d99b84b5d09fc8d9d7d375ffb7ea',1,'MainMenu']]],
+  ['on_5fpushbutton_5fmakereport_5fclicked',['on_pushButton_makeReport_clicked',['../class_reports_view.html#afa5f5644331a9f66811b2a21aad02b36',1,'ReportsView']]],
+  ['on_5fpushbutton_5fsavedbdir_5fclicked',['on_pushButton_saveDbDir_clicked',['../class_settings_page.html#a3098069804572f2adf23455988abca3d',1,'SettingsPage']]],
+  ['on_5fpushbutton_5fsavereportdir_5fclicked',['on_pushButton_saveReportDir_clicked',['../class_settings_page.html#a4121381639d038b258e6411b6d955d34',1,'SettingsPage']]],
+  ['on_5ftablewidget_5finv_5fcelldoubleclicked',['on_tableWidget_inv_cellDoubleClicked',['../class_reports_view.html#ad5cf98addd840c1e257a556598ce66d7',1,'ReportsView']]],
+  ['on_5ftoolbutton_5ffilebrowse_5fclicked',['on_toolButton_fileBrowse_clicked',['../class_settings_page.html#a89e494c0da340e56e3ba14a551065a20',1,'SettingsPage']]],
+  ['on_5ftoolbutton_5freportsloc_5fclicked',['on_toolButton_reportsLoc_clicked',['../class_settings_page.html#ad3cb6b69bada10bfa67502aca6fbb19a',1,'SettingsPage']]],
+  ['orgitemname',['orgItemName',['../class_reports_view.html#ae9233527989415532115900f72cae761',1,'ReportsView']]]
 ];
