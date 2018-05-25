@@ -218,6 +218,7 @@ This project uses [SemVer](http://semver.org/) for versioning. For the versions 
 * **Robert Baker** - *Initial work & main author* - [github profile](https://github.com/rbaker26)
 * **Alex Hwang** - *Tester & Dev* - [github profile](https://github.com/Hwangsta)
 * **Patrick Beemer** - *Tester & Dev* - [github profile](https://github.com/TheCynicalBadger)
+* **Bryce Tsuyuki** - *Tester & Dev* - [github profile](https://github.com/hexalellogram)
 
 See also the list of [contributors](https://github.com/rbaker26/BigBlueBox/graphs/contributors) who participated in this project.
 
