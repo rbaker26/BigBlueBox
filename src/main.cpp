@@ -30,7 +30,6 @@
 //#############################################################################################
 int main(int argc, char *argv[])
 {
-
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon(":/img/nyltIcon.png"));
     a.setApplicationName("BigBlueBox v0.4.0");

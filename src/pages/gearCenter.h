@@ -3,7 +3,8 @@
 
 #include <QWidget>
 #include <QtSvg>
-
+#include <QThread>
+#include <QDialogButtonBox>
 
 
 // for testing
@@ -35,7 +36,8 @@ public:
 private:
     bool itemScanned;
     bool pidScanned;
-
+    uint decCatId;
+    uint decIdvId;
 private slots:
 
     void on_pushButton_checkInOut_clicked();
@@ -47,6 +49,10 @@ private slots:
     void on_pushButton_enterCode_clicked();
 
     void on_comboBox_troopNames_currentIndexChanged(int index);
+
+    void on_pushButton_addNote_clicked();
+
+    void on_toolButton_defaultNoteList_clicked();
 
 private:
     Ui::GearCenter *ui;

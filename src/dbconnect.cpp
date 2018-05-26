@@ -456,7 +456,53 @@ bool DbConnect::isCheckedOut(int catId, int idvId)
 //*********************************************************************************
 
 
+//*********************************************************************************
+QStringList DbConnect::getDefaultNotes()
+{
+    QSqlQuery query;
+    query.prepare("SELECT note             "
+                  "FROM gear_default_notes ");
+    QStringList temp;
 
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+
+    int noteFieldNum = query.record().indexOf("note");
+
+    query.first();
+    do
+    {
+        temp << query.value(noteFieldNum).toString();
+    }while(query.next());
+
+    return temp;
+}
+//*********************************************************************************
+
+
+//*********************************************************************************
+void  DbConnect::addNote(int catId, int idvId, QString note, QString author)
+{
+    QDateTime dt = QDateTime::currentDateTime();
+
+    QSqlQuery query;
+    query.prepare("INSERT INTO gear_notes (gear_cat_id, gear_idv_id, note, author, time_stamp) "
+                  "VALUES ( (:catId), (:idvId), (:note), (:author), (:dt) )");
+    query.bindValue(":catId", catId);
+    query.bindValue(":idvId", idvId);
+     query.bindValue(":note", note);
+    query.bindValue(":author", author);
+    query.bindValue(":dt", dt.toString(dateFormat));
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+
+}
+//*********************************************************************************
 
 
 

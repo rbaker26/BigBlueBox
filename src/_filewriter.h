@@ -58,10 +58,6 @@ public:
     //!           <tr><td>ReportType::Expirable</td><td>3</td><td>Only prints items if they are expirable.</td></tr>
     //!           <tr><td>ReportType::DbDump</td><td>4</td><td>Prints all data in database. (only for xml)</td></tr>
     //!          </table>
-    //! First Header  | Second Header
-    //! ------------- | -------------
-    //! Content Cell  | Content Cell
-    //! Content Cell  | Content Cell
     //! \author Bob Baker
     enum ReportType
     {
@@ -72,6 +68,8 @@ public:
         DbDump
     };
     //**********************************************************
+
+
     //**********************************************************
     //! \brief   Default non-args de-constructor
     //! \details Resets instance to nullptr.

@@ -10,6 +10,9 @@ GearCenter::GearCenter(QWidget *parent) :
     ui->setupUi(this);
     ui->stackedWidget->setCurrentIndex(0); // Set the stacked wgt to the first page
 
+    // Set the dec IDs to zero
+    decCatId = 0;
+    decIdvId = 0;
 
 
     //ui->lineEdit_scanCode->setFocus();
@@ -19,6 +22,7 @@ GearCenter::GearCenter(QWidget *parent) :
     //ui->lineEdit_scanCode->selectionStart();
     //ui->lineEdit_scanCode->setCursorPosition(0);
 
+    // Set ScannedBools to false
     itemScanned = false;
     pidScanned = false;
 
@@ -136,6 +140,22 @@ void GearCenter::on_pushButton_enterCode_clicked()
 
         // Set the pidScanned to true
         pidScanned = true;
+
+
+        //**********************************************************************
+        // Set the combo boxes to correct values once the QrCode is scanned.   *
+        //**********************************************************************
+        QString tempTroop = scanCodeString.mid(4,2);
+        QString tempPatrol = scanCodeString.mid(6,2);
+        //qDebug() << "Troop Code:  " << tempTroop;
+        //qDebug() << "Patrol Code: " << tempPatrol;
+
+        int troopIndex  = tempTroop.toInt();
+        int patrolIndex = tempPatrol.toInt();
+        ui->comboBox_troopNames->setCurrentIndex(troopIndex);
+        QThread::msleep(1);
+        ui->comboBox_patrolNames->setCurrentIndex(patrolIndex);
+        //**********************************************************************
     }
     else if(scanCodeString.left(3).toUpper() == "ITM")
     {
@@ -150,6 +170,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
 
         //**********************************************************************
         // Get sub QString
+        //**********************************************************************
         QString catIdString = scanCodeString.mid(4,4);
         QString idvIdString = scanCodeString.mid(9,6);
 
@@ -160,8 +181,8 @@ void GearCenter::on_pushButton_enterCode_clicked()
         // QString -> int
         // str_Hex -> int_Dec
         bool ok;
-        uint decCatId = catIdString.toUInt(&ok,16);
-        uint decIdvId = idvIdString.toUInt(&ok,16);
+        decCatId = catIdString.toUInt(&ok,16);
+        decIdvId = idvIdString.toUInt(&ok,16);
 
         //qDebug() << ok << " " << decCatId;
         //qDebug() << ok << " " << decIdvId;
@@ -283,6 +304,9 @@ void GearCenter::on_pushButton_enterCode_clicked()
         msg.setDefaultButton(QMessageBox::Ok);
         int ret = msg.exec();
 
+        //**********************************************************************
+        // Clean up the UI and input Fields
+        //**********************************************************************
         // Find the path to the blank QrCode
         QString blankPath = bbb::_FileWriter::getAndCheckRoamingPath();
         blankPath.append("/temp/blankQr.svg");
@@ -303,7 +327,20 @@ void GearCenter::on_pushButton_enterCode_clicked()
             ui->lineEdit_itemCode_infoBox->clear();
             clearTable();
             initTable();
+
+            // Clear the PID ComboBoxes
+            //ui->comboBox_troopNames->clear();
+            ui->comboBox_troopNames->setCurrentIndex(0);
+            ui->comboBox_patrolNames->clear();
+
+            // Clear the new comment box
+            ui->lineEdit_noteText->clear();
+
+            // Reset the local Id variable
+            decIdvId = 0;
+            decCatId = 0;
         }
+        //**********************************************************************
     }
 
 }
@@ -341,6 +378,40 @@ void GearCenter::on_comboBox_troopNames_currentIndexChanged(int index)
 //********************************************************************************************
 void GearCenter::on_pushButton_addNote_clicked()
 {
+    QInputDialog inputBox(this);
+    setWindowTitle("Note Author");
+    inputBox.setLabelText("Enter your name:");
+    QString author = inputBox.getText(this,"Note Author","Enter your name:");
+    QString note =  ui->lineEdit_noteText->text();
+    bbb::DbConnect::getInstance()->addNote(decCatId, decIdvId, note, author);
+    ui->lineEdit_noteText->clear();
 
+}
+//********************************************************************************************
+
+
+//********************************************************************************************
+void GearCenter::on_toolButton_defaultNoteList_clicked()
+{
+    QInputDialog inputBox(this);
+
+    // This gives a different view of the list.  I don't like it, but it might be better
+    // down the road.
+    //inputBox.setOptions(QInputDialog::UseListViewForComboBoxItems);
+
+    setWindowTitle("Default Notes List");
+    inputBox.setLabelText("Choose a note");
+
+    // Get the notes from the DB.
+    QStringList notes = bbb::DbConnect::getInstance()->getDefaultNotes();
+    inputBox.setComboBoxItems(notes);
+
+    // Get the value from the user
+    QString s;
+    inputBox.exec();
+    s = inputBox.textValue();
+
+    // Send the note to the ui
+    ui->lineEdit_noteText->setText(s);
 }
 //********************************************************************************************

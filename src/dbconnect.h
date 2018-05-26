@@ -167,6 +167,13 @@ public:
     //**********************************************************
 
 
+    QStringList getDefaultNotes();
+
+
+    void addNote(int catId, int idvId, QString note, QString author);
+
+
+
 
 }; // end class
 //*********************************************************************************
