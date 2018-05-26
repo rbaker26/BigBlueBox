@@ -1,10 +1,16 @@
 var searchData=
 [
-  ['sendrowtotoolbox',['sendRowToToolBox',['../class_reports_view.html#ae67b95dd993a575d09b467f89557aae2',1,'ReportsView']]],
-  ['setdefaultreportpath',['setDefaultReportPath',['../classbbb_1_1_directory_handler.html#abe8eb160489f3565e4694e8a5d0bed1f',1,'bbb::DirectoryHandler']]],
-  ['setpassword',['setPassword',['../classbbb_1_1_user_session.html#a2453e321df5422f34aad1abced2ecf10',1,'bbb::UserSession']]],
-  ['settingspage',['SettingsPage',['../class_settings_page.html',1,'SettingsPage'],['../class_settings_page.html#a2f7b734cd4b293694140ed7504d19a55',1,'SettingsPage::SettingsPage()']]],
-  ['settingspage_2ecpp',['settingspage.cpp',['../settingspage_8cpp.html',1,'']]],
-  ['settingspage_2eh',['settingspage.h',['../settingspage_8h.html',1,'']]],
-  ['setusername',['setUsername',['../classbbb_1_1_user_session.html#af2e2f336538818015e642545db39571a',1,'bbb::UserSession']]]
+  ['readdbfileloc',['readDbFileLoc',['../classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6',1,'bbb::_FileReader']]],
+  ['readreportsdir',['readReportsDir',['../classbbb_1_1___file_reader.html#a84a82fafca657fac8d48cf1ca451cb88',1,'bbb::_FileReader']]],
+  ['reedsolomongenerator',['ReedSolomonGenerator',['../classqrcodegen_1_1_qr_code_1_1_reed_solomon_generator.html#a7027e18ce3d3a9fa623e6520a6155334',1,'qrcodegen::QrCode::ReedSolomonGenerator']]],
+  ['reedsolomongenerator',['ReedSolomonGenerator',['../classqrcodegen_1_1_qr_code_1_1_reed_solomon_generator.html',1,'qrcodegen::QrCode']]],
+  ['reportsview',['ReportsView',['../class_reports_view.html',1,'ReportsView'],['../class_reports_view.html#a3386fadacc4633e21c1759df01a45efd',1,'ReportsView::ReportsView()']]],
+  ['reportsview_2ecpp',['reportsView.cpp',['../reports_view_8cpp.html',1,'']]],
+  ['reportsview_2eh',['reportsView.h',['../reports_view_8h.html',1,'']]],
+  ['reporttype',['ReportType',['../classbbb_1_1___file_writer.html#a486ba7d0d1033f3b93004a4fd5268a53',1,'bbb::_FileWriter']]],
+  ['roles',['Roles',['../classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cb',1,'bbb::UserSession']]],
+  ['root',['ROOT',['../classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cba17df6dcf118c88604b92ffe2d99cd998',1,'bbb::UserSession']]],
+  ['row',['Row',['../structbbb_1_1_row.html',1,'bbb']]],
+  ['rowforupdate',['rowForUpdate',['../class_reports_view.html#ad121d0303a83a6116f2d1e20624b0b88',1,'ReportsView']]],
+  ['run',['run',['../classbbb_test_1_1_unit_test.html#ab007b0ca0f5cf3f165305e71d67b20c0',1,'bbbTest::UnitTest']]]
 ];

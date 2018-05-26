@@ -1,0 +1,8 @@
+<map id="FramelessWindow::styleWindow" name="FramelessWindow::styleWindow">
+<area shape="rect" id="node2" href="$class_frameless_window.html#a69b9f41329f25a952a1d08fdaa70758d" title="FramelessWindow::on\l_applicationStateChanged" alt="" coords="267,5,442,46"/>
+<area shape="rect" id="node4" href="$class_frameless_window.html#ade632284aa31be034b91d99ebadc1c1a" title="FramelessWindow::on\l_restoreButton_clicked" alt="" coords="277,135,432,177"/>
+<area shape="rect" id="node7" href="$class_frameless_window.html#a0118400a2e3ab73b47732dd6ba0cf9e4" title="FramelessWindow::on\l_maximizeButton_clicked" alt="" coords="269,70,440,111"/>
+<area shape="rect" id="node3" href="$class_frameless_window.html#a860d6d0d18c2de8f52c1a92ce01697f4" title="FramelessWindow::Frameless\lWindow" alt="" coords="499,5,698,46"/>
+<area shape="rect" id="node5" href="$class_frameless_window.html#a0aa35e40b978865114d3546882e274a9" title="FramelessWindow::changeEvent" alt="" coords="491,141,706,168"/>
+<area shape="rect" id="node6" href="$class_frameless_window.html#afd193d6bf50b6c588875c8352828651d" title="FramelessWindow::on\l_windowTitlebar_doubleClicked" alt="" coords="496,73,701,114"/>
+</map>

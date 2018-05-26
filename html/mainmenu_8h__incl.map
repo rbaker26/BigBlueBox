@@ -1,10 +1,16 @@
 <map id="/home/travis/build/rbaker26/BigBlueBox/src/mainmenu.h" name="/home/travis/build/rbaker26/BigBlueBox/src/mainmenu.h">
-<area shape="rect" id="node3" href="$reports_view_8h.html" title="reportsView.h" alt="" coords="889,109,991,136"/>
-<area shape="rect" id="node27" href="$settingspage_8h.html" title="pages/settingspage.h" alt="" coords="1178,109,1324,136"/>
-<area shape="rect" id="node6" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="702,184,795,211"/>
-<area shape="rect" id="node15" href="$item_8h.html" title="item.h" alt="" coords="911,259,968,285"/>
-<area shape="rect" id="node22" href="$__regex_8h.html" title="_regex.h" alt="" coords="339,184,411,211"/>
-<area shape="rect" id="node24" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="1084,184,1172,211"/>
-<area shape="rect" id="node19" href="$__filereader_8h.html" title="_filereader.h" alt="" coords="1232,259,1326,285"/>
-<area shape="rect" id="node16" href="$category_8h.html" title="category.h" alt="" coords="1046,333,1127,360"/>
+<area shape="rect" id="node3" href="$reports_view_8h.html" title="reportsView.h" alt="" coords="886,109,988,136"/>
+<area shape="rect" id="node30" href="$settingspage_8h.html" title="pages/settingspage.h" alt="" coords="1117,109,1264,136"/>
+<area shape="rect" id="node32" href="$gear_center_8h.html" title="pages/gearCenter.h" alt="" coords="1947,109,2081,136"/>
+<area shape="rect" id="node6" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="1060,184,1153,211"/>
+<area shape="rect" id="node16" href="$item_8h.html" title="item.h" alt="" coords="885,259,943,285"/>
+<area shape="rect" id="node24" href="$__regex_8h.html" title="_regex.h" alt="" coords="149,184,221,211"/>
+<area shape="rect" id="node26" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="1277,184,1365,211"/>
+<area shape="rect" id="node19" href="$__filereader_8h.html" title="_filereader.h" alt="" coords="1101,259,1195,285"/>
+<area shape="rect" id="node22" href="$gear_8h.html" title="gear.h" alt="" coords="968,259,1025,285"/>
+<area shape="rect" id="node17" href="$category_8h.html" title="category.h" alt="" coords="795,333,876,360"/>
+<area shape="rect" id="node37" href="$_qr_interface_8h.html" title="qr/QrInterface.h" alt="" coords="2461,184,2573,211"/>
+<area shape="rect" id="node38" href="$_qr_code_8h.html" title="qr/QrCode.h" alt="" coords="2561,259,2655,285"/>
+<area shape="rect" id="node42" href="$_qr_segment_8h.html" title="qr/QrSegment.h" alt="" coords="2663,333,2777,360"/>
+<area shape="rect" id="node43" href="$_bit_buffer_8h.html" title="qr/BitBuffer.h" alt="" coords="2692,408,2791,435"/>
 </map>

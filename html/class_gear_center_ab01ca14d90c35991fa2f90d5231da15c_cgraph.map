@@ -1,0 +1,6 @@
+<map id="GearCenter::on_pushButton_addNote_clicked" name="GearCenter::on_pushButton_addNote_clicked">
+<area shape="rect" id="node2" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="238,12,431,39"/>
+<area shape="rect" id="node5" href="$classbbb_1_1_db_connect.html#a30876ce28234ec25cbe5549a1fe9ba37" title="bbb::DbConnect::addNote" alt="" coords="247,63,422,89"/>
+<area shape="rect" id="node3" href="$classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="481,12,671,39"/>
+<area shape="rect" id="node4" href="$classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6" title="bbb::_FileReader::readDb\lFileLoc" alt="" coords="720,5,891,46"/>
+</map>

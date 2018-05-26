@@ -1,0 +1,6 @@
+<map id="qrcodegen::QrCode::handleConstructorMasking" name="qrcodegen::QrCode::handleConstructorMasking">
+<area shape="rect" id="node2" href="$classqrcodegen_1_1_qr_code.html#ad82a191042caa6c94734f97a8b97a87c" title="qrcodegen::QrCode::\lQrCode" alt="" coords="233,38,375,79"/>
+<area shape="rect" id="node3" href="$classqrcodegen_1_1_qr_code.html#a78aa108015b15a8b1fd35d042aff34aa" title="qrcodegen::QrCode::\lencodeSegments" alt="" coords="425,38,567,79"/>
+<area shape="rect" id="node4" href="$classqrcodegen_1_1_qr_code.html#a15d9e26d273b8de6d0773e317ebd97d5" title="qrcodegen::QrCode::\lencodeText" alt="" coords="617,5,759,46"/>
+<area shape="rect" id="node5" href="$classqrcodegen_1_1_qr_code.html#a31efd868a933e2ea62a6f9694bf19606" title="qrcodegen::QrCode::\lencodeBinary" alt="" coords="617,70,759,111"/>
+</map>
