@@ -36,10 +36,6 @@ GearCenter::GearCenter(QWidget *parent) :
 
     // Init Table
     initTable();
-
-
-
-
 }
 //********************************************************************************************
 
@@ -382,10 +378,13 @@ void GearCenter::on_pushButton_addNote_clicked()
     setWindowTitle("Note Author");
     inputBox.setLabelText("Enter your name:");
     QString author = inputBox.getText(this,"Note Author","Enter your name:");
-    QString note =  ui->lineEdit_noteText->text();
-    bbb::DbConnect::getInstance()->addNote(decCatId, decIdvId, note, author);
-    ui->lineEdit_noteText->clear();
 
+    if(author.length() != 0)
+    {
+        QString note =  ui->lineEdit_noteText->text();
+        bbb::DbConnect::getInstance()->addNote(decCatId, decIdvId, note, author);
+        ui->lineEdit_noteText->clear();
+    }
 }
 //********************************************************************************************
 
@@ -408,10 +407,14 @@ void GearCenter::on_toolButton_defaultNoteList_clicked()
 
     // Get the value from the user
     QString s;
-    inputBox.exec();
+    int result = inputBox.exec();
     s = inputBox.textValue();
 
-    // Send the note to the ui
-    ui->lineEdit_noteText->setText(s);
+    if(result == 1 /*QMessageBox::Ok*/)
+    {
+        // Send the note to the ui
+        ui->lineEdit_noteText->setText(s);
+    }
+
 }
 //********************************************************************************************

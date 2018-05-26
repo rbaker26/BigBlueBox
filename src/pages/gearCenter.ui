@@ -629,7 +629,7 @@
              <item>
               <widget class="QPushButton" name="pushButton_addNote">
                <property name="enabled">
-                <bool>true</bool>
+                <bool>false</bool>
                </property>
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
