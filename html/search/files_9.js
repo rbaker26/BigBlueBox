@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['reportsview_2ecpp',['reportsView.cpp',['../reports_view_8cpp.html',1,'']]],
-  ['reportsview_2eh',['reportsView.h',['../reports_view_8h.html',1,'']]]
+  ['settingspage_2ecpp',['settingspage.cpp',['../settingspage_8cpp.html',1,'']]],
+  ['settingspage_2eh',['settingspage.h',['../settingspage_8h.html',1,'']]]
 ];
