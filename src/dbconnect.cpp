@@ -206,30 +206,6 @@ QVector<GearNote> DbConnect::getGearNotes(int catId, int idvId)
     GearNote tempNote;
 
     QSqlQuery query;
-
-    // This query doesn't really need the join, it is just here in case
-    //  I want to expand its functionality.
-    // It just allows the connection of the gear_name.
-    // It also adds the possiblity of adding Heath_status to the notes
-    //  reports.
-    // I plan on making a xml/txt report genrator like I did with the
-    //  inventory page.
-    // For this, I will need to print out the name of the item as well
-    //  as some stats.  I will try to reuse this query / function.
-
-//    query.prepare("SELECT gear_list.gear_name,                          "
-//                  "       gear_notes.note, gear_notes.author,           "
-//                  "       gear_notes.time_stamp                         "
-//                  "FROM gear_list LEFT JOIN gear_notes                  "
-//                  "WHERE gear_list.gear_cat_id = gear_notes.gear_cat_id "
-//                  "      AND                                            "
-//                  "      gear_list.gear_idv_id = gear_notes.gear_idv_id "
-//                  "      AND                                            "
-//                  "      gear_list.gear_cat_id = (:catId)               "
-//                  "      AND                                            "
-//                  "      gear_list.gear_idv_id = (:idvId);              ");
-
-
     query.prepare("SELECT                           "
                   "       note, author,             "
                   "       time_stamp                "
@@ -456,6 +432,8 @@ bool DbConnect::isCheckedOut(int catId, int idvId)
 //*********************************************************************************
 
 
+
+
 //*********************************************************************************
 QStringList DbConnect::getDefaultNotes()
 {
@@ -480,6 +458,8 @@ QStringList DbConnect::getDefaultNotes()
     return temp;
 }
 //*********************************************************************************
+
+
 
 
 //*********************************************************************************
@@ -508,3 +488,80 @@ void  DbConnect::addNote(int catId, int idvId, QString note, QString author)
 
 
 
+//*********************************************************************************
+bool DbConnect::gearItemExists(int catId, int idvId)
+{
+    bool exists;
+    QSqlQuery query;
+
+    query.prepare("SELECT CASE WHEN EXISTS (            "
+                  "  SELECT *                           "
+                  "  FROM gear_list                     "
+                  "  WHERE gear_cat_id = (:gear_cat_id) "
+                  "        AND                          "
+                  "        gear_idv_id = (:gear_idv_id) "
+                  "  LIMIT 1                            "
+                  ")                                    "
+                  "THEN CAST(1 AS BIT)                  "
+                  "ELSE CAST(0 AS BIT) END              ");
+
+
+
+    query.bindValue(":gear_cat_id", catId);
+    query.bindValue(":gear_idv_id", idvId);
+    exists = query.exec();
+
+    query.first();
+    exists = query.value(0).toBool();
+
+    return exists;
+}
+//*********************************************************************************
+
+
+
+
+
+//*********************************************************************************
+void DbConnect::checkOutGear(int catId, int idvId, QString pidStr)
+{
+    QSqlQuery query;
+    query.prepare("UPDATE gear_list                  "
+                  "SET is_checked_out = (:boolTrue), "
+                  "    checked_out_by = (:pidStr)    "
+                  "WHERE gear_cat_id  = (:catId)     "
+                  "      AND                         "
+                  "      gear_idv_id  = (:idvId);    ");
+    query.bindValue(":boolTrue", true);
+    query.bindValue(":pidStr", pidStr);
+    query.bindValue(":catId", catId);
+    query.bindValue(":catId", idvId);
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+}
+//*********************************************************************************
+
+
+
+
+//*********************************************************************************
+void  DbConnect::sysLog(QString log)
+{
+
+    QDateTime dt = QDateTime::currentDateTime();
+    QSqlQuery query;
+    query.prepare("INSERT INTO system_log (log_note, time_stamp)  "
+                  "VALUES ( (:log), (:dt) );                      ");
+    query.bindValue(":log", log);
+    query.bindValue(":dt", dt.toString(dateFormat));
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+}
+
+//*********************************************************************************

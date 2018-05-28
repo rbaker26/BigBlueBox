@@ -8,6 +8,7 @@
 
 #include "_filereader.h"
 #include "_filewriter.h"
+#include "dbconnect.h"
 
 
 namespace Ui {

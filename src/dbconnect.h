@@ -70,7 +70,7 @@ public:
     //**********************************************************
     //! \brief   Singleton pointer return function.
     //! \details Returns pointer to singleton object.
-    //! \return  DbConnect*
+    //! \return  DbConnect* instanceSingletonClass
     //! \author  Bob Baker
     static DbConnect* getInstance();
     //**********************************************************
@@ -116,7 +116,8 @@ public:
     //! \details Queries DB with itemName to see if any records
     //!          with the same name exist.  If they exist,
     //!          the function will return true.
-    //! //! \author Bob Baker
+    //! \return boolItemAlreadyExists
+    //! \author Bob Baker
     bool itemAlreadyExists(QString name);
     //**********************************************************
 
@@ -125,6 +126,7 @@ public:
     //! \details Queries DB with catId and idvId to find all
     //!          related node for a certain gear item in chrono
     //!          order.
+    //! \return QVector<GearNote>
     //! \author Bob Baker
     QVector<GearNote> getGearNotes(int catId, int idvId);
     //**********************************************************
@@ -133,6 +135,7 @@ public:
     //! \brief Gets all info for a gear item.
     //! \details Queries DB with catId and idvId to find all
     //!          related info for a certain gear item.
+    //! Gear gearItem
     //! \author Bob Baker
     Gear getGearInfo(int catId, int idvId);
     //**********************************************************
@@ -141,19 +144,25 @@ public:
     //! \brief Gets all Heath Statuses
     //! \details Returns a QStringList containing all of the
     //!          Health Status Text Code in the DB.
+    //! \return QStringList healthStatusList
     //! \author Bob Baker
     QStringList getGearHealthStatusList();
     //**********************************************************
 
     //**********************************************************
+    //! \brief Checks if Gear is checked out
+    //! \details Returns a bool if the Gear Item, based on catId
+    //!          and idvId, is checked out.
+    //! \return bool isCheckedOut
+    //! \author Bob Baker
     bool isCheckedOut(int catId, int idvId);
     //**********************************************************
-
 
     //**********************************************************
     //! \brief Gets Troop names
     //! \details Will return all troop names in the DB in a
     //!          QStringList
+    //! \return QStringList troopNamesList
     //! \author Bob Baker
     QStringList getTroopNames();
     //**********************************************************
@@ -162,18 +171,40 @@ public:
     //! \brief Gets Patrol names
     //! \details Will return all patrol names for the given
     //!          troop id in a QStringList
+    //! \return QStringList patrolNamesList
     //! \author Bob Baker
     QStringList getPatrolNamesByTroop(int troopNum);
     //**********************************************************
 
-
+    //**********************************************************
+    //! \brief Gets Default Notes
+    //! \details Will return all default notes in the DB.
+    //! \return QStringList defaultNotesList
+    //! \author Bob Baker
     QStringList getDefaultNotes();
+    //**********************************************************
 
-
+    //**********************************************************
+    //! \brief Adds new Gear Note to DB
+    //! \details Addes a new note for an Gear Item based on
+    //!          catId and idvId.  It will handle the time stamp
+    //!          local to the function.
+    //! \author Bob Baker
     void addNote(int catId, int idvId, QString note, QString author);
+    //**********************************************************
+
+    //**********************************************************
+    bool gearItemExists(int catId, int idvId);
+    //**********************************************************
 
 
+    //**********************************************************
+    void checkOutGear(int catId, int idvId, QString pid);
+    //**********************************************************
 
+    //**********************************************************
+    void sysLog(QString log);
+    //**********************************************************
 
 }; // end class
 //*********************************************************************************

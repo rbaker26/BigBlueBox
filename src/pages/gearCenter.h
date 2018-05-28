@@ -33,6 +33,10 @@ public:
     
     void clearTable();
 
+    void fillNotesTables();
+
+    void clearGearInfo();
+
 private:
     bool itemScanned;
     bool pidScanned;

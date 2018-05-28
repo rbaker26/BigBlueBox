@@ -1,6 +1,6 @@
 #include "settingspage.h"
 #include "ui_settingspage.h"
-
+//*********************************************************************************
 SettingsPage::SettingsPage(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::SettingsPage)
@@ -9,12 +9,20 @@ SettingsPage::SettingsPage(QWidget *parent) :
 
     initPaths();
 }
+//*********************************************************************************
 
+
+//*********************************************************************************
 SettingsPage::~SettingsPage()
 {
     delete ui;
 }
+//*********************************************************************************
 
+
+
+
+//*********************************************************************************
 void SettingsPage::initPaths()
 {
     QString dbPath = bbb::_FileReader::readDbFileLoc();
@@ -24,7 +32,12 @@ void SettingsPage::initPaths()
     ui->lineEdit_reportsDir->setText(reportPath);
 
 }
+//*********************************************************************************
 
+
+
+
+//*********************************************************************************
 void SettingsPage::on_toolButton_fileBrowse_clicked()
 {
     // todo - get default file loc form class and put it as default path in QFileDialog param
@@ -40,7 +53,12 @@ void SettingsPage::on_toolButton_fileBrowse_clicked()
 
 
 }
+//*********************************************************************************
 
+
+
+
+//*********************************************************************************
 void SettingsPage::on_toolButton_reportsLoc_clicked()
 {
     // todo - get defualt loc from class and put it as default path in QFileDialog param
@@ -55,7 +73,13 @@ void SettingsPage::on_toolButton_reportsLoc_clicked()
     }
 
 }
+//*********************************************************************************
 
+
+
+
+
+//*********************************************************************************
 void SettingsPage::on_pushButton_saveDbDir_clicked()
 {
     bbb::_FileWriter::writeDbFileLoc(ui->lineEdit_dbFile->text());
@@ -69,11 +93,23 @@ void SettingsPage::on_pushButton_saveDbDir_clicked()
     msgBox.setDefaultButton(QMessageBox::Ok);
     msgBox.exec();
 
-}
+    bbb::DbConnect::getInstance()->sysLog("SYSTEM:\tDB_PATH_CHANGED->" +
+                                          ui->lineEdit_dbFile->text());
 
+}
+//*********************************************************************************
+
+
+
+
+//*********************************************************************************
 void SettingsPage::on_pushButton_saveReportDir_clicked()
 {
     ui->lineEdit_reportsDir->setFocus();
     bbb::_FileWriter::writeReportsDir(ui->lineEdit_reportsDir->text());
     ui->pushButton_saveReportDir->setEnabled(false);
+
+    bbb::DbConnect::getInstance()->sysLog("SYSTEM:\tREPORT_DIR_CHANGED->" +
+                                          ui->lineEdit_reportsDir->text());
 }
+//*********************************************************************************

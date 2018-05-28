@@ -113,6 +113,52 @@ void GearCenter::initTable()
 
 
 //********************************************************************************************
+void GearCenter::fillNotesTables()
+{
+    QVector<bbb::GearNote> notes = bbb::DbConnect::getInstance()->getGearNotes(decCatId, decIdvId);
+
+    // Init table
+    initTable();
+
+
+    // Fill table
+    QVector<bbb::GearNote>::iterator it = notes.begin();
+    const QVector<bbb::GearNote>::iterator EXIT_FLAG =  notes.end();
+    int rowCount = 0;
+
+    while(it != EXIT_FLAG)
+    {
+        ui->tableWidget->insertRow(ui->tableWidget->rowCount());
+
+        ui->tableWidget->setItem(rowCount ,0, new QTableWidgetItem(it->noteText));
+        ui->tableWidget->setItem(rowCount ,1, new QTableWidgetItem((it->author)));
+        ui->tableWidget->setItem(rowCount ,2, new QTableWidgetItem(it->dtMade.toString("MM/dd/yy hh:mm")));
+
+        rowCount++;
+        it++;
+    }
+    ui->tableWidget->scrollToBottom();
+}
+//********************************************************************************************
+
+
+
+
+//********************************************************************************************
+void GearCenter::clearGearInfo()
+{
+    // Clear the Gear Info section
+    ui->dateEdit_obsolDate->setDate(QDate(1970,1,1));
+    ui->lineEdit_itemName->clear();
+    ui->lineEdit_scanCode->clear();
+    ui->comboBox_itemHealth->setCurrentIndex(0);
+}
+//********************************************************************************************
+
+
+
+
+//********************************************************************************************
 //********************************************************************************************
 void GearCenter::on_pushButton_enterCode_clicked()
 {
@@ -165,7 +211,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
         itemScanned = true;
 
         //**********************************************************************
-        // Get sub QString
+        // Get sub QString                                                     *
         //**********************************************************************
         QString catIdString = scanCodeString.mid(4,4);
         QString idvIdString = scanCodeString.mid(9,6);
@@ -189,7 +235,30 @@ void GearCenter::on_pushButton_enterCode_clicked()
         //**********************************************************************
         // Check to see if the item exists                                     *
         //**********************************************************************
+        bool exists = bbb::DbConnect::getInstance()->gearItemExists(decCatId, decIdvId);
+        qDebug() << "Exists:\t" << exists;
+        if(!exists)
+        {
+            // Display error for non-existent gear item
+            QMessageBox msg(this);
+            msg.setText("Error: No Gear Item of code: " + scanCodeString);
+            msg.setStandardButtons(QMessageBox::Ok);
+            msg.setDefaultButton(QMessageBox::Ok);
+            msg.exec();
 
+            // Clear out the gear info on the screen
+            clearGearInfo();
+
+            // Un-set the scanned bool
+            itemScanned = false;
+
+            // Final Clean-up
+            decCatId = 0;
+            decIdvId = 0;
+            ui->lineEdit_itemCode_infoBox->clear();
+            return;         // Exit the Function
+
+        }
         //**********************************************************************
 
 
@@ -198,7 +267,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
         // Check to see if item is checked in or not, offer to check item in   *
         //**********************************************************************
         bool isCheckedOut = bbb::DbConnect::getInstance()->isCheckedOut(decCatId, decIdvId);
-        qDebug() << "Checked in\t" << isCheckedOut;
+        qDebug() << "Checked out\t" << isCheckedOut;
         //**********************************************************************
 
 
@@ -222,45 +291,19 @@ void GearCenter::on_pushButton_enterCode_clicked()
 
 
 
-        //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-        // Fill the notes table widget
-        clearTable();
-        //qDebug() << decCatId << decIdvId;
-        QVector<bbb::GearNote> notes = bbb::DbConnect::getInstance()->getGearNotes(decCatId, decIdvId);
-
-        // Init table
-        initTable();
-
-
-        // Fill table
-        QVector<bbb::GearNote>::iterator it = notes.begin();
-        const QVector<bbb::GearNote>::iterator EXIT_FLAG =  notes.end();
-        int rowCount = 0;
-
-        while(it != EXIT_FLAG)
-        {
-            ui->tableWidget->insertRow(ui->tableWidget->rowCount());
-
-            ui->tableWidget->setItem(rowCount ,0, new QTableWidgetItem(it->noteText));
-            ui->tableWidget->setItem(rowCount ,1, new QTableWidgetItem((it->author)));
-            ui->tableWidget->setItem(rowCount ,2, new QTableWidgetItem(it->dtMade.toString("MM/dd/yy hh:mm")));
-
-            rowCount++;
-            it++;
-        }
-        ui->tableWidget->scrollToBottom();
-        //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-
-
-
-
         //**********************************************************************
+        // Fill the notes table widget                                         *
+        //**********************************************************************
+        fillNotesTables();
+        //**********************************************************************
+
+
 
     }
     else
     {
         // Display error for bad scan code
-        QMessageBox msg;
+        QMessageBox msg(this);
         msg.setText("Error: Bad Scan Code    ");
         msg.setStandardButtons(QMessageBox::Ok);
         msg.setDefaultButton(QMessageBox::Ok);
@@ -301,7 +344,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
         int ret = msg.exec();
 
         //**********************************************************************
-        // Clean up the UI and input Fields
+        // Clean up the UI and input Fields                                    *
         //**********************************************************************
         // Find the path to the blank QrCode
         QString blankPath = bbb::_FileWriter::getAndCheckRoamingPath();
@@ -335,6 +378,18 @@ void GearCenter::on_pushButton_enterCode_clicked()
             // Reset the local Id variable
             decIdvId = 0;
             decCatId = 0;
+
+            // Clear the Gear Info section
+            clearGearInfo();
+
+        }
+        else if(ret == QMessageBox::Cancel)
+        {
+            //
+            //
+            //
+            //
+            // Allow person to edit the screen and enable bottom button
         }
         //**********************************************************************
     }
@@ -385,6 +440,7 @@ void GearCenter::on_pushButton_addNote_clicked()
         bbb::DbConnect::getInstance()->addNote(decCatId, decIdvId, note, author);
         ui->lineEdit_noteText->clear();
     }
+    fillNotesTables();
 }
 //********************************************************************************************
 

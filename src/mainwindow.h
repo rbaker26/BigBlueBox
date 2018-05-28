@@ -4,6 +4,7 @@
 #include <QMainWindow>
 
 #include "mainmenu.h"
+#include "dbconnect.h"
 
 namespace Ui {
 class MainWindow;
