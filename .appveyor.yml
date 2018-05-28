@@ -1,6 +1,7 @@
 install:
   - set QTDIR=C:\Qt\5.10.1\mingw492_32
   - set PATH=%PATH%;%QTDIR%\bin;C:\MinGW\bin
+  - sudo apt-get install qt5-default qttools5-dev-tools libqt5svg5 libqt5svg5-dev
 build_script:
   - qmake src/BigBlueBox.pro
   - mingw32-make
