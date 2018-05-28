@@ -7,6 +7,7 @@ var searchData=
   ['gearcenter_2ecpp',['gearCenter.cpp',['../gear_center_8cpp.html',1,'']]],
   ['gearcenter_2eh',['gearCenter.h',['../gear_center_8h.html',1,'']]],
   ['gearhealth',['gearHealth',['../class_gear.html#ab9b689643030cc0cb6235d0ca4e61d68',1,'Gear']]],
+  ['gearitemexists',['gearItemExists',['../classbbb_1_1_db_connect.html#a6d60564ee740061fb74ddb0f51617221',1,'bbb::DbConnect']]],
   ['gearname',['gearName',['../class_gear.html#ae31c06025514b806c7a4c06f870602c6',1,'Gear']]],
   ['gearnote',['GearNote',['../classbbb_1_1_gear_note.html#a08f3d69aff33df72d1896adada7116b4',1,'bbb::GearNote']]],
   ['gearnote',['GearNote',['../classbbb_1_1_gear_note.html',1,'bbb']]],

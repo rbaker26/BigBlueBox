@@ -366,10 +366,10 @@ Generating caller graph for function FramelessWindow::styleWindow
 Generating docs for compound Gear...
 Generating docs for compound GearCenter...
 Generating call graph for function GearCenter::GearCenter
+Generating caller graph for function GearCenter::clearGearInfo
 Generating caller graph for function GearCenter::clearTable
-Generating call graph for function GearCenter::initTable
-Generating caller graph for function GearCenter::initTable
-Generating call graph for func/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
+Generating call graph for function GearCenter::fillNotesTables
+Generating caller gr/home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isBoxName(QString boxName)
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:39: warning: The following parameters of bbb::_Regex::isBoxName(QString boxName) are not documented:
   parameter 'boxName'
 /home/travis/build/rbaker26/BigBlueBox/src/_regex.h:30: warning: argument 'QString' of command @param is not found in the argument list of bbb::_Regex::isItemName(QString itemName)
@@ -391,12 +391,17 @@ Generating call graph for func/home/travis/build/rbaker26/BigBlueBox/src/_regex.
 /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:108: warning: argument 'QString' of command @param is not found in the argument list of bbb::DbConnect::deleteItem(QString name)
 /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:108: warning: The following parameters of bbb::DbConnect::deleteItem(QString name) are not documented:
   parameter 'name'
-tion GearCenter::on_comboBox_troopNames_currentIndexChanged
+aph for function GearCenter::fillNotesTables
+Generating call graph for function GearCenter::initTable
+Generating caller graph for function GearCenter::initTable
+Generating call graph for function GearCenter::on_comboBox_troopNames_currentIndexChanged
 Generating call graph for function GearCenter::on_pushButton_addNote_clicked
 Generating call graph for function GearCenter::on_pushButton_enterCode_clicked
 Generating call graph for function GearCenter::on_toolButton_defaultNoteList_clicked
 Generating docs for compound MainMenu...
 Generating docs for compound MainWindow...
+Generating call graph for function MainWindow::MainWindow
+Generating call graph for function MainWindow::~MainWindow
 Generating docs for compound QrInterface...
 Generating call graph for function QrInterface::strToSvg
 Generating caller graph for function QrInterface::strToSvg
@@ -451,12 +456,7 @@ Generating caller graph for function bbb::DbConnect::DbConnect
 Generating caller graph for function bbb::DbConnect::addNewItem
 Generating caller graph for function bbb::DbConnect::addNote
 Generating caller graph for function bbb::DbConnect::deleteItem
-Generating caller graph for function bbb::DbConnect::getDefaultNotes
-Generating caller graph for function bbb::DbConnect::getFullInvAsVector
-Generating caller graph for function bbb::DbConnect::getGearInfo
-Generating caller graph for function bbb::DbConnect::getGearNotes
-Generating call graph for function bbb::DbConnect::getInstance
-Generati/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:90: warning: argument 'QString' of command @param is not found in the argument list of bbb::DbConnect::updateItem(QString orgName, Row newRowInfo)
+Generating caller graph for functio/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:90: warning: argument 'QString' of command @param is not found in the argument list of bbb::DbConnect::updateItem(QString orgName, Row newRowInfo)
 /home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:90: warning: The following parameters of bbb::DbConnect::updateItem(QString orgName, Row newRowInfo) are not documented:
   parameter 'orgName'
   parameter 'newRowInfo'
@@ -468,9 +468,16 @@ Generati/home/travis/build/rbaker26/BigBlueBox/src/dbconnect.h:90: warning: argu
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:38: warning: Found unknown command `\obsolete'
 /home/travis/build/rbaker26/BigBlueBox/src/item.h:76: warning: Found unknown command `\inherits'
-ng caller graph for function bbb::DbConnect::getInstance
+n bbb::DbConnect::gearItemExists
+Generating caller graph for function bbb::DbConnect::getDefaultNotes
+Generating caller graph for function bbb::DbConnect::getFullInvAsVector
+Generating caller graph for function bbb::DbConnect::getGearInfo
+Generating caller graph for function bbb::DbConnect::getGearNotes
+Generating call graph for function bbb::DbConnect::getInstance
+Generating caller graph for function bbb::DbConnect::getInstance
 Generating caller graph for function bbb::DbConnect::isCheckedOut
 Generating caller graph for function bbb::DbConnect::itemAlreadyExists
+Generating caller graph for function bbb::DbConnect::sysLog
 Generating caller graph for function bbb::DbConnect::updateItem
 Generating docs for compound bbb::DirectoryHandler...
 Generating docs for compound bbb::GearNote...
@@ -585,316 +592,323 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 3 parallel threads...
-Running dot for graph 1/310
-Running dot for graph 2/310
-Running dot for graph 3/310
-Running dot for graph 4/310
-Running dot for graph 5/310
-Running dot for graph 6/310
-Running dot for graph 7/310
-Running dot for graph 8/310
-Running dot for graph 9/310
-Running dot for graph 10/310
-Running dot for graph 11/310
-Running dot for graph 12/310
-Running dot for graph 13/310
-Running dot for graph 14/310
-Running dot for graph 15/310
-Running dot for graph 16/310
-Running dot for graph 17/310
-Running dot for graph 18/310
-Running dot for graph 19/310
-Running dot for graph 20/310
-Running dot for graph 21/310
-Running dot for graph 22/310
-Running dot for graph 23/310
-Running dot for graph 24/310
-Running dot for graph 25/310
-Running dot for graph 26/310
-Running dot for graph 27/310
-Running dot for graph 28/310
-Running dot for graph 29/310
-Running dot for graph 30/310
-Running dot for graph 31/310
-Running dot for graph 32/310
-Running dot for graph 33/310
-Running dot for graph 34/310
-Running dot for graph 35/310
-Running dot for graph 36/310
-Running dot for graph 37/310
-Running dot for graph 38/310
-Running dot for graph 39/310
-Running dot for graph 40/310
-Running dot for graph 41/310
-Running dot for graph 42/310
-Running dot for graph 43/310
-Running dot for graph 44/310
-Running dot for graph 45/310
-Running dot for graph 46/310
-Running dot for graph 47/310
-Running dot for graph 48/310
-Running dot for graph 49/310
-Running dot for graph 50/310
-Running dot for graph 51/310
-Running dot for graph 52/310
-Running dot for graph 53/310
-Running dot for graph 54/310
-Running dot for graph 55/310
-Running dot for graph 56/310
-Running dot for graph 57/310
-Running dot for graph 58/310
-Running dot for graph 59/310
-Running dot for graph 60/310
-Running dot for graph 61/310
-Running dot for graph 62/310
-Running dot for graph 63/310
-Running dot for graph 64/310
-Running dot for graph 65/310
-Running dot for graph 66/310
-Running dot for graph 67/310
-Running dot for graph 68/310
-Running dot for graph 69/310
-Running dot for graph 70/310
-Running dot for graph 71/310
-Running dot for graph 72/310
-Running dot for graph 73/310
-Running dot for graph 74/310
-Running dot for graph 75/310
-Running dot for graph 76/310
-Running dot for graph 77/310
-Running dot for graph 78/310
-Running dot for graph 79/310
-Running dot for graph 80/310
-Running dot for graph 81/310
-Running dot for graph 82/310
-Running dot for graph 83/310
-Running dot for graph 84/310
-Running dot for graph 85/310
-Running dot for graph 86/310
-Running dot for graph 87/310
-Running dot for graph 88/310
-Running dot for graph 89/310
-Running dot for graph 90/310
-Running dot for graph 91/310
-Running dot for graph 92/310
-Running dot for graph 93/310
-Running dot for graph 94/310
-Running dot for graph 95/310
-Running dot for graph 96/310
-Running dot for graph 97/310
-Running dot for graph 98/310
-Running dot for graph 99/310
-Running dot for graph 100/310
-Running dot for graph 101/310
-Running dot for graph 102/310
-Running dot for graph 103/310
-Running dot for graph 104/310
-Running dot for graph 105/310
-Running dot for graph 106/310
-Running dot for graph 107/310
-Running dot for graph 108/310
-Running dot for graph 109/310
-Running dot for graph 110/310
-Running dot for graph 111/310
-Running dot for graph 112/310
-Running dot for graph 113/310
-Running dot for graph 114/310
-Running dot for graph 115/310
-Running dot for graph 116/310
-Running dot for graph 117/310
-Running dot for graph 118/310
-Running dot for graph 119/310
-Running dot for graph 120/310
-Running dot for graph 121/310
-Running dot for graph 122/310
-Running dot for graph 123/310
-Running dot for graph 124/310
-Running dot for graph 125/310
-Running dot for graph 126/310
-Running dot for graph 127/310
-Running dot for graph 128/310
-Running dot for graph 129/310
-Running dot for graph 130/310
-Running dot for graph 131/310
-Running dot for graph 132/310
-Running dot for graph 133/310
-Running dot for graph 134/310
-Running dot for graph 135/310
-Running dot for graph 136/310
-Running dot for graph 137/310
-Running dot for graph 138/310
-Running dot for graph 139/310
-Running dot for graph 140/310
-Running dot for graph 141/310
-Running dot for graph 142/310
-Running dot for graph 143/310
-Running dot for graph 144/310
-Running dot for graph 145/310
-Running dot for graph 146/310
-Running dot for graph 147/310
-Running dot for graph 148/310
-Running dot for graph 149/310
-Running dot for graph 150/310
-Running dot for graph 151/310
-Running dot for graph 152/310
-Running dot for graph 153/310
-Running dot for graph 154/310
-Running dot for graph 155/310
-Running dot for graph 156/310
-Running dot for graph 157/310
-Running dot for graph 158/310
-Running dot for graph 159/310
-Running dot for graph 160/310
-Running dot for graph 161/310
-Running dot for graph 162/310
-Running dot for graph 163/310
-Running dot for graph 164/310
-Running dot for graph 165/310
-Running dot for graph 166/310
-Running dot for graph 167/310
-Running dot for graph 168/310
-Running dot for graph 169/310
-Running dot for graph 170/310
-Running dot for graph 171/310
-Running dot for graph 172/310
-Running dot for graph 173/310
-Running dot for graph 174/310
-Running dot for graph 175/310
-Running dot for graph 176/310
-Running dot for graph 177/310
-Running dot for graph 178/310
-Running dot for graph 179/310
-Running dot for graph 180/310
-Running dot for graph 181/310
-Running dot for graph 182/310
-Running dot for graph 183/310
-Running dot for graph 184/310
-Running dot for graph 185/310
-Running dot for graph 186/310
-Running dot for graph 187/310
-Running dot for graph 188/310
-Running dot for graph 189/310
-Running dot for graph 190/310
-Running dot for graph 191/310
-Running dot for graph 192/310
-Running dot for graph 193/310
-Running dot for graph 194/310
-Running dot for graph 195/310
-Running dot for graph 196/310
-Running dot for graph 197/310
-Running dot for graph 198/310
-Running dot for graph 199/310
-Running dot for graph 200/310
-Running dot for graph 201/310
-Running dot for graph 202/310
-Running dot for graph 203/310
-Running dot for graph 204/310
-Running dot for graph 205/310
-Running dot for graph 206/310
-Running dot for graph 207/310
-Running dot for graph 208/310
-Running dot for graph 209/310
-Running dot for graph 210/310
-Running dot for graph 211/310
-Running dot for graph 212/310
-Running dot for graph 213/310
-Running dot for graph 214/310
-Running dot for graph 215/310
-Running dot for graph 216/310
-Running dot for graph 217/310
-Running dot for graph 218/310
-Running dot for graph 219/310
-Running dot for graph 220/310
-Running dot for graph 221/310
-Running dot for graph 222/310
-Running dot for graph 223/310
-Running dot for graph 224/310
-Running dot for graph 225/310
-Running dot for graph 226/310
-Running dot for graph 227/310
-Running dot for graph 228/310
-Running dot for graph 229/310
-Running dot for graph 230/310
-Running dot for graph 231/310
-Running dot for graph 232/310
-Running dot for graph 233/310
-Running dot for graph 234/310
-Running dot for graph 235/310
-Running dot for graph 236/310
-Running dot for graph 237/310
-Running dot for graph 238/310
-Running dot for graph 239/310
-Running dot for graph 240/310
-Running dot for graph 241/310
-Running dot for graph 242/310
-Running dot for graph 243/310
-Running dot for graph 244/310
-Running dot for graph 245/310
-Running dot for graph 246/310
-Running dot for graph 247/310
-Running dot for graph 248/310
-Running dot for graph 249/310
-Running dot for graph 250/310
-Running dot for graph 251/310
-Running dot for graph 252/310
-Running dot for graph 253/310
-Running dot for graph 254/310
-Running dot for graph 255/310
-Running dot for graph 256/310
-Running dot for graph 257/310
-Running dot for graph 258/310
-Running dot for graph 259/310
-Running dot for graph 260/310
-Running dot for graph 261/310
-Running dot for graph 262/310
-Running dot for graph 263/310
-Running dot for graph 264/310
-Running dot for graph 265/310
-Running dot for graph 266/310
-Running dot for graph 267/310
-Running dot for graph 268/310
-Running dot for graph 269/310
-Running dot for graph 270/310
-Running dot for graph 271/310
-Running dot for graph 272/310
-Running dot for graph 273/310
-Running dot for graph 274/310
-Running dot for graph 275/310
-Running dot for graph 276/310
-Running dot for graph 277/310
-Running dot for graph 278/310
-Running dot for graph 279/310
-Running dot for graph 280/310
-Running dot for graph 281/310
-Running dot for graph 282/310
-Running dot for graph 283/310
-Running dot for graph 284/310
-Running dot for graph 285/310
-Running dot for graph 286/310
-Running dot for graph 287/310
-Running dot for graph 288/310
-Running dot for graph 289/310
-Running dot for graph 290/310
-Running dot for graph 291/310
-Running dot for graph 292/310
-Running dot for graph 293/310
-Running dot for graph 294/310
-Running dot for graph 295/310
-Running dot for graph 296/310
-Running dot for graph 297/310
-Running dot for graph 298/310
-Running dot for graph 299/310
-Running dot for graph 300/310
-Running dot for graph 301/310
-Running dot for graph 302/310
-Running dot for graph 303/310
-Running dot for graph 304/310
-Running dot for graph 305/310
-Running dot for graph 306/310
-Running dot for graph 307/310
-Running dot for graph 308/310
-Running dot for graph 309/310
-Running dot for graph 310/310
+Running dot for graph 1/317
+Running dot for graph 2/317
+Running dot for graph 3/317
+Running dot for graph 4/317
+Running dot for graph 5/317
+Running dot for graph 6/317
+Running dot for graph 7/317
+Running dot for graph 8/317
+Running dot for graph 9/317
+Running dot for graph 10/317
+Running dot for graph 11/317
+Running dot for graph 12/317
+Running dot for graph 13/317
+Running dot for graph 14/317
+Running dot for graph 15/317
+Running dot for graph 16/317
+Running dot for graph 17/317
+Running dot for graph 18/317
+Running dot for graph 19/317
+Running dot for graph 20/317
+Running dot for graph 21/317
+Running dot for graph 22/317
+Running dot for graph 23/317
+Running dot for graph 24/317
+Running dot for graph 25/317
+Running dot for graph 26/317
+Running dot for graph 27/317
+Running dot for graph 28/317
+Running dot for graph 29/317
+Running dot for graph 30/317
+Running dot for graph 31/317
+Running dot for graph 32/317
+Running dot for graph 33/317
+Running dot for graph 34/317
+Running dot for graph 35/317
+Running dot for graph 36/317
+Running dot for graph 37/317
+Running dot for graph 38/317
+Running dot for graph 39/317
+Running dot for graph 40/317
+Running dot for graph 41/317
+Running dot for graph 42/317
+Running dot for graph 43/317
+Running dot for graph 44/317
+Running dot for graph 45/317
+Running dot for graph 46/317
+Running dot for graph 47/317
+Running dot for graph 48/317
+Running dot for graph 49/317
+Running dot for graph 50/317
+Running dot for graph 51/317
+Running dot for graph 52/317
+Running dot for graph 53/317
+Running dot for graph 54/317
+Running dot for graph 55/317
+Running dot for graph 56/317
+Running dot for graph 57/317
+Running dot for graph 58/317
+Running dot for graph 59/317
+Running dot for graph 60/317
+Running dot for graph 61/317
+Running dot for graph 62/317
+Running dot for graph 63/317
+Running dot for graph 64/317
+Running dot for graph 65/317
+Running dot for graph 66/317
+Running dot for graph 67/317
+Running dot for graph 68/317
+Running dot for graph 69/317
+Running dot for graph 70/317
+Running dot for graph 71/317
+Running dot for graph 72/317
+Running dot for graph 73/317
+Running dot for graph 74/317
+Running dot for graph 75/317
+Running dot for graph 76/317
+Running dot for graph 77/317
+Running dot for graph 78/317
+Running dot for graph 79/317
+Running dot for graph 80/317
+Running dot for graph 81/317
+Running dot for graph 82/317
+Running dot for graph 83/317
+Running dot for graph 84/317
+Running dot for graph 85/317
+Running dot for graph 86/317
+Running dot for graph 87/317
+Running dot for graph 88/317
+Running dot for graph 89/317
+Running dot for graph 90/317
+Running dot for graph 91/317
+Running dot for graph 92/317
+Running dot for graph 93/317
+Running dot for graph 94/317
+Running dot for graph 95/317
+Running dot for graph 96/317
+Running dot for graph 97/317
+Running dot for graph 98/317
+Running dot for graph 99/317
+Running dot for graph 100/317
+Running dot for graph 101/317
+Running dot for graph 102/317
+Running dot for graph 103/317
+Running dot for graph 104/317
+Running dot for graph 105/317
+Running dot for graph 106/317
+Running dot for graph 107/317
+Running dot for graph 108/317
+Running dot for graph 109/317
+Running dot for graph 110/317
+Running dot for graph 111/317
+Running dot for graph 112/317
+Running dot for graph 113/317
+Running dot for graph 114/317
+Running dot for graph 115/317
+Running dot for graph 116/317
+Running dot for graph 117/317
+Running dot for graph 118/317
+Running dot for graph 119/317
+Running dot for graph 120/317
+Running dot for graph 121/317
+Running dot for graph 122/317
+Running dot for graph 123/317
+Running dot for graph 124/317
+Running dot for graph 125/317
+Running dot for graph 126/317
+Running dot for graph 127/317
+Running dot for graph 128/317
+Running dot for graph 129/317
+Running dot for graph 130/317
+Running dot for graph 131/317
+Running dot for graph 132/317
+Running dot for graph 133/317
+Running dot for graph 134/317
+Running dot for graph 135/317
+Running dot for graph 136/317
+Running dot for graph 137/317
+Running dot for graph 138/317
+Running dot for graph 139/317
+Running dot for graph 140/317
+Running dot for graph 141/317
+Running dot for graph 142/317
+Running dot for graph 143/317
+Running dot for graph 144/317
+Running dot for graph 145/317
+Running dot for graph 146/317
+Running dot for graph 147/317
+Running dot for graph 148/317
+Running dot for graph 149/317
+Running dot for graph 150/317
+Running dot for graph 151/317
+Running dot for graph 152/317
+Running dot for graph 153/317
+Running dot for graph 154/317
+Running dot for graph 155/317
+Running dot for graph 156/317
+Running dot for graph 157/317
+Running dot for graph 158/317
+Running dot for graph 159/317
+Running dot for graph 160/317
+Running dot for graph 161/317
+Running dot for graph 162/317
+Running dot for graph 163/317
+Running dot for graph 164/317
+Running dot for graph 165/317
+Running dot for graph 166/317
+Running dot for graph 167/317
+Running dot for graph 168/317
+Running dot for graph 169/317
+Running dot for graph 170/317
+Running dot for graph 171/317
+Running dot for graph 172/317
+Running dot for graph 173/317
+Running dot for graph 174/317
+Running dot for graph 175/317
+Running dot for graph 176/317
+Running dot for graph 177/317
+Running dot for graph 178/317
+Running dot for graph 179/317
+Running dot for graph 180/317
+Running dot for graph 181/317
+Running dot for graph 182/317
+Running dot for graph 183/317
+Running dot for graph 184/317
+Running dot for graph 185/317
+Running dot for graph 186/317
+Running dot for graph 187/317
+Running dot for graph 188/317
+Running dot for graph 189/317
+Running dot for graph 190/317
+Running dot for graph 191/317
+Running dot for graph 192/317
+Running dot for graph 193/317
+Running dot for graph 194/317
+Running dot for graph 195/317
+Running dot for graph 196/317
+Running dot for graph 197/317
+Running dot for graph 198/317
+Running dot for graph 199/317
+Running dot for graph 200/317
+Running dot for graph 201/317
+Running dot for graph 202/317
+Running dot for graph 203/317
+Running dot for graph 204/317
+Running dot for graph 205/317
+Running dot for graph 206/317
+Running dot for graph 207/317
+Running dot for graph 208/317
+Running dot for graph 209/317
+Running dot for graph 210/317
+Running dot for graph 211/317
+Running dot for graph 212/317
+Running dot for graph 213/317
+Running dot for graph 214/317
+Running dot for graph 215/317
+Running dot for graph 216/317
+Running dot for graph 217/317
+Running dot for graph 218/317
+Running dot for graph 219/317
+Running dot for graph 220/317
+Running dot for graph 221/317
+Running dot for graph 222/317
+Running dot for graph 223/317
+Running dot for graph 224/317
+Running dot for graph 225/317
+Running dot for graph 226/317
+Running dot for graph 227/317
+Running dot for graph 228/317
+Running dot for graph 229/317
+Running dot for graph 230/317
+Running dot for graph 231/317
+Running dot for graph 232/317
+Running dot for graph 233/317
+Running dot for graph 234/317
+Running dot for graph 235/317
+Running dot for graph 236/317
+Running dot for graph 237/317
+Running dot for graph 238/317
+Running dot for graph 239/317
+Running dot for graph 240/317
+Running dot for graph 241/317
+Running dot for graph 242/317
+Running dot for graph 243/317
+Running dot for graph 244/317
+Running dot for graph 245/317
+Running dot for graph 246/317
+Running dot for graph 247/317
+Running dot for graph 248/317
+Running dot for graph 249/317
+Running dot for graph 250/317
+Running dot for graph 251/317
+Running dot for graph 252/317
+Running dot for graph 253/317
+Running dot for graph 254/317
+Running dot for graph 255/317
+Running dot for graph 256/317
+Running dot for graph 257/317
+Running dot for graph 258/317
+Running dot for graph 259/317
+Running dot for graph 260/317
+Running dot for graph 261/317
+Running dot for graph 262/317
+Running dot for graph 263/317
+Running dot for graph 264/317
+Running dot for graph 265/317
+Running dot for graph 266/317
+Running dot for graph 267/317
+Running dot for graph 268/317
+Running dot for graph 269/317
+Running dot for graph 270/317
+Running dot for graph 271/317
+Running dot for graph 272/317
+Running dot for graph 273/317
+Running dot for graph 274/317
+Running dot for graph 275/317
+Running dot for graph 276/317
+Running dot for graph 277/317
+Running dot for graph 278/317
+Running dot for graph 279/317
+Running dot for graph 280/317
+Running dot for graph 281/317
+Running dot for graph 282/317
+Running dot for graph 283/317
+Running dot for graph 284/317
+Running dot for graph 285/317
+Running dot for graph 286/317
+Running dot for graph 287/317
+Running dot for graph 288/317
+Running dot for graph 289/317
+Running dot for graph 290/317
+Running dot for graph 291/317
+Running dot for graph 292/317
+Running dot for graph 293/317
+Running dot for graph 294/317
+Running dot for graph 295/317
+Running dot for graph 296/317
+Running dot for graph 297/317
+Running dot for graph 298/317
+Running dot for graph 299/317
+Running dot for graph 300/317
+Running dot for graph 301/317
+Running dot for graph 302/317
+Running dot for graph 303/317
+Running dot for graph 304/317
+Running dot for graph 305/317
+Running dot for graph 306/317
+Running dot for graph 307/317
+Running dot for graph 308/317
+Running dot for graph 309/317
+Running dot for graph 310/317
+Running dot for graph 311/317
+Running dot for graph 312/317
+Running dot for graph 313/317
+Running dot for graph 314/317
+Running dot for graph 315/317
+Running dot for graph 316/317
+Running dot for graph 317/317
 Patching output file 1/92
 Patching output file 2/92
 Patching output file 3/92
@@ -987,5 +1001,5 @@ Patching output file 89/92
 Patching output file 90/92
 Patching output file 91/92
 Patching output file 92/92
-lookup cache used 845/65536 hits=4746 misses=885
+lookup cache used 854/65536 hits=4839 misses=894
 finished...

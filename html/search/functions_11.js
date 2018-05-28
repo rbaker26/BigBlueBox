@@ -12,5 +12,6 @@ var searchData=
   ['stylebase',['styleBase',['../class_dark_style.html#a55805ec7e61e03ccec4668713f84f0c5',1,'DarkStyle']]],
   ['stylewindow',['styleWindow',['../class_frameless_window.html#a9bc4161596d24df1dd9a9a8f7b018e43',1,'FramelessWindow']]],
   ['svgrendertest',['svgRenderTest',['../classbbb_test_1_1_qr_test.html#ada4e17d6073d9b05a8b53b01f3917b81',1,'bbbTest::QrTest']]],
-  ['svgrendertest_5fdata',['svgRenderTest_data',['../classbbb_test_1_1_qr_test.html#acefb03f5cc5d811097e762d48b9f0c21',1,'bbbTest::QrTest']]]
+  ['svgrendertest_5fdata',['svgRenderTest_data',['../classbbb_test_1_1_qr_test.html#acefb03f5cc5d811097e762d48b9f0c21',1,'bbbTest::QrTest']]],
+  ['syslog',['sysLog',['../classbbb_1_1_db_connect.html#a9e87a883806a0af2536c6109e19dbaa1',1,'bbb::DbConnect']]]
 ];

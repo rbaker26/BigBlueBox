@@ -2,6 +2,7 @@ var searchData=
 [
   ['gear',['Gear',['../class_gear.html#aeb94a7438d5b477e2c2139fbdf831c89',1,'Gear']]],
   ['gearcenter',['GearCenter',['../class_gear_center.html#a10bad3d87aa86b96a33dc17e15838fc7',1,'GearCenter']]],
+  ['gearitemexists',['gearItemExists',['../classbbb_1_1_db_connect.html#a6d60564ee740061fb74ddb0f51617221',1,'bbb::DbConnect']]],
   ['gearnote',['GearNote',['../classbbb_1_1_gear_note.html#a08f3d69aff33df72d1896adada7116b4',1,'bbb::GearNote']]],
   ['getalignmentpatternpositions',['getAlignmentPatternPositions',['../classqrcodegen_1_1_qr_code.html#aa8fb0fe93510ed7590b9619a5a245963',1,'qrcodegen::QrCode']]],
   ['getandcheckroamingpath',['getAndCheckRoamingPath',['../classbbb_1_1___file_writer.html#ad2e2fb05b28dfe9d1e37f5a9560f52ee',1,'bbb::_FileWriter']]],
