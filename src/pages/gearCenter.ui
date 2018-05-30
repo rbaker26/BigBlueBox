@@ -230,7 +230,10 @@
        <item>
         <layout class="QGridLayout" name="gridLayout">
          <item row="8" column="1">
-          <widget class="QPushButton" name="pushButton_checkinOut">
+          <widget class="QPushButton" name="pushButton_submitCheckInOut">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
            <property name="text">
             <string>Check in/out generic</string>
            </property>

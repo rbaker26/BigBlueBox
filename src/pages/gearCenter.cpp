@@ -284,8 +284,20 @@ void GearCenter::on_pushButton_enterCode_clicked()
         //**********************************************************************
         //Check to see if the item is healthly or not. Ask person to check     *
         // item if it is not healthy.                                          *
+        // Must come after "Populate the Item info on the ui page"             *
         //**********************************************************************
+        if(ui->comboBox_itemHealth->currentIndex() != 0)
+        {
+            // Display Warning
+            QMessageBox msg(this);
+            msg.setIcon(QMessageBox::Critical);
+            msg.setText("This item is not healthy.     ");
+            msg.setInformativeText("Please check to make sure this item is ready to be checked out or scan a new item.");
+            msg.setStandardButtons(QMessageBox::Ok);
+            msg.setDefaultButton(QMessageBox::Ok);
+            msg.exec();
 
+        }
         //**********************************************************************
 
 
@@ -382,6 +394,8 @@ void GearCenter::on_pushButton_enterCode_clicked()
             // Clear the Gear Info section
             clearGearInfo();
 
+            // Disable Bottom Button
+            ui->pushButton_submitCheckInOut->setEnabled(false);
         }
         else if(ret == QMessageBox::Cancel)
         {
@@ -390,6 +404,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
             //
             //
             // Allow person to edit the screen and enable bottom button
+            ui->pushButton_submitCheckInOut->setEnabled(true);
         }
         //**********************************************************************
     }
