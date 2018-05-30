@@ -1,6 +1,8 @@
 <map id="/home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.h" name="/home/travis/build/rbaker26/BigBlueBox/src/pages/settingspage.h">
-<area shape="rect" id="node6" href="$__filereader_8h.html" title="_filereader.h" alt="" coords="680,184,773,211"/>
-<area shape="rect" id="node9" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="454,109,543,136"/>
-<area shape="rect" id="node15" href="$item_8h.html" title="item.h" alt="" coords="245,184,303,211"/>
-<area shape="rect" id="node16" href="$category_8h.html" title="category.h" alt="" coords="331,259,412,285"/>
+<area shape="rect" id="node6" href="$__filereader_8h.html" title="_filereader.h" alt="" coords="889,184,983,211"/>
+<area shape="rect" id="node9" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="686,109,775,136"/>
+<area shape="rect" id="node19" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="1181,109,1275,136"/>
+<area shape="rect" id="node16" href="$item_8h.html" title="item.h" alt="" coords="1153,184,1211,211"/>
+<area shape="rect" id="node17" href="$category_8h.html" title="category.h" alt="" coords="1215,259,1296,285"/>
+<area shape="rect" id="node25" href="$gear_8h.html" title="gear.h" alt="" coords="1335,184,1392,211"/>
 </map>

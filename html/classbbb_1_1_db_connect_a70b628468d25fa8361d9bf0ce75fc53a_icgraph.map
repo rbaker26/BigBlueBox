@@ -1,0 +1,5 @@
+<map id="bbb::DbConnect::getGearNotes" name="bbb::DbConnect::getGearNotes">
+<area shape="rect" id="node2" href="$class_gear_center.html#abae45e02d9483b2adff3a1b14069b346" title="GearCenter::fillNotesTables" alt="" coords="261,45,445,72"/>
+<area shape="rect" id="node3" href="$class_gear_center.html#ab09deefbe4834fd7e96bc5b0e07c908b" title="GearCenter::on_pushButton\l_enterCode_clicked" alt="" coords="493,5,677,46"/>
+<area shape="rect" id="node4" href="$class_gear_center.html#ab01ca14d90c35991fa2f90d5231da15c" title="GearCenter::on_pushButton\l_addNote_clicked" alt="" coords="493,70,677,111"/>
+</map>

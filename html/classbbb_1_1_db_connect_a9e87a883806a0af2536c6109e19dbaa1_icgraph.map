@@ -1,0 +1,6 @@
+<map id="bbb::DbConnect::sysLog" name="bbb::DbConnect::sysLog">
+<area shape="rect" id="node2" href="$class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db" title="MainWindow::MainWindow" alt="" coords="229,5,409,32"/>
+<area shape="rect" id="node3" href="$class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7" title="MainWindow::~MainWindow" alt="" coords="225,56,413,83"/>
+<area shape="rect" id="node4" href="$class_settings_page.html#a3098069804572f2adf23455988abca3d" title="SettingsPage::on_pushButton\l_saveDbDir_clicked" alt="" coords="221,107,416,149"/>
+<area shape="rect" id="node5" href="$class_settings_page.html#a4121381639d038b258e6411b6d955d34" title="SettingsPage::on_pushButton\l_saveReportDir_clicked" alt="" coords="221,173,416,214"/>
+</map>

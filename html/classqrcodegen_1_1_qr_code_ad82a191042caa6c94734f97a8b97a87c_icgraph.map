@@ -1,0 +1,5 @@
+<map id="qrcodegen::QrCode::QrCode" name="qrcodegen::QrCode::QrCode">
+<area shape="rect" id="node2" href="$classqrcodegen_1_1_qr_code.html#a78aa108015b15a8b1fd35d042aff34aa" title="qrcodegen::QrCode::\lencodeSegments" alt="" coords="198,38,341,79"/>
+<area shape="rect" id="node3" href="$classqrcodegen_1_1_qr_code.html#a15d9e26d273b8de6d0773e317ebd97d5" title="qrcodegen::QrCode::\lencodeText" alt="" coords="390,5,533,46"/>
+<area shape="rect" id="node4" href="$classqrcodegen_1_1_qr_code.html#a31efd868a933e2ea62a6f9694bf19606" title="qrcodegen::QrCode::\lencodeBinary" alt="" coords="390,70,533,111"/>
+</map>
