@@ -246,6 +246,14 @@ void GearCenter::on_pushButton_enterCode_clicked()
             msg.setDefaultButton(QMessageBox::Ok);
             msg.exec();
 
+
+            QString blankQrPath = bbb::_FileWriter::getAndCheckRoamingPath();
+            blankQrPath.append("/temp/blankQr.svg");
+
+            // Clear the QrCode boxes
+            ui->widget_itemQr->load(blankQrPath);
+
+
             // Clear out the gear info on the screen
             clearGearInfo();
 
@@ -256,6 +264,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
             decCatId = 0;
             decIdvId = 0;
             ui->lineEdit_itemCode_infoBox->clear();
+
             return;         // Exit the Function
 
         }
