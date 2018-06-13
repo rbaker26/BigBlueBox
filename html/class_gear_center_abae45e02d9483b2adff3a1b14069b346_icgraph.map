@@ -1,4 +1,5 @@
 <map id="GearCenter::fillNotesTables" name="GearCenter::fillNotesTables">
-<area shape="rect" id="node2" href="$class_gear_center.html#ab09deefbe4834fd7e96bc5b0e07c908b" title="GearCenter::on_pushButton\l_enterCode_clicked" alt="" coords="237,5,421,46"/>
-<area shape="rect" id="node3" href="$class_gear_center.html#ab01ca14d90c35991fa2f90d5231da15c" title="GearCenter::on_pushButton\l_addNote_clicked" alt="" coords="237,70,421,111"/>
+<area shape="rect" id="node2" href="$class_gear_center.html#ab09deefbe4834fd7e96bc5b0e07c908b" title="GearCenter::on_pushButton\l_enterCode_clicked" alt="" coords="257,5,441,46"/>
+<area shape="rect" id="node3" href="$class_gear_center.html#ab01ca14d90c35991fa2f90d5231da15c" title="GearCenter::on_pushButton\l_addNote_clicked" alt="" coords="257,70,441,111"/>
+<area shape="rect" id="node4" href="$class_gear_center.html#a47fb47157bbaa6424b3514f199d935dd" title="GearCenter::on_comboBox\l_itemHealth_currentIndexChanged" alt="" coords="238,135,461,177"/>
 </map>

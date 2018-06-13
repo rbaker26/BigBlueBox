@@ -1,7 +1,8 @@
 <map id="GearCenter::clearTable" name="GearCenter::clearTable">
-<area shape="rect" id="node2" href="$class_gear_center.html#a7a4d80dee6125971e9f5642c5227c247" title="GearCenter::initTable" alt="" coords="211,88,357,115"/>
-<area shape="rect" id="node5" href="$class_gear_center.html#ab09deefbe4834fd7e96bc5b0e07c908b" title="GearCenter::on_pushButton\l_enterCode_clicked" alt="" coords="637,106,821,147"/>
-<area shape="rect" id="node3" href="$class_gear_center.html#a10bad3d87aa86b96a33dc17e15838fc7" title="GearCenter::GearCenter" alt="" coords="415,63,579,89"/>
-<area shape="rect" id="node4" href="$class_gear_center.html#abae45e02d9483b2adff3a1b14069b346" title="GearCenter::fillNotesTables" alt="" coords="405,12,589,39"/>
-<area shape="rect" id="node6" href="$class_gear_center.html#ab01ca14d90c35991fa2f90d5231da15c" title="GearCenter::on_pushButton\l_addNote_clicked" alt="" coords="637,5,821,46"/>
+<area shape="rect" id="node2" href="$class_gear_center.html#a7a4d80dee6125971e9f5642c5227c247" title="GearCenter::initTable" alt="" coords="211,135,357,161"/>
+<area shape="rect" id="node5" href="$class_gear_center.html#ab09deefbe4834fd7e96bc5b0e07c908b" title="GearCenter::on_pushButton\l_enterCode_clicked" alt="" coords="657,153,841,194"/>
+<area shape="rect" id="node3" href="$class_gear_center.html#a10bad3d87aa86b96a33dc17e15838fc7" title="GearCenter::GearCenter" alt="" coords="415,109,579,136"/>
+<area shape="rect" id="node4" href="$class_gear_center.html#abae45e02d9483b2adff3a1b14069b346" title="GearCenter::fillNotesTables" alt="" coords="405,59,589,85"/>
+<area shape="rect" id="node6" href="$class_gear_center.html#ab01ca14d90c35991fa2f90d5231da15c" title="GearCenter::on_pushButton\l_addNote_clicked" alt="" coords="657,70,841,111"/>
+<area shape="rect" id="node7" href="$class_gear_center.html#a47fb47157bbaa6424b3514f199d935dd" title="GearCenter::on_comboBox\l_itemHealth_currentIndexChanged" alt="" coords="638,5,861,46"/>
 </map>

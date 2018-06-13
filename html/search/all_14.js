@@ -6,13 +6,14 @@ var searchData=
   ['unittest_2ecpp',['unittest.cpp',['../unittest_8cpp.html',1,'']]],
   ['unittest_2eh',['unittest.h',['../unittest_8h.html',1,'']]],
   ['updatedatabase',['updateDataBase',['../class_reports_view.html#ab58aa45a0fde5271c5ccf19da12a5f10',1,'ReportsView']]],
+  ['updategearitemhealth',['updateGearItemHealth',['../classbbb_1_1_db_connect.html#ab71244263ce7d2e2121557ff5831982b',1,'bbb::DbConnect']]],
   ['updateitem',['updateItem',['../classbbb_1_1_db_connect.html#a1794a5b641c117021fd6a2ffbde0028f',1,'bbb::DbConnect']]],
   ['updatestoredvector',['updateStoredVector',['../class_reports_view.html#ab1abccf202bed57c66ad865886e6856e',1,'ReportsView']]],
   ['user',['USER',['../classbbb_1_1_user_session.html#a8c43ffc9b1eac311544d74988b4b37cbafd5e188e220dab8b0166ff4602089cc0',1,'bbb::UserSession']]],
   ['username',['userName',['../classbbb_1_1_user_session.html#a50067338e5bf30abb481e9cef523b9bd',1,'bbb::UserSession']]],
   ['userrole',['userRole',['../classbbb_1_1_user_session.html#aca3af942c451749634dd550b2be249a1',1,'bbb::UserSession']]],
-  ['usersession',['UserSession',['../classbbb_1_1_user_session.html#abc1a059a8be662ee345a27940fb563c6',1,'bbb::UserSession']]],
   ['usersession',['UserSession',['../classbbb_1_1_user_session.html',1,'bbb']]],
+  ['usersession',['UserSession',['../classbbb_1_1_user_session.html#abc1a059a8be662ee345a27940fb563c6',1,'bbb::UserSession']]],
   ['usersession_2ecpp',['usersession.cpp',['../usersession_8cpp.html',1,'']]],
   ['usersession_2eh',['usersession.h',['../usersession_8h.html',1,'']]]
 ];

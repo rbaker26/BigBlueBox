@@ -1,3 +1,4 @@
 <map id="bbb::DbConnect::addNote" name="bbb::DbConnect::addNote">
-<area shape="rect" id="node2" href="$class_gear_center.html#ab01ca14d90c35991fa2f90d5231da15c" title="GearCenter::on_pushButton\l_addNote_clicked" alt="" coords="229,5,413,46"/>
+<area shape="rect" id="node2" href="$class_gear_center.html#ab01ca14d90c35991fa2f90d5231da15c" title="GearCenter::on_pushButton\l_addNote_clicked" alt="" coords="249,5,433,46"/>
+<area shape="rect" id="node3" href="$class_gear_center.html#a47fb47157bbaa6424b3514f199d935dd" title="GearCenter::on_comboBox\l_itemHealth_currentIndexChanged" alt="" coords="230,70,453,111"/>
 </map>

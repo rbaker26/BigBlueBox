@@ -7,6 +7,7 @@ var searchData=
   ['isalphanumeric',['isAlphanumeric',['../classqrcodegen_1_1_qr_segment.html#a28153ac814d7b3105473a33d6e6734f3',1,'qrcodegen::QrSegment']]],
   ['isboxname',['isBoxName',['../classbbb_1_1___regex.html#a23e37deda14af81e47c12224176257f0',1,'bbb::_Regex']]],
   ['ischeckedout',['isCheckedOut',['../classbbb_1_1_db_connect.html#ab9bee4d8ff3a10d30030d39d3182e83d',1,'bbb::DbConnect']]],
+  ['ischeckedoutby',['isCheckedOutBy',['../classbbb_1_1_db_connect.html#ab0b054a3e2d364d6561063da283b1bf8',1,'bbb::DbConnect']]],
   ['isitemname',['isItemName',['../classbbb_1_1___regex.html#ad73b4104a24a919c82a129288796025e',1,'bbb::_Regex']]],
   ['isnumeric',['isNumeric',['../classqrcodegen_1_1_qr_segment.html#a9f2c32b351c0731c08fb170c2320f04d',1,'qrcodegen::QrSegment']]],
   ['item',['Item',['../classbbb_1_1_item.html#a297720c02984eab37332ae795d22189d',1,'bbb::Item']]],

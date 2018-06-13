@@ -10,6 +10,7 @@ var searchData=
   ['on_5fcombobox_5fadddel_5factivated',['on_comboBox_addDel_activated',['../class_reports_view.html#ada0efc617e671329badefe711a815f16',1,'ReportsView']]],
   ['on_5fcombobox_5fadddel_5fcurrentindexchanged',['on_comboBox_addDel_currentIndexChanged',['../class_reports_view.html#a13858bc2045f7739674bf683b57f8d2f',1,'ReportsView']]],
   ['on_5fcombobox_5fcurrentindexchanged',['on_comboBox_currentIndexChanged',['../class_reports_view.html#a2f849e56c1e598de3ae680bf01a6cc96',1,'ReportsView']]],
+  ['on_5fcombobox_5fitemhealth_5fcurrentindexchanged',['on_comboBox_itemHealth_currentIndexChanged',['../class_gear_center.html#a47fb47157bbaa6424b3514f199d935dd',1,'GearCenter']]],
   ['on_5fcombobox_5ftroopnames_5fcurrentindexchanged',['on_comboBox_troopNames_currentIndexChanged',['../class_gear_center.html#ad9094692d4aa4cd7dc5a89ef7e3c27cb',1,'GearCenter']]],
   ['on_5flineedit_5fscancode_5freturnpressed',['on_lineEdit_scanCode_returnPressed',['../class_gear_center.html#ab954836a35365cc6051699ec265f2eca',1,'GearCenter']]],
   ['on_5fmaximizebutton_5fclicked',['on_maximizeButton_clicked',['../class_frameless_window.html#a0118400a2e3ab73b47732dd6ba0cf9e4',1,'FramelessWindow']]],
