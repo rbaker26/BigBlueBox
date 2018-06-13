@@ -203,11 +203,26 @@ public:
     //**********************************************************
 
     //**********************************************************
+    void checkInGear(int catId, int idvId);
+    //**********************************************************
+
+    //**********************************************************
     //! \brief System Log
     //! \details Pushes a log with a timestamp to the DB.
     //! \author Bob Baker
     void sysLog(QString log);
     //**********************************************************
+
+
+    //**********************************************************
+    //! \brief Updates Health Status
+    //! \details Updates Health Status for an item. Health must
+    //!          be passed as an int, not a enum
+    //! \author Bob Baker
+    void updateGearItemHealth(int catId, int idvId, int health);
+    //**********************************************************
+
+    QString isCheckedOutBy(int catId, int idvId);
 
 }; // end class
 //*********************************************************************************

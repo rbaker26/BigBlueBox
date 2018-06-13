@@ -55,7 +55,7 @@ SOURCES += \
        framelesswindow/framelesswindow.cpp \
        framelesswindow/windowdragger.cpp   \
        DarkStyle.cpp            \
-    pages/gearManager.cpp
+        pages/gearManager.cpp   \
 
 
         
@@ -82,7 +82,7 @@ HEADERS += \
        framelesswindow/framelesswindow.h \
        framelesswindow/windowdragger.h   \
        DarkStyle.h              \
-    pages/gearManager.h
+       pages/gearManager.h      \
 
 
         
@@ -92,11 +92,11 @@ FORMS += \
         mainmenu.ui             \
         pages/settingspage.ui   \
         pages/gearCenter.ui     \
-    pages/gearManager.ui
+        pages/gearManager.ui    \
         
 RESOURCES += \
-        ../rec/rec.qrc \
-        framelesswindow.qrc \
+            ../rec/rec.qrc      \
+            framelesswindow.qrc \
 
 
 
@@ -194,8 +194,8 @@ FORMS -= \
 
 # Remove all recources
 RESOURCES -= \
-        ../rec/rec.qrc \
-        framelesswindow.qrc \
+            ../rec/rec.qrc      \
+            framelesswindow.qrc \
 
 }
 ###########################################################

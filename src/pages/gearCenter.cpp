@@ -32,6 +32,7 @@ GearCenter::GearCenter(QWidget *parent) :
 
 
     // Set and fill the item health status combo box
+    ui->comboBox_itemHealth->addItem("- Choose a Health Code -");
     ui->comboBox_itemHealth->addItems(bbb::DbConnect::getInstance()->getGearHealthStatusList());
 
     // Init Table
@@ -178,6 +179,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
     // Choose the correct file based on the first three digit of the scan code
     if(scanCodeString.left(3).toUpper() == "PID")
     {
+
         filePath.append("/temp/pidQr.svg");
 
         // Set the pidScanned to true
@@ -189,11 +191,16 @@ void GearCenter::on_pushButton_enterCode_clicked()
         //**********************************************************************
         QString tempTroop = scanCodeString.mid(4,2);
         QString tempPatrol = scanCodeString.mid(6,2);
+
+        // Save the string value for late in DB use
+        this->pidStr = tempTroop + tempPatrol;
+
         //qDebug() << "Troop Code:  " << tempTroop;
         //qDebug() << "Patrol Code: " << tempPatrol;
 
-        int troopIndex  = tempTroop.toInt();
-        int patrolIndex = tempPatrol.toInt();
+        bool ok;
+        int troopIndex  = tempTroop.toUInt(&ok,16);
+        int patrolIndex = tempPatrol.toUInt(&ok,16);
         ui->comboBox_troopNames->setCurrentIndex(troopIndex);
         QThread::msleep(1);
         ui->comboBox_patrolNames->setCurrentIndex(patrolIndex);
@@ -241,7 +248,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
         {
             // Display error for non-existent gear item
             QMessageBox msg(this);
-            msg.setText("Error: No Gear Item of code: " + scanCodeString);
+            msg.setText("Error: No Gear Item with code: " + scanCodeString);
             msg.setStandardButtons(QMessageBox::Ok);
             msg.setDefaultButton(QMessageBox::Ok);
             msg.exec();
@@ -266,18 +273,9 @@ void GearCenter::on_pushButton_enterCode_clicked()
             ui->lineEdit_itemCode_infoBox->clear();
 
             return;         // Exit the Function
-
         }
         //**********************************************************************
 
-
-
-        //**********************************************************************
-        // Check to see if item is checked in or not, offer to check item in   *
-        //**********************************************************************
-        bool isCheckedOut = bbb::DbConnect::getInstance()->isCheckedOut(decCatId, decIdvId);
-        qDebug() << "Checked out\t" << isCheckedOut;
-        //**********************************************************************
 
 
         //**********************************************************************
@@ -285,7 +283,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
         //**********************************************************************
         Gear temp = bbb::DbConnect::getInstance()->getGearInfo(decCatId, decIdvId);
         ui->lineEdit_itemName->setText(temp.gearName);
-        ui->comboBox_itemHealth->setCurrentIndex(static_cast<int>(temp.gearHealth)-1);
+        ui->comboBox_itemHealth->setCurrentIndex(static_cast<int>(temp.gearHealth));
         ui->dateEdit_obsolDate->setDate(temp.obsolDate);
         //**********************************************************************
 
@@ -295,7 +293,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
         // item if it is not healthy.                                          *
         // Must come after "Populate the Item info on the ui page"             *
         //**********************************************************************
-        if(ui->comboBox_itemHealth->currentIndex() != 0)
+        if(ui->comboBox_itemHealth->currentIndex() != 1)
         {
             // Display Warning
             QMessageBox msg(this);
@@ -311,6 +309,14 @@ void GearCenter::on_pushButton_enterCode_clicked()
 
 
 
+        //**********************************************************************
+        // Check to see if item is checked in or not, offer to check item in   *
+        //**********************************************************************
+        bool isCheckedOut = bbb::DbConnect::getInstance()->isCheckedOut(decCatId, decIdvId);
+        qDebug() << "Checked out\t" << isCheckedOut;
+        //**********************************************************************
+
+
 
         //**********************************************************************
         // Fill the notes table widget                                         *
@@ -318,10 +324,8 @@ void GearCenter::on_pushButton_enterCode_clicked()
         fillNotesTables();
         //**********************************************************************
 
-
-
     }
-    else
+    else  // Not an ITM or PID
     {
         // Display error for bad scan code
         QMessageBox msg(this);
@@ -354,8 +358,38 @@ void GearCenter::on_pushButton_enterCode_clicked()
     ui->lineEdit_scanCode->clear();
 
 
-    // Start Submit Process
-    if(itemScanned && pidScanned)
+    // Start the Checkin process
+    qDebug() << "CHECK BOOL " << itemScanned << bbb::DbConnect::getInstance()->isCheckedOut(decCatId, decIdvId);
+    if(itemScanned && bbb::DbConnect::getInstance()->isCheckedOut(decCatId, decIdvId))
+    {
+        qDebug() << "Scan" << bbb::DbConnect::getInstance()->isCheckedOutBy(decCatId, decIdvId);
+
+        QString tempPidStr = bbb::DbConnect::getInstance()->isCheckedOutBy(decCatId, decIdvId);
+        QString tempTroop  = tempPidStr.mid(0,2);
+        QString tempPatrol = tempPidStr.mid(2,2);
+
+        bool ok;
+        int troopIndex  = tempTroop.toUInt(&ok,16);
+        int patrolIndex = tempPatrol.toUInt(&ok,16);
+        ui->comboBox_troopNames->setCurrentIndex(troopIndex);
+        QThread::msleep(1);
+        ui->comboBox_patrolNames->setCurrentIndex(patrolIndex);
+
+        QMessageBox msg(this);
+        msg.setText("Do you want to check this item in?");
+        msg.setInformativeText("Click \"Ok\" or press the \"enter\" key to checkin the item.\n"
+                               "Click \"Cancle\" to edit the item's health or notes.  Then scan the item again.");
+        msg.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
+        msg.setDefaultButton(QMessageBox::Ok);
+        int ret = msg.exec();
+
+        if(ret == QMessageBox::Ok)
+        {
+            bbb::DbConnect::getInstance()->checkInGear(decCatId, decIdvId);
+        }
+    }
+    // Start the Checkout Process
+    else if(itemScanned && pidScanned)
     {
         QMessageBox msg(this);
         msg.setText("Do you want to checkout this item?");
@@ -372,6 +406,8 @@ void GearCenter::on_pushButton_enterCode_clicked()
         blankPath.append("/temp/blankQr.svg");
         if (ret == QMessageBox::Ok)
         {
+            bbb::DbConnect::getInstance()->checkOutGear(decCatId, decIdvId, pidStr);
+
             // Clear the QrCode boxes
             ui->widget_itemQr->load(blankPath);
             ui->widget_PidQr->load(blankPath);
@@ -496,5 +532,53 @@ void GearCenter::on_toolButton_defaultNoteList_clicked()
         ui->lineEdit_noteText->setText(s);
     }
 
+}
+//********************************************************************************************
+
+
+//********************************************************************************************
+void GearCenter::on_comboBox_itemHealth_currentIndexChanged(int index)
+{
+    // If  * the item is scanned
+    //     * the combo box was changed from its database value
+    //     * the index is not 0
+    if(itemScanned                                                                 &&
+       (ui->comboBox_itemHealth->currentIndex() !=
+        bbb::DbConnect::getInstance()->getGearInfo(decCatId, decIdvId).gearHealth) &&
+        ui->comboBox_itemHealth->currentIndex() != 0 )
+    {
+        // Prompt user for the AUTHOR_NAME
+        QInputDialog inputBox(this);
+        inputBox.setWindowTitle("Note Author");
+        inputBox.setLabelText("Enter your name:");
+        QString author = inputBox.getText(this,"Note Author","Enter your name:");
+
+        // Fill add the new note to the Database and update the table
+        if(author.length() != 0)
+        {
+            author = "AUTO - " + author;
+            QString note =  "MARKED AS " + ui->comboBox_itemHealth->currentText().toUpper();
+            bbb::DbConnect::getInstance()->addNote(decCatId, decIdvId, note, author);
+            fillNotesTables();
+
+            // Update the health code for the item in the Database
+            bbb::DbConnect::getInstance()->updateGearItemHealth(decCatId, decIdvId, index);
+        }
+        else
+        {
+
+            // Display Warning
+            QMessageBox msg(this);
+            msg.setIcon(QMessageBox::Critical);
+            msg.setText("Invalid Author Name!   ");
+            msg.setInformativeText("Please enter a valid name.");
+            msg.setStandardButtons(QMessageBox::Ok);
+            msg.setDefaultButton(QMessageBox::Ok);
+            msg.exec();
+
+            ui->comboBox_itemHealth->setCurrentIndex(
+                        bbb::DbConnect::getInstance()->getGearInfo(decCatId, decIdvId).gearHealth);
+        }
+    }
 }
 //********************************************************************************************

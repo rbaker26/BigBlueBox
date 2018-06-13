@@ -20,14 +20,11 @@
 #include "mainwindow.h"
 #include <QApplication>
 //#############################################################################################
-
-// test code
-#include <QVector>
-
 #include "DarkStyle.h"
 #include "framelesswindow/framelesswindow.h"
 #include "DarkStyle.h"
 //#############################################################################################
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);

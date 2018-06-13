@@ -472,7 +472,7 @@ void  DbConnect::addNote(int catId, int idvId, QString note, QString author)
                   "VALUES ( (:catId), (:idvId), (:note), (:author), (:dt) )");
     query.bindValue(":catId", catId);
     query.bindValue(":idvId", idvId);
-     query.bindValue(":note", note);
+    query.bindValue(":note", note);
     query.bindValue(":author", author);
     query.bindValue(":dt", dt.toString(dateFormat));
 
@@ -535,7 +535,7 @@ void DbConnect::checkOutGear(int catId, int idvId, QString pidStr)
     query.bindValue(":boolTrue", true);
     query.bindValue(":pidStr", pidStr);
     query.bindValue(":catId", catId);
-    query.bindValue(":catId", idvId);
+    query.bindValue(":idvId", idvId);
 
     if(!query.exec())
     {
@@ -544,6 +544,29 @@ void DbConnect::checkOutGear(int catId, int idvId, QString pidStr)
 }
 //*********************************************************************************
 
+
+
+//*********************************************************************************
+void DbConnect::checkInGear(int catId, int idvId)
+{
+    QSqlQuery query;
+    query.prepare("UPDATE gear_list                  "
+                  "SET is_checked_out = (:boolFalse), "
+                  "    checked_out_by = (:pidStr)    "
+                  "WHERE gear_cat_id  = (:catId)     "
+                  "      AND                         "
+                  "      gear_idv_id  = (:idvId);    ");
+    query.bindValue(":boolFalse", false);
+    query.bindValue(":pidStr", "0000");
+    query.bindValue(":catId", catId);
+    query.bindValue(":idvId", idvId);
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+}
+//*********************************************************************************
 
 
 
@@ -563,5 +586,54 @@ void  DbConnect::sysLog(QString log)
         qDebug() << query.lastError().text();
     }
 }
+//*********************************************************************************
+
+
+
 
 //*********************************************************************************
+void DbConnect::updateGearItemHealth(int catId, int idvId, int health)
+{
+    QSqlQuery query;
+    query.prepare("UPDATE gear_list               "
+                  "SET health_status = (:health)  "
+                  "WHERE gear_cat_id  = (:catId)  "
+                  "      AND                      "
+                  "      gear_idv_id  = (:idvId)  ");
+
+    query.bindValue(":health", health);
+    query.bindValue(":catId", catId);
+    query.bindValue(":idvId", idvId);
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+}
+//*********************************************************************************
+
+
+
+//*********************************************************************************
+QString DbConnect::isCheckedOutBy(int catId, int idvId)
+{
+    QSqlQuery query;
+    query.prepare("SELECT checked_out_by        "
+                  "FROM gear_list               "
+                  "WHERE gear_cat_id = (:catId) "
+                  "      AND                    "
+                  "      gear_idv_id = (:idvId) "
+                  "LIMIT 1                      ");
+    query.bindValue(":catId", catId);
+    query.bindValue(":idvId",idvId);
+
+    if(!query.exec())
+    {
+        qDebug() << query.lastError().text();
+    }
+    query.first();
+    int pidFieldNum = query.record().indexOf("checked_out_by");
+    return query.value(pidFieldNum).toString();
+}
+//*********************************************************************************
+

@@ -42,6 +42,7 @@ private:
     bool pidScanned;
     uint decCatId;
     uint decIdvId;
+    QString pidStr;
 private slots:
 
     void on_pushButton_checkInOut_clicked();
@@ -57,6 +58,8 @@ private slots:
     void on_pushButton_addNote_clicked();
 
     void on_toolButton_defaultNoteList_clicked();
+
+    void on_comboBox_itemHealth_currentIndexChanged(int index);
 
 private:
     Ui::GearCenter *ui;
