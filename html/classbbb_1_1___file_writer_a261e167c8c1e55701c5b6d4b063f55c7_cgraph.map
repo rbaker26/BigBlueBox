@@ -1,3 +1,4 @@
 <map id="bbb::_FileWriter::getReportsPath" name="bbb::_FileWriter::getReportsPath">
-<area shape="rect" id="node2" href="$classbbb_1_1___file_reader.html#a84a82fafca657fac8d48cf1ca451cb88" title="bbb::_FileReader::readReportsDir" alt="" coords="267,5,485,32"/>
+<area shape="rect" id="node2" href="$classbbb_1_1___file_reader.html#a84a82fafca657fac8d48cf1ca451cb88" title="bbb::_FileReader::readReportsDir" alt="" coords="267,12,485,39"/>
+<area shape="rect" id="node3" href="$classbbb_1_1_directory_handler.html#ab84509ca1f11e6515c65dd80c2bab28a" title="bbb::DirectoryHandler\l::getAndCheckRoamingPath" alt="" coords="534,5,722,46"/>
 </map>

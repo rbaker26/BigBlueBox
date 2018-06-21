@@ -1,6 +1,7 @@
 <map id="MainWindow::~MainWindow" name="MainWindow::~MainWindow">
 <area shape="rect" id="node2" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="243,12,437,39"/>
-<area shape="rect" id="node5" href="$classbbb_1_1_db_connect.html#a9e87a883806a0af2536c6109e19dbaa1" title="System Log. " alt="" coords="257,63,423,89"/>
+<area shape="rect" id="node6" href="$classbbb_1_1_db_connect.html#a9e87a883806a0af2536c6109e19dbaa1" title="System Log. " alt="" coords="257,63,423,89"/>
 <area shape="rect" id="node3" href="$classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="486,12,677,39"/>
 <area shape="rect" id="node4" href="$classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6" title="bbb::_FileReader::readDb\lFileLoc" alt="" coords="725,5,896,46"/>
+<area shape="rect" id="node5" href="$classbbb_1_1_directory_handler.html#ab84509ca1f11e6515c65dd80c2bab28a" title="bbb::DirectoryHandler\l::getAndCheckRoamingPath" alt="" coords="945,5,1133,46"/>
 </map>

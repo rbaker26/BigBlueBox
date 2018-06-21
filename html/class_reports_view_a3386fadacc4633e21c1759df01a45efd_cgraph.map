@@ -3,8 +3,9 @@
 <area shape="rect" id="node3" href="$class_reports_view.html#a577ad8a1d30de512a5bc7f8238c6ef6d" title="Sets up the inventoy table. " alt="" coords="235,56,407,83"/>
 <area shape="rect" id="node4" href="$class_reports_view.html#aadf024949bd7935f99e9fd8194edb181" title="Fills the inventory table from the database. " alt="" coords="237,107,405,133"/>
 <area shape="rect" id="node5" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="457,48,650,75"/>
-<area shape="rect" id="node8" href="$classbbb_1_1_db_connect.html#a7986028e9b44516bff117a8255f377e4" title="Gets full inventory. " alt="" coords="462,99,645,141"/>
-<area shape="rect" id="node9" href="$classbbb_1_1_category.html#ad7de659617e688faaa44e4ba448b40fe" title="Turns enum to string. " alt="" coords="465,165,642,206"/>
+<area shape="rect" id="node9" href="$classbbb_1_1_db_connect.html#a7986028e9b44516bff117a8255f377e4" title="Gets full inventory. " alt="" coords="462,99,645,141"/>
+<area shape="rect" id="node10" href="$classbbb_1_1_category.html#ad7de659617e688faaa44e4ba448b40fe" title="Turns enum to string. " alt="" coords="465,165,642,206"/>
 <area shape="rect" id="node6" href="$classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="699,48,890,75"/>
 <area shape="rect" id="node7" href="$classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6" title="bbb::_FileReader::readDb\lFileLoc" alt="" coords="939,41,1109,82"/>
+<area shape="rect" id="node8" href="$classbbb_1_1_directory_handler.html#ab84509ca1f11e6515c65dd80c2bab28a" title="bbb::DirectoryHandler\l::getAndCheckRoamingPath" alt="" coords="1158,41,1346,82"/>
 </map>

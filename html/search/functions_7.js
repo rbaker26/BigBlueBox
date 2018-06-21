@@ -6,7 +6,7 @@ var searchData=
   ['gearmanager',['GearManager',['../class_gear_manager.html#a551608f441e12760c383038d8a828937',1,'GearManager']]],
   ['gearnote',['GearNote',['../classbbb_1_1_gear_note.html#a08f3d69aff33df72d1896adada7116b4',1,'bbb::GearNote']]],
   ['getalignmentpatternpositions',['getAlignmentPatternPositions',['../classqrcodegen_1_1_qr_code.html#aa8fb0fe93510ed7590b9619a5a245963',1,'qrcodegen::QrCode']]],
-  ['getandcheckroamingpath',['getAndCheckRoamingPath',['../classbbb_1_1___file_writer.html#ad2e2fb05b28dfe9d1e37f5a9560f52ee',1,'bbb::_FileWriter']]],
+  ['getandcheckroamingpath',['getAndCheckRoamingPath',['../classbbb_1_1_directory_handler.html#ab84509ca1f11e6515c65dd80c2bab28a',1,'bbb::DirectoryHandler']]],
   ['getbytes',['getBytes',['../classqrcodegen_1_1_bit_buffer.html#a8c74bb35eed210e73ba62e591b0e6077',1,'qrcodegen::BitBuffer']]],
   ['getdata',['getData',['../classqrcodegen_1_1_qr_segment.html#a5e3e5cb40216d3c53624e179574e30fa',1,'qrcodegen::QrSegment']]],
   ['getdefaultnotes',['getDefaultNotes',['../classbbb_1_1_db_connect.html#ab72868841a4ef88d4c5ac9e45bb493b9',1,'bbb::DbConnect']]],

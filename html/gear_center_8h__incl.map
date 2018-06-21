@@ -1,12 +1,13 @@
 <map id="/home/travis/build/rbaker26/BigBlueBox/src/pages/gearCenter.h" name="/home/travis/build/rbaker26/BigBlueBox/src/pages/gearCenter.h">
-<area shape="rect" id="node9" href="$_qr_interface_8h.html" title="qr/QrInterface.h" alt="" coords="437,109,549,136"/>
-<area shape="rect" id="node17" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="1553,109,1647,136"/>
-<area shape="rect" id="node32" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="985,109,1073,136"/>
-<area shape="rect" id="node10" href="$_qr_code_8h.html" title="qr/QrCode.h" alt="" coords="384,184,477,211"/>
-<area shape="rect" id="node14" href="$_qr_segment_8h.html" title="qr/QrSegment.h" alt="" coords="325,259,440,285"/>
-<area shape="rect" id="node15" href="$_bit_buffer_8h.html" title="qr/BitBuffer.h" alt="" coords="312,333,411,360"/>
-<area shape="rect" id="node25" href="$item_8h.html" title="item.h" alt="" coords="1488,184,1545,211"/>
-<area shape="rect" id="node28" href="$__filereader_8h.html" title="_filereader.h" alt="" coords="1320,184,1413,211"/>
-<area shape="rect" id="node30" href="$gear_8h.html" title="gear.h" alt="" coords="1571,184,1628,211"/>
-<area shape="rect" id="node26" href="$category_8h.html" title="category.h" alt="" coords="1461,259,1543,285"/>
+<area shape="rect" id="node9" href="$_qr_interface_8h.html" title="qr/QrInterface.h" alt="" coords="550,109,663,136"/>
+<area shape="rect" id="node17" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="973,109,1067,136"/>
+<area shape="rect" id="node34" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="1287,333,1376,360"/>
+<area shape="rect" id="node10" href="$_qr_code_8h.html" title="qr/QrCode.h" alt="" coords="235,184,328,211"/>
+<area shape="rect" id="node14" href="$_qr_segment_8h.html" title="qr/QrSegment.h" alt="" coords="111,259,225,285"/>
+<area shape="rect" id="node15" href="$_bit_buffer_8h.html" title="qr/BitBuffer.h" alt="" coords="97,333,196,360"/>
+<area shape="rect" id="node25" href="$item_8h.html" title="item.h" alt="" coords="1444,408,1501,435"/>
+<area shape="rect" id="node28" href="$__filereader_8h.html" title="_filereader.h" alt="" coords="1300,184,1393,211"/>
+<area shape="rect" id="node36" href="$gear_8h.html" title="gear.h" alt="" coords="605,184,663,211"/>
+<area shape="rect" id="node26" href="$category_8h.html" title="category.h" alt="" coords="1432,483,1513,509"/>
+<area shape="rect" id="node31" href="$directoryhandler_8h.html" title="directoryhandler.h" alt="" coords="1029,259,1155,285"/>
 </map>

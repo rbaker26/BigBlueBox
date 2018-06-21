@@ -1,5 +1,6 @@
 <map id="bbb::_FileWriter::makeXmlInvReport" name="bbb::_FileWriter::makeXmlInvReport">
-<area shape="rect" id="node2" href="$classbbb_1_1___file_writer.html#a261e167c8c1e55701c5b6d4b063f55c7" title="Gets the path to desktop. " alt="" coords="232,5,445,32"/>
-<area shape="rect" id="node4" href="$classbbb_1_1_category.html#ad7de659617e688faaa44e4ba448b40fe" title="Turns enum to string. " alt="" coords="250,57,427,98"/>
-<area shape="rect" id="node3" href="$classbbb_1_1___file_reader.html#a84a82fafca657fac8d48cf1ca451cb88" title="bbb::_FileReader::readReportsDir" alt="" coords="494,5,711,32"/>
+<area shape="rect" id="node2" href="$classbbb_1_1___file_writer.html#a261e167c8c1e55701c5b6d4b063f55c7" title="Gets the path to desktop. " alt="" coords="232,12,445,39"/>
+<area shape="rect" id="node5" href="$classbbb_1_1_category.html#ad7de659617e688faaa44e4ba448b40fe" title="Turns enum to string. " alt="" coords="250,63,427,105"/>
+<area shape="rect" id="node3" href="$classbbb_1_1___file_reader.html#a84a82fafca657fac8d48cf1ca451cb88" title="bbb::_FileReader::readReportsDir" alt="" coords="494,12,711,39"/>
+<area shape="rect" id="node4" href="$classbbb_1_1_directory_handler.html#ab84509ca1f11e6515c65dd80c2bab28a" title="bbb::DirectoryHandler\l::getAndCheckRoamingPath" alt="" coords="761,5,949,46"/>
 </map>

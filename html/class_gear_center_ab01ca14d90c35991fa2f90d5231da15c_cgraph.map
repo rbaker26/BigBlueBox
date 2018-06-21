@@ -1,10 +1,11 @@
 <map id="GearCenter::on_pushButton_addNote_clicked" name="GearCenter::on_pushButton_addNote_clicked">
 <area shape="rect" id="node2" href="$classbbb_1_1_db_connect.html#a857222eb39d70d8c437f0c583dfcbb53" title="Singleton pointer return function. " alt="" coords="477,12,670,39"/>
-<area shape="rect" id="node5" href="$classbbb_1_1_db_connect.html#a30876ce28234ec25cbe5549a1fe9ba37" title="Adds new Gear Note to DB. " alt="" coords="242,37,417,64"/>
-<area shape="rect" id="node6" href="$class_gear_center.html#abae45e02d9483b2adff3a1b14069b346" title="GearCenter::fillNotesTables" alt="" coords="237,88,421,115"/>
+<area shape="rect" id="node6" href="$classbbb_1_1_db_connect.html#a30876ce28234ec25cbe5549a1fe9ba37" title="Adds new Gear Note to DB. " alt="" coords="242,37,417,64"/>
+<area shape="rect" id="node7" href="$class_gear_center.html#abae45e02d9483b2adff3a1b14069b346" title="GearCenter::fillNotesTables" alt="" coords="237,88,421,115"/>
 <area shape="rect" id="node3" href="$classbbb_1_1_db_connect.html#acc835e712f6917c01f3d555dd1666fdd" title="Default no&#45;args constructor. " alt="" coords="726,12,917,39"/>
 <area shape="rect" id="node4" href="$classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6" title="bbb::_FileReader::readDb\lFileLoc" alt="" coords="965,5,1136,46"/>
-<area shape="rect" id="node7" href="$classbbb_1_1_db_connect.html#a70b628468d25fa8361d9bf0ce75fc53a" title="Gets notes for a gear item. " alt="" coords="470,63,677,89"/>
-<area shape="rect" id="node8" href="$class_gear_center.html#a7a4d80dee6125971e9f5642c5227c247" title="GearCenter::initTable" alt="" coords="500,113,647,140"/>
-<area shape="rect" id="node9" href="$class_gear_center.html#ab58379530784650bfd471c7f76f043d1" title="GearCenter::clearTable" alt="" coords="743,113,900,140"/>
+<area shape="rect" id="node5" href="$classbbb_1_1_directory_handler.html#ab84509ca1f11e6515c65dd80c2bab28a" title="bbb::DirectoryHandler\l::getAndCheckRoamingPath" alt="" coords="1185,5,1373,46"/>
+<area shape="rect" id="node8" href="$classbbb_1_1_db_connect.html#a70b628468d25fa8361d9bf0ce75fc53a" title="Gets notes for a gear item. " alt="" coords="470,63,677,89"/>
+<area shape="rect" id="node9" href="$class_gear_center.html#a7a4d80dee6125971e9f5642c5227c247" title="GearCenter::initTable" alt="" coords="500,113,647,140"/>
+<area shape="rect" id="node10" href="$class_gear_center.html#ab58379530784650bfd471c7f76f043d1" title="GearCenter::clearTable" alt="" coords="743,113,900,140"/>
 </map>
