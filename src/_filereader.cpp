@@ -10,7 +10,14 @@ _FileReader::_FileReader()
 
 QString _FileReader::readDbFileLoc()
 {
-    QFile dbFile("C:/Users/007ds/Documents/GitHub/BigBlueBox/rec/db_path.data");  // todo correct to proper final path
+    QString dirpath = bbb::DirectoryHandler::getAndCheckRoamingPath();
+    QDir dir(dirpath +  "/rec/");
+    if(!dir.exists())
+    {
+        dir.mkpath(dirpath +  "/rec/");
+    }
+
+    QFile dbFile(dirpath + "/rec/db_path.data");
 
     dbFile.open(QIODevice::ReadOnly | QIODevice::Text);
 
@@ -21,6 +28,7 @@ QString _FileReader::readDbFileLoc()
 
     dbFile.close();
 
+
     return path;
 
 }
@@ -28,7 +36,15 @@ QString _FileReader::readDbFileLoc()
 
 QString _FileReader::readReportsDir()
 {
-    QFile reportFile("C:/Users/007ds/Documents/GitHub/BigBlueBox/rec/report_dir.data");  // todo correct to proper final path
+    QString dirpath = bbb::DirectoryHandler::getAndCheckRoamingPath();
+    QDir dir(dirpath +  "/rec/");
+    if(!dir.exists())
+    {
+        dir.mkpath(dirpath +  "/rec/");
+    }
+
+
+    QFile reportFile(dirpath + "/rec/report_dir.data");
     reportFile.open(QIODevice::ReadOnly | QIODevice::Text);
 
     QTextStream ofs(&reportFile);

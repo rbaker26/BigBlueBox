@@ -33,3 +33,17 @@ void DirectoryHandler::setDefaultReportPath(QString path)
 {
     // use xml;
 }
+
+QString DirectoryHandler::getAndCheckRoamingPath()
+{
+    QString filePath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+
+    QDir dir(filePath);
+    if(!dir.exists())
+    {
+        dir.mkpath(filePath);
+    }
+
+    return filePath;
+}
+

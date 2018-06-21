@@ -4,7 +4,9 @@
 #include <QString>
 #include <QFile>
 #include <QTextStream>
+#include <QDir>
 
+#include "directoryhandler.h"
 
 namespace bbb {
 class _FileReader

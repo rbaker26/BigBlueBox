@@ -10,6 +10,8 @@
 #include <QXmlStreamReader>
 #include <QXmlStreamReader>
 
+#include "_filewriter.h"
+
 namespace bbb {
 class DirectoryHandler
 {
@@ -31,6 +33,7 @@ public:
 
     static QString getDefaultReportPath();
 
+    static QString getAndCheckRoamingPath();
 
 
 }; // end class

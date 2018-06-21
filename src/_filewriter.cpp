@@ -356,7 +356,14 @@ void _FileWriter::makeXmlInvReport(QVector<Item> inventory, ReportType type)
 //*********************************************************************************
 void _FileWriter::writeDbFileLoc(QString path)
 {
-    QFile dbFile("C:/Users/007ds/Documents/GitHub/BigBlueBox/rec/db_path.data");  // todo correct to proper final path
+    QString dirpath = bbb::DirectoryHandler::getAndCheckRoamingPath();
+    QDir dir(dirpath +  "/rec/");
+    if(!dir.exists())
+    {
+        dir.mkpath(dirpath +  "/rec/");
+    }
+
+    QFile dbFile(dirpath + "/rec/db_path.data");
 
     dbFile.open(QIODevice::ReadWrite | QIODevice::Truncate | QIODevice::Text);
 
@@ -375,7 +382,15 @@ void _FileWriter::writeDbFileLoc(QString path)
 //*********************************************************************************
 void _FileWriter::writeReportsDir(QString path)
 {
-    QFile file("C:/Users/007ds/Documents/GitHub/BigBlueBox/rec/report_dir.data");  // todo correct to proper final path
+    QString dirpath = bbb::DirectoryHandler::getAndCheckRoamingPath();
+    QDir dir(dirpath +  "/rec/");
+    if(!dir.exists())
+    {
+        dir.mkpath(dirpath +  "/rec/");
+    }
+
+
+    QFile file(dirpath + "/rec/report_dir.data");
 
     file.open(QIODevice::ReadWrite | QIODevice::Truncate | QIODevice::Text);
 

@@ -52,9 +52,9 @@ SOURCES += \
         qr/QrSegment.cpp        \
         qr/QrInterface.cpp      \
         gear.cpp                \
-       framelesswindow/framelesswindow.cpp \
-       framelesswindow/windowdragger.cpp   \
-       DarkStyle.cpp            \
+        framelesswindow/framelesswindow.cpp \
+        framelesswindow/windowdragger.cpp   \
+        DarkStyle.cpp           \
         pages/gearManager.cpp   \
 
 

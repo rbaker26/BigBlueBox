@@ -171,8 +171,7 @@ void GearCenter::on_pushButton_enterCode_clicked()
 
     // Get the path to the appdata folder
     // If it doesn't exist, it will make the path
-    QString filePath = bbb::_FileWriter::getAndCheckRoamingPath();
-
+    QString filePath = bbb::DirectoryHandler::getAndCheckRoamingPath();
 
 
 
@@ -254,7 +253,9 @@ void GearCenter::on_pushButton_enterCode_clicked()
             msg.exec();
 
 
-            QString blankQrPath = bbb::_FileWriter::getAndCheckRoamingPath();
+            // TODO
+            // change this to use directoryhandler.h
+            QString blankQrPath = bbb::DirectoryHandler::getAndCheckRoamingPath();
             blankQrPath.append("/temp/blankQr.svg");
 
             // Clear the QrCode boxes
@@ -402,7 +403,8 @@ void GearCenter::on_pushButton_enterCode_clicked()
         // Clean up the UI and input Fields                                    *
         //**********************************************************************
         // Find the path to the blank QrCode
-        QString blankPath = bbb::_FileWriter::getAndCheckRoamingPath();
+        QString blankPath = bbb::DirectoryHandler::getAndCheckRoamingPath();
+
         blankPath.append("/temp/blankQr.svg");
         if (ret == QMessageBox::Ok)
         {
