@@ -37,7 +37,7 @@ void DirectoryHandler::setDefaultReportPath(QString path)
 QString DirectoryHandler::getAndCheckRoamingPath()
 {
     QString filePath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
-
+    //QStandardPaths::writableLocation(QStandardPaths::App)
     QDir dir(filePath);
     if(!dir.exists())
     {

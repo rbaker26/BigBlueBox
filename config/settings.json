@@ -1,0 +1,22 @@
+{
+    "system_settings"           : {
+        "ui_themes"         : ["light","dark"],
+        "selected_theme"    : "dark"
+    },
+    "file_paths"                : {
+        "database_path"     : "E:/rec/BigBlueBox.db",
+    },
+    "database_settings"         : {
+        "database_type"     : "SQLITE3",
+        "supported_types"   : ["SQLITE3","MYSQL"],
+        "database_location" : ["local","remote"],
+        "database_ip_addr"  : "127.0.0.1",
+        "database_port"     : "3306",
+        "database_username" : "user",
+        "database_password" : "password"
+    },
+    "system_logging"            : {
+        "logging_levels"    : ["minimal","verbose"],
+        "selected_level"    : "verbose"
+    }
+}

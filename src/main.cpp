@@ -20,29 +20,56 @@
 #include "mainwindow.h"
 #include <QApplication>
 //#############################################################################################
+#include "_settings.h"
 #include "DarkStyle.h"
 #include "framelesswindow/framelesswindow.h"
 //#############################################################################################
 
 int main(int argc, char *argv[])
 {
+     const QString APP_NAME = "BigBlueBox v0.4.0";
+
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon(":/img/nyltIcon.png"));
-    a.setApplicationName("BigBlueBox v0.4.0");
-    a.setStyle(new DarkStyle);
+    a.setApplicationName(APP_NAME);
 
+
+    // Make both windows and hide them
+    MainWindow w;
     FramelessWindow framelessWindow;
-    framelessWindow.setWindowTitle("BigBlueBox v0.4.0");
-    framelessWindow.setWindowState(Qt::WindowMaximized);
+    w.hide();
+    framelessWindow.hide();
 
-    MainWindow *mainWindow = new MainWindow;
-   // w.setWindowTitle("BigBlueBox v0.4.0");
-   // w.show();
+    // Get Light/Dark theme settings from JSON file
+    bbb::_Settings set;
+    QString theme = set.getAppColorTheme();
 
-    framelessWindow.setContent(mainWindow);
-    framelessWindow.show();
+    //*************************************************************
+    // Light Mode                                                 *
+    //*************************************************************
+    if(theme == "light")
+    {
+        framelessWindow.close(); // Close other window
+        w.setWindowTitle(APP_NAME);
+        w.show();
+    }
+    //*************************************************************
+    // Dark Mode                                                  *
+    //*************************************************************
+    else if(theme == "dark")
+    {
+        w.close(); // Close other window
 
-   return a.exec();
+        a.setStyle(new DarkStyle);
+        framelessWindow.setWindowTitle(APP_NAME);
+        framelessWindow.setWindowState(Qt::WindowMaximized);
+
+        MainWindow *mainWindow = new MainWindow;
+        framelessWindow.setContent(mainWindow);
+        framelessWindow.show();
+    }
+    //*************************************************************
+    return a.exec();
 }
 
 //#############################################################################################

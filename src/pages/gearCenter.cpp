@@ -173,8 +173,12 @@ void GearCenter::on_pushButton_enterCode_clicked()
     // If it doesn't exist, it will make the path
     QString filePath = bbb::DirectoryHandler::getAndCheckRoamingPath();
 
-
-
+    QDir tempDir(filePath + "/temp/");
+    if(!tempDir.exists())
+    {
+        tempDir.mkdir(filePath + "/temp/");
+    }
+//qDebug() << tempDir;
     // Choose the correct file based on the first three digit of the scan code
     if(scanCodeString.left(3).toUpper() == "PID")
     {
@@ -405,6 +409,14 @@ void GearCenter::on_pushButton_enterCode_clicked()
         // Find the path to the blank QrCode
         QString blankPath = bbb::DirectoryHandler::getAndCheckRoamingPath();
 
+        QFile file(blankPath + "/temp/blankQr.svg");
+
+        // If file doesnt exist, create blank file.
+        if(!file.exists())
+        {
+             file.open(QIODevice::ReadWrite | QIODevice::Truncate | QIODevice::Text);
+             file.close();
+        }
         blankPath.append("/temp/blankQr.svg");
         if (ret == QMessageBox::Ok)
         {
