@@ -1,6 +1,7 @@
 <map id="SettingsPage::SettingsPage" name="SettingsPage::SettingsPage">
-<area shape="rect" id="node2" href="$class_settings_page.html#a8ee41bc1b63e09ecf439e551a21eec9b" title="SettingsPage::initPaths" alt="" coords="241,41,399,68"/>
-<area shape="rect" id="node3" href="$classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6" title="bbb::_FileReader::readDb\lFileLoc" alt="" coords="472,5,643,46"/>
-<area shape="rect" id="node5" href="$classbbb_1_1___file_reader.html#a84a82fafca657fac8d48cf1ca451cb88" title="bbb::_FileReader::readReportsDir" alt="" coords="449,71,666,97"/>
-<area shape="rect" id="node4" href="$classbbb_1_1_directory_handler.html#ab84509ca1f11e6515c65dd80c2bab28a" title="bbb::DirectoryHandler\l::getAndCheckRoamingPath" alt="" coords="715,34,903,75"/>
+<area shape="rect" id="node2" href="$class_settings_page.html#a8ee41bc1b63e09ecf439e551a21eec9b" title="SettingsPage::initPaths" alt="" coords="265,41,423,68"/>
+<area shape="rect" id="node6" href="$class_settings_page.html#ab41260051c033556ff4331204df1e379" title="SettingsPage::toggleDbSettings" alt="" coords="240,92,448,119"/>
+<area shape="rect" id="node3" href="$classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6" title="bbb::_FileReader::readDb\lFileLoc" alt="" coords="520,5,691,46"/>
+<area shape="rect" id="node5" href="$classbbb_1_1___file_reader.html#a84a82fafca657fac8d48cf1ca451cb88" title="bbb::_FileReader::readReportsDir" alt="" coords="497,71,714,97"/>
+<area shape="rect" id="node4" href="$classbbb_1_1_directory_handler.html#ab84509ca1f11e6515c65dd80c2bab28a" title="bbb::DirectoryHandler\l::getAndCheckRoamingPath" alt="" coords="763,34,951,75"/>
 </map>

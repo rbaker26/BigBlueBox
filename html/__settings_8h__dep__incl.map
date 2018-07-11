@@ -1,4 +1,10 @@
 <map id="/home/travis/build/rbaker26/BigBlueBox/src/_settings.h" name="/home/travis/build/rbaker26/BigBlueBox/src/_settings.h">
-<area shape="rect" id="node2" href="$__settings_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/_settings.cpp" alt="" coords="5,109,152,165"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/main.cpp" alt="" coords="177,109,324,165"/>
+<area shape="rect" id="node2" href="$__settings_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/_settings.cpp" alt="" coords="13,109,160,165"/>
+<area shape="rect" id="node3" href="$settingspage_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/pages/settingspage.h" alt="" coords="185,109,356,165"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/main.cpp" alt="" coords="251,421,399,477"/>
+<area shape="rect" id="node4" href="$mainmenu_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainmenu.h" alt="" coords="5,213,152,269"/>
+<area shape="rect" id="node9" href="$settingspage_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/pages/settingspage.cpp" alt="" coords="177,213,364,269"/>
+<area shape="rect" id="node5" href="$mainwindow_8h.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainwindow.h" alt="" coords="5,317,152,373"/>
+<area shape="rect" id="node8" href="$mainmenu_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainmenu.cpp" alt="" coords="177,317,324,373"/>
+<area shape="rect" id="node7" href="$mainwindow_8cpp.html" title="/home/travis/build\l/rbaker26/BigBlueBox\l/src/mainwindow.cpp" alt="" coords="5,421,152,477"/>
 </map>

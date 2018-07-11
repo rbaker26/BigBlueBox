@@ -117,6 +117,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2f7b734cd4b293694140ed7504d19a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20888ad10de70f082260e916ced2e4fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_settings_page.html#a20888ad10de70f082260e916ced2e4fa">~SettingsPage</a> ()</td></tr>
 <tr class="separator:a20888ad10de70f082260e916ced2e4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab41260051c033556ff4331204df1e379"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_settings_page.html#ab41260051c033556ff4331204df1e379">toggleDbSettings</a> (bool toggle)</td></tr>
+<tr class="separator:ab41260051c033556ff4331204df1e379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
 Private Slots</h2></td></tr>
@@ -128,6 +130,10 @@ Private Slots</h2></td></tr>
 <tr class="separator:a3098069804572f2adf23455988abca3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4121381639d038b258e6411b6d955d34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_settings_page.html#a4121381639d038b258e6411b6d955d34">on_pushButton_saveReportDir_clicked</a> ()</td></tr>
 <tr class="separator:a4121381639d038b258e6411b6d955d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229de12a12d09b010379ca32d5a89a03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_settings_page.html#a229de12a12d09b010379ca32d5a89a03">on_comboBox_databaseLoc_currentIndexChanged</a> (const QString &amp;arg1)</td></tr>
+<tr class="separator:a229de12a12d09b010379ca32d5a89a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5fe939c6339a0236b5fe603c380a53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_settings_page.html#a5b5fe939c6339a0236b5fe603c380a53">on_comboBox_databaseType_currentIndexChanged</a> (int index)</td></tr>
+<tr class="separator:a5b5fe939c6339a0236b5fe603c380a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -167,7 +173,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_settings_page_a2f7b734cd4b293694140ed7504d19a55_cgraph.png" border="0" usemap="#class_settings_page_a2f7b734cd4b293694140ed7504d19a55_cgraph" alt=""/></div>
 <map name="class_settings_page_a2f7b734cd4b293694140ed7504d19a55_cgraph" id="class_settings_page_a2f7b734cd4b293694140ed7504d19a55_cgraph">
-<area shape="rect" id="node2" href="class_settings_page.html#a8ee41bc1b63e09ecf439e551a21eec9b" title="SettingsPage::initPaths" alt="" coords="241,41,399,68"/><area shape="rect" id="node3" href="classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6" title="bbb::_FileReader::readDb\lFileLoc" alt="" coords="472,5,643,46"/><area shape="rect" id="node5" href="classbbb_1_1___file_reader.html#a84a82fafca657fac8d48cf1ca451cb88" title="bbb::_FileReader::readReportsDir" alt="" coords="449,71,666,97"/><area shape="rect" id="node4" href="classbbb_1_1_directory_handler.html#ab84509ca1f11e6515c65dd80c2bab28a" title="bbb::DirectoryHandler\l::getAndCheckRoamingPath" alt="" coords="715,34,903,75"/></map>
+<area shape="rect" id="node2" href="class_settings_page.html#a8ee41bc1b63e09ecf439e551a21eec9b" title="SettingsPage::initPaths" alt="" coords="265,41,423,68"/><area shape="rect" id="node6" href="class_settings_page.html#ab41260051c033556ff4331204df1e379" title="SettingsPage::toggleDbSettings" alt="" coords="240,92,448,119"/><area shape="rect" id="node3" href="classbbb_1_1___file_reader.html#a0e2f4e6ab1f5f642cb4abb8c63e5c1f6" title="bbb::_FileReader::readDb\lFileLoc" alt="" coords="520,5,691,46"/><area shape="rect" id="node5" href="classbbb_1_1___file_reader.html#a84a82fafca657fac8d48cf1ca451cb88" title="bbb::_FileReader::readReportsDir" alt="" coords="497,71,714,97"/><area shape="rect" id="node4" href="classbbb_1_1_directory_handler.html#ab84509ca1f11e6515c65dd80c2bab28a" title="bbb::DirectoryHandler\l::getAndCheckRoamingPath" alt="" coords="763,34,951,75"/></map>
 </div>
 </p>
 
@@ -225,6 +231,63 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_settings_page_a8ee41bc1b63e09ecf439e551a21eec9b_icgraph.png" border="0" usemap="#class_settings_page_a8ee41bc1b63e09ecf439e551a21eec9b_icgraph" alt=""/></div>
 <map name="class_settings_page_a8ee41bc1b63e09ecf439e551a21eec9b_icgraph" id="class_settings_page_a8ee41bc1b63e09ecf439e551a21eec9b_icgraph">
 <area shape="rect" id="node2" href="class_settings_page.html#a2f7b734cd4b293694140ed7504d19a55" title="SettingsPage::SettingsPage" alt="" coords="213,5,400,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a229de12a12d09b010379ca32d5a89a03"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SettingsPage::on_comboBox_databaseLoc_currentIndexChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>arg1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5b5fe939c6339a0236b5fe603c380a53"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SettingsPage::on_comboBox_databaseType_currentIndexChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_settings_page_a5b5fe939c6339a0236b5fe603c380a53_cgraph.png" border="0" usemap="#class_settings_page_a5b5fe939c6339a0236b5fe603c380a53_cgraph" alt=""/></div>
+<map name="class_settings_page_a5b5fe939c6339a0236b5fe603c380a53_cgraph" id="class_settings_page_a5b5fe939c6339a0236b5fe603c380a53_cgraph">
+<area shape="rect" id="node2" href="class_settings_page.html#ab41260051c033556ff4331204df1e379" title="SettingsPage::toggleDbSettings" alt="" coords="296,12,504,39"/></map>
 </div>
 </p>
 
@@ -337,6 +400,31 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab41260051c033556ff4331204df1e379"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SettingsPage::toggleDbSettings </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>toggle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_settings_page_ab41260051c033556ff4331204df1e379_icgraph.png" border="0" usemap="#class_settings_page_ab41260051c033556ff4331204df1e379_icgraph" alt=""/></div>
+<map name="class_settings_page_ab41260051c033556ff4331204df1e379_icgraph" id="class_settings_page_ab41260051c033556ff4331204df1e379_icgraph">
+<area shape="rect" id="node2" href="class_settings_page.html#a2f7b734cd4b293694140ed7504d19a55" title="SettingsPage::SettingsPage" alt="" coords="289,5,476,32"/><area shape="rect" id="node3" href="class_settings_page.html#a5b5fe939c6339a0236b5fe603c380a53" title="SettingsPage::on_comboBox\l_databaseType_currentIndexChanged" alt="" coords="261,57,504,98"/></map>
+</div>
+</p>
 
 </div>
 </div>
