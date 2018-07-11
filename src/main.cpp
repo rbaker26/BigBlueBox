@@ -35,9 +35,9 @@ int main(int argc, char *argv[])
 
 
     // Make both windows and hide them
-    MainWindow w;
+    MainWindow window;
     FramelessWindow framelessWindow;
-    w.hide();
+    window.hide();
     framelessWindow.hide();
 
     // Get Light/Dark theme settings from JSON file
@@ -50,15 +50,15 @@ int main(int argc, char *argv[])
     if(theme == "light")
     {
         framelessWindow.close(); // Close other window
-        w.setWindowTitle(APP_NAME);
-        w.show();
+        window.setWindowTitle(APP_NAME);
+        window.show();
     }
     //*************************************************************
     // Dark Mode                                                  *
     //*************************************************************
     else if(theme == "dark")
     {
-        w.close(); // Close other window
+        window.close(); // Close other window
 
         a.setStyle(new DarkStyle);
         framelessWindow.setWindowTitle(APP_NAME);

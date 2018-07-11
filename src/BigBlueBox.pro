@@ -9,7 +9,6 @@
 ###########################################################################
 
 QT       += core gui sql svg
-# QT += testlib    # Test lib only needed in test build after project is done
 CONFIG   += c++14
 QMAKE_CXXFLAGS += -std=c++11
 
@@ -57,9 +56,9 @@ SOURCES += \
         framelesswindow/windowdragger.cpp   \
         DarkStyle.cpp           \
         pages/gearManager.cpp   \
-    jsonReader.cpp \
-    jsonReader.cpp \
-    _settings.cpp
+        jsonReader.cpp          \
+        jsonReader.cpp          \
+        _settings.cpp           \
 
 
         
@@ -87,9 +86,9 @@ HEADERS += \
        framelesswindow/windowdragger.h   \
        DarkStyle.h              \
        pages/gearManager.h      \
-    jsonReader.h \
-    jsonReader.h \
-    _settings.h
+       jsonReader.h             \
+       jsonReader.h             \
+       _settings.h              \
 
 
         
@@ -112,6 +111,7 @@ RESOURCES += \
 # UNIT TESTING BUILD
 ###########################################################
 test {
+QT += testlib    # Test lib only needed in test build after project is done
 
 # These are for CodeCov
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
