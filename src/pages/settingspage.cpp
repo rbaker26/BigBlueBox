@@ -8,6 +8,7 @@ SettingsPage::SettingsPage(QWidget *parent) :
     ui->setupUi(this);
 
     initPaths();
+    toggleDbSettings(true);
 }
 //*********************************************************************************
 
@@ -111,5 +112,56 @@ void SettingsPage::on_pushButton_saveReportDir_clicked()
 
     bbb::DbConnect::getInstance()->sysLog("SYSTEM:\tREPORT_DIR_CHANGED->" +
                                           ui->lineEdit_reportsDir->text());
+}
+//*********************************************************************************
+
+
+
+//*********************************************************************************
+void SettingsPage::on_comboBox_databaseLoc_currentIndexChanged(const QString &arg1)
+{
+    if(arg1 == "Local")
+    {
+
+    }
+    else if (arg1 == "Remote")
+    {
+
+    }
+}
+//*********************************************************************************
+
+
+
+//*********************************************************************************
+void SettingsPage::toggleDbSettings(bool toggle)
+{
+    ui->lineEdit_dbFile->setEnabled(toggle);
+    ui->toolButton_fileBrowse->setEnabled(toggle);
+
+    ui->lineEdit_ipAddr->setEnabled(!toggle);
+    ui->lineEdit_port->setEnabled(!toggle);
+    ui->lineEdit_username->setEnabled(!toggle);
+    ui->lineEdit_psswrd->setEnabled(!toggle);
+
+    ui->pushButton_IPAddrSave->setEnabled(!toggle);
+    ui->pushButton_usernameSave->setEnabled(!toggle);
+    ui->pushButton_psswrdSave->setEnabled(!toggle);
+}
+//*********************************************************************************
+
+
+
+//*********************************************************************************
+void SettingsPage::on_comboBox_databaseType_currentIndexChanged(int index)
+{
+    if(index == 0)
+    {
+        toggleDbSettings(true);
+    }
+    else if(index == 1)
+    {
+         toggleDbSettings(false);
+    }
 }
 //*********************************************************************************
