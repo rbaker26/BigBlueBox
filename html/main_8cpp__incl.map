@@ -1,19 +1,19 @@
 <map id="/home/travis/build/rbaker26/BigBlueBox/src/main.cpp" name="/home/travis/build/rbaker26/BigBlueBox/src/main.cpp">
-<area shape="rect" id="node2" href="$mainwindow_8h.html" title="mainwindow.h" alt="" coords="1435,109,1540,136"/>
-<area shape="rect" id="node45" href="$_dark_style_8h.html" title="DarkStyle.h" alt="" coords="1805,109,1896,136"/>
-<area shape="rect" id="node49" href="$framelesswindow_8h.html" title="framelesswindow/framelesswindow.h" alt="" coords="2031,109,2269,136"/>
-<area shape="rect" id="node4" href="$mainmenu_8h.html" title="mainmenu.h" alt="" coords="1379,184,1472,211"/>
-<area shape="rect" id="node9" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="784,333,877,360"/>
-<area shape="rect" id="node6" href="$reports_view_8h.html" title="reportsView.h" alt="" coords="1394,259,1496,285"/>
-<area shape="rect" id="node34" href="$settingspage_8h.html" title="pages/settingspage.h" alt="" coords="1696,259,1843,285"/>
-<area shape="rect" id="node36" href="$gear_center_8h.html" title="pages/gearCenter.h" alt="" coords="591,259,725,285"/>
-<area shape="rect" id="node19" href="$item_8h.html" title="item.h" alt="" coords="1072,632,1129,659"/>
-<area shape="rect" id="node28" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="1430,557,1519,584"/>
-<area shape="rect" id="node32" href="$__regex_8h.html" title="_regex.h" alt="" coords="1245,333,1317,360"/>
-<area shape="rect" id="node22" href="$__filereader_8h.html" title="_filereader.h" alt="" coords="1669,408,1763,435"/>
-<area shape="rect" id="node30" href="$gear_8h.html" title="gear.h" alt="" coords="347,408,404,435"/>
-<area shape="rect" id="node20" href="$category_8h.html" title="category.h" alt="" coords="1112,707,1193,733"/>
-<area shape="rect" id="node26" href="$directoryhandler_8h.html" title="directoryhandler.h" alt="" coords="1683,483,1808,509"/>
-<area shape="rect" id="node41" href="$_qr_interface_8h.html" title="qr/QrInterface.h" alt="" coords="61,333,173,360"/>
-<area shape="rect" id="node42" href="$_qr_code_8h.html" title="qr/QrCode.h" alt="" coords="27,408,120,435"/>
+<area shape="rect" id="node2" href="$mainwindow_8h.html" title="mainwindow.h" alt="" coords="493,109,597,136"/>
+<area shape="rect" id="node39" href="$__settings_8h.html" title="_settings.h" alt="" coords="1865,109,1951,136"/>
+<area shape="rect" id="node45" href="$_dark_style_8h.html" title="DarkStyle.h" alt="" coords="2349,109,2440,136"/>
+<area shape="rect" id="node49" href="$framelesswindow_8h.html" title="framelesswindow/framelesswindow.h" alt="" coords="2585,109,2823,136"/>
+<area shape="rect" id="node4" href="$mainmenu_8h.html" title="mainmenu.h" alt="" coords="588,184,681,211"/>
+<area shape="rect" id="node9" href="$dbconnect_8h.html" title="dbconnect.h" alt="" coords="412,333,505,360"/>
+<area shape="rect" id="node6" href="$reports_view_8h.html" title="reportsView.h" alt="" coords="494,259,596,285"/>
+<area shape="rect" id="node30" href="$settingspage_8h.html" title="pages/settingspage.h" alt="" coords="1079,259,1225,285"/>
+<area shape="rect" id="node32" href="$gear_center_8h.html" title="pages/gearCenter.h" alt="" coords="772,259,907,285"/>
+<area shape="rect" id="node19" href="$item_8h.html" title="item.h" alt="" coords="287,632,344,659"/>
+<area shape="rect" id="node27" href="$__filewriter_8h.html" title="_filewriter.h" alt="" coords="1047,557,1136,584"/>
+<area shape="rect" id="node29" href="$__regex_8h.html" title="_regex.h" alt="" coords="39,483,111,509"/>
+<area shape="rect" id="node21" href="$__filereader_8h.html" title="_filereader.h" alt="" coords="1291,408,1384,435"/>
+<area shape="rect" id="node28" href="$gear_8h.html" title="gear.h" alt="" coords="503,707,560,733"/>
+<area shape="rect" id="node20" href="$category_8h.html" title="category.h" alt="" coords="185,707,267,733"/>
+<area shape="rect" id="node24" href="$directoryhandler_8h.html" title="directoryhandler.h" alt="" coords="1375,483,1500,509"/>
+<area shape="rect" id="node37" href="$_qr_interface_8h.html" title="qr/QrInterface.h" alt="" coords="338,483,451,509"/>
 </map>

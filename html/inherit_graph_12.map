@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_gear.html" title="Gear" alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node2" href="$class_frameless_window.html" title="FramelessWindow" alt="" coords="184,5,315,32"/>
+<area shape="rect" id="node4" href="$class_gear_center.html" title="GearCenter" alt="" coords="205,56,294,83"/>
+<area shape="rect" id="node5" href="$class_gear_manager.html" title="GearManager" alt="" coords="199,107,299,133"/>
+<area shape="rect" id="node6" href="$class_main_menu.html" title="MainMenu" alt="" coords="208,157,291,184"/>
+<area shape="rect" id="node7" href="$class_reports_view.html" title="ReportsView" alt="" coords="201,208,298,235"/>
+<area shape="rect" id="node8" href="$class_settings_page.html" title="SettingsPage" alt="" coords="199,259,299,285"/>
+<area shape="rect" id="node9" href="$class_window_dragger.html" title="WindowDragger" alt="" coords="192,309,307,336"/>
 </map>

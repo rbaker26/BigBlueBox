@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logout',['logout',['../classbbb_1_1_user_session.html#ab4a7a52bedaae41bd759c79eb7c6d9f3',1,'bbb::UserSession']]]
+  ['jsonreader',['JSONReader',['../class_j_s_o_n_reader.html#ab1b06649857240e4eef164fd9bf7297b',1,'JSONReader']]]
 ];

@@ -1,4 +1,6 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$class_frameless_window.html#a3500036b9f8179ceeadbb22e2d80c29b" title="FramelessWindow::setWindow\lTitle" alt="" coords="104,5,307,46"/>
-<area shape="rect" id="node3" href="$class_frameless_window.html#a9364e6cd71652a32bdd44da3a4f3290b" title="FramelessWindow::setContent" alt="" coords="104,71,307,97"/>
+<area shape="rect" id="node2" href="$classbbb_1_1___settings.html#a72a6e3e35563224a31214e21c8a3c4c2" title="bbb::_Settings::getAppColor\lTheme" alt="" coords="112,5,299,46"/>
+<area shape="rect" id="node4" href="$class_frameless_window.html#a3500036b9f8179ceeadbb22e2d80c29b" title="FramelessWindow::setWindow\lTitle" alt="" coords="104,70,307,111"/>
+<area shape="rect" id="node5" href="$class_frameless_window.html#a9364e6cd71652a32bdd44da3a4f3290b" title="FramelessWindow::setContent" alt="" coords="104,136,307,163"/>
+<area shape="rect" id="node3" href="$classbbb_1_1___settings.html#abf6c13185e060b91830107b69de5f3ba" title="bbb::_Settings::readFile" alt="" coords="355,12,515,39"/>
 </map>

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['kanji',['KANJI',['../classqrcodegen_1_1_qr_segment_1_1_mode.html#a36b33d4af43c2c3b4026e07dbe95f62a',1,'qrcodegen::QrSegment::Mode']]],
-  ['kitchen',['KITCHEN',['../classbbb_1_1_category.html#ae6842fe56f139f41a9e7cf4b0a8d98daa4726a4611f4ed2e1e07cad81c9bf4910',1,'bbb::Category']]]
+  ['jsonpath',['jsonPath',['../classbbb_1_1___settings.html#a230bf776252ddacac97503c66e59ca71',1,'bbb::_Settings']]],
+  ['jsonreader',['JSONReader',['../class_j_s_o_n_reader.html',1,'JSONReader'],['../class_j_s_o_n_reader.html#ab1b06649857240e4eef164fd9bf7297b',1,'JSONReader::JSONReader()']]],
+  ['jsonreader_2ecpp',['jsonReader.cpp',['../json_reader_8cpp.html',1,'']]],
+  ['jsonreader_2eh',['jsonReader.h',['../json_reader_8h.html',1,'']]]
 ];

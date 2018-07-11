@@ -9,5 +9,7 @@ var searchData=
   ['_5fregex_2ecpp',['_regex.cpp',['../__regex_8cpp.html',1,'']]],
   ['_5fregex_2eh',['_regex.h',['../__regex_8h.html',1,'']]],
   ['_5fregextest_2ecpp',['_regextest.cpp',['../__regextest_8cpp.html',1,'']]],
-  ['_5fregextest_2eh',['_regextest.h',['../__regextest_8h.html',1,'']]]
+  ['_5fregextest_2eh',['_regextest.h',['../__regextest_8h.html',1,'']]],
+  ['_5fsettings_2ecpp',['_settings.cpp',['../__settings_8cpp.html',1,'']]],
+  ['_5fsettings_2eh',['_settings.h',['../__settings_8h.html',1,'']]]
 ];

@@ -19,5 +19,9 @@ var searchData=
   ['_5fregextest',['_RegexTest',['../classbbb_test_1_1___regex_test.html',1,'bbbTest']]],
   ['_5fregextest',['_RegexTest',['../classbbb_test_1_1___regex_test.html#a8879b913c4ead901acbe174c40108780',1,'bbbTest::_RegexTest']]],
   ['_5fregextest_2ecpp',['_regextest.cpp',['../__regextest_8cpp.html',1,'']]],
-  ['_5fregextest_2eh',['_regextest.h',['../__regextest_8h.html',1,'']]]
+  ['_5fregextest_2eh',['_regextest.h',['../__regextest_8h.html',1,'']]],
+  ['_5fsettings',['_Settings',['../classbbb_1_1___settings.html',1,'bbb']]],
+  ['_5fsettings',['_Settings',['../classbbb_1_1___settings.html#a4af746f377105569b236c13df34e418c',1,'bbb::_Settings']]],
+  ['_5fsettings_2ecpp',['_settings.cpp',['../__settings_8cpp.html',1,'']]],
+  ['_5fsettings_2eh',['_settings.h',['../__settings_8h.html',1,'']]]
 ];

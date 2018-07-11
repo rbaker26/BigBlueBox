@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['low',['LOW',['../classqrcodegen_1_1_qr_code_1_1_ecc.html#a757346707ab9285f8278f7169fac10f6',1,'qrcodegen::QrCode::Ecc']]]
+  ['kanji',['KANJI',['../classqrcodegen_1_1_qr_segment_1_1_mode.html#a36b33d4af43c2c3b4026e07dbe95f62a',1,'qrcodegen::QrSegment::Mode']]]
 ];

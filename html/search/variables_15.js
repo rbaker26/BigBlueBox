@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wndpos',['wndPos',['../class_window_dragger.html#a243b6faf77a947d3166896e1b3105702',1,'WindowDragger']]]
+  ['version',['version',['../classqrcodegen_1_1_qr_code.html#a37ab4abf93ddea965fe715ffdf68b80e',1,'qrcodegen::QrCode']]]
 ];
